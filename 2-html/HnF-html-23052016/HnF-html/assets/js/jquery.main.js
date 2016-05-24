@@ -11,7 +11,14 @@
 //function===============================================================================================
 /*=============================fun=========================================*/
 function myfunload() {
-    
+    $(".panel-a").mobilepanel();
+    $(".search-click").click(function () {
+        $(this).toggleClass("current");
+        $(".search").stop(true, true).toggle("slow");
+    });
+    $(".del").click(function() {
+        $(".search").hide("slow");
+    });
 }
 /*=========================================================================*/
 function mypageload() {
