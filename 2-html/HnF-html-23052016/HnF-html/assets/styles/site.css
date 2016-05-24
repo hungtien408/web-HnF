@@ -1,0 +1,251 @@
+﻿/*==========================site styles======================*/
+body
+{
+    font-family: 'Roboto' , sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+.clr
+{
+    clear: both;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Roboto' , sans-serif;
+}
+h1, h2, h3, h4, h5, h6
+{
+    margin: 0;
+}
+a:link, a:visited
+{
+    outline: none;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+fieldset, a img, img
+{
+    border: none;
+}
+:focus
+{
+    outline: none;
+}
+.hidden
+{
+    display: none;
+}
+hr
+{
+    display: none;
+}
+#wrapper
+{
+    overflow: hidden;
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+#wrapper-in
+{
+    background-color: #fff; /*background: url(../images/header-bg.jpg) repeat center top;*/
+    top: 0;
+    left: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    z-index: 99;
+}
+/*==========================header============================*/
+#header
+{
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.header-top
+{
+    padding: 40px 0;
+}
+.logo
+{
+    width: 97px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    float: left;
+    position: relative;
+}
+.logo a
+{
+    display: block;
+    width: 100%;
+}
+/*==========================*/
+#header.header-sroll
+{
+    /*background: url(../images/menu-bg.png) repeat left top;*/
+    background-color: #fff;
+    -webkit-box-shadow: 0 3px 5px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0 3px 5px #ccc; /* Firefox 3.5 - 3.6 */
+    box-shadow: 0 3px 5px #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    position: fixed;
+}
+#header.header-sroll .header-top
+{
+    padding: 0;
+}
+#header.header-sroll .hotline-w
+{
+    display: none;
+}
+/*=========================*/
+.wrapper-menu
+{
+    position: relative;
+    padding: 40px 0;
+    z-index: 99;
+    float: right;
+}
+#updateie
+{
+    display: none;
+}
+#menu
+{
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#menu a
+{
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+}
+#menu li
+{
+    position: relative;
+}
+#menu > li
+{
+    float: left;
+    margin-right: 1px;
+}
+#menu > li > a
+{
+    color: #303030;
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 40px;
+    padding: 0 17px;
+}
+#menu > li > a:hover, #menu > li:hover > a, #menu > li.active > a
+{
+    background-color: #ff9933;
+    text-decoration: none;
+}
+#menu ul
+{
+    border: none;
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 240px;
+}
+#menu > li > ul
+{
+    left: 0;
+    top: 100%;
+    padding-top: 1px;
+}
+#menu ul ul
+{
+    left: 100%;
+    top: 0;
+    padding-left: 1px;
+}
+#menu li li
+{
+    padding-bottom: 1px;
+}
+#menu li li a
+{
+    background-color: #333399;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 5px 10px;
+    text-transform: capitalize;
+}
+#menu li li > a:hover, #menu li li:hover > a, #menu li li.active > a
+{
+    background-color: #ff9933;
+    text-decoration: none;
+}
+/*==============search====================*/
+.form-search
+{
+    background-color: #fff;
+    overflow: hidden;
+    width: 100%;
+}
+.form-search .search-btn
+{
+    background: url(../images/icon-search.png) no-repeat left 9px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding: 0;
+    height: 40px;
+    width: 32px;
+}
+.form-search .search-input
+{
+    overflow: hidden;
+    padding-left: 10px;
+}
+.form-search .search-text
+{
+    background-color: #3366cc;
+    border: none;
+    color: #999;
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+/*=========================*/
+#header .form-search
+{
+    background-color: #3366cc;
+    overflow: hidden;
+    width: auto;
+}
+.hotline-w
+{
+    overflow: hidden;
+    width: 100%;
+}
