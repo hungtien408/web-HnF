@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/site.master" AutoEventWireup="true" CodeFile="site-sub.master.cs"
+    Inherits="site_sub" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphHeader" runat="Server">
+    <div class="logo">
+        <a id="A2" href="~/" runat="server">
+            <img class="img-responsive" src="assets/images/logo.png" alt="logo" /></a>
+    </div>
+    <div class="wrapper-menu">
+        <a class="panel-a menu-mo ipadmo-992" href="#menumobile" data-position="true" data-type="false">
+            <span class="fa fa-reorder"></span>Menu</a>
+        <div class="search-head desktop-992">
+            <a class="search-click" href="javascript:void(0);">
+                <img src="assets/images/icon-search.png" alt="" /></a>
+            <div class="search">
+                <span class="del"><a href="javascript:void(0);">x</a></span>
+                <asp:Button ID="Button1" CssClass="search-btn" runat="server" />
+                <asp:TextBox ID="TextBox1" runat="server" CssClass="search-text"></asp:TextBox>
+            </div>
+        </div>
+        <ul id="menu" class="desktop-992">
+            <li><a href="#">Về chúng tôi</a></li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Quy trình thực hiện</a></li>
+            <li><a href="#">Sản Phẩm</a></li>
+            <li><a href="#">Thông số size</a></li>
+            <li><a href="#">Dự án</a></li>
+            <li><a href="#">Tư vấn</a></li>
+            <li><a href="#">Liên Hệ</a></li>
+        </ul>
+        <div class="form-search corner ipadmo-992">
+            <asp:Button ID="btnSearch" CssClass="search-btnmo" runat="server" />
+            <div class="search-input">
+                <asp:TextBox ID="txtSearch" CssClass="search-text" runat="server"></asp:TextBox>
+            </div>
+        </div>
+        <div class="clearfix">
+        </div>
+    </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphBanner" runat="Server">
+    <asp:ContentPlaceHolder ID="cphBanner" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="cphMenuMobile" runat="Server">
+    <!--menumobile-->
+        <div id="menumobile" class="mobile-panel mobilep-left">
+            <div class="close-menu">
+                <a href="#menumobile" class="glyphicon glyphicon-remove-circle">close</a></div>
+            <div class="menu-in">
+                <div class="menu-mobile">
+                    <div class="logo">
+                        <a id="A1" href="~/" runat="server">
+                            <img class="img-responsive" src="assets/images/logo.png" alt="logo" /></a>
+                    </div>
+                    <ul id="menuMobile" class="menu-nav">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--menumobile-->
+</asp:Content>
+<asp:Content ID="Content6" ContentPlaceHolderID="cphPopup" runat="Server">
+    <asp:ContentPlaceHolder ID="cphPopup" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

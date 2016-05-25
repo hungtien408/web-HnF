@@ -11,6 +11,10 @@
     <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
     <link href="assets/styles/font-awesome.min.css" rel="stylesheet" />
     <link href="assets/styles/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/styles/slick.css" rel="stylesheet" type="text/css" />
+        <link href="assets/styles/nivo-slider.css" rel="stylesheet" />
+    <link href="assets/styles/jquery.bxslider.css" rel="stylesheet" />
+    <link href="assets/styles/jquery.fancybox.css" rel="stylesheet" />
     <link href="assets/styles/site.css" rel="stylesheet" type="text/css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -47,55 +51,16 @@
             <!--header-->
             <div id="header">
                 <div class="container">
-                    <asp:ContentPlaceHolder ID="cphBannerHeader" runat="server">
+                    <asp:ContentPlaceHolder ID="cphHeader" runat="server">
                     </asp:ContentPlaceHolder>
-                </div>
-                <div class="container">
-                    <div class="logo">
-                        <a id="A2" href="~/" runat="server">
-                            <img class="img-responsive" src="assets/images/logo.png" alt="logo" /></a>
-                    </div>
-                    <div class="wrapper-menu">
-                        <a class="panel-a menu-mo ipadmo-992" href="#menumobile" data-position="true" data-type="false">
-                                        <span class="fa fa-reorder"></span>Menu</a>
-                        <div class="search-head">
-                            <a class="search-click" href="javascript:void(0);">
-                                <img src="assets/images/icon-search.png" alt="" /></a>
-                            <div class="search">
-                                <span class="del"><a href="javascript:void(0);">x</a></span>
-                                <asp:Button ID="Button1" CssClass="search-btn" runat="server" />
-                                <asp:TextBox ID="TextBox1" runat="server" CssClass="search-text"></asp:TextBox>
-                            </div>
-                        </div>
-                        <ul id="menu" class="desktop-992">
-                            <li><a href="#">Về chúng tôi</a></li>
-                            <li><a href="#">Dịch vụ</a></li>
-                            <li><a href="#">Quy trình thực hiện</a></li>
-                            <li><a href="#">Sản Phẩm</a></li>
-                            <li><a href="#">Thông số size</a></li>
-                            <li><a href="#">Dự án</a></li>
-                            <li><a href="#">Tư vấn</a></li>
-                            <li><a href="#">Liên Hệ</a></li>
-                        </ul>
-                        <%--<div class="form-search corner">
-                            <asp:Button ID="btnSearch" CssClass="search-btn" runat="server" />
-                            <div class="search-input">
-                                <asp:TextBox ID="txtSearch" CssClass="search-text" runat="server"></asp:TextBox>
-                            </div>
-                        </div>--%>
-                        <div class="clearfix">
-                        </div>
-                    </div>
                 </div>
             </div>
             <!--end header-->
             <hr />
             <!--main-->
             <div id="mainContent">
-                <div class="container">
-                    <asp:ContentPlaceHolder ID="cphBanner" runat="server">
-                    </asp:ContentPlaceHolder>
-                </div>
+                <asp:ContentPlaceHolder ID="cphBanner" runat="server">
+                </asp:ContentPlaceHolder>
                 <div class="container">
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
@@ -105,6 +70,24 @@
             <hr />
             <!--footer-->
             <div id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-left"></div>
+                        <div class="footer-right"></div>
+                        <div class="col-md-8 col-sm-6">
+                            <h4 class="title-footer text-uppercase">Chúng tôi có thể là đối tác bạn đang tìm kiếm</h4>
+                            <p class="footer-content">Hãy để chúng tôi cho bạn những lời khuyên và giải pháp tốt nhất cho nhu cầu của bạn!</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="hotline">
+                                <p>Liên hệ</p>
+                                <span>0917 377 999</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer2">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
@@ -158,22 +141,6 @@
             </div>
             <!--end footer-->
         </div>
-        <!--menumobile-->
-        <div id="menumobile" class="mobile-panel mobilep-left">
-            <div class="close-menu">
-                <a href="#menumobile" class="glyphicon glyphicon-remove-circle">close</a></div>
-            <div class="menu-in">
-                <div class="menu-mobile">
-                    <div class="logo">
-                        <a id="A1" href="~/" runat="server">
-                            <img class="img-responsive" src="assets/images/logo.png" alt="logo" /></a>
-                    </div>
-                    <ul id="menuMobile" class="menu-nav">
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--menumobile-->
         <asp:ContentPlaceHolder ID="cphMenuMobile" runat="server">
         </asp:ContentPlaceHolder>
     </div>
@@ -207,6 +174,13 @@
     <script src="assets/js/jquery.menu.level.js"></script>
     <script src="assets/js/jquery.fancybox.pack.js"></script>
     <script src="assets/js/jquery.main.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                pauseOnHover: false
+            });
+        });
+    </script>
     </form>
 </body>
 </html>

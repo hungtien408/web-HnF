@@ -19,6 +19,15 @@ function myfunload() {
     $(".del").click(function() {
         $(".search").hide("slow");
     });
+    $('.slider-banner').slick({
+        dots: true,
+        arrows: true,
+        fade: true,
+        pauseOnHover: false,
+        autoplay: true,
+        speed: 500,
+        autoplaySpeed: 3000
+    });
 }
 /*=========================================================================*/
 function mypageload() {
