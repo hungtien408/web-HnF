@@ -720,10 +720,6 @@ body .mobilep-right {
     width: 100%;
     z-index: 1;
 }
-#footer .row {
-    margin-left: 120px;
-    margin-right: 120px;
-}
 #footer2 {
     padding: 50px 0 10px;
     position: relative;
@@ -775,7 +771,7 @@ body .mobilep-right {
     line-height: 24px;
     text-align: center;
     margin: 0 auto;
-    width: 330px;
+    width: 45%;
 }
 #footer .hotline {
     border-left: 2px solid #fff;
@@ -953,13 +949,19 @@ body .mobilep-right {
         width: 100%;
     }
     .section-list li:nth-child(2), .section-list li:last-child {
-        width: 54%;
+        width: 54.6%;
+    }
+    .section-list li:last-child {
+        padding-top: 3px;
+    }
+    .wrap-section .section-list {
+        width: 100%;
     }
     .wrap-section .section-box {
-        width: 46%;
+        width: 45.3%;
         position: absolute;
-        top: 34%;
-        left: 54%;
+        top: 34.3%;
+        left: 54.6%;
     }
     /*=============*/
     #footer .logo {
@@ -991,6 +993,16 @@ body .mobilep-right {
     .wrapper-menu {
         padding: 0;
     }    
+    .box-clothes .section-name a {
+        font-size: 16px;
+        line-height: 22px;
+     }
+     .box-clothes .section-content {
+        top: 12px;
+     }
+     .content-bottom {
+        top: 70% !important;
+     }
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px)
@@ -1004,30 +1016,31 @@ body .mobilep-right {
          display: block !important;
      }
      #header.header-sroll .logo {
-        padding: 3px 0;
-        width: 50px;
-    }
-    #header.header-sroll .wrapper-menu, #header.header-sroll #menu {
-        padding: 2px 0;
-    }
-    #header.header-sroll .search-head .search-click {
-        padding: 8px 15px;
-    }
-     #header .logo {
-        width: 40px;
-        padding: 4px 0 0;
-    }
-    .wrapper-menu {
-        padding: 0;
-    } 
-    .link-show a {
-        line-height: 20px;
-        font-size: 16px;
-    }
-    .title-1 {
-        font-size: 40px;
-        line-height: 50px;
-    }
+         padding: 3px 0;
+         width: 50px;
+     }
+     #header.header-sroll .wrapper-menu, #header.header-sroll #menu {
+         padding: 2px 0;
+     }
+     #header.header-sroll .search-head .search-click {
+         padding: 8px 15px;
+     }
+      #header .logo {
+         width: 40px;
+         padding: 4px 0 0;
+     }
+     .wrapper-menu {
+         padding: 0;
+     } 
+     .link-show a {
+         line-height: 20px;
+         font-size: 16px;
+     }
+     .title-1 {
+         font-size: 40px;
+         line-height: 50px;
+     }
+     
 }
 @media (min-width: 481px) and (max-width: 767px)
 {
@@ -1089,13 +1102,86 @@ body .mobilep-right {
         line-height: 12px;
         font-size: 12px;
     }
-    #footer h4 {
-        font-size: 15px;
-        line-height: 22px;
-        margin-bottom: 5px;
+    /*========*/
+    .wrap-section .content {
+        top: 5%;
+        left: 2%;
     }
-    .list-address li {
-        padding-left: 25px;
+    .wrap-section .section-name, .wrap-section .section-name a {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .wrap-section .section-name strong {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .section-list li:first-child .desription {
+        margin: 2px 0;
+        width: 160px;
+    }
+    .more-details a {
+        width: 85px;
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .section-box .more-details a {
+        font-size: 13px;
+        line-height: 25px;
+        width: 108px;
+    }
+    .section-list li .section-img img, .section-box .section-img img {
+        width: 100%;
+    }
+    .section-list li:nth-child(2), .section-list li:last-child {
+        width: 100%;
+    }
+    .wrap-section .section-box {
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .title-1 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .wrapper-880 .desription {
+        width: 100%;
+        font-size: 12px;
+    }
+    .section-box .content {
+        top: 6%;
+        left: 2%;
+    }
+    .section-box .section-name, .section-box .section-name a {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .section-box .section-name strong {
+        font-size: 28px;
+        line-height: 32px;
+    }
+    #footer h4 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .footer-left, .footer-right {
+        background: none;
+    }
+    #footer .col-xs-6, #footer2 .col-xs-6 {
+        width: 100%;
+    }
+    #footer2 h4, .list-address {
+        text-align: center;
+    }
+    #footer2 img {
+        margin: 0 auto;
+    }
+    .footer-content {
+        width: 100%;
+    }
+    .section-tb .col-xs-6 {
+        width: 100%;
     }
 }
 @media (max-width: 479px)
@@ -1108,23 +1194,54 @@ body .mobilep-right {
         font-size: 13px;
         line-height: 20px;
     }
-    .title, .head-bg {
-        font-size: 16px;
-        padding: 5px 10px;
+    /*========*/
+    .wrap-section .content {
+        top: 5%;
+        left: 2%;
     }
-        .head-bg .title-in {
-            font-size: 16px;
-        }
-    .protb-none .col-xs-6 {
+    .wrap-section .section-name, .wrap-section .section-name a {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .wrap-section .section-name strong {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .section-list li:first-child .desription {
+        margin: 2px 0;
+        width: 140px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .more-details a {
+        width: 70px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .section-list li .section-img img, .section-box .section-img img {
         width: 100%;
+    }
+    .section-list li:nth-child(2), .section-list li:last-child {
+        width: 100%;
+    }
+    .wrap-section .section-box {
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .title-1 {
+        font-size: 28px;
+        line-height: 35px;
+    }
+    .wrapper-880 .desription {
+        width: 100%;
+        font-size: 12px;
     }
 }
 @media (max-width: 419px)
 {
-    
-    .detail-images {
-        width: 100%;
-    }
+   
 }
 @media (max-width: 359px)
 {

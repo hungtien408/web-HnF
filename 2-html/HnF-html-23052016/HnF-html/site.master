@@ -76,14 +76,14 @@
                         </div>
                         <div class="footer-right">
                         </div>
-                        <div class="col-md-8 col-sm-6">
+                        <div class="col-md-8 col-xs-6">
                             <h4 class="title-footer text-uppercase">
                                 Chúng tôi có thể là đối tác bạn đang tìm kiếm</h4>
                             <p class="footer-content">
                                 Hãy để chúng tôi cho bạn những lời khuyên và giải pháp tốt nhất cho nhu cầu của
                                 bạn!</p>
                         </div>
-                        <div class="col-md-4 col-sm-6">
+                        <div class="col-md-4 col-xs-6">
                             <div class="hotline">
                                 <p>
                                     Liên hệ</p>
@@ -96,7 +96,7 @@
             <div id="footer2">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 col-xs-6">
                             <h4 class="text-uppercase">
                                 Dịch vụ</h4>
                             <ul class="list-address">
@@ -108,7 +108,7 @@
                                 <li>Thêu Logo</li>
                             </ul>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 col-xs-6">
                             <h4 class="text-uppercase">
                                 Thông tin đặt hàng</h4>
                             <ul class="list-address">
@@ -120,7 +120,7 @@
                                 <li>Subcribe to News</li>
                             </ul>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 col-xs-6">
                             <h4 class="text-uppercase">
                                 Kiến thức sản phẩm</h4>
                             <ul class="list-address">
@@ -132,7 +132,7 @@
                                 <li>Cách in chữ lên áo</li>
                             </ul>
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 col-xs-6">
                             <h4 class="text-uppercase">
                                 Follow us on facebook</h4>
                             <img class="img-responsive" src="assets/images/img-facebook.jpg" alt="" />
