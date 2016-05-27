@@ -1,7 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/site-sub.master" AutoEventWireup="true"
     CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="cphBanner" runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <title>HnF</title>
+    <meta name="description" content="HnF" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphBanner" runat="Server">
     <div id="banner">
         <div class="slider-wrapper">
             <div id="slider" class="nivoSlider">
@@ -14,7 +18,7 @@
             <a href="#productShow">Chúng tôi cung cấp<span class="fa fa-chevron-down"></span></a></div>
     </div>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="text-center wrapper-880">
         <h4 class="text-uppercase title-1">
             Chúng tôi cung cấp</h4>
@@ -117,5 +121,5 @@
         </div>
     </div>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="cphPopup" runat="Server">
+<asp:Content ID="Content4" ContentPlaceHolderID="cphPopup" runat="Server">
 </asp:Content>
