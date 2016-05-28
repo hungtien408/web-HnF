@@ -99,6 +99,8 @@ function myfunload() {
 //                });
 //            }
         });
+        $("#sectionTab").tabs();
+        $("#tabs").tabs();
     }
     myfunsroll();
 }
