@@ -197,71 +197,58 @@
     </div>
     <div class="wrap-section">
         <div id="sectionTab">
-        <div class="head-2">
-            <ul class="menu-control">
-                <li><a class="link-tabs" href="#tab-1">Áo cổ trụ - cổ bo</a></li>
-                <li><a class="link-tabs" href="#tab-2">Áo cổ trụ - cổ sơ mi</a></li>
-                <li><a class="link-tabs" href="#tab-3">Áo cổ tròn</a></li>
-                <li><a class="link-tabs" href="#tab-4">Áo cổ tim</a></li>
-                <li><a class="link-tabs" href="#tab-5">Áo cổ tròn, tay raglan</a></li>
-            </ul>
-        </div>
-        <div id="tab-1" class="section-tabs">
-            <div class="wrap-guarantee">
-                <div class="guarantee-content">
-                    <p>
-                        18001529 - Cửa sổ tiếp nhận và xử lý thông tin Tháng 6-2004, Trung tâm tư vấn khách
-                        hàng (call center) của Công ty Toshiba Việt Nam chính thức ra mắt. Đây là một trong
-                        những call center đầu tiên của cả nước trong ngành hàng điện tử, điện lạnh và đến
-                        nay bao gồm cả mảng laptop. Trước đó, qua bề dày hoạt động tại Việt Nam, Toshiba
-                        đã thực hiện nhiều hoạt động và chính sách chăm sóc khách hàng hết sức qui mô và
-                        chuyên nghiệp. Việc ra đời đội ngũ call center là một trong những bước đột phá của
-                        Toshiba Việt Nam nhằm nâng cao hơn nữa chất lượng dịch vụ hậu mãi, qua đó gia tăng
-                        uy tín và sức lan toả của thương hiệu Toshiba.</p>
-                    <p>
-                        Đội ngũ call center Toshiba hoàn toàn là nhân viên của công ty, được đào tạo trở
-                        thành tư vấn viên chuyên nghiệp, am hiểu các tính năng vượt trội của sản phẩm Toshiba
-                        để giải đáp các thắc mắc của khách hàng, tiếp nhận và xử lý thông tin sản phẩm cần
-                        bảo hành, Thông qua giao tiếp với khách hàng, call center xác định được trường hợp
-                        nào không phải là hư hỏng máy móc, chỉ cần hướng dẫn khách hàng sử dụng; trường
-                        hợp nào cần kỹ thuật viên trực tiếp kiểm tra, khắc phục. Bước sàng lọc này của nhân
-                        viên giúp tiết kiệm thời gian của khách hàng, rút ngắn tối đa thời gian sữa chữa,
-                        đồng thời hỗ trợ đội ngũ kỹ thuật viên bảo hành hoạt động hiệu quả hơn. Với vai
-                        trò đó, call center như là cửa sổ tiếp nhận thông tin, là một mắc xích quan trọng
-                        trong hệ thống bảo hành. Mọi nỗ lực của call center đều nhằm làm gia tăng sự hài
-                        lòng của khách hàng, để khách hàng ngày càng thêm an tâm và tin tưởng sử dụng các
-                        sản phẩm, dịch vụ của Toshiba.</p>
+            <div class="head-2">
+                <ul class="menu-control">
+                    <li><a class="link-tabs" href="#tab-1">Áo cổ trụ - cổ bo</a></li>
+                    <li><a class="link-tabs" href="#tab-2">Áo cổ trụ - cổ sơ mi</a></li>
+                    <li><a class="link-tabs" href="#tab-3">Áo cổ tròn</a></li>
+                    <li><a class="link-tabs" href="#tab-4">Áo cổ tim</a></li>
+                    <li><a class="link-tabs" href="#tab-5">Áo cổ tròn, tay raglan</a></li>
+                </ul>
+            </div>
+            <div id="tab-1" class="section-tabs">
+                <%--<ul class="list-models">
+                    <li><img src="assets/images/product-img-1.jpg" alt="" /></li>
+                    <li><img src="assets/images/product-img-2.jpg" alt="" /></li>
+                    <li><img src="assets/images/product-img-3.jpg" alt="" /></li>
+                    <li><img src="assets/images/product-img-4.jpg" alt="" /></li>
+                    <li><img src="assets/images/product-img-5.jpg" alt="" /></li>
+                </ul>--%>
+                <div class="section-tb row">
+                    <div class="col-sm-3 col-xs-6 element-item">
+                            <a href="#" class="models-img">
+                                <img src="assets/images/product-img-1.jpg" alt="" class="corner" />
+                            </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 element-item">
+                            <a href="#" class="models-img">
+                                <img src="assets/images/product-img-2.jpg" alt="" class="corner" />
+                            </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 element-item">
+                            <a href="#" class="models-img">
+                                <img src="assets/images/product-img-3.jpg" alt="" class="corner" />
+                            </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 element-item">
+                            <a href="#" class="models-img">
+                                <img src="assets/images/product-img-4.jpg" alt="" class="corner" />
+                            </a>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 element-item">
+                            <a href="#" class="models-img">
+                                <img src="assets/images/product-img-5.jpg" alt="" class="corner" />
+                            </a>
+                    </div>
+                </div>
+            </div>  
+            <div id="tab-2" class="section-tabs">
+                <div class="wrap-guarantee">
+                    <div class="guarantee-content">
+                    
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="tab-2" class="section-tabs">
-            <div class="wrap-guarantee">
-                <div class="guarantee-content">
-                    <p>
-                        18001529 - Cửa sổ tiếp nhận và xử lý thông tin Tháng 6-2004, Trung tâm tư vấn khách
-                        hàng (call center) của Công ty Toshiba Việt Nam chính thức ra mắt. Đây là một trong
-                        những call center đầu tiên của cả nước trong ngành hàng điện tử, điện lạnh và đến
-                        nay bao gồm cả mảng laptop. Trước đó, qua bề dày hoạt động tại Việt Nam, Toshiba
-                        đã thực hiện nhiều hoạt động và chính sách chăm sóc khách hàng hết sức qui mô và
-                        chuyên nghiệp. Việc ra đời đội ngũ call center là một trong những bước đột phá của
-                        Toshiba Việt Nam nhằm nâng cao hơn nữa chất lượng dịch vụ hậu mãi, qua đó gia tăng
-                        uy tín và sức lan toả của thương hiệu Toshiba.</p>
-                    <p>
-                        Đội ngũ call center Toshiba hoàn toàn là nhân viên của công ty, được đào tạo trở
-                        thành tư vấn viên chuyên nghiệp, am hiểu các tính năng vượt trội của sản phẩm Toshiba
-                        để giải đáp các thắc mắc của khách hàng, tiếp nhận và xử lý thông tin sản phẩm cần
-                        bảo hành, Thông qua giao tiếp với khách hàng, call center xác định được trường hợp
-                        nào không phải là hư hỏng máy móc, chỉ cần hướng dẫn khách hàng sử dụng; trường
-                        hợp nào cần kỹ thuật viên trực tiếp kiểm tra, khắc phục. Bước sàng lọc này của nhân
-                        viên giúp tiết kiệm thời gian của khách hàng, rút ngắn tối đa thời gian sữa chữa,
-                        đồng thời hỗ trợ đội ngũ kỹ thuật viên bảo hành hoạt động hiệu quả hơn. Với vai
-                        trò đó, call center như là cửa sổ tiếp nhận thông tin, là một mắc xích quan trọng
-                        trong hệ thống bảo hành. Mọi nỗ lực của call center đều nhằm làm gia tăng sự hài
-                        lòng của khách hàng, để khách hàng ngày càng thêm an tâm và tin tưởng sử dụng các
-                        sản phẩm, dịch vụ của Toshiba.</p>
-                </div>
-            </div>
-        </div>
         </div>
     </div>
 </asp:Content>

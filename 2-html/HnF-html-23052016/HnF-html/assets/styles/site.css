@@ -919,17 +919,35 @@ body .mobilep-right {
 }
 .list-object .content {
     position: absolute;
-    top: 20%;
+    top: 55%;
     left: 4%;
+    width: 42%;
     text-align: center;
 }
+.list-object li:nth-child(3) .content, .list-object li:nth-child(3) .desription, .list-object li:nth-child(5) .content, .list-object li:nth-child(5) .desription {
+    top: 20%;
+    text-align: left;
+}
+.list-object li:nth-child(3) .desription, .list-object li:nth-child(5) .desription {
+    width: 80%;
+    padding: 0;
+    background: none;
+}
+.list-object li:nth-child(4) .content, .list-object li:nth-child(6) .content {
+    width: 100%;
+    left: 0;
+    padding: 0 56px;
+}
 .list-object .object-name, .list-object .object-name a {
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 24px;
     color: #484848;
     font-weight: 700;
     text-transform: uppercase;
     font-family: 'UTM Futura Extra';
+}
+.list-object li:nth-child(3) .object-name, .list-object li:nth-child(3) .object-name a, .list-object li:nth-child(3) .desription, .list-object li:nth-child(4) .object-name a,.list-object li:nth-child(6) .object-name a {
+    color: #fff;
 }
 .list-object .desription {
     text-align: center;
@@ -978,6 +996,17 @@ body .mobilep-right {
 .menu-control li:hover a, .menu-control li.ui-tabs-active a {
     color: #fff;
     text-decoration: none;
+}
+.section-tabs {
+    padding-top: 30px;
+}
+.list-models {
+    float: left;
+    width: 100%;
+    list-style: none;
+}
+.list-models li {
+    float: left;
 }
 /*=============================footer======================*/
 #footer
