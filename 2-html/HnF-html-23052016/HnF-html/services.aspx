@@ -207,48 +207,97 @@
                 </ul>
             </div>
             <div id="tab-1" class="section-tabs">
-                <%--<ul class="list-models">
-                    <li><img src="assets/images/product-img-1.jpg" alt="" /></li>
-                    <li><img src="assets/images/product-img-2.jpg" alt="" /></li>
-                    <li><img src="assets/images/product-img-3.jpg" alt="" /></li>
-                    <li><img src="assets/images/product-img-4.jpg" alt="" /></li>
-                    <li><img src="assets/images/product-img-5.jpg" alt="" /></li>
-                </ul>--%>
-                <div class="section-tb row">
-                    <div class="col-sm-3 col-xs-6 element-item">
-                            <a href="#" class="models-img">
-                                <img src="assets/images/product-img-1.jpg" alt="" class="corner" />
-                            </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 element-item">
-                            <a href="#" class="models-img">
-                                <img src="assets/images/product-img-2.jpg" alt="" class="corner" />
-                            </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 element-item">
-                            <a href="#" class="models-img">
-                                <img src="assets/images/product-img-3.jpg" alt="" class="corner" />
-                            </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 element-item">
-                            <a href="#" class="models-img">
-                                <img src="assets/images/product-img-4.jpg" alt="" class="corner" />
-                            </a>
-                    </div>
-                    <div class="col-sm-3 col-xs-6 element-item">
-                            <a href="#" class="models-img">
-                                <img src="assets/images/product-img-5.jpg" alt="" class="corner" />
-                            </a>
-                    </div>
-                </div>
+                <ul class="list-models">
+                    <li><a href="#"><img src="assets/images/product-img-1.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-2.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-3.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-4.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-5.jpg" alt="" /></a></li>
+                </ul>
             </div>  
             <div id="tab-2" class="section-tabs">
-                <div class="wrap-guarantee">
-                    <div class="guarantee-content">
-                    
-                    </div>
-                </div>
+                <ul class="list-models">
+                    <li><a href="#"><img src="assets/images/product-img-2.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-3.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-1.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-5.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-4.jpg" alt="" /></a></li>
+                </ul>
             </div>
+            <div id="tab-3" class="section-tabs">
+                <ul class="list-models">
+                    <li><a href="#"><img src="assets/images/product-img-3.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-2.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-1.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-4.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-5.jpg" alt="" /></a></li>
+                </ul>
+            </div>
+            <div id="tab-4" class="section-tabs">
+                <ul class="list-models">
+                    <li><a href="#"><img src="assets/images/product-img-4.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-2.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-5.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-3.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-1.jpg" alt="" /></a></li>
+                </ul>
+            </div>
+            <div id="tab-5" class="section-tabs">
+                <ul class="list-models">
+                    <li><a href="#"><img src="assets/images/product-img-1.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-2.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-3.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-4.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="assets/images/product-img-5.jpg" alt="" /></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center wrapper-880">
+        <h4 class="text-uppercase title-1">
+            Chất vải</h4>
+        <div class="desription">
+            Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100% cotton
+        </div>
+    </div>
+    <div class="wrap-section">
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Chất vải</th>
+                        <th>Hình</th>
+                        <th>Đặc điểm</th>
+                        <th>Bảng màu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>VẢI CÁ SẤU 100% cotton</td>
+                        <td><img src="assets/images/fabric-img-1.jpg" alt="" /></td>
+                        <td>Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100% cotton</td>
+                        <td>Vải cá sấu 65% cotton</td>
+                    </tr>
+                    <tr>
+                        <td>VẢI CÁ SẤU 35% cotton</td>
+                        <td><img src="assets/images/fabric-img-2.jpg" alt="" /></td>
+                        <td>Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100% cotton</td>
+                        <td>Vải cá sấu 65% cotton</td>
+                    </tr>
+                    <tr>
+                        <td>VẢI CÁ SẤU 100% cotton</td>
+                        <td><img src="assets/images/fabric-img-3.jpg" alt="" /></td>
+                        <td>Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100% cotton</td>
+                        <td>Vải cá sấu 65% cotton</td>
+                    </tr>
+                    <tr>
+                        <td>VẢI CÁ SẤU 65% cotton</td>
+                        <td><img src="assets/images/fabric-img-4.jpg" alt="" /></td>
+                        <td>Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100% cotton</td>
+                        <td>Vải cá sấu 65% cotton</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </asp:Content>
@@ -270,5 +319,28 @@
     </div>
     <!--menumobile-->
 </asp:Content>
-<asp:Content ID="Content6" ContentPlaceHolderID="cphPopup" runat="Server">
+<asp:Content ID="Content6" ContentPlaceHolderID="cphFooter" runat="Server">
+    <div class="container">
+        <div class="row">
+            <div class="footer-left">
+            </div>
+            <div class="footer-right">
+            </div>
+            <div class="col-md-8 col-xs-6">
+                <h4 class="title-footer text-uppercase">
+                    Đồng phục là một trong những yếu tố ảnh hưởng đến sự thành công của một doanh nghiệp</h4>
+                <p class="footer-content">
+                    Hãy để chúng tôi cải thiện hình ảnh doanh nghiệp của bạn!</p>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <div class="hotline">
+                    <p>
+                        Liên hệ</p>
+                    <span>0917 377 999</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>
+<asp:Content ID="Content7" ContentPlaceHolderID="cphPopup" runat="Server">
 </asp:Content>
