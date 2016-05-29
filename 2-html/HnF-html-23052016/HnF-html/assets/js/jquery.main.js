@@ -3,10 +3,47 @@
 }
 (function ($) {
     $(window).load(function () {
+        var cleartime;
+        mywrapper();
+        $(window).resize(function () {
+            $("#header").css({ "padding-top": 0 });
+            clearTimeout(cleartime);
+            cleartime = setTimeout(function () {
+                mywrapper();
+            }, 300);
+        });
     });
     $(function () {
+       if ($('#isotopelist').size() == 1) {
+           var cleartimeout;
+            clearTimeout(cleartimeout);
+            cleartimeout = setTimeout(function () {
+                var $container = $('#isotopelist').imagesLoaded(function () {
+                    $container.isotope({
+                        itemSelector: '.element-item',
+                        layoutMode: 'fitRows'
+                    });
+                });
+            }, 300);
+        }
+        $(".wrap-images").hover(function () {
+            $(this).stop(true, true).animate({ transform: 'scale(1.20,1.20)' }, 500);
+        }, function () {
+            $(this).stop(true, true).animate({ transform: 'scale(1,1)' }, 500);
+        });
         myfunload();
     });
+    function mywrapper() {
+        var hmain = $("#wrapper").height();
+        var hwin = $(window).height();
+        var htop = parseInt((hwin - hmain) / 2);
+        if (hwin > hmain) {
+            $("#header").css({ "padding-top": htop });
+        } else {
+            $("#header").css({ "padding-top": 0 });
+        }
+        $("#wrappertop").backstretch("assets/images/intro-bg.jpg");
+    }
 })(jQuery);
 //function===============================================================================================
 /*=============================fun=========================================*/
@@ -99,9 +136,23 @@ function myfunload() {
 //                });
 //            }
         });
-        $("#sectionTab").tabs();
-        $("#tabs").tabs();
     }
+    if ($('.wrap-boximg').size() > 0) {
+        var productlist = $('.wrap-boximg').imagesLoaded(function () {
+            productlist.textHeight({
+                activetit: true,
+                listcss: [{ cssname: ".intro-img" }, { cssname: ".name-link" }],
+                wpointb: true,
+                desbool: false,
+                listpos: [{ cssnamepos: ".desription", cssheightnum: "2"}],
+                tbrow: true,
+                csstr: ".element-item",
+                max: true
+            });
+        });
+    }
+    $("#sectionTab").tabs();
+    $("#priceTab").tabs();
     myfunsroll();
 }
 /*=========================================================================*/
@@ -153,9 +204,11 @@ function srollmenu(htop) {
     if ($(window).scrollTop() > htop) {
         $("#header").addClass("header-sroll");
         $(".header-services").addClass("header-sroll");
+        $(".header-tv").removeClass("display-none");
     } else {
         $("#header").removeClass("header-sroll");
         $(".header-services").removeClass("header-sroll");
+        $(".header-tv").addClass("display-none");
     }
 }
 //==================

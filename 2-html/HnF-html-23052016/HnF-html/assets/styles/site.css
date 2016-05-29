@@ -1014,19 +1014,27 @@ body .mobilep-right {
     background-color: #000;
     border-color: #000;
 }
+.list-models li a {
+    display: block;
+    width: 100%;
+}
+.list-models li a img {
+    background: none;
+    display: inline-block;
+}
 .list-models li:hover img{
     opacity: .5;
     background-color: #000;
 }
 /*===============*/
-.wrap-section .table {
+.wrap-section .table-fabric, .wrap-section .table-price {
     color: #484848;
     font-size: 13px;
     font-weight: 600;
     margin: 0;
     text-align: center;
 }
-.wrap-section .table th {
+.wrap-section .table-fabric th, .wrap-section .table-price th {
     background-color: #000;
     color: #fff;
     font-size: 16px;
@@ -1034,29 +1042,223 @@ body .mobilep-right {
     text-align: center;
     text-transform: uppercase;
 }
-.wrap-section .table td {
+.wrap-section .table-fabric td, .wrap-section .table-price td {
     background-color: #fff;
 }
-.wrap-section .table th, .wrap-section .table td {
+.wrap-section .table-fabric th, .wrap-section .table-fabric td, .wrap-section .table-price th, .wrap-section .table-price td {
     border: solid 1px #cecece;
     padding: 7px 20px;
     line-height: 22px;
 }
-.wrap-section .table th:first-child, .wrap-section .table td:first-child, .wrap-section .table th:nth-child(2), .wrap-section .table td:nth-child(2) {
+.wrap-section .table-fabric th:first-child, .wrap-section .table-fabric td:first-child, .wrap-section .table-fabric th:nth-child(2), .wrap-section .table-fabric td:nth-child(2) {
     width: 14%;
 }
-.wrap-section .table td:nth-child(2) {
+.wrap-section .table-fabric td:nth-child(2) {
     padding: 0;
 }
-.wrap-section .table td:first-child {
+.wrap-section .table-fabric td:first-child {
     color: #7f7f7f;
     font-size: 18px;
     line-height: 24px;
     padding: 40px 12px;
     font-weight: 700;
 }
-.wrap-section .table td:nth-child(3) {
+.wrap-section .table-fabric td:nth-child(3) {
     width: 24%;
+    padding: 50px 12px;
+    background-color: #ebeaec;
+    font-weight: 400;
+}
+.wrap-section .table-fabric td:nth-child(4) {
+    width: 47%;
+    font-weight: 400;
+}
+.list-color {
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+    padding: 50px 12px;
+}
+.list-color li {
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+.list-color li img {
+    display: block;
+    width: 100%;
+}
+/*========production technology======*/
+.wrap-boximg {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.wrap-boximg .box-col {
+    float: left;
+    width: 30%;
+}
+.box-in {
+    padding: 0 40px;
+}
+.wrap-images {
+    overflow: hidden;
+    width: 100%;
+}
+.intro-img {
+    display: block;
+    width: 100%;
+}
+.intro-img img {
+    background: none;
+    display: inline-block;
+}
+.name-link a {
+    color: #202020;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 20px 0;
+}
+/*=======table price======*/
+.wrap-section .table-price th, .wrap-section .table-price td {
+    width: 14%;
+}
+.wrap-section .table-price th {
+    background-color: #0b425b;
+    font-size: 14px;
+    line-height: 22px;
+}
+.wrap-section .table-price td {
+    font-size: 14px;
+    color: #252525;
+    font-weight: 400;
+}
+.wrap-section .table-price tr:first-child th {
+    border-bottom: none;
+}
+.wrap-section .table-price tr:nth-child(2) th {
+    background-color: #4996ba;
+    border-top: none;
+}
+/*=====suicide====*/
+.display-none {
+    display: none;
+}
+.header-tv {
+    background: url('../images/bg-header-tv.png') repeat left top !important;
+    border: none;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.title-tv {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    text-align: center;
+    width: 100%
+}
+.title-tv span {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 28px 72px;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.title-2 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    background: url('../images/bg-title.png') repeat-x center center;
+}
+.title-2 span {
+    background-color: #fff;
+    padding: 0 10px;
+}
+.wrap-suicide {
+    padding: 40px 0 0;
+}
+.box-suicide {
+    padding: 30px 0;
+}
+.suicide-img {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.suicide-img img {
+    display: inline-block;
+    width: 100%;
+}
+.title-suicide, .title-suicide a {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 20px;
+    line-height: 22px;
+    color: #252525;
+}
+.title-suicide a:hover {
+    text-decoration: none;
+}
+.box-suicide .description {
+    text-align: center;
+    overflow: hidden;
+    margin: 12px 0 20px;
+    max-height: 66px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 24px;
+}
+.box-suicide .more-details a {
+    color: #ff5a00;
+    text-transform: none;
+    font-size: 12px;
+    line-height: 22px;
+    border: none;
+    background-color: #fff;
+}
+/*=====pager====*/
+.pager {
+    text-align: center;
+    vertical-align: top;
+    font-size: 0;
+    margin: 0 0 10px;
+    width: 100%;
+    padding-top: 11px;
+}
+.pager a, .pager span span {
+    background: #fff;
+    color: #151515;
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: top;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 3px;
+    vertical-align: top;
+    width: 24px;
+}
+.pager .first, .pager .last {
+    font-size: 10px;
+}
+.pager a:hover, .pager a.current {
+    background-color: #f37121;
+    border-color: #000;
+    color: #fff;
+    text-decoration: none;
 }
 /*=============================footer======================*/
 #footer
@@ -1394,6 +1596,9 @@ body .mobilep-right {
          font-size: 40px;
          line-height: 50px;
      }
+     #footer .hotline span {
+         font-size: 30px;
+     }
      
 }
 @media (min-width: 481px) and (max-width: 767px)
@@ -1408,6 +1613,11 @@ body .mobilep-right {
     .list-hotline {
         font-size: 18px;
         line-height: 22px;
+    }
+    .title-tv span 
+    {
+        padding: 12px 36px;
+        font-size: 30px;
     }
 }
 @media (max-width: 639px)
@@ -1543,6 +1753,11 @@ body .mobilep-right {
     .section-tb .box-clothes {
         margin: 0 32px 15px;
     }
+    .title-tv span 
+    {
+        padding: 12px 36px;
+        font-size: 30px;
+    }
 }
 @media (max-width: 479px)
 {
@@ -1617,6 +1832,14 @@ body .mobilep-right {
     .section-list li:first-child .section-name strong {
         font-size: 18px;
         line-height: 20px;
+    }
+    .title-tv {
+        top: 30%;
+    }
+    .title-tv span 
+    {
+        padding: 10px 36px;
+        font-size: 12px;
     }
 }
 @media (max-width: 359px)

@@ -26,12 +26,12 @@
                 </div>
                 <ul id="menu" class="desktop-992">
                     <li><a href="#">Về chúng tôi</a></li>
-                    <li><a href="services.aspx">Dịch vụ</a></li>
+                    <li><a href="dich-vu.aspx">Dịch vụ</a></li>
                     <li><a href="#">Quy trình thực hiện</a></li>
                     <li><a href="#">Sản Phẩm</a></li>
                     <li><a href="#">Thông số size</a></li>
                     <li><a href="#">Dự án</a></li>
-                    <li><a href="#">Tư vấn</a></li>
+                    <li><a href="tu-van.aspx">Tư vấn</a></li>
                     <li><a href="#">Liên Hệ</a></li>
                 </ul>
                 <div class="form-search corner ipadmo-992">
@@ -39,8 +39,6 @@
                     <div class="search-input">
                         <asp:TextBox ID="txtSearch" CssClass="search-text" runat="server"></asp:TextBox>
                     </div>
-                </div>
-                <div class="clearfix">
                 </div>
             </div>
         </div>
