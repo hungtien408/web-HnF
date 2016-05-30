@@ -44,6 +44,9 @@
         }
         $("#wrappertop").backstretch("assets/images/intro-bg.jpg");
     }
+//    $('#isotopelist .element-item').each(function() {
+//         $("#isotopelist .element-item:nth-child(4)").css("left", "500px");
+//    });
 })(jQuery);
 //function===============================================================================================
 /*=============================fun=========================================*/

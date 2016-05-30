@@ -35,6 +35,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="cphBanner" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<div class="container">
     <div class="text-center wrapper-880 border-none wrap-suicide">
         <h4 class="text-uppercase title-2">
             <span>Công nghệ sản xuất</span></h4>
@@ -256,6 +257,7 @@
             <a class="next fa fa-caret-right" href="#"></a>
             <a class="last fa fa-forward" href="#"></a>
         </div>
+    </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="cphFooter" Runat="Server">
