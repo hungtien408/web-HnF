@@ -156,6 +156,13 @@ function myfunload() {
     }
     $("#sectionTab").tabs();
     $("#priceTab").tabs();
+    $(".menu-qt li:last-child .bg-button-right").remove();
+    $('.bg-order').addClass('fadeInLeft');
+    //$('.order-tabs').delay(800).addClass('fadeInRight');
+    $(".order-tabs").delay(800).queue(function (next) {
+        $(this).addClass("fadeInRight");
+        next();
+    });
     myfunsroll();
 }
 /*=========================================================================*/

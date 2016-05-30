@@ -1135,23 +1135,41 @@
         </div>
     </div>
     <div class="wrap-section">
-        <div class="bg-order">
+        <div class="bg-order wow">
             <img src="assets/images/img-quytrinh.jpg" alt="" /></div>
         <div class="container">
             <div id="orderTab">
                 <div class="head-2">
                     <ul class="menu-control menu-qt">
-                        <li><a class="link-tabs" href="#order-1"><span class="bg-button-left"></span>Tư vấn<span class="bg-button-right"></span></a></li>
-                        <li><a class="link-tabs" href="#order-2"><span class="bg-button-left"></span>Báo giá<span class="bg-button-right"></span></a></li>
-                        <li><a class="link-tabs" href="#order-3"><span class="bg-button-left"></span>Ký hợp đồng<span class="bg-button-right"></span></a></li>
-                        <li><a class="link-tabs" href="#order-4"><span class="bg-button-left"></span>Thiết kế mẫu<span class="bg-button-right"></span></a></li>
-                        <li><a class="link-tabs" href="#order-5"><span class="bg-button-left"></span>Chỉnh sửa &amp; duyệt mẫu<span class="bg-button-right"></span></a></li>
-                        <li><a class="link-tabs" href="#order-6"><span class="bg-button-left"></span>Sản xuất<span class="bg-button-right"></span></a></li>
-                        <li><a class="link-tabs" href="#order-7"><span class="bg-button-left"></span>Giao hàng<span class="bg-button-right"></span></a></li>
-                        <li><a class="link-tabs" href="#order-8"><span class="bg-button-left"></span>Kiểm tra chất lượng<span class="bg-button-right"></span></a></li>
+                        <li><a class="link-tabs" href="#order-1"><span class="bg-button-left"></span>Tư vấn<span
+                            class="bg-button-right"></span></a></li>
+                        <li><a class="link-tabs" href="#order-2"><span class="bg-button-left"></span>Báo giá<span
+                            class="bg-button-right"></span></a></li>
+                        <li><a class="link-tabs" href="#order-3"><span class="bg-button-left"></span>Ký hợp
+                            đồng<span class="bg-button-right"></span></a></li>
+                        <li><a class="link-tabs" href="#order-4"><span class="bg-button-left"></span>Thiết kế
+                            mẫu<span class="bg-button-right"></span></a></li>
+                        <li><a class="link-tabs" href="#order-5"><span class="bg-button-left"></span>Chỉnh sửa
+                            &amp; duyệt mẫu<span class="bg-button-right"></span></a></li>
+                        <li><a class="link-tabs" href="#order-6"><span class="bg-button-left"></span>Sản xuất<span
+                            class="bg-button-right"></span></a></li>
+                        <li><a class="link-tabs" href="#order-7"><span class="bg-button-left"></span>Giao hàng<span
+                            class="bg-button-right"></span></a></li>
+                        <li><a class="link-tabs" href="#order-8"><span class="bg-button-left"></span>Kiểm tra
+                            chất lượng<span class="bg-button-right"></span></a></li>
                     </ul>
                 </div>
-                <div id="order-1" class="section-tabs">
+                <h2 class="title-1 text-uppercase title-order">
+                    Quy trình đặt hàng</h2>
+                <div id="order-1" class="section-tabs order-tabs wow">
+                    <h4 class="title-design">
+                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
+                    <div class="desription">
+                        If you are like me you live and breathe fashion. You are constantly inspired with
+                        so many new designs racing through your mind, so many you can't seem to get them
+                        all down quick enough at the pace they arrive. You constantly dream of the day your
+                        fashions will be on the fashion runway with the lights beaming brightly overhead,
+                        the cameras flashing.</div>
                 </div>
                 <div id="order-2" class="section-tabs">
                 </div>
