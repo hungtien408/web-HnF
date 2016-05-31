@@ -1713,6 +1713,53 @@ body .mobilep-right {
     .title-order {
         font-size: 40px;
     }
+    /*=========fabric==============*/
+    .wrap-section .table-fabric td:first-child {
+        padding: 10px 5px;
+        white-space: normal;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .wrap-section .table-fabric td:nth-child(2) {
+        padding: 0;
+    }
+    .wrap-section .table-fabric td:nth-child(3) {
+        padding: -1px 200px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        position: relative;
+        width: 100%;
+    }
+    .wrap-section .table-fabric .fabric-content {
+        white-space: normal;
+        position: absolute;
+        top: 12px;
+        left: 6px;
+        width: 240%;
+        text-align: left;
+    }
+    .wrap-section .table-fabric td:nth-child(4) {
+        width: 100%;
+        overflow-x: scroll;
+        overflow-y: scroll;
+        padding: 0 140px;
+        position: relative;
+    }
+    .list-color {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        padding: 0;
+    }
+    .list-color li {
+        width: 33%;
+    }
+    .note-color {
+        white-space: normal;
+        position: absolute;
+        top: 650px;
+        left: 6px;
+    }
 }
 @media (min-width: 768px)
 {

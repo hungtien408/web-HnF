@@ -317,11 +317,11 @@
                                 <img src="assets/images/fabric-img-1.jpg" alt="" />
                             </td>
                             <td rowspan="4">
-                                <p style="white-space: normal;">Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
+                                <div class="fabric-content">Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
                                 là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
                                 khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
                                 cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                tôi là đơn vị đầu tiên sử dụng vải 100% cotton</p>
+                                tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
                             </td>
                             <td rowspan="4">
                                 <ul class="list-color">
@@ -366,7 +366,7 @@
                                     <li>
                                         <img src="assets/images/color-img-20.png" alt="" /></li>
                                 </ul>
-                                <p style="white-space: normal;">
+                                <p class="note-color">
                                     Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
                             </td>
                         </tr>
