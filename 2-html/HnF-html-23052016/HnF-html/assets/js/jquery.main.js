@@ -44,9 +44,12 @@
         }
         $("#wrappertop").backstretch("assets/images/intro-bg.jpg");
     }
-//    $('#isotopelist .element-item').each(function() {
-//         $("#isotopelist .element-item:nth-child(4)").css("left", "500px");
-//    });
+    if ($(window).width() > 992){
+        if ($('#isotopelist .element-item').length == 5) {
+            $('#isotopelist .element-item:nth-child(4)').css("margin-left","150px");
+            $('#isotopelist .element-item:nth-child(5)').css("margin-left","12px");
+        }
+    }
 })(jQuery);
 //function===============================================================================================
 /*=============================fun=========================================*/
@@ -87,8 +90,8 @@ function myfunload() {
         return false;
     });
     if ($('.section-tb').size() > 0) {
-        var productlist = $('.section-tb').imagesLoaded(function () {
-            productlist.textHeight({
+        var sectionlist = $('.section-tb').imagesLoaded(function () {
+            sectionlist.textHeight({
                 activetit: true,
                 listcss: [{ cssname: ".services-img" }, { cssname: ".title-services" }],
                 wpointb: true,
@@ -154,12 +157,14 @@ function myfunload() {
             });
         });
     }
+    
     $("#sectionTab").tabs();
     $("#priceTab").tabs();
+    $("#orderTab").tabs();
     $(".menu-qt li:last-child .bg-button-right").remove();
     $('.bg-order').addClass('fadeInLeft');
     //$('.order-tabs').delay(800).addClass('fadeInRight');
-    $(".order-tabs").delay(800).queue(function (next) {
+    $(".wrap-order").delay(800).queue(function (next) {
         $(this).addClass("fadeInRight");
         next();
     });

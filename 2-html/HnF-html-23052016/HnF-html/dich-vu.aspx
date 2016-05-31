@@ -317,11 +317,11 @@
                                 <img src="assets/images/fabric-img-1.jpg" alt="" />
                             </td>
                             <td rowspan="4">
-                                Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
+                                <p style="white-space: normal;">Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
                                 là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
                                 khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
                                 cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                tôi là đơn vị đầu tiên sử dụng vải 100% cotton
+                                tôi là đơn vị đầu tiên sử dụng vải 100% cotton</p>
                             </td>
                             <td rowspan="4">
                                 <ul class="list-color">
@@ -366,7 +366,7 @@
                                     <li>
                                         <img src="assets/images/color-img-20.png" alt="" /></li>
                                 </ul>
-                                <p>
+                                <p style="white-space: normal;">
                                     Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
                             </td>
                         </tr>
@@ -472,8 +472,8 @@
         <div class="wrap-section">
             <div id="priceTab">
                 <div class="head-2">
-                    <ul class="menu-control">
-                        <li><a class="link-tabs" href="#price-1">Áo cổ tròn</a></li>
+                    <ul class="menu-control menu-price">
+                        <li><a class="link-tabs" href="#price-1">Áo thun cổ tròn</a></li>
                         <li><a class="link-tabs" href="#price-2">Áo thun polo thường</a></li>
                         <li><a class="link-tabs" href="#price-3">Áo thun polo cao cấp</a></li>
                         <li><a class="link-tabs" href="#price-4">Một số yêu cầu thêm</a></li>
@@ -1161,7 +1161,8 @@
                 </div>
                 <h2 class="title-1 text-uppercase title-order">
                     Quy trình đặt hàng</h2>
-                <div id="order-1" class="section-tabs order-tabs wow">
+                    <div class="wrap-order wow">
+                <div id="order-1" class="section-tabs order-tabs">
                     <h4 class="title-design">
                         Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
                     <div class="desription">
@@ -1171,19 +1172,76 @@
                         fashions will be on the fashion runway with the lights beaming brightly overhead,
                         the cameras flashing.</div>
                 </div>
-                <div id="order-2" class="section-tabs">
+                <div id="order-2" class="section-tabs order-tabs">
+                    <h4 class="title-design">
+                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
+                    <div class="desription">
+                        If you are like me you live and breathe fashion. You are constantly inspired with
+                        so many new designs racing through your mind, so many you can't seem to get them
+                        all down quick enough at the pace they arrive. You constantly dream of the day your
+                        fashions will be on the fashion runway with the lights beaming brightly overhead,
+                        the cameras flashing.</div>
                 </div>
-                <div id="order-3" class="section-tabs">
+                <div id="order-3" class="section-tabs order-tabs">
+                    <h4 class="title-design">
+                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
+                    <div class="desription">
+                        If you are like me you live and breathe fashion. You are constantly inspired with
+                        so many new designs racing through your mind, so many you can't seem to get them
+                        all down quick enough at the pace they arrive. You constantly dream of the day your
+                        fashions will be on the fashion runway with the lights beaming brightly overhead,
+                        the cameras flashing.</div>
                 </div>
-                <div id="order-4" class="section-tabs">
+                <div id="order-4" class="section-tabs order-tabs">
+                    <h4 class="title-design">
+                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
+                    <div class="desription">
+                        If you are like me you live and breathe fashion. You are constantly inspired with
+                        so many new designs racing through your mind, so many you can't seem to get them
+                        all down quick enough at the pace they arrive. You constantly dream of the day your
+                        fashions will be on the fashion runway with the lights beaming brightly overhead,
+                        the cameras flashing.</div>
                 </div>
-                <div id="order-5" class="section-tabs">
+                <div id="order-5" class="section-tabs order-tabs">
+                    <h4 class="title-design">
+                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
+                    <div class="desription">
+                        If you are like me you live and breathe fashion. You are constantly inspired with
+                        so many new designs racing through your mind, so many you can't seem to get them
+                        all down quick enough at the pace they arrive. You constantly dream of the day your
+                        fashions will be on the fashion runway with the lights beaming brightly overhead,
+                        the cameras flashing.</div>
                 </div>
-                <div id="order-6" class="section-tabs">
+                <div id="order-6" class="section-tabs order-tabs">
+                    <h4 class="title-design">
+                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
+                    <div class="desription">
+                        If you are like me you live and breathe fashion. You are constantly inspired with
+                        so many new designs racing through your mind, so many you can't seem to get them
+                        all down quick enough at the pace they arrive. You constantly dream of the day your
+                        fashions will be on the fashion runway with the lights beaming brightly overhead,
+                        the cameras flashing.</div>
                 </div>
-                <div id="order-7" class="section-tabs">
+                <div id="order-7" class="section-tabs order-tabs">
+                    <h4 class="title-design">
+                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
+                    <div class="desription">
+                        If you are like me you live and breathe fashion. You are constantly inspired with
+                        so many new designs racing through your mind, so many you can't seem to get them
+                        all down quick enough at the pace they arrive. You constantly dream of the day your
+                        fashions will be on the fashion runway with the lights beaming brightly overhead,
+                        the cameras flashing.</div>
                 </div>
-                <div id="order-8" class="section-tabs">
+                <div id="order-8" class="section-tabs order-tabs">
+                    <h4 class="title-design">
+                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
+                    <div class="desription">
+                        If you are like me you live and breathe fashion. You are constantly inspired with
+                        so many new designs racing through your mind, so many you can't seem to get them
+                        all down quick enough at the pace they arrive. You constantly dream of the day your
+                        fashions will be on the fashion runway with the lights beaming brightly overhead,
+                        the cameras flashing.</div>
+                </div>
                 </div>
             </div>
         </div>
