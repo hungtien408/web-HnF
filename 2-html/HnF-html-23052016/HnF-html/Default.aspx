@@ -48,6 +48,8 @@
                 <div class="content">
                     <div class="section-name">
                         <a href="#">Áo nhóm - Áo lớp</a></div>
+                    <p class="more-details">
+                        <a href="#">Chi tiết</a></p>
                 </div>
             </li>
             <li><a href="#" class="section-img">
@@ -56,6 +58,8 @@
                 <div class="content">
                     <div class="section-name">
                         <a href="#">Sản xuất áo thun theo yêu cầu</a></div>
+                    <p class="more-details">
+                        <a href="#">Chi tiết</a></p>
                 </div>
             </li>
         </ul>

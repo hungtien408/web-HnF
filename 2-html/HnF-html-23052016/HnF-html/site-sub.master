@@ -25,14 +25,54 @@
                     </div>
                 </div>
                 <ul id="menu" class="desktop-992">
-                    <li><a href="#">Về chúng tôi</a></li>
-                    <li><a href="dich-vu.aspx">Dịch vụ</a></li>
-                    <li><a href="#">Quy trình thực hiện</a></li>
-                    <li><a href="#">Sản Phẩm</a></li>
-                    <li><a href="#">Thông số size</a></li>
-                    <li><a href="#">Dự án</a></li>
-                    <li><a href="tu-van.aspx">Tư vấn</a></li>
-                    <li><a href="#">Liên Hệ</a></li>
+                    <li>
+                        <a href="#" class="btn btn-1">
+                            <svg><rect x="0" y="0" fill="none" width="100%" height="100%"></rect></svg>
+                            Về chúng tôi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dich-vu.aspx" class="btn btn-1">
+                            <svg><rect x="0" y="0" fill="none" width="100%" height="100%"></rect></svg>
+                            Dịch vụ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-1">
+                            <svg><rect x="0" y="0" fill="none" width="100%" height="100%"></rect></svg>
+                            Quy trình thực hiện
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-1">
+                            <svg><rect x="0" y="0" fill="none" width="100%" height="100%"></rect></svg>
+                            Sản Phẩm
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-1">
+                            <svg><rect x="0" y="0" fill="none" width="100%" height="100%"></rect></svg>
+                            Thông số size
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-1">
+                            <svg><rect x="0" y="0" fill="none" width="100%" height="100%"></rect></svg
+                            >Dự án
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tu-van.aspx" class="btn btn-1">
+                            <svg><rect x="0" y="0" fill="none" width="100%" height="100%"></rect></svg>
+                            Tư vấn
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-1">
+                            <svg><rect x="0" y="0" fill="none" width="100%" height="100%"></rect></svg>
+                            Liên Hệ
+                        </a>
+                    </li>
                 </ul>
                 <div class="form-search corner ipadmo-992">
                     <asp:Button ID="btnSearch" CssClass="search-btnmo" runat="server" />

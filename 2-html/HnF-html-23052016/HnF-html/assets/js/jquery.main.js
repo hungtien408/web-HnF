@@ -50,6 +50,11 @@
             $('#isotopelist .element-item:nth-child(5)').css("margin-left","12px");
         }
     }
+    $(".btn-1").hover(function() {
+        var a = $(this).width() + 50;
+        var b = "15, " + a;
+        $(".btn-1:hover rect").css("stroke-dasharray", b);
+    });
 })(jQuery);
 //function===============================================================================================
 /*=============================fun=========================================*/
@@ -89,8 +94,8 @@ function myfunload() {
         }
         return false;
     });
-    if ($('.section-tb').size() > 0) {
-        var sectionlist = $('.section-tb').imagesLoaded(function () {
+    if ($('#serviceShow').size() > 0) {
+        var sectionlist = $('#serviceShow').imagesLoaded(function () {
             sectionlist.textHeight({
                 activetit: true,
                 listcss: [{ cssname: ".services-img" }, { cssname: ".title-services" }],
@@ -103,7 +108,7 @@ function myfunload() {
                 max: true
             });
         });
-        $('.section-tb').viewloads({
+        $('#serviceShow').viewloads({
             cssitems: ".element-item",
             csslink: ".link-view",
             idbox: "loadView",
@@ -157,11 +162,25 @@ function myfunload() {
             });
         });
     }
+    if ($('#whyShow').size() > 0) {
+        var productlist = $('#whyShow').imagesLoaded(function () {
+            productlist.textHeight({
+                activetit: true,
+                listcss: [{ cssname: ".why-img" }, { cssname: ".why-name"}],
+                wpointb: true,
+                desbool: false,
+                listpos: [{ cssnamepos: ".desription", cssheightnum: "2"}],
+                tbrow: true,
+                csstr: ".element-item",
+                max: true
+            });
+        });
+    }
     
     $("#sectionTab").tabs();
     $("#priceTab").tabs();
     $("#orderTab").tabs();
-    $(".menu-qt li:last-child .bg-button-right").remove();
+    //$(".menu-qt li:last-child .bg-button-right").remove();
     $('.bg-order').addClass('fadeInLeft');
     //$('.order-tabs').delay(800).addClass('fadeInRight');
     $(".wrap-order").delay(800).queue(function (next) {

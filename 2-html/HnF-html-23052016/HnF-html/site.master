@@ -75,36 +75,36 @@
                             <h4 class="text-uppercase">
                                 Dịch vụ</h4>
                             <ul class="list-address">
-                                <li>Áo thun đồng phục</li>
-                                <li>Áo thun Quảng cáo</li>
-                                <li>Áo thun thời trang</li>
-                                <li>Áo nhóm - Áo lớp</li>
-                                <li>In áo thun</li>
-                                <li>Thêu Logo</li>
+                                <li><a href="#">Áo thun đồng phục</a></li>
+                                <li><a href="#">Áo thun Quảng cáo</a></li>
+                                <li><a href="#">Áo thun thời trang</a></li>
+                                <li><a href="#">Áo nhóm - Áo lớp</a></li>
+                                <li><a href="#">In áo thun</a></li>
+                                <li><a href="#">Thêu Logo</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <h4 class="text-uppercase">
                                 Thông tin đặt hàng</h4>
                             <ul class="list-address">
-                                <li>Các bước đặt áo thun</li>
-                                <li>Bảng giá áo thun</li>
-                                <li>Thông số size áo</li>
-                                <li>Uniform Branding</li>
-                                <li>Styling Service</li>
-                                <li>Subcribe to News</li>
+                                <li><a href="#">Các bước đặt áo thun</a></li>
+                                <li><a href="#">Bảng giá áo thun</a></li>
+                                <li><a href="#">Thông số size áo</a></li>
+                                <li><a href="#">Uniform Branding</a></li>
+                                <li><a href="#">Styling Service</a></li>
+                                <li><a href="#">Subcribe to News</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3 col-xs-6">
                             <h4 class="text-uppercase">
                                 Kiến thức sản phẩm</h4>
                             <ul class="list-address">
-                                <li>Cách nhận biết vải áo thun</li>
-                                <li>Quy trình sản xuất</li>
-                                <li>Cách bảo quản áo thun</li>
-                                <li>Cách in áo thun</li>
-                                <li>Công nghệ in áo thun</li>
-                                <li>Cách in chữ lên áo</li>
+                                <li><a href="#">Cách nhận biết vải áo thun</a></li>
+                                <li><a href="#">Quy trình sản xuất</a></li>
+                                <li><a href="#">Cách bảo quản áo thun</a></li>
+                                <li><a href="#">Cách in áo thun</a></li>
+                                <li><a href="#">Công nghệ in áo thun</a></li>
+                                <li><a href="#">Cách in chữ lên áo</a></li>
                             </ul>
                         </div>
                         <div class="col-md-3 col-xs-6">
