@@ -50,11 +50,12 @@
             $('#isotopelist .element-item:nth-child(5)').css("margin-left","12px");
         }
     }
-    $(".btn-1").hover(function() {
-        var a = $(this).width() + 50;
-        var b = "15, " + a;
-        $(".btn-1:hover rect").css("stroke-dasharray", b);
-    });
+//    $(".btn-1 svg").hover(function() {
+//        //var a = ($(this).width() * 2) / ($(this).width() / 4);
+//        var a = $(this).width() * 2;
+//        var b = "15, " + a;
+//        $(".btn-1:hover rect").css("stroke-dasharray", b);
+//    });
 })(jQuery);
 //function===============================================================================================
 /*=============================fun=========================================*/
@@ -94,6 +95,20 @@ function myfunload() {
         }
         return false;
     });
+//    $(".dvShow a").click(function () {
+//        $(this).toggleClass("current");
+//        var idboxs = $(this).attr("href");
+//        if ($(this).hasClass("current")) {
+//            $(idboxs).height("100%");
+//            var offset = $(this).offset();
+//            $("html, body").stop(true, true).animate({ scrollTop: (offset.top) }, 500);
+//        } else {
+//            $("html, body").stop(true, true).animate({ scrollTop: 0 }, 500, function () {
+//                $(idboxs).height(0);
+//            });
+//        }
+//        return false;
+//    });
     if ($('#serviceShow').size() > 0) {
         var sectionlist = $('#serviceShow').imagesLoaded(function () {
             sectionlist.textHeight({
@@ -149,8 +164,8 @@ function myfunload() {
         });
     }
     if ($('.wrap-boximg').size() > 0) {
-        var productlist = $('.wrap-boximg').imagesLoaded(function () {
-            productlist.textHeight({
+        var wraplist = $('.wrap-boximg').imagesLoaded(function () {
+            wraplist.textHeight({
                 activetit: true,
                 listcss: [{ cssname: ".intro-img" }, { cssname: ".name-link" }],
                 wpointb: true,
@@ -163,8 +178,8 @@ function myfunload() {
         });
     }
     if ($('#whyShow').size() > 0) {
-        var productlist = $('#whyShow').imagesLoaded(function () {
-            productlist.textHeight({
+        var whylist = $('#whyShow').imagesLoaded(function () {
+            whylist.textHeight({
                 activetit: true,
                 listcss: [{ cssname: ".why-img" }, { cssname: ".why-name"}],
                 wpointb: true,
@@ -176,6 +191,31 @@ function myfunload() {
             });
         });
     }
+    if ($('#weShow').size() > 0) {
+        var welist = $('#weShow').imagesLoaded(function () {
+            welist.textHeight({
+                activetit: true,
+                listcss: [{ cssname: ".services-img" }, { cssname: ".title-services"}],
+                wpointb: true,
+                desbool: false,
+                listpos: [{ cssnamepos: ".desription", cssheightnum: "2"}],
+                tbrow: true,
+                csstr: ".element-item",
+                max: true
+            });
+        });
+    }
+//    $('#footer2 .col-xs-4').textHeight({
+//        activetit: true,
+//        listcss: [{ cssname: ".title-footer2" }, { cssname: ".list-address li a"}],
+//        wpointb: false,
+//        widthpont: 420,
+//        desbool: true,
+//        listpos: [{ cssnamepos: ".desription", cssheightnum: "2"}],
+//        tbrow: true,
+//        csstr: ".element-item",
+//        max: true
+//    });
     
     $("#sectionTab").tabs();
     $("#priceTab").tabs();

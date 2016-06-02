@@ -203,7 +203,7 @@ hr
     text-decoration: none;
 }
 .btn-1 svg {
-    height: 45px;
+    height: 40px;
     left: 0;
     position: absolute;
     top: 0;
@@ -222,6 +222,28 @@ hr
     /*stroke-dasharray: 15, 310;*/
     stroke-dashoffset: 48;
     transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn-2:after, .btn-2:before {
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0);
+    bottom: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+.btn-2:hover:after, .btn-2:hover:before {
+    backface-visibility: hidden;
+    border-color: #000;
+    transition: width 350ms ease-in-out;
+    width: 100%;
+}
+.btn-2:hover:before {
+    bottom: auto;
+    top: 0;
+    width: 100%;
 }
 /*========================menu mobile=================================================================*/
 .menu-mo {
@@ -606,7 +628,7 @@ body .mobilep-right {
     padding: 18px 0;
 }
 .header-services #menu > li > a {
-    padding: 0 15px;
+    padding: 0 14px;
 }
 .header-services .logo {
     padding-top: 5px;
@@ -656,14 +678,14 @@ body .mobilep-right {
 .link-show a {
     border: 0 solid;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
-    outline: 1px solid;
+    outline: 2px solid;
     outline-color: rgba(255, 255, 255, 0.5);
     outline-offset: 0px;
     text-shadow: none;
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 .link-show a:hover {
-    border: 1px solid;
+    /*border: 1px solid;*/
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
     outline-color: rgba(255, 255, 255, 0);
     outline-offset: 15px;
@@ -876,6 +898,9 @@ body .mobilep-right {
     line-height: 24px;
     text-transform: uppercase;
     color: #252525;
+}
+.title-services a:hover {
+    text-decoration: none;
 }
 .box-services .description {
     text-align: center;
@@ -1554,6 +1579,33 @@ body .mobilep-right {
     display: block;
     width: 100%;
 }
+.details-2 a, .details-3 a {
+    background: none;
+    width: 130px;
+    position: relative;
+    overflow: hidden;
+    padding: 2px 0;
+}
+.details-3 a {
+    width: 240px;
+}
+.btn-4:after {
+    background: #282828;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+}
+.btn-4:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
 /*=============================footer======================*/
 #footer
 {
@@ -1631,9 +1683,11 @@ body .mobilep-right {
 #footer .hotline p {
     padding: 45px 0 10px;
     background: url('../images/icon-hotline.png') no-repeat 82px 2px;
+    display: block;
 }
 #footer .hotline span {
     font-size: 36px;
+    display: block;
 }
 .list-address
 {
@@ -1755,7 +1809,7 @@ body .mobilep-right {
         padding: 0 6px;
     }
     .header-services #menu > li > a {
-        padding: 0 5px;
+        padding: 0 4px;
     }
     #menu li li a {
         font-size: 13px;
@@ -1781,6 +1835,10 @@ body .mobilep-right {
     .title-order {
         padding: 20px 0;
         font-size: 46px;
+    }
+    .box-clothes .section-name, .box-clothes .section-name a {
+        font-size: 22px;
+        line-height: 30px;
     }
 }
 @media (min-width: 993px)
@@ -1976,14 +2034,21 @@ body .mobilep-right {
         font-size: 16px;
         line-height: 22px;
      }
+     .box-clothes .description {
+        font-size: 12px;
+        line-height: 24px;
+     }
      .box-clothes .section-content {
         top: 12px;
      }
      .content-bottom {
-        top: 70% !important;
+        top: 75% !important;
      }   
      .list-models li {
          width: 32%;
+     }
+     .title-services, .title-services a {
+         font-size: 18px;
      } 
 }
 /* Landscape phone to portrait tablet */
@@ -2024,6 +2089,7 @@ body .mobilep-right {
      }
      #footer .hotline span {
          font-size: 30px;
+         line-height: 40px;
      }
      .logoServices {
          top: 0;
@@ -2041,6 +2107,23 @@ body .mobilep-right {
         font-size: 30px;
         line-height: 40px;
     }
+    .content-bottom {
+        top: 75% !important;
+    }
+    .box-clothes .section-name a {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .box-clothes .description {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .title-services, .title-services a {
+         font-size: 16px;
+     }
+     .box-services .description {
+         font-size: 12px;
+     }
 }
 @media (min-width: 481px) and (max-width: 767px)
 {
@@ -2065,6 +2148,21 @@ body .mobilep-right {
      }
      .menu-price li a {
         font-size: 13px;
+    }
+    .content-bottom {
+        top: 72% !important;
+    }
+    .box-clothes .section-content {
+        padding: 0 20px;
+        top: 4px;
+    }
+    .box-clothes .section-name a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .box-clothes .description {
+        font-size: 11px;
+        line-height: 22px;
     }
 }
 @media (max-width: 639px)
@@ -2119,8 +2217,8 @@ body .mobilep-right {
         left: 2%;
     }
     .wrap-section .section-name, .wrap-section .section-name a {
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 12px;
+        line-height: 20px;
     }
     .wrap-section .section-name strong {
         font-size: 25px;
@@ -2139,6 +2237,19 @@ body .mobilep-right {
         font-size: 13px;
         line-height: 25px;
         width: 108px;
+    }
+    .box-clothes .section-content {
+        padding: 0 2px;
+    }
+    .content-bottom {
+        top: 72% !important;
+    }
+    .box-clothes .description {
+        font-size: 9px;
+        line-height: 20px;
+    }
+    .box-clothes .section-content {
+        top: 4px;
     }
     .section-list li .section-img img, .section-box .section-img img {
         width: 100%;
@@ -2228,6 +2339,26 @@ body .mobilep-right {
     #footer2 img {
         margin: 0 auto;
     }
+    #footer .hotline {
+        border: none;
+        padding: 0;
+        float: none;
+        overflow: hidden;
+    }
+    #footer .hotline p {
+        float: left;
+        margin: 0 auto;
+        background: url('../images/icon-hotline.png') no-repeat right 2px;
+        width: 40%;
+        text-align: right;
+        padding-right: 70px;
+    }
+    #footer .hotline span {
+        float: left;
+        text-align: center;
+        padding: 30px 0 0;
+        width: 60%;
+    }
     .footer-content {
         width: 100%;
     }
@@ -2240,9 +2371,9 @@ body .mobilep-right {
     .box-services .description {
         font-size: 12px;
     }
-    .section-tb .box-clothes {
+    /*.section-tb .box-clothes {
         margin: 0 32px 15px;
-    }
+    }*/
     .title-tv span 
     {
         padding: 12px 36px;
@@ -2261,6 +2392,12 @@ body .mobilep-right {
     .wrap-section .table-fabric td:nth-child(3) {
         padding: 0 200px;
     }
+    .details-3 a {
+        width: 145px;
+    }
+    .wrapper-880 {
+        padding: 35px 0 0;
+    }
 }
 @media (max-width: 479px)
 {
@@ -2278,8 +2415,12 @@ body .mobilep-right {
         left: 2%;
     }
     .wrap-section .section-name, .wrap-section .section-name a {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .box-clothes .description {
+        font-size: 8px;
+        line-height: 16px;
     }
     .wrap-section .section-name strong {
         font-size: 22px;
@@ -2295,6 +2436,9 @@ body .mobilep-right {
         width: 70px;
         font-size: 10px;
         line-height: 15px;
+    }
+    .details-3 a {
+        width: 135px;
     }
     .section-list li .section-img img, .section-box .section-img img {
         width: 100%;
@@ -2319,9 +2463,9 @@ body .mobilep-right {
         width: 100%;
         font-size: 12px;
     }
-    .section-tb .box-clothes {
+    /*.section-tb .box-clothes {
         margin: 0 15px 15px;
-    }
+    }*/
     /*============object===============*/
     .wrap-section .list-object {
         width: 100%;
@@ -2355,6 +2499,12 @@ body .mobilep-right {
     #parner .col-xs-4 {
         width: 50%;
     }
+    .title-services, .title-services a {
+        font-size: 13px;
+    }
+    .box-services .description {
+        font-size: 11px;
+    }
 }
 @media (max-width: 419px)
 {
@@ -2362,8 +2512,18 @@ body .mobilep-right {
         top: 12%;
     }
    .section-list li:first-child .section-name, .wrap-section .section-name a {
-        font-size: 13px;
-        line-height: 16px;
+        font-size: 7px;
+        line-height: 12px;
+    }
+    .box-clothes .section-content {
+        padding: 0;
+    }
+    .box-clothes .description {
+        font-size: 6px;
+        line-height: 9px;
+    }
+    .content-bottom {
+        top: 68% !important;
     }
     .section-list li:first-child .section-name strong {
         font-size: 18px;
@@ -2376,6 +2536,36 @@ body .mobilep-right {
     {
         padding: 10px 36px;
         font-size: 12px;
+    }
+    #footer .hotline {
+        border: none;
+        padding: 0;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #footer .hotline p {
+        float: left;
+        margin: 0 auto;
+        background: url('../images/icon-hotline.png') no-repeat right 2px;
+        width: 45%;
+        padding-right: 50px;
+        text-align: center;
+    }
+    #footer .hotline span {
+        float: right;
+        text-align: center;
+        padding: 30px 0 0;
+        width: 50%;
+    }
+    #footer .hotline span {
+        font-size: 28px;
+    }
+    .title-services, .title-services a {
+        font-size: 9px;
+    }
+    .box-services .description {
+        font-size: 8px;
     }
 }
 @media (max-width: 359px)
@@ -2391,6 +2581,21 @@ body .mobilep-right {
         width: 100%;
     }
     .list-object li .object-img img {
+        width: 100%;
+    }
+    /*==============*/
+    #footer .hotline p {
+        float: none;
+        margin: 0 auto;
+        background: url('../images/icon-hotline.png') no-repeat right 2px;
+        width: 50%;
+        padding-right: 60px;
+        text-align: center;
+    }
+    #footer .hotline span {
+        float: none;
+        text-align: center;
+        padding: 20px 0 0;
         width: 100%;
     }
 }

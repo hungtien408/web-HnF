@@ -23,14 +23,36 @@
                 <a class="panel-a menu-mo ipadmo-992" href="#menumobile" data-position="true" data-type="false">
                     <span class="fa fa-reorder"></span>Menu</a>
                 <ul id="menu" class="desktop-992">
-                    <li><a href="#">Dịch vụ chuyên nghiệp</a></li>
-                    <li><a href="#">Đồng phục các ngành</a></li>
-                    <li><a href="#">Mẫu áo</a></li>
-                    <li><a href="#">Sản Phẩm</a></li>
-                    <li><a href="#">Thông số size</a></li>
-                    <li><a href="#">Dự án</a></li>
-                    <li><a href="tu-van.aspx">Tư vấn</a></li>
-                    <li><a href="#">Liên Hệ</a></li>
+                    <li class="dvShow">
+                        <a href="#dvcnShow" class="btn btn-2">
+                            Dịch vụ chuyên nghiệp
+                        </a>
+                    </li>
+                    <li class="dvShow">
+                        <a href="#" class="btn btn-2">
+                            Đồng phục các ngành
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-2">
+                            Mẫu áo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-2">
+                            Chất vải
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-2">
+                            Công nghệ sản xuất
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-2">
+                            Quy trình đặt hàng
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -40,7 +62,7 @@
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="container">
-        <div class="text-center wrapper-880 border-none">
+        <div id="dvcnShow" class="text-center wrapper-880 border-none">
             <h4 class="text-uppercase title-1">
                 Dịch vụ chuyên nghiệp</h4>
             <div class="desription font-20">
