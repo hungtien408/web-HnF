@@ -81,34 +81,20 @@ function myfunload() {
         speed: 500,
         autoplaySpeed: 3000
     });
+
     $(".link-show a").click(function () {
-        $(this).toggleClass("current");
         var idboxs = $(this).attr("href");
-        if ($(this).hasClass("current")) {
-            $(idboxs).height("100%");
-            var offset = $(this).offset();
-            $("html, body").stop(true, true).animate({ scrollTop: (offset.top) }, 500);
-        } else {
-            $("html, body").stop(true, true).animate({ scrollTop: 0 }, 500, function () {
-                $(idboxs).height(0);
-            });
-        }
+        var offset = $(idboxs).offset();
+        $("html, body").stop(true, true).animate({ scrollTop: offset.top }, 500);
         return false;
     });
-//    $(".dvShow a").click(function () {
-//        $(this).toggleClass("current");
-//        var idboxs = $(this).attr("href");
-//        if ($(this).hasClass("current")) {
-//            $(idboxs).height("100%");
-//            var offset = $(this).offset();
-//            $("html, body").stop(true, true).animate({ scrollTop: (offset.top) }, 500);
-//        } else {
-//            $("html, body").stop(true, true).animate({ scrollTop: 0 }, 500, function () {
-//                $(idboxs).height(0);
-//            });
-//        }
-//        return false;
-//    });
+
+    $(".dvShow a").click(function () {
+        var idboxs = $(this).attr("href");
+        var offset = $(idboxs).offset();
+        $("html, body").stop(true, true).animate({ scrollTop: offset.top }, 500);
+        return false;
+    });
     if ($('#serviceShow').size() > 0) {
         var sectionlist = $('#serviceShow').imagesLoaded(function () {
             sectionlist.textHeight({

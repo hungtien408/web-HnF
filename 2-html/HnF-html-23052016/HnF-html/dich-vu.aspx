@@ -11,7 +11,7 @@
             <img class="img-responsive" src="assets/images/banner-services.jpg" alt="" />
         </div>
         <div class="link-show text-center">
-            <a href="#serviceShow">Trải nghiệm<span class="fa fa-chevron-down"></span></a></div>
+            <a href="#dvcnShow">Trải nghiệm<span class="fa fa-chevron-down"></span></a></div>
     </div>
     <div class="header-services">
         <div class="container">
@@ -29,27 +29,27 @@
                         </a>
                     </li>
                     <li class="dvShow">
-                        <a href="#" class="btn btn-2">
+                        <a href="#dpcnShow" class="btn btn-2">
                             Đồng phục các ngành
                         </a>
                     </li>
-                    <li>
-                        <a href="#" class="btn btn-2">
+                    <li class="dvShow">
+                        <a href="#maShow" class="btn btn-2">
                             Mẫu áo
                         </a>
                     </li>
-                    <li>
-                        <a href="#" class="btn btn-2">
+                    <li class="dvShow">
+                        <a href="#cvShow" class="btn btn-2">
                             Chất vải
                         </a>
                     </li>
-                    <li>
-                        <a href="#" class="btn btn-2">
+                    <li class="dvShow">
+                        <a href="#cnsxShow" class="btn btn-2">
                             Công nghệ sản xuất
                         </a>
                     </li>
-                    <li>
-                        <a href="#" class="btn btn-2">
+                    <li class="dvShow">
+                        <a href="#qtdhShow" class="btn btn-2">
                             Quy trình đặt hàng
                         </a>
                     </li>
@@ -139,7 +139,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center wrapper-880">
+        <div id="dpcnShow" class="text-center wrapper-880">
             <h4 class="text-uppercase title-1">
                 Phục vụ cho nhiều đối tượng</h4>
             <div class="desription font-20">
@@ -212,7 +212,7 @@
                 </li>
             </ul>
         </div>
-        <div class="text-center wrapper-880">
+        <div id="maShow" class="text-center wrapper-880">
             <h4 class="text-uppercase title-1">
                 Mẫu mã đa dạng</h4>
             <div class="desription">
@@ -303,7 +303,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center wrapper-880">
+        <div id="cvShow" class="text-center wrapper-880">
             <h4 class="text-uppercase title-1">
                 Chất vải</h4>
             <div class="desription">
@@ -420,7 +420,7 @@
                 </table>
             </div>
         </div>
-        <div class="text-center wrapper-880">
+        <div id="cnsxShow" class="text-center wrapper-880">
             <h4 class="text-uppercase title-1">
                 Công nghệ sản xuất</h4>
             <div class="desription">
@@ -482,7 +482,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center wrapper-880">
+        <%--<div class="text-center wrapper-880">
             <h4 class="text-uppercase title-1">
                 Bảng giá</h4>
             <div class="desription">
@@ -1154,10 +1154,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>--%>
     </div>
     <div class="wrap-section">
-        <div class="bg-order wow">
+        <div id="qtdhShow" class="bg-order wow">
             <img src="assets/images/img-quytrinh.jpg" alt="" /></div>
         <div class="container">
             <div id="orderTab">
