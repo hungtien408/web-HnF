@@ -170,9 +170,6 @@
                     <div class="content">
                         <div class="object-name">
                             <a href="#">Ngành hàng tiêu dùng</a></div>
-                        <div class="desription">
-                            HF has built a reputation for providing a consistent quality product with long wearing
-                            garments that have a</div>
                     </div>
                 </li>
                 <li><a href="#" class="object-img">
@@ -189,9 +186,6 @@
                     <div class="content">
                         <div class="object-name">
                             <a href="#">Kỹ thuật - công nghệ thông tin</a></div>
-                        <div class="desription">
-                            HF has built a reputation for providing a consistent quality product with long wearing
-                            garments that have a distinctive</div>
                     </div>
                 </li>
                 <li><a href="#" class="object-img">
@@ -311,7 +305,7 @@
                 là đơn vị đầu tiên sử dụng vải 100% cotton
             </div>
         </div>
-        <div class="wrap-section">
+        <div class="wrap-section desktop-showhide">
             <div class="table-responsive">
                 <table class="table table-fabric">
                     <thead>
@@ -420,6 +414,338 @@
                 </table>
             </div>
         </div>
+        <div id="mobileChatVai" class="wrap-section mobile-showhide">
+            <div id="fabricTab">
+                <div class="head-2">
+                    <ul class="menu-control menu-fabric-mo">
+                        <li><a class="link-tabs" href="#fabric-1">VẢI CÁ SẤU 100% cotton</a></li>
+                        <li><a class="link-tabs" href="#fabric-2">VẢI CÁ SẤU 100% cotton</a></li>
+                        <li><a class="link-tabs" href="#fabric-3">VẢI CÁ SẤU 100% cotton</a></li>
+                        <li><a class="link-tabs" href="#fabric-4">VẢI CÁ SẤU 100% cotton</a></li>
+                    </ul>
+                </div>
+                <div id="fabric-1" class="section-tabs">
+                    <div class="table-responsive">
+                        <table class="table table-fabric-mobile">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Hình
+                                    </td>
+                                    <td>
+                                        <img src="assets/images/fabric-img-1.jpg" alt="" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Đặc điểm
+                                    </td>
+                                    <td>
+                                        <div class="fabric-content">Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
+                                        là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
+                                        khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
+                                        cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
+                                        tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
+                                    </td>
+                            
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Bảng màu
+                                    </td>
+                                    <td>
+                                        <ul class="list-color">
+                                            <li>
+                                                <img src="assets/images/color-img-1.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-2.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-3.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-4.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-5.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-6.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-7.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-8.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-9.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-10.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-11.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-12.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-13.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-14.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-15.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-16.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-17.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-18.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-19.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-20.png" alt="" /></li>
+                                        </ul>
+                                        <p class="note-color">
+                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="fabric-2" class="section-tabs">
+                    <div class="table-responsive">
+                        <table class="table table-fabric-mobile">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Hình
+                                    </td>
+                                    <td>
+                                        <img src="assets/images/fabric-img-2.jpg" alt="" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Đặc điểm
+                                    </td>
+                                    <td>
+                                        <div class="fabric-content">Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
+                                        là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
+                                        khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
+                                        cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
+                                        tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
+                                    </td>
+                            
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Bảng màu
+                                    </td>
+                                    <td>
+                                        <ul class="list-color">
+                                            <li>
+                                                <img src="assets/images/color-img-1.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-2.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-3.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-4.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-5.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-6.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-7.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-8.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-9.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-10.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-11.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-12.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-13.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-14.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-15.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-16.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-17.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-18.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-19.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-20.png" alt="" /></li>
+                                        </ul>
+                                        <p class="note-color">
+                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="fabric-3" class="section-tabs">
+                    <div class="table-responsive">
+                        <table class="table table-fabric-mobile">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Hình
+                                    </td>
+                                    <td>
+                                        <img src="assets/images/fabric-img-3.jpg" alt="" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Đặc điểm
+                                    </td>
+                                    <td>
+                                        <div class="fabric-content">Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
+                                        là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
+                                        khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
+                                        cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
+                                        tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
+                                    </td>
+                            
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Bảng màu
+                                    </td>
+                                    <td>
+                                        <ul class="list-color">
+                                            <li>
+                                                <img src="assets/images/color-img-1.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-2.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-3.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-4.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-5.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-6.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-7.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-8.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-9.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-10.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-11.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-12.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-13.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-14.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-15.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-16.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-17.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-18.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-19.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-20.png" alt="" /></li>
+                                        </ul>
+                                        <p class="note-color">
+                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="fabric-4" class="section-tabs">
+                    <div class="table-responsive">
+                        <table class="table table-fabric-mobile">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Hình
+                                    </td>
+                                    <td>
+                                        <img src="assets/images/fabric-img-4.jpg" alt="" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Đặc điểm
+                                    </td>
+                                    <td>
+                                        <div class="fabric-content">Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
+                                        là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
+                                        khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
+                                        cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
+                                        tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
+                                    </td>
+                            
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Bảng màu
+                                    </td>
+                                    <td>
+                                        <ul class="list-color">
+                                            <li>
+                                                <img src="assets/images/color-img-1.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-2.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-3.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-4.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-5.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-6.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-7.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-8.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-9.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-10.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-11.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-12.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-13.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-14.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-15.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-16.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-17.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-18.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-19.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-20.png" alt="" /></li>
+                                        </ul>
+                                        <p class="note-color">
+                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="cnsxShow" class="text-center wrapper-880">
             <h4 class="text-uppercase title-1">
                 Công nghệ sản xuất</h4>
@@ -433,7 +759,7 @@
                 <div class="box-col element-item">
                     <div class="box-in">
                         <div class="wrap-images">
-                            <h2 class="name-link">
+                            <h2 class="name-link text-uppercase">
                                 <a href="#">Cắt vải</a></h2>
                             <a href="#" class="intro-img">
                                 <img src="assets/images/produce-img-1.png" class="img-responsive"></a>
@@ -443,7 +769,7 @@
                 <div class="box-col element-item">
                     <div class="box-in">
                         <div class="wrap-images">
-                            <h2 class="name-link">
+                            <h2 class="name-link text-uppercase">
                                 <a href="#">May thành phẩm</a></h2>
                             <a href="#" class="intro-img">
                                 <img src="assets/images/produce-img-2.png" class="img-responsive"></a>
@@ -453,7 +779,7 @@
                 <div class="box-col element-item">
                     <div class="box-in">
                         <div class="wrap-images">
-                            <h2 class="name-link">
+                            <h2 class="name-link text-uppercase">
                                 <a href="#">In bằng công nghệ ép chuyển nhiệt</a></h2>
                             <a href="#" class="intro-img">
                                 <img src="assets/images/produce-img-3.png" class="img-responsive"></a>
@@ -463,7 +789,7 @@
                 <div class="box-col element-item">
                     <div class="box-in">
                         <div class="wrap-images">
-                            <h2 class="name-link">
+                            <h2 class="name-link text-uppercase">
                                 <a href="#">In thường</a></h2>
                             <a href="#" class="intro-img">
                                 <img src="assets/images/produce-img-4.png" class="img-responsive"></a>
@@ -473,7 +799,7 @@
                 <div class="box-col element-item">
                     <div class="box-in">
                         <div class="wrap-images">
-                            <h2 class="name-link">
+                            <h2 class="name-link text-uppercase">
                                 <a href="#">Thêu</a></h2>
                             <a href="#" class="intro-img">
                                 <img src="assets/images/produce-img-5.png" class="img-responsive"></a>
@@ -1192,7 +1518,7 @@
                         so many new designs racing through your mind, so many you can't seem to get them
                         all down quick enough at the pace they arrive. You constantly dream of the day your
                         fashions will be on the fashion runway with the lights beaming brightly overhead,
-                        the cameras flashing.</div>
+                        the cameras flashing-1.</div>
                 </div>
                 <div id="order-2" class="section-tabs order-tabs">
                     <h4 class="title-design">
@@ -1202,7 +1528,7 @@
                         so many new designs racing through your mind, so many you can't seem to get them
                         all down quick enough at the pace they arrive. You constantly dream of the day your
                         fashions will be on the fashion runway with the lights beaming brightly overhead,
-                        the cameras flashing.</div>
+                        the cameras flashing-2.</div>
                 </div>
                 <div id="order-3" class="section-tabs order-tabs">
                     <h4 class="title-design">

@@ -206,7 +206,11 @@ function myfunload() {
     $("#sectionTab").tabs();
     $("#priceTab").tabs();
     $("#orderTab").tabs();
+    $("#fabricTab").tabs();
     //$(".menu-qt li:last-child .bg-button-right").remove();
+    $(".menu-qt li a").click(function() {
+        new WOW().init();
+    });
     $('.bg-order').addClass('fadeInLeft');
     //$('.order-tabs').delay(800).addClass('fadeInRight');
     $(".wrap-order").delay(800).queue(function (next) {

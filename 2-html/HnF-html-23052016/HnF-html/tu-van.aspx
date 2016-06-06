@@ -20,13 +20,10 @@
                     <span class="fa fa-reorder"></span>Menu</a>
                 <ul id="menu" class="desktop-992">
                     <li><a href="#">Công nghệ sản xuất</a></li>
-                    <li><a href="#">Đồng phục các ngành</a></li>
-                    <li><a href="#">Mẫu áo</a></li>
-                    <li><a href="#">Sản Phẩm</a></li>
-                    <li><a href="#">Thông số size</a></li>
-                    <li><a href="#">Dự án</a></li>
-                    <li><a href="#">Tư vấn</a></li>
-                    <li><a href="#">Liên Hệ</a></li>
+                    <li><a href="#">Nguyên vật liệu</a></li>
+                    <li><a href="#">Màu sắc - Form dáng</a></li>
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="#">Tin tức</a></li>
                 </ul>
             </div>
         </div>
