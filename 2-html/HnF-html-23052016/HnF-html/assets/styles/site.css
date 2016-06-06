@@ -1562,6 +1562,27 @@ body .mobilep-right {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
 }
+.why-box .why-img {
+    webkit-transform: rotate3d(0,1,0,180deg);
+    -moz-transform: rotate3d(0,1,0,180deg);
+    -o-transform: rotate3d(0,1,0,180deg);
+    -ms-transform: rotate3d(0,1,0,180deg);
+    transform: rotate3d(0,1,0,180deg);
+}
+.why-box .why-img {
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.why-box:hover .why-img {
+    -webkit-transform: rotate3d(0,1,0,-180deg);
+    -moz-transform: rotate3d(0,1,0,-180deg);
+    -o-transform: rotate3d(0,1,0,-180deg);
+    -ms-transform: rotate3d(0,1,0,-180deg);
+    transform: rotate3d(0,1,0,-180deg);
+}
 .why-img img {
     display: inline-block;
     width: 100%;
@@ -1574,6 +1595,9 @@ body .mobilep-right {
     line-height: 22px;
     color: #202020;
     padding-bottom: 10px;
+}
+.why-box .why-name a:hover {
+    text-decoration: none;
 }
 .why-box .why-content {
     padding: 5px 25px;
@@ -2075,6 +2099,16 @@ body .mobilep-right {
     .box-in {
         padding: 10px 40px;
     }
+    /*=============about======*/
+    .bg-content {
+        width: 60%;
+    }
+    .bg-content .content-1 {
+        padding: 0 50px;
+    }
+    .bg-content .content-2 {
+        padding: 5px 85px 0;
+    }
 }
 @media (min-width: 768px)
 {
@@ -2246,6 +2280,13 @@ body .mobilep-right {
     .box-clothes .description {
         font-size: 11px;
         line-height: 22px;
+    }
+    /*============about=============*/
+    .paragraph-banner .paragraph-1 {
+        padding: 45px 20% 5px;
+    }
+    .paragraph-banner .paragraph-2 {
+        padding: 0 12% 45px;
     }
 }
 @media (max-width: 639px)
@@ -2487,8 +2528,27 @@ body .mobilep-right {
     .wrapper-880 {
         padding: 35px 0 0;
     }
+    /*=========about==========*/
+    .wrap-why {
+        padding: 0 0 35px;
+    }
     .box-in {
         padding: 10px 30px;
+    }
+    .paragraph-banner .paragraph-1 {
+        padding: 25px 5% 5px;
+    }
+    .paragraph-banner .paragraph-2 {
+        padding: 0 5% 25px;
+    }
+    .bg-content {
+        width: 100%;
+    }
+    .bg-content .content-1 {
+        padding: 0 20px;
+    }
+    .bg-content .content-2 {
+        padding: 5px 35px 0;
     }
 }
 @media (max-width: 479px)
@@ -2618,6 +2678,13 @@ body .mobilep-right {
     }
     .wrap-section .table-fabric-mobile tr td:first-child {
         font-size: 16px;
+    }
+    /*========about========*/
+    #whyShow .col-xs-6 {
+        width: 100%;
+    }
+    .section-tb .why-box {
+        margin-bottom: 27px;
     }
 }
 @media (max-width: 419px)

@@ -40,7 +40,7 @@
                 <div class="col-lg-4 col-xs-6 element-item">
                     <div class="why-box">
                         <a href="#" class="why-img">
-                            <img src="assets/images/why-img-1.png" alt="" /></a>
+                            <img src="assets/images/why-img-1.png" alt="" class="corner" /></a>
                         <div class="why-content">
                             <h5 class="why-name">
                                 <a href="#">Dịch vụ khách hàng hoàn hảo</a></h5>
@@ -53,7 +53,7 @@
                 <div class="col-lg-4 col-xs-6 element-item">
                     <div class="why-box">
                         <a href="#" class="why-img">
-                            <img src="assets/images/why-img-2.png" alt="" /></a>
+                            <img src="assets/images/why-img-2.png" alt="" class="corner" /></a>
                         <div class="why-content">
                             <h5 class="why-name">
                                 <a href="#">Thiết kế</a></h5>
@@ -66,7 +66,7 @@
                 <div class="col-lg-4 col-xs-6 element-item">
                     <div class="why-box">
                         <a href="#" class="why-img">
-                            <img src="assets/images/why-img-3.png" alt="" /></a>
+                            <img src="assets/images/why-img-3.png" alt="" class="corner" /></a>
                         <div class="why-content">
                             <h5 class="why-name">
                                 <a href="#">Sản phẩm chất lượng</a></h5>
@@ -79,7 +79,7 @@
                 <div class="col-lg-4 col-xs-6 element-item">
                     <div class="why-box">
                         <a href="#" class="why-img">
-                            <img src="assets/images/why-img-4.png" alt="" /></a>
+                            <img src="assets/images/why-img-4.png" alt="" class="corner" /></a>
                         <div class="why-content">
                             <h5 class="why-name">
                                 <a href="#">Giải pháp in và thêu tiên tiến</a></h5>
@@ -92,7 +92,7 @@
                 <div class="col-lg-4 col-xs-6 element-item">
                     <div class="why-box">
                         <a href="#" class="why-img">
-                            <img src="assets/images/why-img-5.png" alt="" /></a>
+                            <img src="assets/images/why-img-5.png" alt="" class="corner" /></a>
                         <div class="why-content">
                             <h5 class="why-name">
                                 <a href="#">Giá cả phù hợp với nhu cầu khách hàng</a></h5>
@@ -105,7 +105,7 @@
                 <div class="col-lg-4 col-xs-6 element-item">
                     <div class="why-box">
                         <a href="#" class="why-img">
-                            <img src="assets/images/why-img-6.png" alt="" /></a>
+                            <img src="assets/images/why-img-6.png" alt="" class="corner" /></a>
                         <div class="why-content">
                             <h5 class="why-name">
                                 <a href="#">Giao hàng đúng hẹn Chăm sóc khách hàng sau bán hàng</a></h5>
