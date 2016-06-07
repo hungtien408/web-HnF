@@ -195,9 +195,9 @@
             </div>
         </div>
         <div class="wrap-section">
-            <div id="sectionTab">
+            <%--<div id="sectionTab">
                 <div class="head-2">
-                    <ul class="menu-control">
+                    <ul class="menu-control menu-models">
                         <li><a class="link-tabs" href="#tab-1">Áo cổ trụ - cổ bo</a></li>
                         <li><a class="link-tabs" href="#tab-2">Áo cổ trụ - cổ sơ mi</a></li>
                         <li><a class="link-tabs" href="#tab-3">Áo cổ tròn</a></li>
@@ -264,6 +264,79 @@
                         <li><a href="#">
                             <img src="assets/images/product-img-4.jpg" alt="" /></a></li>
                     </ul>
+                </div>
+            </div>--%>
+            <div id="sectionTab">
+                <div class="head-2">
+                    <ul class="menu-control menu-models simplefilter">
+                        <li data-filter="1"><a class="link-tabs" href="#tab-1">Áo cổ trụ - cổ bo</a></li>
+                        <li data-filter="2"><a class="link-tabs" href="#tab-2">Áo cổ trụ - cổ sơ mi</a></li>
+                        <li data-filter="3"><a class="link-tabs" href="#tab-3">Áo cổ tròn</a></li>
+                        <li data-filter="4"><a class="link-tabs" href="#tab-4">Áo cổ tim</a></li>
+                        <li data-filter="5"><a class="link-tabs" href="#tab-5">Áo cổ tròn, tay raglan</a></li>
+                    </ul>
+                </div>
+                <div class="filtr-container">
+                <div id="tab-1" class="section-tabs filtr-item" data-category="1, 5">
+                    <ul class="list-models">
+                        <li><a href="#">
+                            <img src="assets/images/product-img-1.jpg" alt="" /></a></li>
+                        <li><a href="#">
+                            <img src="assets/images/product-img-2.jpg" alt="" /></a></li>
+                        <li><a href="#">
+                            <img src="assets/images/product-img-3.jpg" alt="" /></a></li>
+                        <li><a href="#">
+                            <img src="assets/images/product-img-4.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div id="tab-2" class="section-tabs filtr-item" data-category="2, 5">
+                    <ul class="list-models">
+                        <li><a href="#">
+                            <img src="assets/images/product-img-2.jpg" alt="" /></a></li>
+                        <li><a href="#">
+                            <img src="assets/images/product-img-3.jpg" alt="" /></a></li>
+                        <li><a href="#">
+                            <img src="assets/images/product-img-1.jpg" alt="" /></a></li>
+                        <li><a href="#">
+                            <img src="assets/images/product-img-5.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div id="tab-3" class="section-tabs filtr-item" data-category="3, 5">
+                    <ul class="list-models">
+                        <li><a href="#">
+                            <img src="assets/images/product-img-3.jpg" alt="" /></a></li>
+                        <li><a href="#">
+                            <img src="assets/images/product-img-2.jpg" alt="" /></a></li>
+                        <li><a href="#">
+                            <img src="assets/images/product-img-1.jpg" alt="" /></a></li>
+                        <li><a href="#">
+                            <img src="assets/images/product-img-4.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div id="tab-4" class="section-tabs filtr-item" data-category="4, 5">
+                    <ul class="list-models">
+                        <li><a href="#">
+                            <img src="assets/images/product-img-4.jpg" alt="" /></a></li>
+                        <li><a href="#">
+                            <img src="assets/images/product-img-2.jpg" alt="" /></a></li>
+                        <li><a href="#">
+                            <img src="assets/images/product-img-5.jpg" alt="" /></a></li>
+                        <li><a href="#">
+                            <img src="assets/images/product-img-3.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
+                <div id="tab-5" class="section-tabs filtr-item" data-category="5, 5">
+                    <ul class="list-models">
+                        <li><a href="#">
+                            <img src="assets/images/product-img-1.jpg" alt="" /></a></li>
+                        <li><a href="#">
+                            <img src="assets/images/product-img-2.jpg" alt="" /></a></li>
+                        <li><a href="#">
+                            <img src="assets/images/product-img-3.jpg" alt="" /></a></li>
+                        <li><a href="#">
+                            <img src="assets/images/product-img-4.jpg" alt="" /></a></li>
+                    </ul>
+                </div>
                 </div>
             </div>
         </div>

@@ -225,7 +225,8 @@ function myfunload() {
     $(".wrap-order").delay(800).queue(function (next) {
         $(this).addClass("fadeInRight");
         next();
-    });
+    });
+    $('.filtr-container').filterizr();
     myfunsroll();
 }
 /*=========================================================================*/

@@ -1555,7 +1555,6 @@ body .mobilep-right {
     z-index: 2;
     font-size: 13px;
     color: #484848;
-    font-weight: 300;
 }
 .why-box .why-img {
     background-color: #fff;
@@ -1569,7 +1568,7 @@ body .mobilep-right {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
 }
-.why-box .why-img {
+/*.why-box .why-img {
     webkit-transform: rotate3d(0,1,0,180deg);
     -moz-transform: rotate3d(0,1,0,180deg);
     -o-transform: rotate3d(0,1,0,180deg);
@@ -1589,6 +1588,21 @@ body .mobilep-right {
     -o-transform: rotate3d(0,1,0,-180deg);
     -ms-transform: rotate3d(0,1,0,-180deg);
     transform: rotate3d(0,1,0,-180deg);
+}*/
+.filtr-item {
+    position: relative !important;
+}
+.section-tb .why-box {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.section-tb .why-box:hover {
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
 }
 .why-img img {
     display: inline-block;
@@ -2271,6 +2285,9 @@ body .mobilep-right {
     .btn-2:after, .btn-2:before {
         border: none;
     }
+    .bg-content {
+        width: 90%;
+    }
 }
 @media (min-width: 481px) and (max-width: 767px)
 {
@@ -2747,8 +2764,12 @@ body .mobilep-right {
     .wrap-section .content {
         top: 12%;
     }
-   .section-list li:first-child .section-name, .wrap-section .section-name a {
-        font-size: 7px;
+    .wrap-section .section-name a {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .section-list li:first-child .section-name, .section-list .section-name a {
+        font-size: 14px;
         line-height: 20px;
     }
     .box-clothes .section-content {
@@ -2804,6 +2825,12 @@ body .mobilep-right {
     .box-services .description {
         font-size: 12px;
     }
+    .box-services {
+        padding: 5px 0;
+    }
+    .menu-models li:nth-child(4) {
+        margin-left: 60px;
+    }
 }
 @media (max-width: 359px)
 {
@@ -2843,6 +2870,15 @@ body .mobilep-right {
         text-align: center;
         padding: 20px 0 0;
         width: 100%;
+    }
+    .menu-models li:nth-child(4) {
+        margin-left: 0;
+    }
+    .wrap-section .section-name a {
+        font-size: 8px;
+    }
+    .section-list li:first-child .section-name, .section-list .section-name a {
+        font-size: 12px;
     }
 }
 @media (max-width: 319px)
