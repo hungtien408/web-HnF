@@ -85,14 +85,23 @@ function myfunload() {
     $(".link-show a").click(function () {
         var idboxs = $(this).attr("href");
         var offset = $(idboxs).offset();
-        $("html, body").stop(true, true).animate({ scrollTop: offset.top }, 500);
+        var offsetTop = offset.top - 330;
+        $("html, body").stop(true, true).animate({ scrollTop: offsetTop }, 500);
+        return false;
+    });
+
+    $(".link-show-dv a").click(function () {
+        var idboxs = $(this).attr("href");
+        var offset = $(idboxs).offset();
+        var offsetTop = offset.top - 100;
+        $("html, body").stop(true, true).animate({ scrollTop: offsetTop }, 500);
         return false;
     });
 
     $(".dvShow a").click(function () {
         var idboxs = $(this).attr("href");
         var offset = $(idboxs).offset();
-        $("html, body").stop(true, true).animate({ scrollTop: offset.top }, 500);
+        $("html, body").stop(true, true).animate({ scrollTop: offset.top - 30 }, 500);
         return false;
     });
     if ($('#serviceShow').size() > 0) {

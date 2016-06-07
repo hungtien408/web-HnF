@@ -148,7 +148,7 @@
     <div id="runScript" runat="server">
     </div>
     <div id="sroltop">
-        <a class="corner" href="javascript:void(0);"><span class="glyphicon glyphicon-chevron-up">
+        <a class="corner" href="javascript:void(0);"><span class="fa fa-angle-double-up">
         </span></a>
     </div>
     <div id="updateie">

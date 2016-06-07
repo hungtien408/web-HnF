@@ -10,7 +10,7 @@
                 <img class="img-responsive" src="assets/images/logo-banner-services.png" /></div>
             <img class="img-responsive" src="assets/images/banner-services.jpg" alt="" />
         </div>
-        <div class="link-show text-center">
+        <div class="link-show link-show-dv text-center">
             <a href="#dvcnShow">Trải nghiệm<span class="fa fa-chevron-down"></span></a></div>
     </div>
     <div class="header-services">
@@ -23,35 +23,15 @@
                 <a class="panel-a menu-mo ipadmo-992" href="#menumobile" data-position="true" data-type="false">
                     <span class="fa fa-reorder"></span>Menu</a>
                 <ul id="menu" class="desktop-992">
-                    <li class="dvShow">
-                        <a href="#dvcnShow" class="btn btn-2">
-                            Dịch vụ chuyên nghiệp
-                        </a>
+                    <li class="dvShow"><a href="#dvcnShow" class="btn btn-2">Dịch vụ chuyên nghiệp </a>
                     </li>
-                    <li class="dvShow">
-                        <a href="#dpcnShow" class="btn btn-2">
-                            Đồng phục các ngành
-                        </a>
+                    <li class="dvShow"><a href="#dpcnShow" class="btn btn-2">Đồng phục các ngành </a>
                     </li>
-                    <li class="dvShow">
-                        <a href="#maShow" class="btn btn-2">
-                            Mẫu áo
-                        </a>
+                    <li class="dvShow"><a href="#maShow" class="btn btn-2">Mẫu áo </a></li>
+                    <li class="dvShow"><a href="#cvShow" class="btn btn-2">Chất vải </a></li>
+                    <li class="dvShow"><a href="#cnsxShow" class="btn btn-2">Công nghệ sản xuất </a>
                     </li>
-                    <li class="dvShow">
-                        <a href="#cvShow" class="btn btn-2">
-                            Chất vải
-                        </a>
-                    </li>
-                    <li class="dvShow">
-                        <a href="#cnsxShow" class="btn btn-2">
-                            Công nghệ sản xuất
-                        </a>
-                    </li>
-                    <li class="dvShow">
-                        <a href="#qtdhShow" class="btn btn-2">
-                            Quy trình đặt hàng
-                        </a>
+                    <li class="dvShow"><a href="#qtdhShow" class="btn btn-2">Quy trình đặt hàng </a>
                     </li>
                 </ul>
             </div>
@@ -235,8 +215,6 @@
                             <img src="assets/images/product-img-3.jpg" alt="" /></a></li>
                         <li><a href="#">
                             <img src="assets/images/product-img-4.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-5.jpg" alt="" /></a></li>
                     </ul>
                 </div>
                 <div id="tab-2" class="section-tabs">
@@ -249,8 +227,6 @@
                             <img src="assets/images/product-img-1.jpg" alt="" /></a></li>
                         <li><a href="#">
                             <img src="assets/images/product-img-5.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-4.jpg" alt="" /></a></li>
                     </ul>
                 </div>
                 <div id="tab-3" class="section-tabs">
@@ -263,8 +239,6 @@
                             <img src="assets/images/product-img-1.jpg" alt="" /></a></li>
                         <li><a href="#">
                             <img src="assets/images/product-img-4.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-5.jpg" alt="" /></a></li>
                     </ul>
                 </div>
                 <div id="tab-4" class="section-tabs">
@@ -277,8 +251,6 @@
                             <img src="assets/images/product-img-5.jpg" alt="" /></a></li>
                         <li><a href="#">
                             <img src="assets/images/product-img-3.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-1.jpg" alt="" /></a></li>
                     </ul>
                 </div>
                 <div id="tab-5" class="section-tabs">
@@ -291,8 +263,6 @@
                             <img src="assets/images/product-img-3.jpg" alt="" /></a></li>
                         <li><a href="#">
                             <img src="assets/images/product-img-4.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-5.jpg" alt="" /></a></li>
                     </ul>
                 </div>
             </div>
@@ -333,11 +303,12 @@
                                 <img src="assets/images/fabric-img-1.jpg" alt="" />
                             </td>
                             <td rowspan="4">
-                                <div class="fabric-content">Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                                là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
-                                khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
-                                cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
+                                <div class="fabric-content">
+                                    Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
+                                    là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
+                                    khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
+                                    cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
+                                    tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
                             </td>
                             <td rowspan="4">
                                 <ul class="list-color">
@@ -441,13 +412,13 @@
                                         Đặc điểm
                                     </td>
                                     <td>
-                                        <div class="fabric-content">Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                                        là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
-                                        khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
-                                        cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                        tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
+                                        <div class="fabric-content">
+                                            Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
+                                            là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
+                                            khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
+                                            cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
+                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
                                     </td>
-                            
                                 </tr>
                                 <tr>
                                     <td>
@@ -521,13 +492,13 @@
                                         Đặc điểm
                                     </td>
                                     <td>
-                                        <div class="fabric-content">Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                                        là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
-                                        khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
-                                        cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                        tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
+                                        <div class="fabric-content">
+                                            Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
+                                            là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
+                                            khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
+                                            cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
+                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
                                     </td>
-                            
                                 </tr>
                                 <tr>
                                     <td>
@@ -601,13 +572,13 @@
                                         Đặc điểm
                                     </td>
                                     <td>
-                                        <div class="fabric-content">Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                                        là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
-                                        khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
-                                        cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                        tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
+                                        <div class="fabric-content">
+                                            Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
+                                            là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
+                                            khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
+                                            cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
+                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
                                     </td>
-                            
                                 </tr>
                                 <tr>
                                     <td>
@@ -681,13 +652,13 @@
                                         Đặc điểm
                                     </td>
                                     <td>
-                                        <div class="fabric-content">Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                                        là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
-                                        khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
-                                        cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                        tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
+                                        <div class="fabric-content">
+                                            Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
+                                            là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
+                                            khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
+                                            cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
+                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
                                     </td>
-                            
                                 </tr>
                                 <tr>
                                     <td>
@@ -1509,87 +1480,95 @@
                 </div>
                 <h2 class="title-1 text-uppercase title-order">
                     Quy trình đặt hàng</h2>
-                    <div class="wrap-order wow">
-                <div id="order-1" class="section-tabs order-tabs">
-                    <h4 class="title-design">
-                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
-                    <div class="desription">
-                        If you are like me you live and breathe fashion. You are constantly inspired with
-                        so many new designs racing through your mind, so many you can't seem to get them
-                        all down quick enough at the pace they arrive. You constantly dream of the day your
-                        fashions will be on the fashion runway with the lights beaming brightly overhead,
-                        the cameras flashing-1.</div>
-                </div>
-                <div id="order-2" class="section-tabs order-tabs">
-                    <h4 class="title-design">
-                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
-                    <div class="desription">
-                        If you are like me you live and breathe fashion. You are constantly inspired with
-                        so many new designs racing through your mind, so many you can't seem to get them
-                        all down quick enough at the pace they arrive. You constantly dream of the day your
-                        fashions will be on the fashion runway with the lights beaming brightly overhead,
-                        the cameras flashing-2.</div>
-                </div>
-                <div id="order-3" class="section-tabs order-tabs">
-                    <h4 class="title-design">
-                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
-                    <div class="desription">
-                        If you are like me you live and breathe fashion. You are constantly inspired with
-                        so many new designs racing through your mind, so many you can't seem to get them
-                        all down quick enough at the pace they arrive. You constantly dream of the day your
-                        fashions will be on the fashion runway with the lights beaming brightly overhead,
-                        the cameras flashing.</div>
-                </div>
-                <div id="order-4" class="section-tabs order-tabs">
-                    <h4 class="title-design">
-                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
-                    <div class="desription">
-                        If you are like me you live and breathe fashion. You are constantly inspired with
-                        so many new designs racing through your mind, so many you can't seem to get them
-                        all down quick enough at the pace they arrive. You constantly dream of the day your
-                        fashions will be on the fashion runway with the lights beaming brightly overhead,
-                        the cameras flashing.</div>
-                </div>
-                <div id="order-5" class="section-tabs order-tabs">
-                    <h4 class="title-design">
-                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
-                    <div class="desription">
-                        If you are like me you live and breathe fashion. You are constantly inspired with
-                        so many new designs racing through your mind, so many you can't seem to get them
-                        all down quick enough at the pace they arrive. You constantly dream of the day your
-                        fashions will be on the fashion runway with the lights beaming brightly overhead,
-                        the cameras flashing.</div>
-                </div>
-                <div id="order-6" class="section-tabs order-tabs">
-                    <h4 class="title-design">
-                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
-                    <div class="desription">
-                        If you are like me you live and breathe fashion. You are constantly inspired with
-                        so many new designs racing through your mind, so many you can't seem to get them
-                        all down quick enough at the pace they arrive. You constantly dream of the day your
-                        fashions will be on the fashion runway with the lights beaming brightly overhead,
-                        the cameras flashing.</div>
-                </div>
-                <div id="order-7" class="section-tabs order-tabs">
-                    <h4 class="title-design">
-                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
-                    <div class="desription">
-                        If you are like me you live and breathe fashion. You are constantly inspired with
-                        so many new designs racing through your mind, so many you can't seem to get them
-                        all down quick enough at the pace they arrive. You constantly dream of the day your
-                        fashions will be on the fashion runway with the lights beaming brightly overhead,
-                        the cameras flashing.</div>
-                </div>
-                <div id="order-8" class="section-tabs order-tabs">
-                    <h4 class="title-design">
-                        Thiết kế mẫu <span class="fa fa-arrow-right"></span></h4>
-                    <div class="desription">
-                        If you are like me you live and breathe fashion. You are constantly inspired with
-                        so many new designs racing through your mind, so many you can't seem to get them
-                        all down quick enough at the pace they arrive. You constantly dream of the day your
-                        fashions will be on the fashion runway with the lights beaming brightly overhead,
-                        the cameras flashing.</div>
-                </div>
+                <div class="wrap-order wow">
+                    <div id="order-1" class="section-tabs order-tabs">
+                        <h4 class="title-design">
+                            Thiết kế mẫu <span class="fa fa-arrow-right"></span>
+                        </h4>
+                        <div class="desription">
+                            If you are like me you live and breathe fashion. You are constantly inspired with
+                            so many new designs racing through your mind, so many you can't seem to get them
+                            all down quick enough at the pace they arrive. You constantly dream of the day your
+                            fashions will be on the fashion runway with the lights beaming brightly overhead,
+                            the cameras flashing-1.</div>
+                    </div>
+                    <div id="order-2" class="section-tabs order-tabs">
+                        <h4 class="title-design">
+                            Thiết kế mẫu <span class="fa fa-arrow-right"></span>
+                        </h4>
+                        <div class="desription">
+                            If you are like me you live and breathe fashion. You are constantly inspired with
+                            so many new designs racing through your mind, so many you can't seem to get them
+                            all down quick enough at the pace they arrive. You constantly dream of the day your
+                            fashions will be on the fashion runway with the lights beaming brightly overhead,
+                            the cameras flashing-2.</div>
+                    </div>
+                    <div id="order-3" class="section-tabs order-tabs">
+                        <h4 class="title-design">
+                            Thiết kế mẫu <span class="fa fa-arrow-right"></span>
+                        </h4>
+                        <div class="desription">
+                            If you are like me you live and breathe fashion. You are constantly inspired with
+                            so many new designs racing through your mind, so many you can't seem to get them
+                            all down quick enough at the pace they arrive. You constantly dream of the day your
+                            fashions will be on the fashion runway with the lights beaming brightly overhead,
+                            the cameras flashing.</div>
+                    </div>
+                    <div id="order-4" class="section-tabs order-tabs">
+                        <h4 class="title-design">
+                            Thiết kế mẫu <span class="fa fa-arrow-right"></span>
+                        </h4>
+                        <div class="desription">
+                            If you are like me you live and breathe fashion. You are constantly inspired with
+                            so many new designs racing through your mind, so many you can't seem to get them
+                            all down quick enough at the pace they arrive. You constantly dream of the day your
+                            fashions will be on the fashion runway with the lights beaming brightly overhead,
+                            the cameras flashing.</div>
+                    </div>
+                    <div id="order-5" class="section-tabs order-tabs">
+                        <h4 class="title-design">
+                            Thiết kế mẫu <span class="fa fa-arrow-right"></span>
+                        </h4>
+                        <div class="desription">
+                            If you are like me you live and breathe fashion. You are constantly inspired with
+                            so many new designs racing through your mind, so many you can't seem to get them
+                            all down quick enough at the pace they arrive. You constantly dream of the day your
+                            fashions will be on the fashion runway with the lights beaming brightly overhead,
+                            the cameras flashing.</div>
+                    </div>
+                    <div id="order-6" class="section-tabs order-tabs">
+                        <h4 class="title-design">
+                            Thiết kế mẫu <span class="fa fa-arrow-right"></span>
+                        </h4>
+                        <div class="desription">
+                            If you are like me you live and breathe fashion. You are constantly inspired with
+                            so many new designs racing through your mind, so many you can't seem to get them
+                            all down quick enough at the pace they arrive. You constantly dream of the day your
+                            fashions will be on the fashion runway with the lights beaming brightly overhead,
+                            the cameras flashing.</div>
+                    </div>
+                    <div id="order-7" class="section-tabs order-tabs">
+                        <h4 class="title-design">
+                            Thiết kế mẫu <span class="fa fa-arrow-right"></span>
+                        </h4>
+                        <div class="desription">
+                            If you are like me you live and breathe fashion. You are constantly inspired with
+                            so many new designs racing through your mind, so many you can't seem to get them
+                            all down quick enough at the pace they arrive. You constantly dream of the day your
+                            fashions will be on the fashion runway with the lights beaming brightly overhead,
+                            the cameras flashing.</div>
+                    </div>
+                    <div id="order-8" class="section-tabs order-tabs">
+                        <h4 class="title-design">
+                            Thiết kế mẫu <span class="fa fa-arrow-right"></span>
+                        </h4>
+                        <div class="desription">
+                            If you are like me you live and breathe fashion. You are constantly inspired with
+                            so many new designs racing through your mind, so many you can't seem to get them
+                            all down quick enough at the pace they arrive. You constantly dream of the day your
+                            fashions will be on the fashion runway with the lights beaming brightly overhead,
+                            the cameras flashing.</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1606,7 +1585,25 @@
                     <a id="A1" href="~/" runat="server">
                         <img class="img-responsive" src="assets/images/logo.png" alt="logo" /></a>
                 </div>
-                <ul id="menuMobile" class="menu-nav">
+                <ul id="menuMobileDV" class="menu-nav">
+                    <li><a href="~/" runat="server" class="btn btn-2">Trang chủ <span class="fa fa-chevron-circle-right iconar">
+                    </span></a></li>
+                    <li><a href="#" class="btn btn-2">Về chúng tôi <span class="fa fa-chevron-circle-right iconar">
+                    </span></a></li>
+                    <li><a href="dich-vu.aspx" class="btn btn-2">Dịch vụ <span class="fa fa-chevron-circle-right iconar">
+                    </span></a></li>
+                    <li><a href="#" class="btn btn-2">Quy trình thực hiện <span class="fa fa-chevron-circle-right iconar">
+                    </span></a></li>
+                    <li><a href="#" class="btn btn-2">Sản Phẩm <span class="fa fa-chevron-circle-right iconar">
+                    </span></a></li>
+                    <li><a href="#" class="btn btn-2">Thông số size <span class="fa fa-chevron-circle-right iconar">
+                    </span></a></li>
+                    <li><a href="#" class="btn btn-2">Dự án <span class="fa fa-chevron-circle-right iconar">
+                    </span></a></li>
+                    <li><a href="tu-van.aspx" class="btn btn-2">Tư vấn <span class="fa fa-chevron-circle-right iconar">
+                    </span></a></li>
+                    <li><a href="#" class="btn btn-2">Liên Hệ <span class="fa fa-chevron-circle-right iconar">
+                    </span></a></li>
                 </ul>
             </div>
         </div>

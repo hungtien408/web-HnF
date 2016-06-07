@@ -12,6 +12,9 @@
                 <img class="img-responsive" src="assets/images/banner-img-1.jpg" alt="" />
                 <img class="img-responsive" src="assets/images/banner-img-2.jpg" alt="" />
                 <img class="img-responsive" src="assets/images/banner-img-3.jpg" alt="" />
+                <img class="img-responsive" src="assets/images/banner-img-4.jpg" alt="" />
+                <img class="img-responsive" src="assets/images/banner-img-5.jpg" alt="" />
+                <img class="img-responsive" src="assets/images/banner-img-6.jpg" alt="" />
             </div>
         </div>
         <div class="link-show text-center">
@@ -36,8 +39,6 @@
                     <div class="content">
                         <div class="section-name">
                             <a href="#">Áo thun <strong>Đồng phục</strong></a></div>
-                        <div class="desription">
-                            Led by originality and our fashion design heritage</div>
                         <p class="more-details">
                             <a href="#">Chi tiết</a></p>
                     </div>
@@ -70,8 +71,6 @@
                 <div class="content">
                     <div class="section-name">
                         <a href="#">Áo thun <strong>Quảng cáo sự kiện</strong></a></div>
-                    <div class="desription">
-                        Led by originality and our fashion design heritage</div>
                     <p class="more-details">
                         <a href="#">Chi tiết</a></p>
                 </div>
@@ -98,8 +97,6 @@
                         <div class="section-content">
                             <h3 class="section-name">
                                 <a href="#">Áo thun dip dye</a></h3>
-                            <div class="description text-uppercase">
-                                Bộ sưu tập 2016</div>
                         </div>
                     </div>
                 </div>
@@ -111,8 +108,6 @@
                         <div class="section-content content-bottom">
                             <h3 class="section-name">
                                 <a href="#">Áo trơn cổ tròn</a></h3>
-                            <div class="description text-uppercase">
-                                Bộ sưu tập 2016</div>
                         </div>
                     </div>
                 </div>
@@ -124,8 +119,6 @@
                         <div class="section-content">
                             <h3 class="section-name">
                                 <a href="#">Áo polo trơn</a></h3>
-                            <div class="description text-uppercase">
-                                Bộ sưu tập 2016</div>
                         </div>
                     </div>
                 </div>

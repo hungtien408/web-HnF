@@ -783,7 +783,7 @@ body .mobilep-right {
 .section-list li:nth-child(2) .content, .section-list li:last-child .content, .section-box .content {
     width: 100%;
     left: 0;
-    top: 10%;
+    top: 2%;
     padding: 0 50px;
 } 
 .wrap-section .section-name, .wrap-section .section-name a {
@@ -830,6 +830,16 @@ body .mobilep-right {
     margin: 0 0 15px;
     border: 2px solid #ff7920;
     position: relative;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.section-tb .box-clothes:hover {
+    -ms-transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
 }
 .box-clothes .section-img, .box-clothes .section-img img {
     display: block;
@@ -917,8 +927,7 @@ body .mobilep-right {
 .box-services .description {
     text-align: center;
     overflow: hidden;
-    margin: 12px 0 20px;
-    max-height: 66px;
+    margin: 6px 0 5px;
     width: 100%;
     font-size: 13px;
     line-height: 22px;
@@ -1089,8 +1098,6 @@ body .mobilep-right {
     text-transform: uppercase;
 }
 .menu-control li:hover, .menu-control li.ui-tabs-active {
-    border: 1px solid #fa7a10;
-    border-bottom: none;
     background-color: #fa7a10;
     color: #fff;
 }
@@ -1110,7 +1117,7 @@ body .mobilep-right {
 }
 .list-models li {
     float: left;
-    width: 20%;
+    width: 25%;
     overflow: hidden;
     background-color: #000;
     border-color: #000;
@@ -1606,8 +1613,6 @@ body .mobilep-right {
 .why-content .description {
     width: 100%;
     overflow: hidden;
-    text-align: justify;
-    max-height: 66px;
 }
 .bg-why {
     left: 0;
@@ -1684,7 +1689,7 @@ body .mobilep-right {
     width: 240px;
 }
 .btn-4:after {
-    background: #282828;
+    background: #f37121;
     content: "";
     height: 155px;
     left: -75px;
@@ -1782,6 +1787,7 @@ body .mobilep-right {
 #footer .hotline span {
     font-size: 36px;
     display: block;
+    font-weight: 900;
 }
 .list-address
 {
@@ -1842,7 +1848,7 @@ body .mobilep-right {
     width: 40px;
     z-index: 999;
 }
-#sroltop a
+/*#sroltop a
 {
     background-color: #eb1921;
     -webkit-border-radius: 5px;
@@ -1855,6 +1861,33 @@ body .mobilep-right {
     text-align: center;
     line-height: 44px;
     width: 100%;
+}*/
+#sroltop a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    font-size: 28px;
+    line-height: 38px;
+    margin: auto;
+    color: #222222;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    -webkit-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2);
+    -webkit-transform: translateZ(0);
+    -webkit-transition: 0.2s all linear;
+    -moz-transition: 0.2s all linear;
+    transition: 0.2s all linear;
+    text-align: center;
+}
+#sroltop a:hover {
+    -webkit-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.1);
+    color: #eb8127;
 }
 #sroltop a
 {
@@ -2101,7 +2134,7 @@ body .mobilep-right {
     }
     /*=============about======*/
     .bg-content {
-        width: 60%;
+        width: 70%;
     }
     .bg-content .content-1 {
         padding: 0 50px;
@@ -2148,9 +2181,6 @@ body .mobilep-right {
      .content-bottom {
         top: 75% !important;
      }   
-     .list-models li {
-         width: 32%;
-     }
      .title-services, .title-services a {
          font-size: 18px;
      } 
@@ -2201,9 +2231,6 @@ body .mobilep-right {
      .logoServices img {
          width: 12%;
      }
-     .list-models li {
-         width: 32%;
-     }
      .menu-price li a {
         font-size: 14px;
     }
@@ -2241,6 +2268,9 @@ body .mobilep-right {
         left: 0;
         padding: 0 20px;
     }
+    .btn-2:after, .btn-2:before {
+        border: none;
+    }
 }
 @media (min-width: 481px) and (max-width: 767px)
 {
@@ -2260,9 +2290,6 @@ body .mobilep-right {
         padding: 12px 36px;
         font-size: 30px;
     }
-    .list-models li {
-         width: 32%;
-     }
      .menu-price li a {
         font-size: 13px;
     }
@@ -2335,9 +2362,12 @@ body .mobilep-right {
         line-height: 12px;
         font-size: 12px;
     }
+    #banner {
+        margin-bottom: 10px;
+    }
     /*========*/
     .wrap-section .content {
-        top: 55%;
+        top: 36%;
         left: 2%;
     }
     .list-object .content {
@@ -2347,8 +2377,11 @@ body .mobilep-right {
         padding: 0 56px;
     }
     .wrap-section .section-name, .wrap-section .section-name a {
-        font-size: 12px;
+        font-size: 18px;
         line-height: 20px;
+    }
+    .section-list li:nth-child(2) .content, .section-list li:last-child .content, .section-box .content {
+        top: 6%;
     }
     .wrap-section .section-name strong {
         font-size: 25px;
@@ -2372,7 +2405,7 @@ body .mobilep-right {
         padding: 0 2px;
     }
     .content-bottom {
-        top: 72% !important;
+        top: 76% !important;
     }
     .box-clothes .description {
         font-size: 9px;
@@ -2526,7 +2559,7 @@ body .mobilep-right {
         width: 145px;
     }
     .wrapper-880 {
-        padding: 35px 0 0;
+        padding: 15px 0 0;
     }
     /*=========about==========*/
     .wrap-why {
@@ -2550,6 +2583,18 @@ body .mobilep-right {
     .bg-content .content-2 {
         padding: 5px 35px 0;
     }
+    .why-box .why-name, .why-box .why-name a {
+        font-size: 14px;
+    }
+    .section-tb .why-box {
+        margin-bottom: 20px;
+    }
+    #footer2 h4 {
+        min-height: 80px;
+    }
+    .wrap-section {
+        padding: 10px 0 20px;
+    }
 }
 @media (max-width: 479px)
 {
@@ -2567,7 +2612,7 @@ body .mobilep-right {
         left: 2%;
     }
     .wrap-section .section-name, .wrap-section .section-name a {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 18px;
     }
     .box-clothes .description {
@@ -2686,6 +2731,16 @@ body .mobilep-right {
     .section-tb .why-box {
         margin-bottom: 27px;
     }
+    #footer .hotline p {
+        background-size: 50px;
+        background-position: right 15px;
+    }
+    #footer .hotline span {
+        width: 55%;
+    }
+    #footer, #footer a, #footer2, #footer2 a, #footer3, #footer3 a {
+        font-size: 10px;
+    }
 }
 @media (max-width: 419px)
 {
@@ -2694,7 +2749,7 @@ body .mobilep-right {
     }
    .section-list li:first-child .section-name, .wrap-section .section-name a {
         font-size: 7px;
-        line-height: 12px;
+        line-height: 20px;
     }
     .box-clothes .section-content {
         padding: 0;
@@ -2704,7 +2759,7 @@ body .mobilep-right {
         line-height: 9px;
     }
     .content-bottom {
-        top: 68% !important;
+        top: 76% !important;
     }
     .section-list li:first-child .section-name strong {
         font-size: 18px;
@@ -2728,25 +2783,26 @@ body .mobilep-right {
     #footer .hotline p {
         float: left;
         margin: 0 auto;
-        background: url('../images/icon-hotline.png') no-repeat right 2px;
+        background: url('../images/icon-hotline.png') no-repeat right 15px;
         width: 45%;
         padding-right: 50px;
+        background-size: 50px;
         text-align: center;
     }
     #footer .hotline span {
         float: right;
         text-align: center;
         padding: 30px 0 0;
-        width: 50%;
+        width: 55%;
     }
     #footer .hotline span {
         font-size: 28px;
     }
     .title-services, .title-services a {
-        font-size: 9px;
+        font-size: 12px;
     }
     .box-services .description {
-        font-size: 8px;
+        font-size: 12px;
     }
 }
 @media (max-width: 359px)
