@@ -1785,6 +1785,63 @@ body .mobilep-right {
     left: 120%;
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
+/*======tu van==========*/
+.listAside {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+.listAside .box-in {
+    padding: 0;
+    float: left;
+    width: 100%;
+}
+.listAside .boxa {
+    border: 1px solid #fff;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 2;
+}
+.box-img, .box-img img {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.boxa .box-name {
+    width: 100%;
+    z-index: 10;
+    margin: 0;
+}
+.boxa .box-name a {
+    color: #202020;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 10px 12px;
+    font-weight: 600;
+    text-align: center;
+}
+.box-name a:hover {
+    text-decoration: none;
+}
+.wrapper-text {
+    width: 100%;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 24px;
+    color: #484848;
+}
+.wrapper-text h4 {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.title-tuvan {
+    color: #202020;
+    font-size: 18px;
+    line-height: 22px;
+}
 /*=============================footer======================*/
 #footer
 {

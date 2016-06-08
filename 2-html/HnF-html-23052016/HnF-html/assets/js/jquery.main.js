@@ -12,10 +12,6 @@
                 mywrapper();
             }, 300);
         });
-        $('.filtr-container').filterizr({
-            filter: '1'
-        });
-        $('.menu-models li:first-child').addClass('active');
     });
     $(function () {
        if ($('#isotopelist').size() == 1) {
@@ -229,7 +225,8 @@ function myfunload() {
     $(".wrap-order").delay(800).queue(function (next) {
         $(this).addClass("fadeInRight");
         next();
-    });
+    });
+
     myfunsroll();
 }
 /*=========================================================================*/
