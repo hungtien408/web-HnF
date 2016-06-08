@@ -194,7 +194,7 @@
                 the most passionate and knowledgeable people in suiting
             </div>
         </div>
-        <div class="wrap-section">
+        <div class="wrap-section wrap-models">
             <%--<div id="sectionTab">
                 <div class="head-2">
                     <ul class="menu-control menu-models">
@@ -266,79 +266,39 @@
                     </ul>
                 </div>
             </div>--%>
-            <div id="sectionTab">
+            <div class="row">
                 <div class="head-2">
-                    <ul class="menu-control menu-models simplefilter">
-                        <li data-filter="1"><a class="link-tabs" href="#tab-1">Áo cổ trụ - cổ bo</a></li>
-                        <li data-filter="2"><a class="link-tabs" href="#tab-2">Áo cổ trụ - cổ sơ mi</a></li>
-                        <li data-filter="3"><a class="link-tabs" href="#tab-3">Áo cổ tròn</a></li>
-                        <li data-filter="4"><a class="link-tabs" href="#tab-4">Áo cổ tim</a></li>
-                        <li data-filter="5"><a class="link-tabs" href="#tab-5">Áo cổ tròn, tay raglan</a></li>
-                    </ul>
-                </div>
-                <div class="filtr-container">
-                <div id="tab-1" class="section-tabs filtr-item" data-category="1, 5">
-                    <ul class="list-models">
-                        <li><a href="#">
-                            <img src="assets/images/product-img-1.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-2.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-3.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-4.jpg" alt="" /></a></li>
-                    </ul>
-                </div>
-                <div id="tab-2" class="section-tabs filtr-item" data-category="2, 5">
-                    <ul class="list-models">
-                        <li><a href="#">
-                            <img src="assets/images/product-img-2.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-3.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-1.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-5.jpg" alt="" /></a></li>
-                    </ul>
-                </div>
-                <div id="tab-3" class="section-tabs filtr-item" data-category="3, 5">
-                    <ul class="list-models">
-                        <li><a href="#">
-                            <img src="assets/images/product-img-3.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-2.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-1.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-4.jpg" alt="" /></a></li>
-                    </ul>
-                </div>
-                <div id="tab-4" class="section-tabs filtr-item" data-category="4, 5">
-                    <ul class="list-models">
-                        <li><a href="#">
-                            <img src="assets/images/product-img-4.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-2.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-5.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-3.jpg" alt="" /></a></li>
-                    </ul>
-                </div>
-                <div id="tab-5" class="section-tabs filtr-item" data-category="5, 5">
-                    <ul class="list-models">
-                        <li><a href="#">
-                            <img src="assets/images/product-img-1.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-2.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-3.jpg" alt="" /></a></li>
-                        <li><a href="#">
-                            <img src="assets/images/product-img-4.jpg" alt="" /></a></li>
-                    </ul>
-                </div>
+                <ul class="menu-control menu-models simplefilter">
+                    <li data-filter="1"><a class="link-tabs" href="javascript:void(0);">Áo cổ trụ - cổ bo</a></li>
+                    <li data-filter="2"><a class="link-tabs" href="javascript:void(0);">Áo cổ trụ - cổ sơ mi</a></li>
+                    <li data-filter="3"><a class="link-tabs" href="javascript:void(0);">Áo cổ tròn</a></li>
+                    <li data-filter="4"><a class="link-tabs" href="javascript:void(0);">Áo cổ tim</a></li>
+                    <li data-filter="5"><a class="link-tabs" href="javascript:void(0);">Áo cổ tròn, tay raglan</a></li>
+                </ul>
                 </div>
             </div>
+            <div class="row">
+            <div class="filtr-container">
+                <div class="models-tabs filtr-item" data-category="1, 2, 5">
+                    <a href="#"><img src="assets/images/product-img-1.jpg" alt="" /></a>
+                </div>
+                <div class="models-tabs filtr-item" data-category="1, 4, 5, 3">
+                    <a href="#"><img src="assets/images/product-img-2.jpg" alt="" /></a>
+                </div>
+                <div class="models-tabs filtr-item" data-category="3, 1, 2, 4">
+                    <a href="#"><img src="assets/images/product-img-3.jpg" alt="" /></a>
+                </div>
+                <div class="models-tabs filtr-item" data-category="2, 5, 1, 3">
+                    <a href="#"><img src="assets/images/product-img-4.jpg" alt="" /></a>
+                </div>
+                <div class="models-tabs filtr-item" data-category="2, 4">
+                    <a href="#"><img src="assets/images/product-img-5.jpg" alt="" /></a>
+                </div>
+                <div class="models-tabs filtr-item" data-category="4, 5, 3">
+                    <a href="#"><img src="assets/images/product-img-3.jpg" alt="" /></a>
+                </div>
+            </div>
+        </div>
         </div>
         <div id="cvShow" class="text-center wrapper-880">
             <h4 class="text-uppercase title-1">
@@ -1661,7 +1621,7 @@
                 <ul id="menuMobileDV" class="menu-nav">
                     <li><a href="~/" runat="server" class="btn btn-2">Trang chủ <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
-                    <li><a href="#" class="btn btn-2">Về chúng tôi <span class="fa fa-chevron-circle-right iconar">
+                    <li><a href="gioi-thieu.aspx" class="btn btn-2">Về chúng tôi <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
                     <li><a href="dich-vu.aspx" class="btn btn-2">Dịch vụ <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
