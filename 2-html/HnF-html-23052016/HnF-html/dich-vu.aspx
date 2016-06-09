@@ -61,7 +61,7 @@
                             </a>
                             <h4 class="title-services">
                                 <a href="#">Tư vấn &amp; thiết kế miễn phí</a></h4>
-                            <div class="description">
+                            <div class="description content-services">
                                 Đội ngũ tư vấn viên nhiệt huyết-nhiều năm kinh nghiệm cùng với các Designer đầy
                                 sức sáng tạo, sẽ mang đến cho bạn những tư vấn phù hợp, biến ý tưởng của bạn thành
                                 sự thật.
@@ -78,7 +78,7 @@
                             </a>
                             <h4 class="title-services">
                                 <a href="#">Giải pháp toàn diện khép kín</a></h4>
-                            <div class="description">
+                            <div class="description content-services">
                                 Chúng tôi cung cấp giải pháp tối ưu nhất cho các doanh nghiệp trong nhiều lĩnh vực
                                 khác nhau bằng kinh nghiệm lâu năm trong ngành may mặc cũng như sự thấu hiểu về
                                 xu hướng thời trang theo từng ngành nghề cụ thể.
@@ -95,7 +95,7 @@
                             </a>
                             <h4 class="title-services">
                                 <a href="#">Chất lượng sản phẩm đúng cam kết</a></h4>
-                            <div class="description">
+                            <div class="description content-services">
                                 Chúng tôi luôn có những cam kết về chất lượng sản phẩm ngay từ khâu tiếp xúc khách
                                 hàng cho đến một khoảng thời gian nhất định sau khi sử dụng sản phẩm. Cam kết phải
                                 đi đôi với chất lượng thực tế.
@@ -112,7 +112,7 @@
                             </a>
                             <h4 class="title-services">
                                 <a href="#">Dịch vụ chu đáo nhiệt tình</a></h4>
-                            <div class="description">
+                            <div class="description content-services">
                                 Đến với chúng tôi, bạn sẽ được trải nghiệm chất lượng phục vụ tiêu chuẩn cao nhất.
                                 Đây là sự khác biệt, là thế mạnh của chúng tôi so với các đối tác khác trong ngành.
                             </div>

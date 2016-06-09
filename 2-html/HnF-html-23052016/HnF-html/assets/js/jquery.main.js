@@ -108,7 +108,7 @@ function myfunload() {
         var sectionlist = $('#serviceShow').imagesLoaded(function () {
             sectionlist.textHeight({
                 activetit: true,
-                listcss: [{ cssname: ".services-img" }, { cssname: ".title-services" }],
+                listcss: [{ cssname: ".services-img" }, { cssname: ".title-services" }, { cssname: ".content-services"}],
                 wpointb: true,
                 //widthpont: 479,
                 desbool: false,
