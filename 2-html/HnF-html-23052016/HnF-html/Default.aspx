@@ -9,7 +9,6 @@
     <div id="banner">
         <div class="slider-wrapper">
             <div id="slider" class="nivoSlider">
-                <img class="img-responsive" src="assets/images/banner-img-1.jpg" alt="" />
                 <img class="img-responsive" src="assets/images/banner-img-2.jpg" alt="" />
                 <img class="img-responsive" src="assets/images/banner-img-3.jpg" alt="" />
                 <img class="img-responsive" src="assets/images/banner-img-4.jpg" alt="" />
@@ -27,8 +26,10 @@
             <h4 class="text-uppercase title-1">
                 Chúng tôi cung cấp</h4>
             <div class="desription">
-                AO THUN RUBIC is the "go-to" design business wardrobe brand with everyday-inspired
-                combinations, making dressing your business easy.
+                HNF cung cấp các giải pháp toàn diện về áo thun thời trang và áo thun cho doanh
+                nghiệp. Bằng kinh nghiệm và sự đam mê sáng tạo, chúng tôi luôn cố gắng đáp ứng tốt
+                nhất các yêu cầu của khách hàng, đặc biệt là các khách hàng doanh nghiệp. Thế mạnh
+                của HNF là:
             </div>
         </div>
         <div id="productShow" class="wrap-section">
@@ -80,8 +81,9 @@
             <h4 class="text-uppercase title-1">
                 Mẫu áo thun tiêu biểu</h4>
             <div class="desription">
-                AO THUN RUBIC is the "go-to" design business wardrobe brand with everyday-inspired
-                combinations, making dressing your business easy.
+                Không những đẹp mà còn phải phù hợp với xu thế thời trang, đội ngũ Designer của
+                chúng tôi luôn không ngừng cải tiến và cho ra mắt nhiều kiểu áo thun phù hợp với
+                từng nhu cầu cụ thể của khách hàng.
             </div>
             <div class="more-details text-center details-2">
                 <a class="btn-4" href="#">Xem thêm</a>
@@ -96,7 +98,7 @@
                         </a>
                         <div class="section-content">
                             <h3 class="section-name">
-                                <a href="#">Áo thun dip dye</a></h3>
+                                <a href="#">Áo thun cổ trụ</a></h3>
                         </div>
                     </div>
                 </div>
@@ -107,7 +109,7 @@
                         </a>
                         <div class="section-content content-bottom">
                             <h3 class="section-name">
-                                <a href="#">Áo trơn cổ tròn</a></h3>
+                                <a href="#">Áo thun cổ tròn</a></h3>
                         </div>
                     </div>
                 </div>
@@ -118,7 +120,7 @@
                         </a>
                         <div class="section-content">
                             <h3 class="section-name">
-                                <a href="#">Áo polo trơn</a></h3>
+                                <a href="#">Áo thun cổ tim</a></h3>
                         </div>
                     </div>
                 </div>
@@ -141,9 +143,10 @@
             <h4 class="text-uppercase title-1">
                 Chúng tôi khác biệt</h4>
             <div class="desription">
-                AO THUN RUBIC are suppliers of high quality, affordable and fashion forward corporate
-                apparel for Australia and New Zealand. We provide complete tailored uniform solutions
-                for businesses and focus on outstanding customer service.
+                Không chỉ mong muốn cung cấp các sản phẩm thời trang chất lượng, chúng tôi hướng
+                đến việc xây dựng chuỗi giá trị lợi ích cho khách hàng, trở thành một đối tác thật
+                sự đáng tin cậy, cả về chuyên môn lẫn dịch vụ. Chúng tôi dám mơ ước – dám thực hiện,
+                đó là sự khác biệt lớn nhất của chúng tôi!
             </div>
             <div class="more-details text-center details-3">
                 <a class="btn-4" href="#">Xem thêm về chúng tôi</a>

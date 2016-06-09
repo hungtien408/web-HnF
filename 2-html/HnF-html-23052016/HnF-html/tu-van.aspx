@@ -1,6 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/site-tv.master" AutoEventWireup="true" CodeFile="tu-van.aspx.cs" Inherits="tu_van" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <title>HnF</title>
+    <meta name="description" content="HnF" />
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 <div class="container">
@@ -13,16 +15,16 @@
             <div class="section-tb row">
                 <div class="col-lg-4 col-xs-6 element-item">
                     <div class="box-suicide">
-                        <a href="#" class="suicide-img">
+                        <a href="tu-van-chi-tiet.aspx" class="suicide-img">
                             <img src="assets/images/suicide-img-1.jpg" alt="" class="corner" />
                         </a>
                         <h4 class="title-suicide">
-                            <a href="#">Dịch vụ khách hàng hoàn hảo</a></h4>
+                            <a href="tu-van-chi-tiet.aspx">Dịch vụ khách hàng hoàn hảo</a></h4>
                         <div class="description">
                             Hemp is an alternative natual fiber that's cultivated with low impact on the environment. It's one of the most durable natural fibers on the planet, and results in the fabric with a wonderful drape, comparable to liren...
                         </div>
                         <div class="more-details text-center">
-                            <a class="link-view" href="#">Xem chi tiết</a>
+                            <a class="link-view" href="tu-van-chi-tiet.aspx">Xem chi tiết</a>
                         </div>
                     </div>
                 </div>

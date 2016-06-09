@@ -2,6 +2,8 @@
     CodeFile="dich-vu.aspx.cs" Inherits="services" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <title>HnF</title>
+    <meta name="description" content="HnF" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphHeader" runat="Server">
     <div id="banner" class="banner-ser">
@@ -60,8 +62,9 @@
                             <h4 class="title-services">
                                 <a href="#">Tư vấn &amp; thiết kế miễn phí</a></h4>
                             <div class="description">
-                                Stafford Corporate has built a reputation for providing a consistent quality product
-                                with long wearing garments that have a distinctive edge…
+                                Đội ngũ tư vấn viên nhiệt huyết-nhiều năm kinh nghiệm cùng với các Designer đầy
+                                sức sáng tạo, sẽ mang đến cho bạn những tư vấn phù hợp, biến ý tưởng của bạn thành
+                                sự thật.
                             </div>
                             <div class="more-details text-center">
                                 <a class="link-view" href="services-view.aspx">Xem thêm</a>
@@ -76,8 +79,9 @@
                             <h4 class="title-services">
                                 <a href="#">Giải pháp toàn diện khép kín</a></h4>
                             <div class="description">
-                                Stafford Corporate has built a reputation for providing a consistent quality product
-                                with long wearing garments that have a distinctive edge…
+                                Chúng tôi cung cấp giải pháp tối ưu nhất cho các doanh nghiệp trong nhiều lĩnh vực
+                                khác nhau bằng kinh nghiệm lâu năm trong ngành may mặc cũng như sự thấu hiểu về
+                                xu hướng thời trang theo từng ngành nghề cụ thể.
                             </div>
                             <div class="more-details text-center">
                                 <a class="link-view" href="services-view.aspx">Xem thêm</a>
@@ -92,8 +96,9 @@
                             <h4 class="title-services">
                                 <a href="#">Chất lượng sản phẩm đúng cam kết</a></h4>
                             <div class="description">
-                                Stafford Corporate has built a reputation for providing a consistent quality product
-                                with long wearing garments that have a distinctive edge…
+                                Chúng tôi luôn có những cam kết về chất lượng sản phẩm ngay từ khâu tiếp xúc khách
+                                hàng cho đến một khoảng thời gian nhất định sau khi sử dụng sản phẩm. Cam kết phải
+                                đi đôi với chất lượng thực tế.
                             </div>
                             <div class="more-details text-center">
                                 <a class="link-view" href="services-view.aspx">Xem thêm</a>
@@ -108,8 +113,8 @@
                             <h4 class="title-services">
                                 <a href="#">Dịch vụ chu đáo nhiệt tình</a></h4>
                             <div class="description">
-                                Stafford Corporate has built a reputation for providing a consistent quality product
-                                with long wearing garments that have a distinctive edge…
+                                Đến với chúng tôi, bạn sẽ được trải nghiệm chất lượng phục vụ tiêu chuẩn cao nhất.
+                                Đây là sự khác biệt, là thế mạnh của chúng tôi so với các đối tác khác trong ngành.
                             </div>
                             <div class="more-details text-center">
                                 <a class="link-view" href="services-view.aspx">Xem thêm</a>
@@ -123,7 +128,8 @@
             <h4 class="text-uppercase title-1">
                 Phục vụ cho nhiều đối tượng</h4>
             <div class="desription font-20">
-                Phục vụ cho nhiều đối tượng doanh nghiệp
+                Am hiểu xu hướng thời trang, am hiểu thị trường doanh nghiệp, chúng tôi tự hào đã
+                phục vụ cho nhiều đối tượng doanh nghiệp trong nhiều lĩnh vực, ngành nghề khác nhau.
             </div>
         </div>
         <div class="wrap-section">
@@ -190,8 +196,9 @@
             <h4 class="text-uppercase title-1">
                 Mẫu mã đa dạng</h4>
             <div class="desription">
-                you are what matters most. That's why we offer a diverse and personal service from
-                the most passionate and knowledgeable people in suiting
+                Đội ngũ Designer được đào tạo chuyên nghiệp, luôn sẵn sàng đem đến cho bạn nhiều
+                ý tưởng về mẫu mã khác nhau. Chúng tôi luôn xem trọng tính thẫm mỹ và độ tiện ích
+                của áo thun đồng phục.
             </div>
         </div>
         <div class="wrap-section wrap-models">
@@ -268,37 +275,45 @@
             </div>--%>
             <div class="row">
                 <div class="head-2">
-                <ul class="menu-control menu-models simplefilter">
-                    <li data-filter="1"><a class="link-tabs" href="javascript:void(0);">Áo cổ trụ - cổ bo</a></li>
-                    <li data-filter="2"><a class="link-tabs" href="javascript:void(0);">Áo cổ trụ - cổ sơ mi</a></li>
-                    <li data-filter="3"><a class="link-tabs" href="javascript:void(0);">Áo cổ tròn</a></li>
-                    <li data-filter="4"><a class="link-tabs" href="javascript:void(0);">Áo cổ tim</a></li>
-                    <li data-filter="5"><a class="link-tabs" href="javascript:void(0);">Áo cổ tròn, tay raglan</a></li>
-                </ul>
+                    <ul class="menu-control menu-models simplefilter">
+                        <li data-filter="1"><a class="link-tabs" href="javascript:void(0);">Áo cổ trụ - cổ bo</a></li>
+                        <li data-filter="2"><a class="link-tabs" href="javascript:void(0);">Áo cổ trụ - cổ sơ
+                            mi</a></li>
+                        <li data-filter="3"><a class="link-tabs" href="javascript:void(0);">Áo cổ tròn</a></li>
+                        <li data-filter="4"><a class="link-tabs" href="javascript:void(0);">Áo cổ tim</a></li>
+                        <li data-filter="5"><a class="link-tabs" href="javascript:void(0);">Áo cổ tròn, tay
+                            raglan</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="row">
-            <div class="filtr-container">
-                <div class="models-tabs filtr-item" data-category="1, 2, 5">
-                    <a href="#"><img src="assets/images/product-img-1.jpg" alt="" /></a>
-                </div>
-                <div class="models-tabs filtr-item" data-category="1, 4, 5, 3">
-                    <a href="#"><img src="assets/images/product-img-2.jpg" alt="" /></a>
-                </div>
-                <div class="models-tabs filtr-item" data-category="3, 1, 2, 4">
-                    <a href="#"><img src="assets/images/product-img-3.jpg" alt="" /></a>
-                </div>
-                <div class="models-tabs filtr-item" data-category="2, 5, 1, 3">
-                    <a href="#"><img src="assets/images/product-img-4.jpg" alt="" /></a>
-                </div>
-                <div class="models-tabs filtr-item" data-category="2, 4">
-                    <a href="#"><img src="assets/images/product-img-5.jpg" alt="" /></a>
-                </div>
-                <div class="models-tabs filtr-item" data-category="4, 5, 3">
-                    <a href="#"><img src="assets/images/product-img-3.jpg" alt="" /></a>
+                <div class="filtr-container">
+                    <div class="models-tabs filtr-item" data-category="1, 2, 5">
+                        <a href="#">
+                            <img src="assets/images/product-img-1.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="1, 4, 5, 3">
+                        <a href="#">
+                            <img src="assets/images/product-img-2.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="3, 1, 2, 4">
+                        <a href="#">
+                            <img src="assets/images/product-img-3.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="2, 5, 1, 3">
+                        <a href="#">
+                            <img src="assets/images/product-img-4.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="2, 4">
+                        <a href="#">
+                            <img src="assets/images/product-img-5.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="4, 5, 3">
+                        <a href="#">
+                            <img src="assets/images/product-img-3.jpg" alt="" /></a>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
         <div id="cvShow" class="text-center wrapper-880">
             <h4 class="text-uppercase title-1">
@@ -337,11 +352,14 @@
                             </td>
                             <td rowspan="4">
                                 <div class="fabric-content">
-                                    Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                                    là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
-                                    khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
-                                    cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                    tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
+                                    <p>
+                                        Chúng tôi có nhiều chất vải khác nhau, ứng với từng nhu cầu sử dụng khác nhau của
+                                        mỗi đối tượng doanh nghiệp. HNF là một trong những đơn vị đầu tiên sử dụng chất
+                                        vải hoàn toàn 100% cotton tự nhiên cũng như luôn công bố chính xác tỉ lệ % cấu tạo
+                                        của chất vải.</p>
+                                    <p style="font-weight: 600; text-align: center;">
+                                        CHẤT LIỆU THẬT-TƯ VẤN THẬT-SẢN PHẨM THẬT</p>
+                                </div>
                             </td>
                             <td rowspan="4">
                                 <ul class="list-color">
@@ -754,8 +772,9 @@
             <h4 class="text-uppercase title-1">
                 Công nghệ sản xuất</h4>
             <div class="desription">
-                Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                là đơn vị đầu tiên sử dụng vải 100% cotton
+                Công nghệ hiện đại, khép kín từ khâu nguyên liệu đầu vào cho đến khi thành phẩm,
+                HNF luôn đảm bảo về năng lực sản xuất cũng như có thể đáp ứng hầu hết các yêu cầu
+                khắc khe nhất của khách hàng.
             </div>
         </div>
         <div class="wrap-section">
