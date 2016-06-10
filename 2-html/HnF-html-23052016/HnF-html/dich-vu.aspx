@@ -25,15 +25,15 @@
                 <a class="panel-a menu-mo ipadmo-992" href="#menumobile" data-position="true" data-type="false">
                     <span class="fa fa-reorder"></span>Menu</a>
                 <ul id="menu" class="desktop-992">
-                    <li class="dvShow"><a href="#dvcnShow" class="btn btn-2">Dịch vụ chuyên nghiệp </a>
+                    <li class="dvShow"><a href="#dvcnShow" class="btn-2">Dịch vụ chuyên nghiệp </a>
                     </li>
-                    <li class="dvShow"><a href="#dpcnShow" class="btn btn-2">Đồng phục các ngành </a>
+                    <li class="dvShow"><a href="#dpcnShow" class="btn-2">Đồng phục các ngành </a>
                     </li>
-                    <li class="dvShow"><a href="#maShow" class="btn btn-2">Mẫu áo </a></li>
-                    <li class="dvShow"><a href="#cvShow" class="btn btn-2">Chất vải </a></li>
-                    <li class="dvShow"><a href="#cnsxShow" class="btn btn-2">Công nghệ sản xuất </a>
+                    <li class="dvShow"><a href="#maShow" class="btn-2">Mẫu áo </a></li>
+                    <li class="dvShow"><a href="#cvShow" class="btn-2">Chất vải </a></li>
+                    <li class="dvShow"><a href="#cnsxShow" class="btn-2">Công nghệ sản xuất </a>
                     </li>
-                    <li class="dvShow"><a href="#qtdhShow" class="btn btn-2">Quy trình đặt hàng </a>
+                    <li class="dvShow"><a href="#qtdhShow" class="btn-2">Quy trình đặt hàng </a>
                     </li>
                 </ul>
             </div>
@@ -74,7 +74,7 @@
                     <div class="col-lg-3 col-xs-6 element-item">
                         <div class="box-services">
                             <a href="#" class="services-img">
-                                <img src="assets/images/services-img-1.png" alt="" class="corner" />
+                                <img src="assets/images/services-img-2.png" alt="" class="corner" />
                             </a>
                             <h4 class="title-services">
                                 <a href="#">Giải pháp toàn diện khép kín</a></h4>
@@ -91,7 +91,7 @@
                     <div class="col-lg-3 col-xs-6 element-item">
                         <div class="box-services">
                             <a href="#" class="services-img">
-                                <img src="assets/images/services-img-1.png" alt="" class="corner" />
+                                <img src="assets/images/services-img-3.png" alt="" class="corner" />
                             </a>
                             <h4 class="title-services">
                                 <a href="#">Chất lượng sản phẩm đúng cam kết</a></h4>
@@ -108,7 +108,7 @@
                     <div class="col-lg-3 col-xs-6 element-item">
                         <div class="box-services">
                             <a href="#" class="services-img">
-                                <img src="assets/images/services-img-1.png" alt="" class="corner" />
+                                <img src="assets/images/services-img-4.png" alt="" class="corner" />
                             </a>
                             <h4 class="title-services">
                                 <a href="#">Dịch vụ chu đáo nhiệt tình</a></h4>

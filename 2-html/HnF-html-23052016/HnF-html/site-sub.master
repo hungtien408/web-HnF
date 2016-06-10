@@ -25,24 +25,39 @@
                     </div>
                 </div>
                 <ul id="menu" class="desktop-992">
-                    <li><a href="gioi-thieu.aspx" class="btn btn-2">Về chúng tôi </a></li>
-                    <li><a href="dich-vu.aspx" class="btn btn-2">Dịch vụ </a>
+                    <li><a href="gioi-thieu.aspx" class="btn-2">Về chúng tôi </a></li>
+                    <li><a href="dich-vu.aspx" class="btn-2">Dịch vụ </a>
                         <div class="menu-sub">
                             <div class="menu-subin">
                                 <ul>
                                     <li><a href="#"><span class="menu-box"><span class="iconai">
-                                        <img src="res/article/icon/company-26.png" alt=""></span>Áo thun đồng phục</span><span
+                                        <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun đồng phục<span
+                                            class="menubg"></span></a> </li>
+                                            <li><a href="#"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun quảng cáo - sự kiện<span
+                                            class="menubg"></span></a> </li>
+                                            <li><a href="#"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-3.jpg" alt="" /></span></span>Áo nhóm - áo lớp<span
+                                            class="menubg"></span></a> </li>
+                                            <li><a href="#"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản xuất áo thun theo yêu cầu<span
+                                            class="menubg"></span></a> </li>
+                                            <li><a href="#"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-5.jpg" alt="" /></span></span>In ấn công nghệ cao<span
+                                            class="menubg"></span></a> </li>
+                                            <li><a href="#"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-6.jpg" alt="" /></span></span>Thêu vi tính<span
                                             class="menubg"></span></a> </li>
                                 </ul>
                             </div>
                         </div>
                     </li>
-                    <li><a href="#" class="btn btn-2">Quy trình thực hiện </a></li>
-                    <li><a href="#" class="btn btn-2">Sản Phẩm </a></li>
-                    <li><a href="#" class="btn btn-2">Thông số size </a></li>
-                    <li><a href="#" class="btn btn-2">Dự án </a></li>
-                    <li><a href="tu-van.aspx" class="btn btn-2">Tư vấn </a></li>
-                    <li><a href="#" class="btn btn-2">Liên Hệ </a></li>
+                    <li><a href="#" class="btn-2">Quy trình thực hiện </a></li>
+                    <li><a href="#" class="btn-2">Sản Phẩm </a></li>
+                    <li><a href="#" class="btn-2">Thông số size </a></li>
+                    <li><a href="#" class="btn-2">Dự án </a></li>
+                    <li><a href="tu-van.aspx" class="btn-2">Tư vấn </a></li>
+                    <li><a href="#" class="btn-2">Liên Hệ </a></li>
                 </ul>
                 <div class="form-search corner ipadmo-992">
                     <asp:Button ID="btnSearch" CssClass="search-btnmo" runat="server" />

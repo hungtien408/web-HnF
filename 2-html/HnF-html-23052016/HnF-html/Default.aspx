@@ -158,7 +158,7 @@
                     <div class="col-lg-4 col-xs-4 element-item">
                         <div class="box-services">
                             <a href="#" class="services-img">
-                                <img src="assets/images/we-other.png" alt="" class="corner" />
+                                <img src="assets/images/we-other-1.png" alt="" class="corner" />
                             </a>
                             <h4 class="title-services">
                                 <a href="#">Tư vấn giải pháp hợp lý</a></h4>
@@ -175,7 +175,7 @@
                     <div class="col-lg-4 col-xs-4 element-item">
                         <div class="box-services">
                             <a href="#" class="services-img">
-                                <img src="assets/images/we-other.png" alt="" class="corner" />
+                                <img src="assets/images/we-other-2.png" alt="" class="corner" />
                             </a>
                             <h4 class="title-services">
                                 <a href="#">Chất lượng dịch vụ tương xứng với giá cả</a></h4>
@@ -192,7 +192,7 @@
                     <div class="col-lg-4 col-xs-4 element-item">
                         <div class="box-services">
                             <a href="#" class="services-img">
-                                <img src="assets/images/we-other.png" alt="" class="corner" />
+                                <img src="assets/images/we-other-3.png" alt="" class="corner" />
                             </a>
                             <h4 class="title-services">
                                 <a href="#">Chia sẻ kiến thức về sản phẩm</a></h4>

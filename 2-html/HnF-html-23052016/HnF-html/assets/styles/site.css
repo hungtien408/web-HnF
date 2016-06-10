@@ -161,7 +161,7 @@ hr
     color: #f37121;
     text-decoration: none;
 }
-#menu ul
+/*#menu ul
 {
     border: none;
     display: none;
@@ -170,7 +170,7 @@ hr
     padding: 0;
     margin: 0;
     width: 240px;
-}
+}*/
 #menu > li > ul
 {
     left: 0;
@@ -187,20 +187,9 @@ hr
 {
     padding-bottom: 1px;
 }
-#menu li li a
-{
-    background-color: #333399;
-    color: #fff;
-    display: block;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 22px;
-    padding: 5px 10px;
-    text-transform: capitalize;
-}
 #menu li li > a:hover, #menu li li:hover > a, #menu li li.active > a
 {
-    background-color: #ff9933;
+    /*background-color: #ff9933;*/
     text-decoration: none;
 }
 .btn-1 svg {
@@ -245,6 +234,97 @@ hr
     bottom: auto;
     top: 0;
     width: 100%;
+}
+/*=====menu-sub=====*/
+#menu .menu-sub {
+    display: none;
+    left: -135%;
+    top: 100%;
+    position: absolute;
+    /*padding-top: 15px;*/
+    white-space: nowrap;
+}
+.menu-subin {
+    /*background-color: #0b1748;*/
+    padding: 4px;
+}
+#menu li ul {
+    font-size: 0;
+}
+.menu-sub ul {
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 962px;
+    float: left;
+}
+.menu-sub ul li {
+    /*display: inline-block;*/
+    display: block;
+    vertical-align: top;
+    border-right: 1px solid #e5e5e5;
+    margin: 30px 5px;
+    width: 150px;
+    float: left;
+}
+#menu li li a {
+    color: #484848;
+    background-color: #fff;
+    display: block;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 35px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+}
+.menu-sub ul a {
+    padding: 12px 0;
+    line-height: 60px;
+}
+.menu-sub .menu-box {
+    /*border-left: solid 1px #636a88;*/
+    display: block;
+    /*padding: 23px 35px;*/
+}
+.menu-sub ul li:first-child .menu-box {
+    border-left: none;
+}
+#menu .menubg {
+    /* background-color: #16276c; */
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    z-index: -1;
+}
+.menu-sub .iconai {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-right: 5px;
+    width: 100%;
+}
+.menu-sub .iconai img {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+#menu li:hover > .menu-sub {
+    display: block;
+}
+.menu-sub ul li:last-child {
+    border: none;
 }
 /*========================menu mobile=================================================================*/
 .menu-mo {
@@ -500,6 +580,24 @@ body .mobilep-right {
 }
 .menu-nav a:hover {
     text-decoration: none;
+}
+.menu-nav .menu-sub ul {
+    border: none;
+    float: none;
+    width: 100%;
+}
+.menu-nav .menu-sub ul li {
+    display: block;
+    margin: 0;
+    border: none;
+    float: none;
+    width: 100%;
+}
+.menu-nav .menu-sub .menu-box {
+    padding: 0;
+}
+.menu-nav .menu-sub .iconai {
+    display: none;
 }
 /*==============search====================*/
 .form-search
@@ -1028,7 +1126,7 @@ body .mobilep-right {
     width: 45%;
     text-align: center;
 }
-.list-object li:nth-child(3) .content, .list-object li:nth-child(3) .desription, .list-object li:nth-child(5) .content, .list-object li:nth-child(5) .desription {
+.list-object li:nth-child(5) .content, .list-object li:nth-child(5) .desription {
     top: 20%;
     text-align: left;
 }
@@ -2117,8 +2215,9 @@ body .mobilep-right {
         font-size: 13px;
         line-height: 20px;
     }
-    #menu ul {
-        width: 210px;
+    #menu .menu-sub {
+        left: -380%;
+        top: 56px;
     }
     #header .form-search {
         margin-top: 6px;
@@ -2953,6 +3052,9 @@ body .mobilep-right {
     }
     .why-box .why-name, .why-box .why-name a {
         text-align: left;
+    }
+    .list-object li:nth-child(4) .content, .list-object li:nth-child(6) .content {
+        padding: 0 20px;
     }
 }
 @media (max-width: 419px)
