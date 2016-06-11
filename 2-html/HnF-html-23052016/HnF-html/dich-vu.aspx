@@ -25,16 +25,12 @@
                 <a class="panel-a menu-mo ipadmo-992" href="#menumobile" data-position="true" data-type="false">
                     <span class="fa fa-reorder"></span>Menu</a>
                 <ul id="menu" class="desktop-992">
-                    <li class="dvShow"><a href="#dvcnShow" class="btn-2">Dịch vụ chuyên nghiệp </a>
-                    </li>
-                    <li class="dvShow"><a href="#dpcnShow" class="btn-2">Đồng phục các ngành </a>
-                    </li>
+                    <li class="dvShow"><a href="#dvcnShow" class="btn-2">Dịch vụ chuyên nghiệp </a></li>
+                    <li class="dvShow"><a href="#dpcnShow" class="btn-2">Đồng phục các ngành </a></li>
                     <li class="dvShow"><a href="#maShow" class="btn-2">Mẫu áo </a></li>
                     <li class="dvShow"><a href="#cvShow" class="btn-2">Chất vải </a></li>
-                    <li class="dvShow"><a href="#cnsxShow" class="btn-2">Công nghệ sản xuất </a>
-                    </li>
-                    <li class="dvShow"><a href="#qtdhShow" class="btn-2">Quy trình đặt hàng </a>
-                    </li>
+                    <li class="dvShow"><a href="#cnsxShow" class="btn-2">Công nghệ sản xuất </a></li>
+                    <li class="dvShow"><a href="#qtdhShow" class="btn-2">Quy trình đặt hàng </a></li>
                 </ul>
             </div>
         </div>
@@ -47,7 +43,7 @@
         <div id="dvcnShow" class="text-center wrapper-880 border-none">
             <h4 class="text-uppercase title-1">
                 Dịch vụ chuyên nghiệp</h4>
-            <div class="desription font-20">
+            <div class="desription">
                 Hãy trải nghiệm một dịch vụ hoàn toàn khác biệt
             </div>
         </div>
@@ -66,9 +62,6 @@
                                 sức sáng tạo, sẽ mang đến cho bạn những tư vấn phù hợp, biến ý tưởng của bạn thành
                                 sự thật.
                             </div>
-                            <div class="more-details text-center">
-                                <a class="link-view" href="services-view.aspx">Xem thêm</a>
-                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-xs-6 element-item">
@@ -82,9 +75,6 @@
                                 Chúng tôi cung cấp giải pháp tối ưu nhất cho các doanh nghiệp trong nhiều lĩnh vực
                                 khác nhau bằng kinh nghiệm lâu năm trong ngành may mặc cũng như sự thấu hiểu về
                                 xu hướng thời trang theo từng ngành nghề cụ thể.
-                            </div>
-                            <div class="more-details text-center">
-                                <a class="link-view" href="services-view.aspx">Xem thêm</a>
                             </div>
                         </div>
                     </div>
@@ -100,9 +90,6 @@
                                 hàng cho đến một khoảng thời gian nhất định sau khi sử dụng sản phẩm. Cam kết phải
                                 đi đôi với chất lượng thực tế.
                             </div>
-                            <div class="more-details text-center">
-                                <a class="link-view" href="services-view.aspx">Xem thêm</a>
-                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-xs-6 element-item">
@@ -116,9 +103,9 @@
                                 Đến với chúng tôi, bạn sẽ được trải nghiệm chất lượng phục vụ tiêu chuẩn cao nhất.
                                 Đây là sự khác biệt, là thế mạnh của chúng tôi so với các đối tác khác trong ngành.
                             </div>
-                            <div class="more-details text-center">
+                            <%--<div class="more-details text-center">
                                 <a class="link-view" href="services-view.aspx">Xem thêm</a>
-                            </div>
+                            </div>--%>
                         </div>
                     </div>
                 </div>
@@ -127,7 +114,7 @@
         <div id="dpcnShow" class="text-center wrapper-880">
             <h4 class="text-uppercase title-1">
                 Phục vụ cho nhiều đối tượng</h4>
-            <div class="desription font-20">
+            <div class="desription">
                 Am hiểu xu hướng thời trang, am hiểu thị trường doanh nghiệp, chúng tôi tự hào đã
                 phục vụ cho nhiều đối tượng doanh nghiệp trong nhiều lĩnh vực, ngành nghề khác nhau.
             </div>
@@ -319,8 +306,13 @@
             <h4 class="text-uppercase title-1">
                 Chất vải</h4>
             <div class="desription">
-                Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                là đơn vị đầu tiên sử dụng vải 100% cotton
+                <p>
+                    Chúng tôi có nhiều chất vải khác nhau, ứng với từng nhu cầu sử dụng khác nhau của
+                    mỗi đối tượng doanh nghiệp. HNF là một trong những đơn vị đầu tiên sử dụng chất
+                    vải hoàn toàn 100% cotton tự nhiên cũng như luôn công bố chính xác tỉ lệ % cấu tạo
+                    của chất vải.</p>
+                <p style="font-weight: 600; text-align: center;">
+                    CHẤT LIỆU THẬT - TƯ VẤN THẬT - SẢN PHẨM THẬT</p>
             </div>
         </div>
         <div class="wrap-section desktop-showhide">
@@ -353,12 +345,8 @@
                             <td rowspan="4">
                                 <div class="fabric-content">
                                     <p>
-                                        Chúng tôi có nhiều chất vải khác nhau, ứng với từng nhu cầu sử dụng khác nhau của
-                                        mỗi đối tượng doanh nghiệp. HNF là một trong những đơn vị đầu tiên sử dụng chất
-                                        vải hoàn toàn 100% cotton tự nhiên cũng như luôn công bố chính xác tỉ lệ % cấu tạo
-                                        của chất vải.</p>
-                                    <p style="font-weight: 600; text-align: center;">
-                                        CHẤT LIỆU THẬT-TƯ VẤN THẬT-SẢN PHẨM THẬT</p>
+                                        Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
+                                        là đơn vị đầu tiên sử dụng vải 100% cotton</p>
                                 </div>
                             </td>
                             <td rowspan="4">

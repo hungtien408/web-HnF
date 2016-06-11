@@ -167,9 +167,6 @@
                                 designed and well priced. We work closely with our suppliers and manufacturers to
                                 ensure
                             </div>
-                            <div class="more-details text-center">
-                                <a class="link-view" href="services-view.aspx">Xem thêm</a>
-                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-xs-4 element-item">
@@ -183,9 +180,6 @@
                                 We offer high quality stock service items and unique custom pieces that are well
                                 designed and well priced. We work closely with our suppliers and manufacturers to
                                 ensure
-                            </div>
-                            <div class="more-details text-center">
-                                <a class="link-view" href="services-view.aspx">Xem thêm</a>
                             </div>
                         </div>
                     </div>
@@ -201,9 +195,9 @@
                                 designed and well priced. We work closely with our suppliers and manufacturers to
                                 ensure
                             </div>
-                            <div class="more-details text-center">
+                            <%--<div class="more-details text-center">
                                 <a class="link-view" href="services-view.aspx">Xem thêm</a>
-                            </div>
+                            </div>--%>
                         </div>
                     </div>
                 </div>
