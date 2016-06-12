@@ -769,7 +769,7 @@
             <div id="isotopelist" class="wrap-boximg">
                 <div class="box-col element-item">
                     <div class="box-in">
-                        <div class="wrap-images">
+                        <div class="wrap-img">
                             <h2 class="name-link text-uppercase">
                                 <a href="#">Cắt vải</a></h2>
                             <a href="#" class="intro-img">
@@ -779,7 +779,7 @@
                 </div>
                 <div class="box-col element-item">
                     <div class="box-in">
-                        <div class="wrap-images">
+                        <div class="wrap-img">
                             <h2 class="name-link text-uppercase">
                                 <a href="#">May thành phẩm</a></h2>
                             <a href="#" class="intro-img">
@@ -789,7 +789,7 @@
                 </div>
                 <div class="box-col element-item">
                     <div class="box-in">
-                        <div class="wrap-images">
+                        <div class="wrap-img">
                             <h2 class="name-link text-uppercase">
                                 <a href="#">In bằng công nghệ ép chuyển nhiệt</a></h2>
                             <a href="#" class="intro-img">
@@ -799,7 +799,7 @@
                 </div>
                 <div class="box-col element-item">
                     <div class="box-in">
-                        <div class="wrap-images">
+                        <div class="wrap-img">
                             <h2 class="name-link text-uppercase">
                                 <a href="#">In thường</a></h2>
                             <a href="#" class="intro-img">
@@ -809,7 +809,7 @@
                 </div>
                 <div class="box-col element-item">
                     <div class="box-in">
-                        <div class="wrap-images">
+                        <div class="wrap-img">
                             <h2 class="name-link text-uppercase">
                                 <a href="#">Thêu</a></h2>
                             <a href="#" class="intro-img">

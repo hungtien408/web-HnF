@@ -129,16 +129,17 @@
     border: none;
     display: block;
     font-size: 0;
-    top: 50%;
-    position: absolute;
-    height: 46px;
+    /*top: 50%;
+    position: absolute;*/
+    position: relative;
+    height: 15px;
     margin-top: -23px;
     overflow: hidden;
-    width: 15px;
+    width: 20px;
     z-index: 99;
 }
 .slick-slider .slick-arrow, .btn-slide {
-    background-image: url(../images/control-b2.png);
+    background-image: url(../images/controls-2.png);
 }
 .btn-slide {
     top: 40%;
@@ -151,14 +152,16 @@
 }
 .slick-slider .slick-prev {
     background-position: left top;
-    left: 0;
+    /*left: 16px;*/
+    margin: 0 auto;
 }
 .slick-slider .slick-next {
-    background-position: right top;
-    right: 0;
+    background-position: left bottom;
+    /*right: 16px;*/
+    margin: 0 auto;
 }
 .slick-slider .slick-prev:hover {
-    background-position: left bottom;
+    background-position: right top;
 }
 .slick-slider .slick-next:hover {
     background-position: right bottom;
@@ -200,8 +203,8 @@
 }
     
 .slider-nav .slick-prev {
-    left: 7px;
+    /*left: 7px;*/
 }
 .slider-nav .slick-next {
-    right: 7px;
+    /*right: 7px;*/
 }
