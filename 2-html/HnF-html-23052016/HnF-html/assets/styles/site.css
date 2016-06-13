@@ -2244,6 +2244,14 @@ body .mobilep-right {
 .col-same .box-in {
     border: 1px solid #e3e3e3;
 }
+.small-imga {
+    border: solid 1px #ddd;
+    display: block;
+    overflow: hidden;
+}
+.slick-current .small-imga, .small-imga:hover {
+    border-color: #000;
+}
 /*=============================footer======================*/
 #footer
 {

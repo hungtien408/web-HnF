@@ -76,10 +76,10 @@
                     <div class="product-group row">
                         <div class="col-md-4 col-xs-6 element-item">
                             <div class="product-box">
-                                <a href="#" class="product-img fullbox-img">
+                                <a href="san-pham-chi-tiet.aspx" class="product-img fullbox-img">
                                     <img class="hideo" src="assets/images/img-product-1.jpg" alt="" /></a>
                                 <h4 class="product-name">
-                                    <a href="#">Áo thun sự kiện 001</a></h4>
+                                    <a href="san-pham-chi-tiet.aspx">Áo thun sự kiện 001</a></h4>
                             </div>
                         </div>
                         <div class="col-md-4 col-xs-6 element-item">

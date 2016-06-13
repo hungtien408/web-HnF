@@ -154,6 +154,7 @@
     background-position: left top;
     /*left: 16px;*/
     margin: 0 auto;
+    top: -2px;
 }
 .slick-slider .slick-next {
     background-position: left bottom;

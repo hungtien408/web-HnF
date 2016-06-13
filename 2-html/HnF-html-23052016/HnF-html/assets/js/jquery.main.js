@@ -32,6 +32,50 @@
                 layoutMode: 'fitRows'
             });
         }
+        if ($("#sliderDetails").size() == 1) {
+            var bigimg = $(".small-imga:first").attr("href");
+            var smallimg = $(".small-imga:first").attr("data-img");
+            $(".cloud-zoom").attr("href", bigimg).find("img:first").attr("src", smallimg);
+            jQuery('.cloud-zoom').CloudZoom();
+            if ($("#sliderDetails").hasClass("load-page")) {
+                var loadf = $(".small-imga:first").attr("data-page") + " #loadCcontent";
+                myloadpage(loadf);
+            }
+            $('#sliderDetails .slider-for').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                infinite: false,
+                fade: true,
+                asNavFor: '#sliderDetails .slider-nav'
+            });
+            $('#sliderDetails .slider-nav').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                asNavFor: '#sliderDetails .slider-for',
+                vertical: true,
+                dots: false,
+                infinite: false,
+                //centerMode: true,
+                focusOnSelect: true
+            });
+            $('#sliderDetails .slider-nav').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+                var bigimg2 = $("#sliderDetails .slider-nav .slick-slide:eq(" + nextSlide + ") .small-imga").attr("href");
+                var smallimg2 = $("#sliderDetails .slider-nav .slick-slide:eq(" + nextSlide + ") .small-imga").attr("data-img");
+                $(".cloud-zoom").attr("href", bigimg2).find("img:first").attr("src", smallimg2);
+                jQuery('.cloud-zoom').CloudZoom();
+                if ($("#sliderDetails").hasClass("load-page")) {
+                    var loadp = $("#sliderDetails .slider-nav .slick-slide:eq(" + nextSlide + ") .small-imga").attr("data-page") + " #loadCcontent";
+
+                    myloadpage(loadp);
+                }
+            });
+            $(".small-imga").click(function() {
+                $("#loadCcontent").remove();
+                var loadp = $(this).attr("data-page") + " #loadCcontent";
+                myloadpage(loadp);
+            });
+        }
     });
     $(function () {
        if ($('#isotopelist').size() == 1) {
@@ -238,50 +282,6 @@ function myfunload() {
                 csstr: ".element-item",
                 max: true
             });
-        });
-    }
-    if ($("#sliderDetails").size() == 1) {
-        var bigimg = $(".small-imga:first").attr("href");
-        var smallimg = $(".small-imga:first").attr("data-img");
-        $(".cloud-zoom").attr("href", bigimg).find("img:first").attr("src", smallimg);
-        jQuery('.cloud-zoom').CloudZoom();
-        if ($("#sliderDetails").hasClass("load-page")) {
-            var loadf = $(".small-imga:first").attr("data-page") + " #loadCcontent";
-            myloadpage(loadf);
-        }
-        $('#sliderDetails .slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            infinite: false,
-            fade: true,
-            asNavFor: '#sliderDetails .slider-nav'
-        });
-        $('#sliderDetails .slider-nav').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            asNavFor: '#sliderDetails .slider-for',
-            vertical: true,
-            dots: false,
-            infinite: false,
-            //centerMode: true,
-            focusOnSelect: true
-        });
-        $('#sliderDetails .slider-nav').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-            var bigimg = $("#sliderDetails .slider-nav .slick-slide:eq(" + nextSlide + ") .small-imga").attr("href");
-            var smallimg = $("#sliderDetails .slider-nav .slick-slide:eq(" + nextSlide + ") .small-imga").attr("data-img");
-            $(".cloud-zoom").attr("href", bigimg).find("img:first").attr("src", smallimg);
-            jQuery('.cloud-zoom').CloudZoom();
-            if ($("#sliderDetails").hasClass("load-page")) {
-                var loadp = $("#sliderDetails .slider-nav .slick-slide:eq(" + nextSlide + ") .small-imga").attr("data-page") + " #loadCcontent";
-
-                myloadpage(loadp);
-            }
-        });
-        $(".small-imga").click(function() {
-            $("#loadCcontent").remove();
-            var loadp = $(this).attr("data-page") + " #loadCcontent";
-            myloadpage(loadp);
         });
     }
 //    $('#footer2 .col-xs-4').textHeight({

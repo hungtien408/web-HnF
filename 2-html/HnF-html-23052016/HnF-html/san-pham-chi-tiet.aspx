@@ -87,13 +87,15 @@
                                 <li>Two pockets Round collar </li>
                                 <li>Action back </li>
                                 <li>Multiple colours and fabrics available </li>
-                                <li>Selected colours available in </li>
+                                <li>Selected colours available in 
+                                    <img src="assets/images/img-logo-prodetails.jpg" alt="" /></li>
                                 <li>Size Range: 6 – 30 and special make </li>
                             </ul>
                             <p style="font-style: italic;">
                                 Please CONTACT us by email or phone to enquire about ordering this garment. For
                                 any garments not in stock please allow 20 working days for New Zealand production.
                             </p>
+                            <img class="img-responsive" src="assets/images/productdetails-fb.jpg" alt="" />
                         </div>
                     </div>
                 </div>
