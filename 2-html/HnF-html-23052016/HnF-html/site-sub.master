@@ -33,19 +33,19 @@
                                     <li><a href="#"><span class="menu-box"><span class="iconai">
                                         <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun đồng phục<span
                                             class="menubg fa fa-caret-right"></span></a> </li>
-                                            <li><a href="#"><span class="menu-box"><span class="iconai">
-                                        <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun quảng cáo - sự kiện<span
-                                            class="menubg fa fa-caret-right"></span></a> </li>
-                                            <li><a href="#"><span class="menu-box"><span class="iconai">
+                                    <li><a href="#"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun quảng
+                                        cáo - sự kiện<span class="menubg fa fa-caret-right"></span></a> </li>
+                                    <li><a href="#"><span class="menu-box"><span class="iconai">
                                         <img src="assets/images/menusub-img-3.jpg" alt="" /></span></span>Áo nhóm - áo lớp<span
                                             class="menubg fa fa-caret-right"></span></a> </li>
-                                            <li><a href="#"><span class="menu-box"><span class="iconai">
-                                        <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản xuất áo thun theo yêu cầu<span
-                                            class="menubg fa fa-caret-right"></span></a> </li>
-                                            <li><a href="#"><span class="menu-box"><span class="iconai">
-                                        <img src="assets/images/menusub-img-5.jpg" alt="" /></span></span>In ấn công nghệ cao<span
-                                            class="menubg fa fa-caret-right"></span></a> </li>
-                                            <li><a href="#"><span class="menu-box"><span class="iconai">
+                                    <li><a href="#"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản xuất áo thun
+                                        theo yêu cầu<span class="menubg fa fa-caret-right"></span></a> </li>
+                                    <li><a href="#"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-5.jpg" alt="" /></span></span>In ấn công nghệ
+                                        cao<span class="menubg fa fa-caret-right"></span></a> </li>
+                                    <li><a href="#"><span class="menu-box"><span class="iconai">
                                         <img src="assets/images/menusub-img-6.jpg" alt="" /></span></span>Thêu vi tính<span
                                             class="menubg fa fa-caret-right"></span></a> </li>
                                 </ul>
@@ -54,19 +54,45 @@
                     </li>
                     <li><a href="#" class="btn-2">Quy trình thực hiện </a></li>
                     <li><a href="san-pham.aspx" class="btn-2">Sản Phẩm </a>
-                        <div class="menu-sub">
-                            <div class="menu-subin menu-pro">
-                                <h4>Áo thun đồng phục</h4>
-                                <ul>
-                                    <li><a href="#">Ngành tài chính ngân hàng</a></li>
-                                    <li><a href="#">Ngành xây dựng</a></li>
-                                    <li><a href="#">Ngành hàng tiêu dùng</a></li>
-                                    <li><a href="#">Ngành Logistic</a></li>
-                                    <li><a href="#">Ngành kỹ thuật - Công nghệ thông tin</a></li>
-                                    <li><a href="#">Ngành truyền thông giải trí</a></li>
-                                    <li><a href="#">Ngành nhà hàng khách sạn</a></li>
+                        <div class="menu-sub menu-sub2">
+                            <%--<div class="menu-subin menu-pro"></div>--%>
+                            <%--<div class="menu-content">
+                                    <h4>Áo thun đồng phục</h4>
+                                    <ul class="menu-procat">
+                                        <li><a href="#">Ngành tài chính ngân hàng<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                        <li><a href="#">Ngành xây dựng<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                        <li><a href="#">Ngành hàng tiêu dùng<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                        <li><a href="#">Ngành Logistic<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                        <li><a href="#">Ngành kỹ thuật - Công nghệ thông tin<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                        <li><a href="#">Ngành truyền thông giải trí<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                        <li><a href="#">Ngành nhà hàng khách sạn<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                    </ul>
+                                </div>--%>
+                            <div class="menu-content">
+                                <ul class="menu-procat">
+                                    <li><a href="#">Áo thun đồng phục</a>
+                                        <ul class="menu-procat-sub">
+                                            <li><a href="#">Ngành tài chính ngân hàng<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Ngành xây dựng<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Ngành hàng tiêu dùng<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Ngành Logistic<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Ngành kỹ thuật - Công nghệ thông tin<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Ngành truyền thông giải trí<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Ngành nhà hàng khách sạn<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Áo thun quảng cáo</a>
+                                        <ul class="menu-procat-sub">
+                                            <li><a href="#">Áo thun tiếp thị<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Áo thun sự kiện<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Áo thun quà tặng<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Áo lớp</a></li>
+                                    <li><a href="#">Áo thun sản xuất theo yêu cầu</a></li>
                                 </ul>
-                                <ul>
+                            </div>
+                            <%--<ul>
                                     <li><a href="#"><span class="menu-box"><span class="iconai">
                                         <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun đồng phục<span
                                             class="menubg fa fa-caret-right"></span></a> </li>
@@ -85,8 +111,7 @@
                                             <li><a href="#"><span class="menu-box"><span class="iconai">
                                         <img src="assets/images/menusub-img-6.jpg" alt="" /></span></span>Thêu vi tính<span
                                             class="menubg fa fa-caret-right"></span></a> </li>
-                                </ul>
-                            </div>
+                                </ul>--%>
                         </div>
                     </li>
                     <li><a href="#" class="btn-2">Thông số size </a></li>
