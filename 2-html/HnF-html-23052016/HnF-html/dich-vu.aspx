@@ -1634,7 +1634,7 @@
                     </span></a></li>
                     <li><a href="#" class="btn btn-2">Quy trình thực hiện <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
-                    <li><a href="#" class="btn btn-2">Sản Phẩm <span class="fa fa-chevron-circle-right iconar">
+                    <li><a href="san-pham.aspx" class="btn btn-2">Sản Phẩm <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
                     <li><a href="#" class="btn btn-2">Thông số size <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>

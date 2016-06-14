@@ -91,6 +91,22 @@
                                     <li><a href="#">Áo lớp</a></li>
                                     <li><a href="#">Áo thun sản xuất theo yêu cầu</a></li>
                                 </ul>
+                                <div class="menu-procat2">
+                                    <h4>
+                                        Mẫu áo thun</h4>
+                                    <ul>
+                                        <li><a href="#"><span class="menu-box"><span class="iconai">
+                                            <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun cổ trụ<span
+                                                class="menubg fa fa-caret-right"></span></a> </li>
+                                        <li><a href="#"><span class="menu-box"><span class="iconai">
+                                            <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun cổ tròn<span class="menubg fa fa-caret-right"></span></a> </li>
+                                        <li><a href="#"><span class="menu-box"><span class="iconai">
+                                            <img src="assets/images/menusub-img-3.jpg" alt="" /></span></span>Áo thun cổ tim<span
+                                                class="menubg fa fa-caret-right"></span></a> </li>
+                                        <li><a href="#"><span class="menu-box"><span class="iconai">
+                                            <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản phẩm khác<span class="menubg fa fa-caret-right"></span></a> </li>
+                                    </ul>
+                                </div>
                             </div>
                             <%--<ul>
                                     <li><a href="#"><span class="menu-box"><span class="iconai">
