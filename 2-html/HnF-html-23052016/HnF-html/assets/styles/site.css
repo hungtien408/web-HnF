@@ -391,6 +391,7 @@ hr
     display: block;
     font-size: 14px;
     line-height: 21px;
+    text-transform: none;
     padding: 8px 0;
 }
 .menu-procat-sub .icon-right{
@@ -654,6 +655,7 @@ body .mobilep-right {
     list-style: none;
     padding: 0;
     margin: 0;
+    border-left: solid 1px #e5e5e5;
     width: 100%;
 }
 .menu-nav > li {
@@ -712,16 +714,22 @@ body .mobilep-right {
 #menuMobile .menu-content {
     float: none;
     width: 100%;
-    padding: 0;
+    border: none;
+    padding: 5px 0;
 }
 #menuMobile .menu-sub .menu-procat > li > a {
     font-size: 15px;
+    padding: 5px 7px 5px 0;
+    margin: 0;
 }
 #menuMobile .menu-sub .menu-procat li {
     padding-right: 0;
+    border: none;
+    float: left;
 }
 #menuMobile .menu-sub .menu-procat-sub {
     padding: 0;
+    float: left;
 }
 /*==============search====================*/
 .form-search
@@ -2158,10 +2166,11 @@ body .mobilep-right {
 }
 .menu-list ul li a, .menu-nav ul li a {
     font-weight: 500;
-    font-size: 13px;
+    font-size: 14px;
+    color: #000;
     line-height: 22px;
     padding: 7px 0;
-    text-transform: none;
+    text-transform: uppercase;
     position: relative;
     display: block;
 }
@@ -2175,11 +2184,14 @@ body .mobilep-right {
     line-height: 20px;
     width: 12px;
 }
+#menuMobile .menu-sub .menu-procat-sub a .iconl {
+    top: 8px;
+}
 #menuMobile.menu-list ul, #menuMobile.menu-nav ul {
     padding: 0 0 0 20px;
 }
 #menuMobile.menu-list ul li a, #menuMobile.menu-nav ul li a {
-    padding: 7px 12px 7px 0;
+    padding: 7px 18px 7px 0;
 }
 #menuMobile .menu-sub ul a .menubg {
     display: none;
@@ -2187,7 +2199,17 @@ body .mobilep-right {
 #menuMobile .menu-sub h4 {
     line-height: 30px;
     font-size: 16px;
-    padding-left: 10px;
+}
+#menuMobile .menu-sub .menu-procat2 ul li a {
+    text-align: left;
+    text-transform: none;
+    font-size: 14px;
+}
+#menuMobile .menu-sub .menu-procat, #menuMobile .menu-sub .menu-procat2 {
+    width: 100%;
+}
+#menuMobile .menu-sub .menu-procat2 ul {
+    padding: 0;
 }
 .menu-list ul li a:hover, .menu-nav ul li a:hover {
     color: #f37121;
