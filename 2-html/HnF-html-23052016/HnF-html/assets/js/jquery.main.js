@@ -90,7 +90,7 @@
                 });
             }, 300);
         }
-        $(".wrap-img").hover(function () {
+        $(".wrap-boximg .box-in").hover(function () {
             $(this).stop(true, true).animate({ transform: 'scale(1.20,1.20)' }, 500);
         }, function () {
             $(this).stop(true, true).animate({ transform: 'scale(1,1)' }, 500);
@@ -135,6 +135,98 @@ function myfunload() {
     });
     $(".del").click(function () {
         $(".search").hide("slow");
+    });
+    /*===slide hover menu==*/
+    $('#menu > li').hover(
+        function () {
+            $(this).children('.menu-sub').slideDown(600);
+        },
+        function () {
+            $(this).children('.menu-sub').slideUp(300);
+        }
+    );
+    $('.wrap-section .table-fabric tr:first-child').addClass("act");
+        $('.wrap-section .table-fabric tr').each(function() {
+            if ($(this).hasClass("act")) {
+                var a = $(this).attr('id');
+                $('.wrap-section .table-fabric .fabric-content').each(function() {
+                    var b = $(this).attr("data-id");
+                    if (a == b) {
+                        $(this).css("display", "block");
+                    }
+                });
+                $('.wrap-section .table-fabric .fabric-color').each(function() {
+                    var b = $(this).attr("data-id");
+                    if (a == b) {
+                        $(this).css("display", "block");
+                    }
+                });
+            } 
+        });
+    $('.wrap-section .table-fabric tr').hover(
+        function () {
+            var a = $(this).attr('id');
+            $('.wrap-section .table-fabric tr').each(function () {
+                if ($(this).hasClass("act")) {
+                    $(this).removeClass("act");
+                    $('.wrap-section .table-fabric .fabric-content').each(function () {
+                        $(this).css("display", "none");
+                    });
+                    $('.wrap-section .table-fabric .fabric-color').each(function () {
+                        $(this).css("display", "none");
+                    });
+                }
+            });
+            $('.wrap-section .table-fabric .fabric-content').each(function() {
+                var b = $(this).attr("data-id");
+                if (a == b) {
+                    $(this).css("display", "block");
+                }
+            });
+            $('.wrap-section .table-fabric .fabric-color').each(function () {
+                var b = $(this).attr("data-id");
+                if (a == b) {
+                    $(this).css("display", "block");
+                }
+            });
+        },
+        function () {
+            $('.wrap-section .table-fabric .fabric-content').each(function () {
+                $(this).css("display", "none");
+            });
+            $('.wrap-section .table-fabric .fabric-color').each(function () {
+                $(this).css("display", "none");
+            });
+            $('.wrap-section .table-fabric tr:first-child').addClass("act");
+            $('.wrap-section .table-fabric tr').each(function () {
+                if ($(this).hasClass("act")) {
+                    var a = $(this).attr('id');
+                    $('.wrap-section .table-fabric .fabric-content').each(function () {
+                        var b = $(this).attr("data-id");
+                        if (a == b) {
+                            $(this).css("display", "block");
+                        }
+                    });
+                    $('.wrap-section .table-fabric .fabric-color').each(function () {
+                        var b = $(this).attr("data-id");
+                        if (a == b) {
+                            $(this).css("display", "block");
+                        }
+                    });
+                }
+            });
+        }
+    );
+    $('.slider-main').slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: false,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        arrows: false,
+        cssEase: 'linear'
     });
     $('.slider-banner').slick({
         dots: true,

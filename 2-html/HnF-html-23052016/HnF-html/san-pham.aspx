@@ -2,6 +2,8 @@
     CodeFile="san-pham.aspx.cs" Inherits="san_pham" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <title>HnF</title>
+    <meta name="description" content="HnF" />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cphBanner" runat="Server">
 </asp:Content>

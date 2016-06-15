@@ -8,7 +8,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBanner" runat="Server">
     <div id="banner">
         <div class="slider-wrapper">
-            <div id="slider" class="nivoSlider">
+            <%--<div id="slider" class="nivoSlider">
+                <img class="img-responsive" src="assets/images/banner-aboutus-1.jpg" alt="" />
+                <img class="img-responsive" src="assets/images/banner-aboutus-2.jpg" alt="" />
+                <img class="img-responsive" src="assets/images/banner-aboutus-3.jpg" alt="" />
+            </div>--%>
+            <div class="slider-main">
                 <img class="img-responsive" src="assets/images/banner-aboutus-1.jpg" alt="" />
                 <img class="img-responsive" src="assets/images/banner-aboutus-2.jpg" alt="" />
                 <img class="img-responsive" src="assets/images/banner-aboutus-3.jpg" alt="" />

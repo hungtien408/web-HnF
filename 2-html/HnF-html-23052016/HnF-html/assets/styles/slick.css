@@ -209,3 +209,32 @@
 .slider-nav .slick-next {
     /*right: 7px;*/
 }
+/*====================*/
+.slider-main .slick-dots {
+    bottom: 60px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    right: -36%;
+    position: absolute;
+    text-align:center;
+    vertical-align: top;
+    width: 100%;
+    z-index: 99;
+}
+    .slider-main .slick-dots li {
+        display: inline-block;
+        padding: 0 4px;
+    }
+         .slider-main .slick-dots button {
+    background:url('../images/no1.png');
+    border: none;
+    display:block;
+    font-size: 0;
+    border:none;
+    height: 12px;
+    width: 13px;
+}
+      .slider-main .slick-dots .slick-active button, .slick-dots button:hover {
+        background-image:url('../images/no2.png');
+    }

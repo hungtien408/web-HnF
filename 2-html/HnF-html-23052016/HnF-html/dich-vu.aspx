@@ -335,7 +335,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr id="fab-1">
                             <td>
                                 VẢI CÁ SẤU 100% cotton
                             </td>
@@ -343,60 +343,181 @@
                                 <img src="assets/images/fabric-img-1.jpg" alt="" />
                             </td>
                             <td rowspan="4">
-                                <div class="fabric-content">
+                                <div data-id="fab-1" class="fabric-content">
                                     <p>
                                         Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                                        là đơn vị đầu tiên sử dụng vải 100% cotton</p>
+                                        là đơn vị đầu tiên sử dụng vải 100% cotton1</p>
+                                </div>
+                                <div data-id="fab-2" class="fabric-content">
+                                    <p>
+                                        Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
+                                        là đơn vị đầu tiên sử dụng vải 100% cotton2</p>
+                                </div>
+                                <div data-id="fab-3" class="fabric-content">
+                                    <p>
+                                        Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
+                                        là đơn vị đầu tiên sử dụng vải 100% cotton3</p>
+                                </div>
+                                <div data-id="fab-4" class="fabric-content">
+                                    <p>
+                                        Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
+                                        là đơn vị đầu tiên sử dụng vải 100% cotton4</p>
                                 </div>
                             </td>
                             <td rowspan="4">
-                                <ul class="list-color">
-                                    <li>
-                                        <img src="assets/images/color-img-1.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-2.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-3.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-4.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-5.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-6.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-7.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-8.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-9.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-10.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-11.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-12.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-13.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-14.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-15.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-16.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-17.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-18.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-19.png" alt="" /></li>
-                                    <li>
-                                        <img src="assets/images/color-img-20.png" alt="" /></li>
-                                </ul>
-                                <p class="note-color">
-                                    Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                <div data-id="fab-1" class="fabric-color">
+                                    <ul class="list-color">
+                                        <li>
+                                            <img src="assets/images/color-img-1.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-2.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-3.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-4.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-5.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-6.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-7.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-8.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-9.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-10.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-11.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-12.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-13.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-14.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-15.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-16.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-17.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-18.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-19.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-20.png" alt="" /></li>
+                                    </ul>
+                                    <p class="note-color">
+                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                </div>
+                                <div data-id="fab-2" class="fabric-color">
+                                    <ul class="list-color">
+                                        <li>
+                                            <img src="assets/images/color-img-8.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-9.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-10.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-11.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-12.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-13.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-14.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-15.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-16.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-17.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-18.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-19.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-20.png" alt="" /></li>
+                                    </ul>
+                                    <p class="note-color">
+                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                </div>
+                                <div data-id="fab-3" class="fabric-color">
+                                    <ul class="list-color">
+                                        <li>
+                                            <img src="assets/images/color-img-1.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-2.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-3.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-4.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-5.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-6.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-7.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-8.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-9.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-10.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-11.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-12.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-13.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-20.png" alt="" /></li>
+                                    </ul>
+                                    <p class="note-color">
+                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                </div>
+                                <div data-id="fab-4" class="fabric-color">
+                                    <ul class="list-color">
+                                        <li>
+                                            <img src="assets/images/color-img-3.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-4.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-5.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-6.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-7.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-8.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-9.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-10.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-11.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-12.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-15.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-16.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-17.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-18.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-19.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-20.png" alt="" /></li>
+                                    </ul>
+                                    <p class="note-color">
+                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                </div>
                             </td>
                         </tr>
-                        <tr>
+                        <tr id="fab-2">
                             <td>
                                 VẢI CÁ SẤU 35% cotton
                             </td>
@@ -404,7 +525,7 @@
                                 <img src="assets/images/fabric-img-2.jpg" alt="" />
                             </td>
                         </tr>
-                        <tr>
+                        <tr id="fab-3">
                             <td>
                                 VẢI CÁ SẤU 100% cotton
                             </td>
@@ -412,7 +533,7 @@
                                 <img src="assets/images/fabric-img-3.jpg" alt="" />
                             </td>
                         </tr>
-                        <tr>
+                        <tr id="fab-4">
                             <td>
                                 VẢI CÁ SẤU 65% cotton
                             </td>
@@ -456,7 +577,7 @@
                                             là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
                                             khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
                                             cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
+                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton1</div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -493,18 +614,6 @@
                                                 <img src="assets/images/color-img-13.png" alt="" /></li>
                                             <li>
                                                 <img src="assets/images/color-img-14.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-15.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-16.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-17.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-18.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-19.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-20.png" alt="" /></li>
                                         </ul>
                                         <p class="note-color">
                                             Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
@@ -536,7 +645,7 @@
                                             là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
                                             khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
                                             cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
+                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton2</div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -545,18 +654,6 @@
                                     </td>
                                     <td>
                                         <ul class="list-color">
-                                            <li>
-                                                <img src="assets/images/color-img-1.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-2.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-3.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-4.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-5.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-6.png" alt="" /></li>
                                             <li>
                                                 <img src="assets/images/color-img-7.png" alt="" /></li>
                                             <li>
@@ -616,7 +713,7 @@
                                             là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
                                             khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
                                             cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
+                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton3</div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -651,12 +748,6 @@
                                                 <img src="assets/images/color-img-12.png" alt="" /></li>
                                             <li>
                                                 <img src="assets/images/color-img-13.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-14.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-15.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-16.png" alt="" /></li>
                                             <li>
                                                 <img src="assets/images/color-img-17.png" alt="" /></li>
                                             <li>
@@ -696,7 +787,7 @@
                                             là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
                                             khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
                                             cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton</div>
+                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton4</div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -705,14 +796,6 @@
                                     </td>
                                     <td>
                                         <ul class="list-color">
-                                            <li>
-                                                <img src="assets/images/color-img-1.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-2.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-3.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-4.png" alt="" /></li>
                                             <li>
                                                 <img src="assets/images/color-img-5.png" alt="" /></li>
                                             <li>
@@ -741,10 +824,6 @@
                                                 <img src="assets/images/color-img-17.png" alt="" /></li>
                                             <li>
                                                 <img src="assets/images/color-img-18.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-19.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-20.png" alt="" /></li>
                                         </ul>
                                         <p class="note-color">
                                             Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
@@ -1626,23 +1705,91 @@
                         <img class="img-responsive" src="assets/images/logo.png" alt="logo" /></a>
                 </div>
                 <ul id="menuMobileDV" class="menu-nav">
-                    <li><a href="~/" runat="server" class="btn btn-2">Trang chủ <span class="fa fa-chevron-circle-right iconar">
+                    <li><a href="~/" runat="server">Trang chủ <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
-                    <li><a href="gioi-thieu.aspx" class="btn btn-2">Về chúng tôi <span class="fa fa-chevron-circle-right iconar">
+                    <li><a href="gioi-thieu.aspx">Về chúng tôi <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
-                    <li><a href="dich-vu.aspx" class="btn btn-2">Dịch vụ <span class="fa fa-chevron-circle-right iconar">
+                    <li>
+                        <a href="dich-vu.aspx">Dịch vụ <span class="fa fa-chevron-circle-right iconar"></span></a>
+                        <div class="menu-sub">
+                                <div class="menu-subin">
+                                    <ul>
+                                        <li><a href="#"><span class="menu-box"><span class="iconai">
+                                            <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun đồng phục<span
+                                                class="menubg fa fa-caret-right"></span></a> </li>
+                                        <li><a href="#"><span class="menu-box"><span class="iconai">
+                                            <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun quảng
+                                            cáo - sự kiện<span class="menubg fa fa-caret-right"></span></a> </li>
+                                        <li><a href="#"><span class="menu-box"><span class="iconai">
+                                            <img src="assets/images/menusub-img-3.jpg" alt="" /></span></span>Áo nhóm - áo lớp<span
+                                                class="menubg fa fa-caret-right"></span></a> </li>
+                                        <li><a href="#"><span class="menu-box"><span class="iconai">
+                                            <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản xuất áo thun
+                                            theo yêu cầu<span class="menubg fa fa-caret-right"></span></a> </li>
+                                        <li><a href="#"><span class="menu-box"><span class="iconai">
+                                            <img src="assets/images/menusub-img-5.jpg" alt="" /></span></span>In ấn công nghệ
+                                            cao<span class="menubg fa fa-caret-right"></span></a> </li>
+                                        <li><a href="#"><span class="menu-box"><span class="iconai">
+                                            <img src="assets/images/menusub-img-6.jpg" alt="" /></span></span>Thêu vi tính<span
+                                                class="menubg fa fa-caret-right"></span></a> </li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Quy trình thực hiện <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
-                    <li><a href="#" class="btn btn-2">Quy trình thực hiện <span class="fa fa-chevron-circle-right iconar">
+                    <li>
+                        <a href="san-pham.aspx">Sản Phẩm <span class="fa fa-chevron-circle-right iconar"></span></a>
+                        <div class="menu-sub menu-sub2">
+                            <div class="menu-content">
+                                <ul class="menu-procat">
+                                    <li><a href="#">Áo thun đồng phục</a>
+                                        <ul class="menu-procat-sub">
+                                            <li><a href="#">Ngành tài chính ngân hàng<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Ngành xây dựng<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Ngành hàng tiêu dùng<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Ngành Logistic<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Ngành kỹ thuật - Công nghệ thông tin<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Ngành truyền thông giải trí<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Ngành nhà hàng khách sạn<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Áo thun quảng cáo</a>
+                                        <ul class="menu-procat-sub">
+                                            <li><a href="#">Áo thun tiếp thị<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Áo thun sự kiện<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                            <li><a href="#">Áo thun quà tặng<span class="icon-right menubg fa fa-caret-right"></span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Áo lớp</a></li>
+                                    <li><a href="#">Áo thun sản xuất theo yêu cầu</a></li>
+                                </ul>
+                                <div class="menu-procat2">
+                                    <h4>
+                                        Mẫu áo thun</h4>
+                                    <ul>
+                                        <li><a href="#"><span class="menu-box"><span class="iconai">
+                                            <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun cổ trụ<span
+                                                class="menubg fa fa-caret-right"></span></a> </li>
+                                        <li><a href="#"><span class="menu-box"><span class="iconai">
+                                            <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun cổ tròn<span class="menubg fa fa-caret-right"></span></a> </li>
+                                        <li><a href="#"><span class="menu-box"><span class="iconai">
+                                            <img src="assets/images/menusub-img-3.jpg" alt="" /></span></span>Áo thun cổ tim<span
+                                                class="menubg fa fa-caret-right"></span></a> </li>
+                                        <li><a href="#"><span class="menu-box"><span class="iconai">
+                                            <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản phẩm khác<span class="menubg fa fa-caret-right"></span></a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">Thông số size <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
-                    <li><a href="san-pham.aspx" class="btn btn-2">Sản Phẩm <span class="fa fa-chevron-circle-right iconar">
+                    <li><a href="#">Dự án <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
-                    <li><a href="#" class="btn btn-2">Thông số size <span class="fa fa-chevron-circle-right iconar">
+                    <li><a href="tu-van.aspx">Tư vấn <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
-                    <li><a href="#" class="btn btn-2">Dự án <span class="fa fa-chevron-circle-right iconar">
-                    </span></a></li>
-                    <li><a href="tu-van.aspx" class="btn btn-2">Tư vấn <span class="fa fa-chevron-circle-right iconar">
-                    </span></a></li>
-                    <li><a href="#" class="btn btn-2">Liên Hệ <span class="fa fa-chevron-circle-right iconar">
+                    <li><a href="#">Liên Hệ <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
                 </ul>
             </div>

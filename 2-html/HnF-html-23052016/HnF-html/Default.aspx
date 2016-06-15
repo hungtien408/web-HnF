@@ -6,9 +6,22 @@
     <meta name="description" content="HnF" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBanner" runat="Server">
-    <div id="banner">
+    <%--<div id="banner">
         <div class="slider-wrapper">
             <div id="slider" class="nivoSlider">
+                <img class="img-responsive" src="assets/images/banner-img-2.jpg" alt="" />
+                <img class="img-responsive" src="assets/images/banner-img-3.jpg" alt="" />
+                <img class="img-responsive" src="assets/images/banner-img-4.jpg" alt="" />
+                <img class="img-responsive" src="assets/images/banner-img-5.jpg" alt="" />
+                <img class="img-responsive" src="assets/images/banner-img-6.jpg" alt="" />
+            </div>
+        </div>
+        <div class="link-show text-center">
+            <a href="#productShow">Chúng tôi cung cấp<span class="fa fa-chevron-down"></span></a></div>
+    </div>--%>
+    <div id="banner">
+        <div class="slider-wrapper">
+            <div class="slider-main">
                 <img class="img-responsive" src="assets/images/banner-img-2.jpg" alt="" />
                 <img class="img-responsive" src="assets/images/banner-img-3.jpg" alt="" />
                 <img class="img-responsive" src="assets/images/banner-img-4.jpg" alt="" />
