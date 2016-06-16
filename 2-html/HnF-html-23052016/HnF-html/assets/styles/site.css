@@ -2412,6 +2412,153 @@ body .mobilep-right {
 .slick-current .small-imga, .small-imga:hover {
     border-color: #000;
 }
+/*=======================contact===================*/
+.contact {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.contact-form {
+    color: #222;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 52px 0;
+    margin-bottom: 20px;
+    width: 67%;
+    margin: 0 auto;
+}
+.contact .node {
+    color: #202020;
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 0 70px;
+    text-align: center;
+}
+.form-input {
+    overflow: hidden;
+    padding: 4px 0;
+    width: 60%;
+    margin: 0 auto;
+}
+.form-input .form-lb {
+    color: #686868;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 30px;
+    white-space: nowrap;
+    margin: 0;
+    width: 87px;
+}
+.form-input .form-radio {
+    width: 200px;
+}
+.error, .lb-error {
+    color: #bb3a96;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+}
+.form-input .form-text {
+    overflow: hidden;
+}
+.form-text .input-text, .form-text .input-area, .input-code {
+    background: #fff;
+    border: solid 1px #c2c2c2;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    display: block;
+    color: #999;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+.form-text .input-text, .input-code {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 9px;
+}
+.form-text .input-text {
+    width: 100%;
+}
+.form-text .input-area {
+    padding: 5px 9px;
+    line-height: 18px;
+    height: 145px;
+    resize: none;
+    width: 100%;
+}
+.form-text .checkbox input{
+    margin: 0;
+}
+.form-input .wrap-btn {
+    padding-left: 87px;
+    padding-top: 7px;
+    overflow: hidden;
+    width: auto;
+}
+.wrap-btn {
+    font-size: 0;
+    padding: 20px;
+    width: 100%;
+}
+.btn-a, .btn-button {
+    background: #ff7200;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    height: 30px;
+    line-height: 24px;
+    vertical-align: top;
+    padding: 0 50px;
+    text-transform: uppercase;
+}
+.form-input .wrap-btn .btn-a {
+    float: left;
+}
+.list-contact {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    float: left;
+}
+.list-contact li {
+    padding: 4px 0;
+    float: left;
+    width: 25%;
+}
+.list-contact input {
+    display: block;
+    float: left;
+}
+.list-contact label {
+    padding-left: 7px;
+    margin-top: 2px;
+}
+.paragraph-contact {
+    background-color: #abadaf;
+    padding: 50px 0;
+}
+.paragraph-contact .paragraph-1, .paragraph-contact .paragraph-2 {
+    padding: 0;
+}
+.paragraph-contact .paragraph-1 {
+    font-size: 24px;
+    line-height: 30px;
+}
+.paragraph-contact .paragraph-2 {
+    font-size: 14px;
+    line-height: 22px;
+}
 /*=============================footer======================*/
 #footer
 {

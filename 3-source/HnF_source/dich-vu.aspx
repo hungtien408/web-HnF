@@ -119,7 +119,7 @@
                 phục vụ cho nhiều đối tượng doanh nghiệp trong nhiều lĩnh vực, ngành nghề khác nhau.
             </div>
         </div>
-        <div class="wrap-section">
+        <div class="wrap-section wrap-object">
             <ul class="list-object">
                 <li><a href="#" class="object-img">
                     <img class="img-responsive" src="assets/images/object-img-1.jpg" alt="">
@@ -263,39 +263,83 @@
             <div class="row">
                 <div class="head-2">
                     <ul class="menu-control menu-models simplefilter">
-                        <li data-filter="1"><a class="link-tabs" href="javascript:void(0);">Áo cổ trụ - cổ bo</a></li>
-                        <li data-filter="2"><a class="link-tabs" href="javascript:void(0);">Áo cổ trụ - cổ sơ
+                        <li data-filter="1" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo cổ trụ - cổ bo</a></li>
+                        <li data-filter="2" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo cổ trụ - cổ sơ
                             mi</a></li>
-                        <li data-filter="3"><a class="link-tabs" href="javascript:void(0);">Áo cổ tròn</a></li>
-                        <li data-filter="4"><a class="link-tabs" href="javascript:void(0);">Áo cổ tim</a></li>
-                        <li data-filter="5"><a class="link-tabs" href="javascript:void(0);">Áo cổ tròn, tay
+                        <li data-filter="3" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo cổ tròn</a></li>
+                        <li data-filter="4" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo cổ tim</a></li>
+                        <li data-filter="5" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo cổ tròn, tay
                             raglan</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="filtr-container">
-                    <div class="models-tabs filtr-item" data-category="1, 2, 5">
+                    <div class="models-tabs filtr-item" data-category="1">
                         <a href="#">
                             <img src="assets/images/product-img-1.jpg" alt="" /></a>
                     </div>
-                    <div class="models-tabs filtr-item" data-category="1, 4, 5, 3">
+                    <div class="models-tabs filtr-item" data-category="1">
                         <a href="#">
                             <img src="assets/images/product-img-2.jpg" alt="" /></a>
                     </div>
-                    <div class="models-tabs filtr-item" data-category="3, 1, 2, 4">
+                    <div class="models-tabs filtr-item" data-category="1">
                         <a href="#">
                             <img src="assets/images/product-img-3.jpg" alt="" /></a>
                     </div>
-                    <div class="models-tabs filtr-item" data-category="2, 5, 1, 3">
+                    <div class="models-tabs filtr-item" data-category="2">
                         <a href="#">
                             <img src="assets/images/product-img-4.jpg" alt="" /></a>
                     </div>
-                    <div class="models-tabs filtr-item" data-category="2, 4">
+                    <div class="models-tabs filtr-item" data-category="2">
                         <a href="#">
                             <img src="assets/images/product-img-5.jpg" alt="" /></a>
                     </div>
-                    <div class="models-tabs filtr-item" data-category="4, 5, 3">
+                    <div class="models-tabs filtr-item" data-category="2">
+                        <a href="#">
+                            <img src="assets/images/product-img-3.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="2">
+                        <a href="#">
+                            <img src="assets/images/product-img-4.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="3">
+                        <a href="#">
+                            <img src="assets/images/product-img-1.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="3">
+                        <a href="#">
+                            <img src="assets/images/product-img-2.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="3">
+                        <a href="#">
+                            <img src="assets/images/product-img-5.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="3">
+                        <a href="#">
+                            <img src="assets/images/product-img-2.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="3">
+                        <a href="#">
+                            <img src="assets/images/product-img-4.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="4">
+                        <a href="#">
+                            <img src="assets/images/product-img-3.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="4">
+                        <a href="#">
+                            <img src="assets/images/product-img-2.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="5">
+                        <a href="#">
+                            <img src="assets/images/product-img-1.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="5">
+                        <a href="#">
+                            <img src="assets/images/product-img-5.jpg" alt="" /></a>
+                    </div>
+                    <div class="models-tabs filtr-item" data-category="5">
                         <a href="#">
                             <img src="assets/images/product-img-3.jpg" alt="" /></a>
                     </div>

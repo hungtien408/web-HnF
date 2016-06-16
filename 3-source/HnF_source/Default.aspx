@@ -6,27 +6,33 @@
     <meta name="description" content="HnF" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBanner" runat="Server">
-    <%--<div id="banner">
-        <div class="slider-wrapper">
-            <div id="slider" class="nivoSlider">
-                <img class="img-responsive" src="assets/images/banner-img-2.jpg" alt="" />
-                <img class="img-responsive" src="assets/images/banner-img-3.jpg" alt="" />
-                <img class="img-responsive" src="assets/images/banner-img-4.jpg" alt="" />
-                <img class="img-responsive" src="assets/images/banner-img-5.jpg" alt="" />
-                <img class="img-responsive" src="assets/images/banner-img-6.jpg" alt="" />
-            </div>
-        </div>
-        <div class="link-show text-center">
-            <a href="#productShow">Chúng tôi cung cấp<span class="fa fa-chevron-down"></span></a></div>
-    </div>--%>
     <div id="banner">
         <div class="slider-wrapper">
             <div class="slider-main">
-                <img class="img-responsive" src="assets/images/banner-img-2.jpg" alt="" />
-                <img class="img-responsive" src="assets/images/banner-img-3.jpg" alt="" />
-                <img class="img-responsive" src="assets/images/banner-img-4.jpg" alt="" />
-                <img class="img-responsive" src="assets/images/banner-img-5.jpg" alt="" />
-                <img class="img-responsive" src="assets/images/banner-img-6.jpg" alt="" />
+                <asp:ListView ID="lstBannerMain" runat="server" DataSourceID="odsBannerMain" EnableModelValidation="True">
+                    <ItemTemplate>
+                        <img class="img-responsive" alt='<%# Eval("FileName") %>' src='<%# !string.IsNullOrEmpty(Eval("FileName").ToString()) ? "~/res/advertisement/" + Eval("FileName") : "~/assets/images/banner-img-2.jpg" %>'
+                            runat="server" />
+                    </ItemTemplate>
+                    <LayoutTemplate>
+                        <span runat="server" id="itemPlaceholder" />
+                    </LayoutTemplate>
+                </asp:ListView>
+                <asp:ObjectDataSource ID="odsBannerMain" runat="server" 
+                    SelectMethod="AdsBannerSelectAll" TypeName="TLLib.AdsBanner">
+                    <SelectParameters>
+                        <asp:Parameter Name="StartRowIndex" Type="String" />
+                        <asp:Parameter Name="EndRowIndex" Type="String" />
+                        <asp:Parameter DefaultValue="5" Name="AdsCategoryID" Type="String" />
+                        <asp:Parameter Name="CompanyName" Type="String" />
+                        <asp:Parameter Name="Website" Type="String" />
+                        <asp:Parameter Name="FromDate" Type="String" />
+                        <asp:Parameter Name="ToDate" Type="String" />
+                        <asp:Parameter DefaultValue="True" Name="IsAvailable" Type="String" />
+                        <asp:Parameter Name="Priority" Type="String" />
+                        <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
             </div>
         </div>
         <div class="link-show text-center">

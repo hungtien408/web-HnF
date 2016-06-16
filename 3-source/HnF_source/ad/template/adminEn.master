@@ -130,6 +130,9 @@
                             </asp:RadMenuItem>
                         </Items>
                     </asp:RadMenuItem>
+                    <asp:RadMenuItem runat="server" Text="Banner" PostBack="False" Font-Bold="True"
+                        NavigateUrl="~/ad/bilingual/bannermain.aspx">
+                    </asp:RadMenuItem>
                     <%--<asp:RadMenuItem runat="server" Owner="RadMenu1" PostBack="False" Text="Sản Phẩm"
                         Font-Bold="True">
                         <Items>
