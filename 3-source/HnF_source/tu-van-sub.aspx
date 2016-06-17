@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/site-tv.master" AutoEventWireup="true"
-    CodeFile="tu-van.aspx.cs" Inherits="tu_van" %>
+    CodeFile="tu-van-sub.aspx.cs" Inherits="tu_van" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
@@ -97,13 +97,11 @@
                         <span runat="server" id="itemPlaceholder" />
                     </LayoutTemplate>
                 </asp:ListView>
-                <asp:ObjectDataSource ID="odsSupportCategory" runat="server" SelectMethod="ArticleCategorySelectAll"
+                <asp:ObjectDataSource ID="odsSupportCategory" runat="server" SelectMethod="ArticleCategorySelectOne"
                     TypeName="TLLib.ArticleCategory">
                     <SelectParameters>
-                        <asp:Parameter DefaultValue="2" Name="parentID" Type="Int32" />
-                        <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
-                        <asp:Parameter Name="IsShowOnMenu" Type="String" />
-                        <asp:Parameter DefaultValue="True" Name="IsShowOnHomePage" Type="String" />
+                        <asp:QueryStringParameter Name="ArticleCategoryID" QueryStringField="tci" 
+                            Type="String" />
                     </SelectParameters>
                 </asp:ObjectDataSource>
             </ContentTemplate>

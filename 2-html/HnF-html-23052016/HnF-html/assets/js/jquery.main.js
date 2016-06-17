@@ -402,7 +402,9 @@ function myfunload() {
         $(this).addClass("fadeInRight");
         next();
     });
-
+    if ($('#mapshow').size() == 1) {
+        mymap();
+    }
     myfunsroll();
 }
 /*=========================================================================*/

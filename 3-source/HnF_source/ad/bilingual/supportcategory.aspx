@@ -201,13 +201,13 @@
                                 Text='<%# Eval("ParentCategoryName")%>'></asp:Label>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn DataField="IsShowOnMenu" HeaderText="Xem trên menu" Visible="False">
+                    <asp:GridTemplateColumn DataField="IsShowOnMenu" HeaderText="Xem trên menu">
                         <ItemTemplate>
                             <asp:CheckBox ID="chkIsShowOnMenu" runat="server" Checked='<%# Eval("IsShowOnMenu") == DBNull.Value ? false : Convert.ToBoolean(Eval("IsShowOnMenu"))%>'
                                 CssClass="checkbox" />
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn DataField="IsShowOnHomePage" HeaderText="Xem trên trang chủ" Visible="False">
+                    <asp:GridTemplateColumn DataField="IsShowOnHomePage" HeaderText="Xem trên trang chủ">
                         <ItemTemplate>
                             <asp:CheckBox ID="chkIsShowOnHomePage" runat="server" Checked='<%# Eval("IsShowOnHomePage") == DBNull.Value ? false : Convert.ToBoolean(Eval("IsShowOnHomePage"))%>'
                                 CssClass="checkbox" />
@@ -432,10 +432,10 @@
                                 <tr>
                                     <td class="left" colspan="2">
                                         <asp:CheckBox ID="chkIsShowOnMenu" runat="server" Checked='<%# (Container is GridEditFormInsertItem) ? true : (Eval("IsShowOnMenu") == DBNull.Value ? false : Convert.ToBoolean(Eval("IsShowOnMenu"))) %>'
-                                            CssClass="checkbox" Text=" Xem trên menu" Visible="False" />
+                                            CssClass="checkbox" Text=" Xem trên menu" />
                                         &nbsp;&nbsp;
                                         <asp:CheckBox ID="chkIsShowOnHomePage" runat="server" Checked='<%# (Container is GridEditFormInsertItem) ? true : (Eval("IsShowOnHomePage") == DBNull.Value ? false : Convert.ToBoolean(Eval("IsShowOnHomePage"))) %>'
-                                            CssClass="checkbox" Text=" Xem trên trang chủ" Visible="False" />
+                                            CssClass="checkbox" Text=" Xem trên trang chủ" />
                                         &nbsp;&nbsp;
                                         <asp:CheckBox ID="chkIsAvailable" runat="server" Checked='<%# (Container is GridEditFormInsertItem) ? true : (Eval("IsAvailable") == DBNull.Value ? false : Convert.ToBoolean(Eval("IsAvailable"))) %>'
                                             CssClass="checkbox" Text=" Hiển thị" />

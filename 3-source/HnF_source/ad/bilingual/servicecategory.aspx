@@ -166,7 +166,7 @@
                             </div>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn DataField="ServiceCategoryNameEn" HeaderText="Tên danh mục(Tiếng Anh)">
+                    <asp:GridTemplateColumn DataField="ServiceCategoryNameEn" HeaderText="Tên danh mục(Tiếng Anh)" Visible="False">
                         <ItemTemplate>
                             <div class='<%#"catlevel level" +  Eval("Level") %>' style='padding-left: <%# string.IsNullOrEmpty(Eval("Level").ToString()) ? 0 : Convert.ToInt32(Eval("Level")) * 10 %>px'>
                                 <asp:Label ID="lblServiceCategoryNameEn" runat="server" Font-Bold='<%# Eval("ParentID").ToString() == "0" ? true : false %>'
@@ -201,13 +201,13 @@
                                 Text='<%# Eval("ParentCategoryName")%>'></asp:Label>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn DataField="IsShowOnMenu" HeaderText="Xem trên menu">
+                    <asp:GridTemplateColumn DataField="IsShowOnMenu" HeaderText="Xem trên menu" Visible="False">
                         <ItemTemplate>
                             <asp:CheckBox ID="chkIsShowOnMenu" runat="server" Checked='<%# Eval("IsShowOnMenu") == DBNull.Value ? false : Convert.ToBoolean(Eval("IsShowOnMenu"))%>'
                                 CssClass="checkbox" />
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn DataField="IsShowOnHomePage" HeaderText="Xem trên trang chủ">
+                    <asp:GridTemplateColumn DataField="IsShowOnHomePage" HeaderText="Xem trên trang chủ" Visible="False">
                         <ItemTemplate>
                             <asp:CheckBox ID="chkIsShowOnHomePage" runat="server" Checked='<%# Eval("IsShowOnHomePage") == DBNull.Value ? false : Convert.ToBoolean(Eval("IsShowOnHomePage"))%>'
                                 CssClass="checkbox" />
@@ -222,9 +222,11 @@
                     <asp:GridTemplateColumn HeaderText="Ảnh">
                         <ItemTemplate>
                             <asp:Panel ID="Panel1" runat="server" Visible='<%# string.IsNullOrEmpty( Eval("ImageName").ToString()) ? false : true %>'>
-                                <a class="screenshot" rel='../../res/productcategory/<%# Eval("ImageName") %>'>
+                                <%--<a class="screenshot" rel='../../res/productcategory/<%# Eval("ImageName") %>'>
                                     <img alt="" src="../assets/images/photo.png" />
-                                </a>
+                                </a>--%>
+                                <img alt="" src='<%# "~/res/servicecategory/" + Eval("ImageName") %>' width="80" runat="server"
+                                    visible='<%# string.IsNullOrEmpty(Eval("ImageName").ToString()) ? false : true %>' />
                                 <asp:LinkButton ID="lnkDeleteImage" runat="server" CommandName="DeleteImage" OnClientClick="return confirm('Xóa ảnh này ?')"
                                     rel='<%#  Eval("ServiceCategoryID") + "#" + Eval("ImageName") %>'>
                             <img alt="Xóa ảnh" title="Xóa ảnh" src="../assets/images/delete-icon.png" />
@@ -253,6 +255,7 @@
                                             ControlObjectsVisibility="None" Culture="vi-VN" InputSize="69" Language="vi-VN" />
                                         <asp:CustomValidator ID="CustomValidator1" runat="server" ClientValidationFunction="validateRadUpload"
                                             Display="Dynamic" ErrorMessage="Sai định dạng ảnh (*.jpg, *.jpeg, *.gif, *.png)"></asp:CustomValidator>
+                                         <span class="required">(Kích thước 1360px x 670px)</span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -303,6 +306,7 @@
                                         </asp:RadTextBox>
                                     </td>
                                 </tr>
+                                <asp:Panel ID="Panel2" runat="server" Visible="False">
                                 <tr>
                                     <td class="left" valign="top">
                                         Mô tả
@@ -439,6 +443,7 @@
                                             CssClass="checkbox" Text=" Hiển thị" />
                                     </td>
                                 </tr>
+                                </asp:Panel>
                             </table>
                             <div class="edit">
                                 <hr />

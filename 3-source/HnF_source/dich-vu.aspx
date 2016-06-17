@@ -453,7 +453,7 @@
                                             <img src="assets/images/color-img-20.png" alt="" /></li>
                                     </ul>
                                     <p class="note-color">
-                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                 </div>
                                 <div data-id="fab-2" class="fabric-color">
                                     <ul class="list-color">
@@ -485,7 +485,7 @@
                                             <img src="assets/images/color-img-20.png" alt="" /></li>
                                     </ul>
                                     <p class="note-color">
-                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                 </div>
                                 <div data-id="fab-3" class="fabric-color">
                                     <ul class="list-color">
@@ -519,7 +519,7 @@
                                             <img src="assets/images/color-img-20.png" alt="" /></li>
                                     </ul>
                                     <p class="note-color">
-                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                 </div>
                                 <div data-id="fab-4" class="fabric-color">
                                     <ul class="list-color">
@@ -557,7 +557,7 @@
                                             <img src="assets/images/color-img-20.png" alt="" /></li>
                                     </ul>
                                     <p class="note-color">
-                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                 </div>
                             </td>
                         </tr>
@@ -660,7 +660,7 @@
                                                 <img src="assets/images/color-img-14.png" alt="" /></li>
                                         </ul>
                                         <p class="note-color">
-                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -728,7 +728,7 @@
                                                 <img src="assets/images/color-img-20.png" alt="" /></li>
                                         </ul>
                                         <p class="note-color">
-                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -802,7 +802,7 @@
                                                 <img src="assets/images/color-img-20.png" alt="" /></li>
                                         </ul>
                                         <p class="note-color">
-                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -870,7 +870,7 @@
                                                 <img src="assets/images/color-img-18.png" alt="" /></li>
                                         </ul>
                                         <p class="note-color">
-                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế</p>
+                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -1833,7 +1833,7 @@
                     </span></a></li>
                     <li><a href="tu-van.aspx">Tư vấn <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
-                    <li><a href="#">Liên Hệ <span class="fa fa-chevron-circle-right iconar">
+                    <li><a href="lien-he.aspx">Liên Hệ <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
                 </ul>
             </div>
@@ -1842,23 +1842,25 @@
     <!--menumobile-->
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="cphFooter" runat="Server">
-    <div class="container">
-        <div class="row">
-            <div class="footer-left">
-            </div>
-            <div class="footer-right">
-            </div>
-            <div class="col-md-8 col-xs-6">
-                <h4 class="title-footer text-uppercase">
-                    Đồng phục là một trong những yếu tố ảnh hưởng đến sự thành công của một doanh nghiệp</h4>
-                <p class="footer-content">
-                    Hãy để chúng tôi cải thiện hình ảnh doanh nghiệp của bạn!</p>
-            </div>
-            <div class="col-md-4 col-xs-6">
-                <div class="hotline">
-                    <p>
-                        Liên hệ</p>
-                    <span>0917 377 999</span>
+    <div class="wrap-footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-left">
+                </div>
+                <div class="footer-right">
+                </div>
+                <div class="col-md-8 col-xs-6">
+                    <h4 class="title-footer text-uppercase">
+                        Đồng phục là một trong những yếu tố ảnh hưởng đến sự thành công của một doanh nghiệp</h4>
+                    <p class="footer-content">
+                        Hãy để chúng tôi cải thiện hình ảnh doanh nghiệp của bạn!</p>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="hotline">
+                        <p>
+                            Liên hệ</p>
+                        <span>0917 377 999</span>
+                    </div>
                 </div>
             </div>
         </div>

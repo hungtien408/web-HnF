@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/site-sub.master" AutoEventWireup="true"
     CodeFile="san-pham-chi-tiet.aspx.cs" Inherits="san_pham_chi_tiet" %>
+<%@ Register TagPrefix="uc1" TagName="footer" Src="~/uc/ucFooter.ascx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>HnF</title>
@@ -128,5 +129,8 @@
         </div>
     </div>
 </asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="cphPopup" runat="Server">
+<asp:Content ID="Content4" ContentPlaceHolderID="cphFooter" runat="Server">
+    <uc1:footer ID="footer1" runat="server" />
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="cphPopup" runat="Server">
 </asp:Content>

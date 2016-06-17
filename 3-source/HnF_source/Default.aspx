@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/site-sub.master" AutoEventWireup="true"
     CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
+<%@ Register Src="uc/ucFooter.ascx" TagName="footer" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>HnF</title>
     <meta name="description" content="HnF" />
@@ -18,8 +19,8 @@
                         <span runat="server" id="itemPlaceholder" />
                     </LayoutTemplate>
                 </asp:ListView>
-                <asp:ObjectDataSource ID="odsBannerMain" runat="server" 
-                    SelectMethod="AdsBannerSelectAll" TypeName="TLLib.AdsBanner">
+                <asp:ObjectDataSource ID="odsBannerMain" runat="server" SelectMethod="AdsBannerSelectAll"
+                    TypeName="TLLib.AdsBanner">
                     <SelectParameters>
                         <asp:Parameter Name="StartRowIndex" Type="String" />
                         <asp:Parameter Name="EndRowIndex" Type="String" />
@@ -168,61 +169,59 @@
                 đó là sự khác biệt lớn nhất của chúng tôi!
             </div>
             <div class="more-details text-center details-3">
-                <a class="btn-4" href="#">Xem thêm về chúng tôi</a>
+                <a class="btn-4" href="gioi-thieu.aspx">Xem thêm về chúng tôi</a>
             </div>
         </div>
         <div class="wrap-section">
             <div class="productw">
                 <div id="weShow" class="section-tb row">
-                    <div class="col-lg-4 col-xs-4 element-item">
-                        <div class="box-services">
-                            <a href="#" class="services-img">
-                                <img src="assets/images/we-other-1.png" alt="" class="corner" />
-                            </a>
-                            <h4 class="title-services">
-                                <a href="#">Tư vấn giải pháp hợp lý</a></h4>
-                            <div class="description">
-                                We offer high quality stock service items and unique custom pieces that are well
-                                designed and well priced. We work closely with our suppliers and manufacturers to
-                                ensure
+                    <asp:ListView ID="lstOurDifferent" runat="server" DataSourceID="odsOurDifferent"
+                        EnableModelValidation="True">
+                        <ItemTemplate>
+                            <div class="col-lg-4 col-xs-4 element-item">
+                                <div class="box-services">
+                                    <a href="javascript:void(0);" class="services-img">
+                                        <img class="corner" alt='<%# Eval("ImageName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/article/" + Eval("ImageName") : "~/assets/images/we-other-1.png" %>' runat="server" />
+                                    </a>
+                                    <h4 class="title-services">
+                                        <a href="javascript:void(0);"><%# Eval("ArticleTitle")%></a></h4>
+                                    <div class="description">
+                                       <%# Eval("Description")%>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xs-4 element-item">
-                        <div class="box-services">
-                            <a href="#" class="services-img">
-                                <img src="assets/images/we-other-2.png" alt="" class="corner" />
-                            </a>
-                            <h4 class="title-services">
-                                <a href="#">Chất lượng dịch vụ tương xứng với giá cả</a></h4>
-                            <div class="description">
-                                We offer high quality stock service items and unique custom pieces that are well
-                                designed and well priced. We work closely with our suppliers and manufacturers to
-                                ensure
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-xs-4 element-item">
-                        <div class="box-services">
-                            <a href="#" class="services-img">
-                                <img src="assets/images/we-other-3.png" alt="" class="corner" />
-                            </a>
-                            <h4 class="title-services">
-                                <a href="#">Chia sẻ kiến thức về sản phẩm</a></h4>
-                            <div class="description">
-                                We offer high quality stock service items and unique custom pieces that are well
-                                designed and well priced. We work closely with our suppliers and manufacturers to
-                                ensure
-                            </div>
-                            <%--<div class="more-details text-center">
-                                <a class="link-view" href="services-view.aspx">Xem thêm</a>
-                            </div>--%>
-                        </div>
-                    </div>
+                        </ItemTemplate>
+                        <LayoutTemplate>
+                            <span runat="server" id="itemPlaceholder" />
+                        </LayoutTemplate>
+                    </asp:ListView>
+                    <asp:ObjectDataSource ID="odsOurDifferent" runat="server" 
+                        SelectMethod="ArticleSelectAll" TypeName="TLLib.Article">
+                        <SelectParameters>
+                            <asp:Parameter Name="StartRowIndex" Type="String" />
+                            <asp:Parameter Name="EndRowIndex" Type="String" />
+                            <asp:Parameter Name="Keyword" Type="String" />
+                            <asp:Parameter Name="ArticleTitle" Type="String" />
+                            <asp:Parameter Name="Description" Type="String" />
+                            <asp:Parameter DefaultValue="5" Name="ArticleCategoryID" Type="String" />
+                            <asp:Parameter Name="Tag" Type="String" />
+                            <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+                            <asp:Parameter Name="IsHot" Type="String" />
+                            <asp:Parameter Name="IsNew" Type="String" />
+                            <asp:Parameter Name="FromDate" Type="String" />
+                            <asp:Parameter Name="ToDate" Type="String" />
+                            <asp:Parameter DefaultValue="True" Name="IsAvailable" Type="String" />
+                            <asp:Parameter Name="Priority" Type="String" />
+                            <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />
+                        </SelectParameters>
+                    </asp:ObjectDataSource>
                 </div>
             </div>
         </div>
     </div>
 </asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="cphPopup" runat="Server">
+<asp:Content ID="Content4" ContentPlaceHolderID="cphFooter" runat="Server">
+    <uc1:footer ID="footer1" runat="server" />
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="cphPopup" runat="Server">
 </asp:Content>

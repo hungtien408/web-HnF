@@ -95,7 +95,7 @@
                                     <h4>
                                         Mẫu áo thun</h4>
                                     <ul>
-                                        <li><a href="#"><span class="menu-box"><span class="iconai">
+                                        <li><a href="san-pham-sub.aspx"><span class="menu-box"><span class="iconai">
                                             <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun cổ trụ<span
                                                 class="menubg fa fa-caret-right"></span></a> </li>
                                         <li><a href="#"><span class="menu-box"><span class="iconai">
@@ -133,7 +133,7 @@
                     <li><a href="#" class="btn-2">Thông số size </a></li>
                     <li><a href="#" class="btn-2">Dự án </a></li>
                     <li><a href="tu-van.aspx" class="btn-2">Tư vấn </a></li>
-                    <li><a href="#" class="btn-2">Liên Hệ </a></li>
+                    <li><a href="lien-he.aspx" class="btn-2">Liên Hệ </a></li>
                 </ul>
                 <div class="form-search corner ipadmo-992">
                     <asp:Button ID="btnSearch" CssClass="search-btnmo" runat="server" />
@@ -172,28 +172,8 @@
     <!--menumobile-->
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="cphFooter" runat="Server">
-    <div class="container">
-        <div class="row">
-            <div class="footer-left">
-            </div>
-            <div class="footer-right">
-            </div>
-            <div class="col-md-8 col-xs-6">
-                <h4 class="title-footer text-uppercase">
-                    Chúng tôi có thể là đối tác bạn đang tìm kiếm</h4>
-                <p class="footer-content">
-                    Hãy để chúng tôi cho bạn những lời khuyên và giải pháp tốt nhất cho nhu cầu của
-                    bạn!</p>
-            </div>
-            <div class="col-md-4 col-xs-6">
-                <div class="hotline">
-                    <p>
-                        Liên hệ</p>
-                    <span>0917 377 999</span>
-                </div>
-            </div>
-        </div>
-    </div>
+    <asp:ContentPlaceHolder ID="cphFooter" runat="server">
+    </asp:ContentPlaceHolder>
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="cphPopup" runat="Server">
     <asp:ContentPlaceHolder ID="cphPopup" runat="server">

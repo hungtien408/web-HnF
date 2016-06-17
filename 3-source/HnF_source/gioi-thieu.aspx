@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/site-sub.master" AutoEventWireup="true"
     CodeFile="gioi-thieu.aspx.cs" Inherits="gioi_thieu" %>
+<%@ Register TagPrefix="uc1" TagName="footer" Src="~/uc/ucFooter.ascx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>HnF</title>
@@ -21,8 +22,6 @@
         </div>
         <div class="paragraph-banner">
             <p class="paragraph-1 text-uppercase">
-                Work wear design requires a special combination of creativity, engineering and practicality.</p>
-            <p class="paragraph-2">
                 Kể từ năm 2016, Hnf chuyên cung cấp các giải pháp hoàn diện về may mặc như áo thun
                 đồng phục, áo thun quảng cáo nhằm đáp ứng nhu cầu của các doanh nghiệp trên địa
                 bàn Thành Phố Hồ Chí Minh và cả nước.</p>
@@ -225,5 +224,8 @@
         </div>
     </div>
 </asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="cphPopup" runat="Server">
+<asp:Content ID="Content4" ContentPlaceHolderID="cphFooter" runat="Server">
+    <uc1:footer ID="footer1" runat="server" />
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="cphPopup" runat="Server">
 </asp:Content>

@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ad/template/adminEn.master" AutoEventWireup="true"
-    CodeFile="support.aspx.cs" Inherits="ad_single_article" %>
+    CodeFile="ourdiff.aspx.cs" Inherits="ad_single_article" %>
 
 <%@ Register TagPrefix="asp" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="Server">
@@ -93,7 +93,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBody" runat="Server">
     <h3 class="mainTitle">
         <img alt="" src="../assets/images/product.png" class="vam" />
-        Tư Vấn
+        Chúng Tôi Khác Biệt
     </h3>
     <asp:RadAjaxPanel ID="RadAjaxPanel1" runat="server" ClientEvents-OnRequestStart="conditionalPostback">
         <asp:Panel ID="pnlSearch" DefaultButton="btnSearch" runat="server" Visible="False">
@@ -357,7 +357,7 @@
                     <FormTemplate>
                         <asp:Panel ID="Panel1" runat="server" DefaultButton="lnkUpdate">
                             <h3 class="searchTitle">
-                                Thông Tin Tin Tức</h3>
+                                Thông Tin Chúng Tôi Khác Biệt</h3>
                             <asp:HiddenField ID="hdnArticleID" runat="server" Value='<%# Eval("ArticleID") %>' />
                             <asp:HiddenField ID="hdnOldImageName" runat="server" Value='<%# Eval("ImageName") %>' />
                             <div class="edit">
@@ -381,7 +381,7 @@
                                             Culture="vi-VN" Language="vi-VN" InputSize="69" AllowedFileExtensions=".jpg,.jpeg,.gif,.png" />
                                         <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="Sai định dạng ảnh (*.jpg, *.jpeg, *.gif, *.png)"
                                             ClientValidationFunction="validateRadUpload" Display="Dynamic"></asp:CustomValidator>
-                                        <span class="required">(Kích thước 369px x 208px)</span>
+                                        <span class="required">(Kích thước 200px x 200px)</span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -397,7 +397,7 @@
                                             Checked='<%# (Container is GridEditFormInsertItem) ? true : (string.IsNullOrEmpty(Eval("IsAvailable").ToString()) ? false : Eval("IsAvailable")) %>' />
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="invisible">
                                     <td class="left">
                                         Danh mục
                                     </td>
@@ -487,7 +487,7 @@
                                         </asp:RadEditor>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="invisible">
                                     <td class="left" valign="top">
                                         Nội dung
                                     </td>
@@ -703,7 +703,7 @@
                 Type="String" />
             <asp:ControlParameter ControlID="txtSearchDescription" Name="Description" PropertyName="Text"
                 Type="String" />
-            <asp:ControlParameter ControlID="ddlSearchCategory" DefaultValue="2" Name="ArticleCategoryID" PropertyName="SelectedValue"
+            <asp:ControlParameter ControlID="ddlSearchCategory" DefaultValue="5" Name="ArticleCategoryID" PropertyName="SelectedValue"
                 Type="String" />
             <asp:ControlParameter ControlID="txtSearchTag" Name="Tag" PropertyName="Text" Type="String" />
             <asp:ControlParameter ControlID="ddlSearchIsShowOnHomePage" Name="IsShowOnHomePage"

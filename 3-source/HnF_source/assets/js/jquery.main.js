@@ -279,6 +279,13 @@ function myfunload() {
         var offset = $(idboxs).offset();
         $("html, body").stop(true, true).animate({ scrollTop: offset.top - 30 }, 500);
         return false;
+    });
+
+    $(".supportShow a").click(function () {
+        var idboxs = $(this).attr("href");
+        var offset = $(idboxs).offset();
+        $("html, body").stop(true, true).animate({ scrollTop: offset.top - 30 }, 500);
+        return false;
     });
     if ($('#serviceShow').size() > 0) {
         var sectionlist = $('#serviceShow').imagesLoaded(function () {
@@ -402,7 +409,9 @@ function myfunload() {
         $(this).addClass("fadeInRight");
         next();
     });
-
+    if ($('#mapshow').size() == 1) {
+        mymap();
+    }
     myfunsroll();
 }
 /*=========================================================================*/

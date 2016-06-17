@@ -107,11 +107,13 @@
     <div class="paragraph-banner paragraph-contact">
             <p class="paragraph-1 text-uppercase">
                 Địa chỉ</p>
+            <p class="border-bottom"></p>
             <p class="paragraph-2 text-uppercase">
                 32 Đường 18, Phường Bình Trị Đông B, Quận Bình Tân, Thành phố Hồ Chí Minh</p>
             <p class="paragraph-2">
-                Điện thoại: 0917 377 999  |  Email: <a href="mailTo:info@hnf.vn"></a>info@hnf.vn</p>
-        </div>
+                Điện thoại: 0917 377 999  |  Email: <a href="mailTo:info@hnf.vn">info@hnf.vn</a></p>
+     </div>
+     <div id="mapshow"></div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="cphPopup" runat="Server">
 </asp:Content>

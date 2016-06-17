@@ -1842,23 +1842,25 @@
     <!--menumobile-->
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="cphFooter" runat="Server">
-    <div class="container">
-        <div class="row">
-            <div class="footer-left">
-            </div>
-            <div class="footer-right">
-            </div>
-            <div class="col-md-8 col-xs-6">
-                <h4 class="title-footer text-uppercase">
-                    Đồng phục là một trong những yếu tố ảnh hưởng đến sự thành công của một doanh nghiệp</h4>
-                <p class="footer-content">
-                    Hãy để chúng tôi cải thiện hình ảnh doanh nghiệp của bạn!</p>
-            </div>
-            <div class="col-md-4 col-xs-6">
-                <div class="hotline">
-                    <p>
-                        Liên hệ</p>
-                    <span>0917 377 999</span>
+    <div class="wrap-footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-left">
+                </div>
+                <div class="footer-right">
+                </div>
+                <div class="col-md-8 col-xs-6">
+                    <h4 class="title-footer text-uppercase">
+                        Đồng phục là một trong những yếu tố ảnh hưởng đến sự thành công của một doanh nghiệp</h4>
+                    <p class="footer-content">
+                        Hãy để chúng tôi cải thiện hình ảnh doanh nghiệp của bạn!</p>
+                </div>
+                <div class="col-md-4 col-xs-6">
+                    <div class="hotline">
+                        <p>
+                            Liên hệ</p>
+                        <span>0917 377 999</span>
+                    </div>
                 </div>
             </div>
         </div>
