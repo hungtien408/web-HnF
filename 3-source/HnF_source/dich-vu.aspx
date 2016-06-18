@@ -263,13 +263,16 @@
             <div class="row">
                 <div class="head-2">
                     <ul class="menu-control menu-models simplefilter">
-                        <li data-filter="1" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo cổ trụ - cổ bo</a></li>
-                        <li data-filter="2" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo cổ trụ - cổ sơ
-                            mi</a></li>
-                        <li data-filter="3" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo cổ tròn</a></li>
-                        <li data-filter="4" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo cổ tim</a></li>
-                        <li data-filter="5" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo cổ tròn, tay
-                            raglan</a></li>
+                        <li data-filter="1" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo
+                            cổ trụ - cổ bo</a></li>
+                        <li data-filter="2" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo
+                            cổ trụ - cổ sơ mi</a></li>
+                        <li data-filter="3" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo
+                            cổ tròn</a></li>
+                        <li data-filter="4" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo
+                            cổ tim</a></li>
+                        <li data-filter="5" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo
+                            cổ tròn, tay raglan</a></li>
                     </ul>
                 </div>
             </div>
@@ -389,23 +392,125 @@
                             <td rowspan="4">
                                 <div data-id="fab-1" class="fabric-content">
                                     <p>
-                                        Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                                        là đơn vị đầu tiên sử dụng vải 100% cotton1</p>
+                                        - Vải cá sấu có mắt lưới to hơn vải thun trơn, mắt vải thường đan nhau như lưới.</p>
+                                    <p>
+                                        - Đặc điểm của thun cá sấu 100% cotton:
+                                        <ul style="list-style: none; margin: 0; padding: 0;">
+                                            <li>• Ưu điểm
+                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                                    <li><span class="fa fa-check"></span>Thấm hút mồ hôi cực tốt.</li>
+                                                    <li><span class="fa fa-check"></span>Khi mặc cảm giác rất mát mẻ</li>
+                                                    <li><span class="fa fa-check"></span>Co giãn 4 chiều, thoải mái vận động</li>
+                                                    <li><span class="fa fa-check"></span>Ít xù long, bề mặt lán mịn</li>
+                                                </ul>
+                                            </li>
+                                            <li>• Nhược điểm
+                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                                    <li><span class="fa fa-check"></span>Hơi nhăn sau khi giặt</li>
+                                                    <li><span class="fa fa-check"></span>Hạn chế về màu sắc. Chỉ có các màu như: trắng,
+                                                        đen, xám tiêu, xanh bích.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        - Tại HNF, chúng tôi sử dụng vải với thành phần 100% cotton nhằm đem lại sự thoải
+                                        mái và sang trọng nhất cho người mặc. Tuy nhiên, khi sử dụng cần ủi thường xuyên
+                                        để duy trì tính thẩm mỹ cho áo.
+                                    </p>
+                                    <p>
+                                        - Quý khách vui lòng liên hệ nhân viên tư vấn để được trải nghiệm thêm về chất vải
+                                        này!</p>
                                 </div>
                                 <div data-id="fab-2" class="fabric-content">
                                     <p>
-                                        Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                                        là đơn vị đầu tiên sử dụng vải 100% cotton2</p>
+                                        - Đây là loại vải có bề mặt dệt đẹp, độ dày tương đối nên khi dùng may áo có cổ
+                                        sẽ tạo form đứng cho áo.</p>
+                                    <p>
+                                        - Đặc điểm của thun cá sấu TC 65-35
+                                        <ul style="list-style: none; margin: 0; padding: 0;">
+                                            <li>• Ưu điểm
+                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                                    <li><span class="fa fa-check"></span>Có độ dày tương đối, giữ Form đứng cho áo</li>
+                                                    <li><span class="fa fa-check"></span>Vải mềm mại, ít nhàu khi giặt</li>
+                                                    <li><span class="fa fa-check"></span>Co giãn 4 chiều</li>
+                                                </ul>
+                                            </li>
+                                            <li>• Nhược điểm
+                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                                    <li><span class="fa fa-check"></span>Thấm hút mồ hôi và không mát như Cá sấu 100% cotton</li>
+                                                    <li><span class="fa fa-check"></span>Hơi dễ xù long</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        - Vải cá sấu TC 65-35 có thể nói là loại vải được sử dụng đại trà hiện nay, được
+                                        hầu như các công ty sản xuất đồng phục chọn lựa sử dụng vì chất lượng cũng khá tốt
+                                        và nhất là tính kinh tế. Tại HNF, chúng tôi đầu tư xử lý thêm bề mặt vải để hạn
+                                        chế thấp nhất tình trạng xù lông.
+                                    </p>
+                                    <p>
+                                        - Quý khách vui lòng liên hệ nhân viên tư vấn để được trải nghiệm thêm về chất vải
+                                        này!</p>
                                 </div>
                                 <div data-id="fab-3" class="fabric-content">
                                     <p>
-                                        Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                                        là đơn vị đầu tiên sử dụng vải 100% cotton3</p>
+                                        - Đây là loại vải sử dụng cho các sản phẩm sử dụng vài lần, có giá thành cực tốt.</p>
+                                    <p>
+                                        <ul style="list-style: none; margin: 0; padding: 0;">
+                                            <li>• Ưu điểm
+                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                                    <li><span class="fa fa-check"></span>Mình vải cứng, giữ Form đứng cho áo</li>
+                                                    <li><span class="fa fa-check"></span>Giá thành khá rẻ</li>
+                                                </ul>
+                                            </li>
+                                            <li>• Nhược điểm
+                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                                    <li><span class="fa fa-check"></span>Mình vải hơi thô ráp</li>
+                                                    <li><span class="fa fa-check"></span>Thấm hút mồ hôi kém, gây nóng cho người mặc</li>
+                                                    <li><span class="fa fa-check"></span>Màu nhuộm kém</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        - Vải cá sấu PE là loại vải thông thường nhất, thường được sử dụng cho các sản phẩm
+                                        mặc vài lần như áo cho sự kiện, ngày lễ, áo mặc khi đi du lịch…
+                                    </p>
+                                    <p>
+                                        - Quý khách vui lòng liên hệ nhân viên tư vấn để được trải nghiệm thêm về chất vải
+                                        này!</p>
                                 </div>
                                 <div data-id="fab-4" class="fabric-content">
                                     <p>
-                                        Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                                        là đơn vị đầu tiên sử dụng vải 100% cotton4</p>
+                                        - Vải trơn có bề mặt sớ vải khít, mịn, cảm giác mát tay.</p>
+                                    <p>
+                                        - Đặc điểm của thun cá sấu 100% cotton:
+                                        <ul style="list-style: none; margin: 0; padding: 0;">
+                                            <li>• Ưu điểm
+                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                                    <li><span class="fa fa-check"></span>Thấm hút mồ hôi cực tốt</li>
+                                                    <li><span class="fa fa-check"></span>Khi mặc cảm giác rất mát mẻ</li>
+                                                    <li><span class="fa fa-check"></span>Co giãn 4 chiều, thoải mái vận động</li>
+                                                    <li><span class="fa fa-check"></span>Ít xù long, bề mặt lán mịn</li>
+                                                </ul>
+                                            </li>
+                                            <li>• Nhược điểm
+                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                                    <li><span class="fa fa-check"></span>Hơi nhăn sau khi giặt</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        - Tại HNF, chúng tôi sử dụng vải với thành phần 100% cotton nhằm đem lại sự thoải
+                                        mái và sang trọng nhất cho người mặc. Tuy nhiên, khi sử dụng cần ủi thường xuyên
+                                        để duy trì tính thẩm mỹ cho áo.
+                                    </p>
+                                    <p>
+                                        - Quý khách vui lòng liên hệ nhân viên tư vấn để được trải nghiệm thêm về chất vải
+                                        này!</p>
                                 </div>
                             </td>
                             <td rowspan="4">
@@ -453,7 +558,8 @@
                                             <img src="assets/images/color-img-20.png" alt="" /></li>
                                     </ul>
                                     <p class="note-color">
-                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
+                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế.
+                                        Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                 </div>
                                 <div data-id="fab-2" class="fabric-color">
                                     <ul class="list-color">
@@ -485,7 +591,8 @@
                                             <img src="assets/images/color-img-20.png" alt="" /></li>
                                     </ul>
                                     <p class="note-color">
-                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
+                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế.
+                                        Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                 </div>
                                 <div data-id="fab-3" class="fabric-color">
                                     <ul class="list-color">
@@ -519,7 +626,8 @@
                                             <img src="assets/images/color-img-20.png" alt="" /></li>
                                     </ul>
                                     <p class="note-color">
-                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
+                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế.
+                                        Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                 </div>
                                 <div data-id="fab-4" class="fabric-color">
                                     <ul class="list-color">
@@ -557,13 +665,14 @@
                                             <img src="assets/images/color-img-20.png" alt="" /></li>
                                     </ul>
                                     <p class="note-color">
-                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
+                                        Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế.
+                                        Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                 </div>
                             </td>
                         </tr>
                         <tr id="fab-2">
                             <td>
-                                VẢI CÁ SẤU 35% cotton
+                                VẢI CÁ SẤU TC 65-35 (Thành phần gồm 35 % xơ cotton và 65% xơ Polyeste)
                             </td>
                             <td>
                                 <img src="assets/images/fabric-img-2.jpg" alt="" />
@@ -571,7 +680,7 @@
                         </tr>
                         <tr id="fab-3">
                             <td>
-                                VẢI CÁ SẤU 100% cotton
+                                VẢI CÁ SẤU PE ( Polyeste, tên thường gọi PE )
                             </td>
                             <td>
                                 <img src="assets/images/fabric-img-3.jpg" alt="" />
@@ -579,7 +688,7 @@
                         </tr>
                         <tr id="fab-4">
                             <td>
-                                VẢI CÁ SẤU 65% cotton
+                                VẢI TRƠN 100% cotton
                             </td>
                             <td>
                                 <img src="assets/images/fabric-img-4.jpg" alt="" />
@@ -660,7 +769,8 @@
                                                 <img src="assets/images/color-img-14.png" alt="" /></li>
                                         </ul>
                                         <p class="note-color">
-                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
+                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế.
+                                            Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -728,7 +838,8 @@
                                                 <img src="assets/images/color-img-20.png" alt="" /></li>
                                         </ul>
                                         <p class="note-color">
-                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
+                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế.
+                                            Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -802,7 +913,8 @@
                                                 <img src="assets/images/color-img-20.png" alt="" /></li>
                                         </ul>
                                         <p class="note-color">
-                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
+                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế.
+                                            Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -870,7 +982,8 @@
                                                 <img src="assets/images/color-img-18.png" alt="" /></li>
                                         </ul>
                                         <p class="note-color">
-                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế. Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
+                                            Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế.
+                                            Quý khách vui lòng liên hệ chúng tôi để xem màu vải thật.</p>
                                     </td>
                                 </tr>
                             </tbody>
@@ -1753,37 +1866,37 @@
                     </span></a></li>
                     <li><a href="gioi-thieu.aspx">Về chúng tôi <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
-                    <li>
-                        <a href="dich-vu.aspx">Dịch vụ <span class="fa fa-chevron-circle-right iconar"></span></a>
+                    <li><a href="dich-vu.aspx">Dịch vụ <span class="fa fa-chevron-circle-right iconar"></span>
+                    </a>
                         <div class="menu-sub">
-                                <div class="menu-subin">
-                                    <ul>
-                                        <li><a href="#"><span class="menu-box"><span class="iconai">
-                                            <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun đồng phục<span
-                                                class="menubg fa fa-caret-right"></span></a> </li>
-                                        <li><a href="#"><span class="menu-box"><span class="iconai">
-                                            <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun quảng
-                                            cáo - sự kiện<span class="menubg fa fa-caret-right"></span></a> </li>
-                                        <li><a href="#"><span class="menu-box"><span class="iconai">
-                                            <img src="assets/images/menusub-img-3.jpg" alt="" /></span></span>Áo nhóm - áo lớp<span
-                                                class="menubg fa fa-caret-right"></span></a> </li>
-                                        <li><a href="#"><span class="menu-box"><span class="iconai">
-                                            <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản xuất áo thun
-                                            theo yêu cầu<span class="menubg fa fa-caret-right"></span></a> </li>
-                                        <li><a href="#"><span class="menu-box"><span class="iconai">
-                                            <img src="assets/images/menusub-img-5.jpg" alt="" /></span></span>In ấn công nghệ
-                                            cao<span class="menubg fa fa-caret-right"></span></a> </li>
-                                        <li><a href="#"><span class="menu-box"><span class="iconai">
-                                            <img src="assets/images/menusub-img-6.jpg" alt="" /></span></span>Thêu vi tính<span
-                                                class="menubg fa fa-caret-right"></span></a> </li>
-                                    </ul>
-                                </div>
+                            <div class="menu-subin">
+                                <ul>
+                                    <li><a href="#"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun đồng phục<span
+                                            class="menubg fa fa-caret-right"></span></a> </li>
+                                    <li><a href="#"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun quảng
+                                        cáo - sự kiện<span class="menubg fa fa-caret-right"></span></a> </li>
+                                    <li><a href="#"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-3.jpg" alt="" /></span></span>Áo nhóm - áo lớp<span
+                                            class="menubg fa fa-caret-right"></span></a> </li>
+                                    <li><a href="#"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản xuất áo thun
+                                        theo yêu cầu<span class="menubg fa fa-caret-right"></span></a> </li>
+                                    <li><a href="#"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-5.jpg" alt="" /></span></span>In ấn công nghệ
+                                        cao<span class="menubg fa fa-caret-right"></span></a> </li>
+                                    <li><a href="#"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-6.jpg" alt="" /></span></span>Thêu vi tính<span
+                                            class="menubg fa fa-caret-right"></span></a> </li>
+                                </ul>
+                            </div>
                         </div>
                     </li>
                     <li><a href="#">Quy trình thực hiện <span class="fa fa-chevron-circle-right iconar">
                     </span></a></li>
-                    <li>
-                        <a href="san-pham.aspx">Sản Phẩm <span class="fa fa-chevron-circle-right iconar"></span></a>
+                    <li><a href="san-pham.aspx">Sản Phẩm <span class="fa fa-chevron-circle-right iconar">
+                    </span></a>
                         <div class="menu-sub menu-sub2">
                             <div class="menu-content">
                                 <ul class="menu-procat">
@@ -1816,25 +1929,27 @@
                                             <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun cổ trụ<span
                                                 class="menubg fa fa-caret-right"></span></a> </li>
                                         <li><a href="#"><span class="menu-box"><span class="iconai">
-                                            <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun cổ tròn<span class="menubg fa fa-caret-right"></span></a> </li>
+                                            <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun cổ tròn<span
+                                                class="menubg fa fa-caret-right"></span></a> </li>
                                         <li><a href="#"><span class="menu-box"><span class="iconai">
                                             <img src="assets/images/menusub-img-3.jpg" alt="" /></span></span>Áo thun cổ tim<span
                                                 class="menubg fa fa-caret-right"></span></a> </li>
                                         <li><a href="#"><span class="menu-box"><span class="iconai">
-                                            <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản phẩm khác<span class="menubg fa fa-caret-right"></span></a> </li>
+                                            <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản phẩm khác<span
+                                                class="menubg fa fa-caret-right"></span></a> </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li><a href="#">Thông số size <span class="fa fa-chevron-circle-right iconar">
-                    </span></a></li>
-                    <li><a href="#">Dự án <span class="fa fa-chevron-circle-right iconar">
-                    </span></a></li>
-                    <li><a href="tu-van.aspx">Tư vấn <span class="fa fa-chevron-circle-right iconar">
-                    </span></a></li>
-                    <li><a href="lien-he.aspx">Liên Hệ <span class="fa fa-chevron-circle-right iconar">
-                    </span></a></li>
+                    <li><a href="#">Thông số size <span class="fa fa-chevron-circle-right iconar"></span>
+                    </a></li>
+                    <li><a href="#">Dự án <span class="fa fa-chevron-circle-right iconar"></span></a>
+                    </li>
+                    <li><a href="tu-van.aspx">Tư vấn <span class="fa fa-chevron-circle-right iconar"></span>
+                    </a></li>
+                    <li><a href="lien-he.aspx">Liên Hệ <span class="fa fa-chevron-circle-right iconar"></span>
+                    </a></li>
                 </ul>
             </div>
         </div>

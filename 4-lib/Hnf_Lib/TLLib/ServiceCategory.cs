@@ -10,6 +10,10 @@ namespace TLLib
 {
     public class ServiceCategory
     {
+        #region Class Member Declaration
+        private string m_ServiceCategoryID;
+        #endregion
+
         string connectionString = Common.ConnectionString;
         DBNull dbNULL = DBNull.Value;
 
@@ -26,6 +30,7 @@ namespace TLLib
             string MetaDescription,
             string MetaDescriptionEn,
             string ImageName,
+            string ImageMenu,
             string ParentID,
             string IsShowOnMenu,
             string IsShowOnHomePage,
@@ -49,17 +54,20 @@ namespace TLLib
                 cmd.Parameters.AddWithValue("@MetaDescription", string.IsNullOrEmpty(MetaDescription) ? dbNULL : (object)MetaDescription);
                 cmd.Parameters.AddWithValue("@MetaDescriptionEn", string.IsNullOrEmpty(MetaDescriptionEn) ? dbNULL : (object)MetaDescriptionEn);
                 cmd.Parameters.AddWithValue("@ImageName", string.IsNullOrEmpty(ImageName) ? dbNULL : (object)ImageName);
+                cmd.Parameters.AddWithValue("@ImageMenu", string.IsNullOrEmpty(ImageMenu) ? dbNULL : (object)ImageMenu);
                 cmd.Parameters.AddWithValue("@ParentID", string.IsNullOrEmpty(ParentID) ? dbNULL : (object)ParentID);
                 cmd.Parameters.AddWithValue("@IsShowOnMenu", string.IsNullOrEmpty(IsShowOnMenu) ? dbNULL : (object)IsShowOnMenu);
                 cmd.Parameters.AddWithValue("@IsShowOnHomePage", string.IsNullOrEmpty(IsShowOnHomePage) ? dbNULL : (object)IsShowOnHomePage);
                 cmd.Parameters.AddWithValue("@IsAvailable", string.IsNullOrEmpty(IsAvailable) ? dbNULL : (object)IsAvailable);
 
                 SqlParameter imageNameParam = new SqlParameter("@OutImageName", null);
+                SqlParameter serviceCategoryIDParam = new SqlParameter("@OutServiceCategoryID", null);
                 SqlParameter errorCodeParam = new SqlParameter("@ErrorCode", null);
                 imageNameParam.Size = 100;
-                errorCodeParam.Size = 4;
-                errorCodeParam.Direction = imageNameParam.Direction = ParameterDirection.Output;
+                errorCodeParam.Size = serviceCategoryIDParam.Size = 4;
+                errorCodeParam.Direction = imageNameParam.Direction = serviceCategoryIDParam.Direction = ParameterDirection.Output;
                 cmd.Parameters.Add(imageNameParam);
+                cmd.Parameters.Add(serviceCategoryIDParam);
                 cmd.Parameters.Add(errorCodeParam);
                 scon.Open();
                 cmd.ExecuteNonQuery();
@@ -67,6 +75,8 @@ namespace TLLib
 
                 if (errorCodeParam.Value.ToString() != "0")
                     throw new Exception("Stored Procedure 'usp_ServiceCategory_Insert' reported the ErrorCode : " + errorCodeParam.Value.ToString());
+
+                m_ServiceCategoryID = serviceCategoryIDParam.Value.ToString();
 
                 return imageNameParam.Value.ToString();
             }
@@ -90,6 +100,7 @@ namespace TLLib
             string MetaDescription,
             string MetaDescriptionEn,
             string ImageName,
+            string ImageMenu,
             string ParentID,
             string IsShowOnMenu,
             string IsShowOnHomePage,
@@ -114,6 +125,7 @@ namespace TLLib
                 cmd.Parameters.AddWithValue("@MetaDescription", string.IsNullOrEmpty(MetaDescription) ? dbNULL : (object)MetaDescription);
                 cmd.Parameters.AddWithValue("@MetaDescriptionEn", string.IsNullOrEmpty(MetaDescriptionEn) ? dbNULL : (object)MetaDescriptionEn);
                 cmd.Parameters.AddWithValue("@ImageName", string.IsNullOrEmpty(ImageName) ? dbNULL : (object)ImageName);
+                cmd.Parameters.AddWithValue("@ImageMenu", string.IsNullOrEmpty(ImageMenu) ? dbNULL : (object)ImageMenu);
                 cmd.Parameters.AddWithValue("@ParentID", string.IsNullOrEmpty(ParentID) ? dbNULL : (object)ParentID);
                 cmd.Parameters.AddWithValue("@IsShowOnMenu", string.IsNullOrEmpty(IsShowOnMenu) ? dbNULL : (object)IsShowOnMenu);
                 cmd.Parameters.AddWithValue("@IsShowOnHomePage", string.IsNullOrEmpty(IsShowOnHomePage) ? dbNULL : (object)IsShowOnHomePage);
@@ -221,6 +233,35 @@ namespace TLLib
 
                 if (errorCodeParam.Value.ToString() != "0")
                     throw new Exception("Stored Procedure 'usp_ServiceCategoryImage_Delete' reported the ErrorCode : " + errorCodeParam.Value.ToString());
+
+                return success;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public int ServiceCategoryImageMenuDelete(
+            string ServiceCategoryID
+        )
+        {
+            try
+            {
+                var scon = new SqlConnection(connectionString);
+                var cmd = new SqlCommand("usp_ServiceCategoryImageMenu_Delete", scon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ServiceCategoryID", string.IsNullOrEmpty(ServiceCategoryID) ? dbNULL : (object)ServiceCategoryID);
+                SqlParameter errorCodeParam = new SqlParameter("@ErrorCode", null);
+                errorCodeParam.Size = 4;
+                errorCodeParam.Direction = ParameterDirection.Output;
+                cmd.Parameters.Add(errorCodeParam);
+                scon.Open();
+                int success = cmd.ExecuteNonQuery();
+                scon.Close();
+
+                if (errorCodeParam.Value.ToString() != "0")
+                    throw new Exception("Stored Procedure 'usp_ServiceCategoryImageMenu_Delete' reported the ErrorCode : " + errorCodeParam.Value.ToString());
 
                 return success;
             }
@@ -629,6 +670,16 @@ namespace TLLib
                 throw new Exception(ex.Message);
             }
         }
+
+        #region Properties
+
+        public string ServiceCategoryID
+        {
+            get { return m_ServiceCategoryID; }
+            set { m_ServiceCategoryID = value; }
+        }
+
+        #endregion
     }
 }
 

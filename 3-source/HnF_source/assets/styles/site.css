@@ -1437,6 +1437,9 @@ body .mobilep-right {
 .wrap-section .table-fabric .fabric-content, .wrap-section .table-fabric .fabric-color {
     display: none;
 }
+.wrap-section .table-fabric .fabric-content {
+    text-align: left;
+}
 /*.wrap-section .table-fabric tr {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -1493,12 +1496,13 @@ body .mobilep-right {
     color: #7f7f7f;
     font-size: 18px;
     line-height: 24px;
-    padding: 40px 20px;
+    /*padding: 40px 20px;*/
+    padding: 25px 20px;
     font-weight: 700;
 }
 .wrap-section .table-fabric td:nth-child(3) {
     width: 25%;
-    padding: 50px 22px;
+    /*padding: 50px 22px;*/
     background-color: #ebeaec;
     font-weight: 400;
 }

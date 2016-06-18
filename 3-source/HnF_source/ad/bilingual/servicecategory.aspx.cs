@@ -31,6 +31,16 @@ public partial class ad_single_servicecategory : System.Web.UI.Page
         }
     }
 
+    void DeleteImageMenu(string strImageMenu)
+    {
+        if (!string.IsNullOrEmpty(strImageMenu))
+        {
+            string strOldImageMenuPath = Server.MapPath("~/res/servicecategory/menu/" + strImageMenu);
+            if (File.Exists(strOldImageMenuPath))
+                File.Delete(strOldImageMenuPath);
+        }
+    }
+
     #endregion
 
     #region Event
@@ -86,6 +96,15 @@ public partial class ad_single_servicecategory : System.Web.UI.Page
                         if (File.Exists(strSavePath))
                             File.Delete(strSavePath);
                     }
+
+                    string strImageMenu = ((HiddenField)item.FindControl("hdnImageMenu")).Value;
+
+                    if (!string.IsNullOrEmpty(strImageMenu))
+                    {
+                        string strSavePathMenu = Server.MapPath("~/res/servicecategory/menu/" + strImageMenu);
+                        if (File.Exists(strSavePathMenu))
+                            File.Delete(strSavePathMenu);
+                    }
                 }
             }
             if (!string.IsNullOrEmpty(errorList))
@@ -100,6 +119,7 @@ public partial class ad_single_servicecategory : System.Web.UI.Page
             var command = e.CommandName;
             var row = command == "PerformInsert" ? (GridEditFormInsertItem)e.Item : (GridEditFormItem)e.Item;
             var FileImageName = (RadUpload)row.FindControl("FileImageName");
+            var FileImageMenu = (RadUpload)row.FindControl("FileImageMenu");
 
             string strServiceCategoryName = ((RadTextBox)row.FindControl("txtServiceCategoryName")).Text.Trim();
             string strServiceCategoryNameEn = ((RadTextBox)row.FindControl("txtServiceCategoryNameEn")).Text.Trim();
@@ -113,6 +133,7 @@ public partial class ad_single_servicecategory : System.Web.UI.Page
             string strMetaDescription = ((RadTextBox)row.FindControl("txtMetaDescription")).Text.Trim();
             string strMetaDescriptionEn = ((RadTextBox)row.FindControl("txtMetaDescriptionEn")).Text.Trim();
             string strImageName = FileImageName.UploadedFiles.Count > 0 ? FileImageName.UploadedFiles[0].GetName() : "";
+            string strImageMenu = FileImageMenu.UploadedFiles.Count > 0 ? FileImageMenu.UploadedFiles[0].GetName() : "";
             string strParentID = ((RadComboBox)row.FindControl("ddlParent")).SelectedValue;
             string strIsAvailable = ((CheckBox)row.FindControl("chkIsAvailable")).Checked.ToString();
             string strIsShowOnMenu = ((CheckBox)row.FindControl("chkIsShowOnMenu")).Checked.ToString();
@@ -136,17 +157,30 @@ public partial class ad_single_servicecategory : System.Web.UI.Page
                     strMetaDescription,
                     strMetaDescriptionEn,
                     strImageName,
+                    strImageMenu,
                     strParentID,
                     strIsShowOnMenu,
                     strIsShowOnHomePage,
                     strIsAvailable
                 );
 
+                string ServiceCategoryID = oServiceCategory.ServiceCategoryID;
+
                 string strFullPath = "~/res/servicecategory/" + strImageName;
 
                 if (!string.IsNullOrEmpty(strImageName))
                 {
                     FileImageName.UploadedFiles[0].SaveAs(Server.MapPath(strFullPath));
+                    //ResizeCropImage.ResizeByCondition(strFullPath, 40, 40);
+                }
+
+                strImageMenu = (string.IsNullOrEmpty(strConvertedServiceCategoryName) ? "" : strConvertedServiceCategoryName + "-") + ServiceCategoryID + strImageMenu.Substring(strImageMenu.LastIndexOf('.'));
+                
+                string strFullPathMenu = "~/res/servicecategory/menu/" + strImageMenu;
+                
+                if (!string.IsNullOrEmpty(strImageMenu))
+                {
+                    FileImageMenu.UploadedFiles[0].SaveAs(Server.MapPath(strFullPathMenu));
                     //ResizeCropImage.ResizeByCondition(strFullPath, 40, 40);
                 }
                 RadGrid1.Rebind();
@@ -157,6 +191,8 @@ public partial class ad_single_servicecategory : System.Web.UI.Page
                 var strServiceCategoryID = row.GetDataKeyValue("ServiceCategoryID").ToString();
                 var strOldImageName = ((HiddenField)row.FindControl("hdnImageName")).Value;
                 var strOldImagePath = Server.MapPath("~/res/servicecategory/" + strOldImageName);
+                var strOldImageMenu = ((HiddenField)row.FindControl("hdnImageMenu")).Value;
+                var strOldImagePathMenu = Server.MapPath("~/res/servicecategory/menu/" + strOldImageMenu);
 
                 dsUpdateParam["ServiceCategoryName"].DefaultValue = strServiceCategoryName;
                 dsUpdateParam["ServiceCategoryNameEn"].DefaultValue = strServiceCategoryNameEn;
@@ -166,6 +202,7 @@ public partial class ad_single_servicecategory : System.Web.UI.Page
                 dsUpdateParam["Content"].DefaultValue = strContent;
                 dsUpdateParam["ContentEn"].DefaultValue = strContentEn;
                 dsUpdateParam["ImageName"].DefaultValue = strImageName;
+                dsUpdateParam["ImageMenu"].DefaultValue = strImageMenu;
                 dsUpdateParam["ParentID"].DefaultValue = strParentID;
                 dsUpdateParam["IsShowOnMenu"].DefaultValue = strIsShowOnMenu;
                 dsUpdateParam["IsShowOnHomePage"].DefaultValue = strIsShowOnHomePage;
@@ -179,6 +216,17 @@ public partial class ad_single_servicecategory : System.Web.UI.Page
                         File.Delete(strOldImagePath);
 
                     FileImageName.UploadedFiles[0].SaveAs(Server.MapPath(strFullPath));
+                    //ResizeCropImage.ResizeByCondition(strFullPath, 40, 40);
+                }
+
+                if (!string.IsNullOrEmpty(strImageMenu))
+                {
+                    var strFullPathMenu = "~/res/servicecategory/menu/" + strConvertedServiceCategoryName + "-" + strServiceCategoryID + strImageMenu.Substring(strImageMenu.LastIndexOf('.'));
+
+                    if (File.Exists(strOldImagePathMenu))
+                        File.Delete(strOldImagePathMenu);
+
+                    FileImageMenu.UploadedFiles[0].SaveAs(Server.MapPath(strFullPathMenu));
                     //ResizeCropImage.ResizeByCondition(strFullPath, 40, 40);
                 }
             }
@@ -195,6 +243,18 @@ public partial class ad_single_servicecategory : System.Web.UI.Page
             DeleteImage(strImageName);
             RadGrid1.Rebind();
         }
+        if (e.CommandName == "DeleteImageMenu")
+        {
+            var oServiceCategory = new ServiceCategory();
+            var lnkDeleteImageMenu = (LinkButton)e.CommandSource;
+            var s = lnkDeleteImageMenu.Attributes["rel"].ToString().Split('#');
+            var strServiceCategoryID = s[0];
+            var strImageMenu = s[1];
+
+            oServiceCategory.ServiceCategoryImageMenuDelete(strServiceCategoryID);
+            DeleteImageMenu(strImageMenu);
+            RadGrid1.Rebind();
+        }
     }
     protected void RadGrid1_ItemDataBound(object sender, GridItemEventArgs e)
     {
@@ -203,6 +263,7 @@ public partial class ad_single_servicecategory : System.Web.UI.Page
             var itemtype = e.Item.ItemType;
             var row = itemtype == GridItemType.EditFormItem ? (GridEditFormItem)e.Item : (GridEditFormInsertItem)e.Item;
             var FileImageName = (RadUpload)row.FindControl("FileImageName");
+            var FileImageMenu = (RadUpload)row.FindControl("FileImageMenu");
             var ServiceCategoryID = ((HiddenField)row.FindControl("hdnServiceCategoryID")).Value;
             var dv = (DataView)ObjectDataSource1.Select();
             var ddlParent = (RadComboBox)row.FindControl("ddlParent");
@@ -216,6 +277,7 @@ public partial class ad_single_servicecategory : System.Web.UI.Page
             }
 
             RadAjaxPanel1.ResponseScripts.Add(string.Format("window['UploadId'] = '{0}';", FileImageName.ClientID));
+            RadAjaxPanel1.ResponseScripts.Add(string.Format("window['UploadId2'] = '{0}';", FileImageMenu.ClientID));
         }
     }
 
