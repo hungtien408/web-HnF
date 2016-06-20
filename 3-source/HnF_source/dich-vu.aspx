@@ -396,16 +396,16 @@
                                     <p>
                                         - Đặc điểm của thun cá sấu 100% cotton:
                                         <ul style="list-style: none; margin: 0; padding: 0;">
-                                            <li>• Ưu điểm
-                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                            <li>• <b>Ưu điểm</b>
+                                                <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
                                                     <li><span class="fa fa-check"></span>Thấm hút mồ hôi cực tốt.</li>
                                                     <li><span class="fa fa-check"></span>Khi mặc cảm giác rất mát mẻ</li>
                                                     <li><span class="fa fa-check"></span>Co giãn 4 chiều, thoải mái vận động</li>
                                                     <li><span class="fa fa-check"></span>Ít xù long, bề mặt lán mịn</li>
                                                 </ul>
                                             </li>
-                                            <li>• Nhược điểm
-                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                            <li>• <b>Nhược điểm</b>
+                                                <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
                                                     <li><span class="fa fa-check"></span>Hơi nhăn sau khi giặt</li>
                                                     <li><span class="fa fa-check"></span>Hạn chế về màu sắc. Chỉ có các màu như: trắng,
                                                         đen, xám tiêu, xanh bích.</li>
@@ -429,15 +429,15 @@
                                     <p>
                                         - Đặc điểm của thun cá sấu TC 65-35
                                         <ul style="list-style: none; margin: 0; padding: 0;">
-                                            <li>• Ưu điểm
-                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                            <li>• <b>Ưu điểm</b>
+                                                <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
                                                     <li><span class="fa fa-check"></span>Có độ dày tương đối, giữ Form đứng cho áo</li>
                                                     <li><span class="fa fa-check"></span>Vải mềm mại, ít nhàu khi giặt</li>
                                                     <li><span class="fa fa-check"></span>Co giãn 4 chiều</li>
                                                 </ul>
                                             </li>
-                                            <li>• Nhược điểm
-                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                            <li>• <b>Nhược điểm</b>
+                                                <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
                                                     <li><span class="fa fa-check"></span>Thấm hút mồ hôi và không mát như Cá sấu 100% cotton</li>
                                                     <li><span class="fa fa-check"></span>Hơi dễ xù long</li>
                                                 </ul>
@@ -459,14 +459,14 @@
                                         - Đây là loại vải sử dụng cho các sản phẩm sử dụng vài lần, có giá thành cực tốt.</p>
                                     <p>
                                         <ul style="list-style: none; margin: 0; padding: 0;">
-                                            <li>• Ưu điểm
-                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                            <li>• <b>Ưu điểm</b>
+                                                <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
                                                     <li><span class="fa fa-check"></span>Mình vải cứng, giữ Form đứng cho áo</li>
                                                     <li><span class="fa fa-check"></span>Giá thành khá rẻ</li>
                                                 </ul>
                                             </li>
-                                            <li>• Nhược điểm
-                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                            <li>• <b>Nhược điểm</b>
+                                                <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
                                                     <li><span class="fa fa-check"></span>Mình vải hơi thô ráp</li>
                                                     <li><span class="fa fa-check"></span>Thấm hút mồ hôi kém, gây nóng cho người mặc</li>
                                                     <li><span class="fa fa-check"></span>Màu nhuộm kém</li>
@@ -488,16 +488,16 @@
                                     <p>
                                         - Đặc điểm của thun cá sấu 100% cotton:
                                         <ul style="list-style: none; margin: 0; padding: 0;">
-                                            <li>• Ưu điểm
-                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                            <li>• <b>Ưu điểm</b>
+                                                <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
                                                     <li><span class="fa fa-check"></span>Thấm hút mồ hôi cực tốt</li>
                                                     <li><span class="fa fa-check"></span>Khi mặc cảm giác rất mát mẻ</li>
                                                     <li><span class="fa fa-check"></span>Co giãn 4 chiều, thoải mái vận động</li>
                                                     <li><span class="fa fa-check"></span>Ít xù long, bề mặt lán mịn</li>
                                                 </ul>
                                             </li>
-                                            <li>• Nhược điểm
-                                                <ul style="list-style: none; margin: 0; padding: 0 0 0 10px;">
+                                            <li>• <b>Nhược điểm</b>
+                                                <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
                                                     <li><span class="fa fa-check"></span>Hơi nhăn sau khi giặt</li>
                                                 </ul>
                                             </li>
@@ -703,9 +703,11 @@
                 <div class="head-2">
                     <ul class="menu-control menu-fabric-mo">
                         <li><a class="link-tabs" href="#fabric-1">VẢI CÁ SẤU 100% cotton</a></li>
-                        <li><a class="link-tabs" href="#fabric-2">VẢI CÁ SẤU 100% cotton</a></li>
-                        <li><a class="link-tabs" href="#fabric-3">VẢI CÁ SẤU 100% cotton</a></li>
-                        <li><a class="link-tabs" href="#fabric-4">VẢI CÁ SẤU 100% cotton</a></li>
+                        <li><a class="link-tabs" href="#fabric-2">VẢI CÁ SẤU TC 65-35 (Thành phần gồm 35 % xơ
+                            cotton và 65% xơ Polyeste)</a></li>
+                        <li><a class="link-tabs" href="#fabric-3">VẢI CÁ SẤU PE ( Polyeste, tên thường gọi PE
+                            )</a></li>
+                        <li><a class="link-tabs" href="#fabric-4">VẢI TRƠN 100% cotton</a></li>
                     </ul>
                 </div>
                 <div id="fabric-1" class="section-tabs">
@@ -726,11 +728,37 @@
                                     </td>
                                     <td>
                                         <div class="fabric-content">
-                                            Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                                            là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
-                                            khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
-                                            cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton1</div>
+                                            <p>
+                                                - Vải cá sấu có mắt lưới to hơn vải thun trơn, mắt vải thường đan nhau như lưới.</p>
+                                            <p>
+                                                - Đặc điểm của thun cá sấu 100% cotton:
+                                                <ul style="list-style: none; margin: 0; padding: 0;">
+                                                    <li>• <b>Ưu điểm</b>
+                                                        <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
+                                                            <li><span class="fa fa-check"></span>Thấm hút mồ hôi cực tốt.</li>
+                                                            <li><span class="fa fa-check"></span>Khi mặc cảm giác rất mát mẻ</li>
+                                                            <li><span class="fa fa-check"></span>Co giãn 4 chiều, thoải mái vận động</li>
+                                                            <li><span class="fa fa-check"></span>Ít xù long, bề mặt lán mịn</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>• <b>Nhược điểm</b>
+                                                        <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
+                                                            <li><span class="fa fa-check"></span>Hơi nhăn sau khi giặt</li>
+                                                            <li><span class="fa fa-check"></span>Hạn chế về màu sắc. Chỉ có các màu như: trắng,
+                                                                đen, xám tiêu, xanh bích.</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </p>
+                                            <p>
+                                                - Tại HNF, chúng tôi sử dụng vải với thành phần 100% cotton nhằm đem lại sự thoải
+                                                mái và sang trọng nhất cho người mặc. Tuy nhiên, khi sử dụng cần ủi thường xuyên
+                                                để duy trì tính thẩm mỹ cho áo.
+                                            </p>
+                                            <p>
+                                                - Quý khách vui lòng liên hệ nhân viên tư vấn để được trải nghiệm thêm về chất vải
+                                                này!</p>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -795,11 +823,37 @@
                                     </td>
                                     <td>
                                         <div class="fabric-content">
-                                            Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                                            là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
-                                            khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
-                                            cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton2</div>
+                                            <p>
+                                                - Đây là loại vải có bề mặt dệt đẹp, độ dày tương đối nên khi dùng may áo có cổ
+                                                sẽ tạo form đứng cho áo.</p>
+                                            <p>
+                                                - Đặc điểm của thun cá sấu TC 65-35
+                                                <ul style="list-style: none; margin: 0; padding: 0;">
+                                                    <li>• <b>Ưu điểm</b>
+                                                        <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
+                                                            <li><span class="fa fa-check"></span>Có độ dày tương đối, giữ Form đứng cho áo</li>
+                                                            <li><span class="fa fa-check"></span>Vải mềm mại, ít nhàu khi giặt</li>
+                                                            <li><span class="fa fa-check"></span>Co giãn 4 chiều</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>• <b>Nhược điểm</b>
+                                                        <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
+                                                            <li><span class="fa fa-check"></span>Thấm hút mồ hôi và không mát như Cá sấu 100% cotton</li>
+                                                            <li><span class="fa fa-check"></span>Hơi dễ xù long</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </p>
+                                            <p>
+                                                - Vải cá sấu TC 65-35 có thể nói là loại vải được sử dụng đại trà hiện nay, được
+                                                hầu như các công ty sản xuất đồng phục chọn lựa sử dụng vì chất lượng cũng khá tốt
+                                                và nhất là tính kinh tế. Tại HNF, chúng tôi đầu tư xử lý thêm bề mặt vải để hạn
+                                                chế thấp nhất tình trạng xù lông.
+                                            </p>
+                                            <p>
+                                                - Quý khách vui lòng liên hệ nhân viên tư vấn để được trải nghiệm thêm về chất vải
+                                                này!</p>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -864,11 +918,33 @@
                                     </td>
                                     <td>
                                         <div class="fabric-content">
-                                            Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                                            là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
-                                            khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
-                                            cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton3</div>
+                                            <p>
+                                                - Đây là loại vải sử dụng cho các sản phẩm sử dụng vài lần, có giá thành cực tốt.</p>
+                                            <p>
+                                                <ul style="list-style: none; margin: 0; padding: 0;">
+                                                    <li>• <b>Ưu điểm</b>
+                                                        <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
+                                                            <li><span class="fa fa-check"></span>Mình vải cứng, giữ Form đứng cho áo</li>
+                                                            <li><span class="fa fa-check"></span>Giá thành khá rẻ</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>• <b>Nhược điểm</b>
+                                                        <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
+                                                            <li><span class="fa fa-check"></span>Mình vải hơi thô ráp</li>
+                                                            <li><span class="fa fa-check"></span>Thấm hút mồ hôi kém, gây nóng cho người mặc</li>
+                                                            <li><span class="fa fa-check"></span>Màu nhuộm kém</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </p>
+                                            <p>
+                                                - Vải cá sấu PE là loại vải thông thường nhất, thường được sử dụng cho các sản phẩm
+                                                mặc vài lần như áo cho sự kiện, ngày lễ, áo mặc khi đi du lịch…
+                                            </p>
+                                            <p>
+                                                - Quý khách vui lòng liên hệ nhân viên tư vấn để được trải nghiệm thêm về chất vải
+                                                này!</p>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -939,11 +1015,35 @@
                                     </td>
                                     <td>
                                         <div class="fabric-content">
-                                            Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng tôi
-                                            là đơn vị đầu tiên sử dụng vải 100% cotton. Chúng tôi có nhiều loại chất vải để
-                                            khách hàng lựa chọn. Thế mạnh của chúng tôi là đơn vị đầu tiên sử dụng vải 100%
-                                            cotton. Chúng tôi có nhiều loại chất vải để khách hàng lựa chọn. Thế mạnh của chúng
-                                            tôi là đơn vị đầu tiên sử dụng vải 100% cotton4</div>
+                                            <p>
+                                                - Vải trơn có bề mặt sớ vải khít, mịn, cảm giác mát tay.</p>
+                                            <p>
+                                                - Đặc điểm của thun cá sấu 100% cotton:
+                                                <ul style="list-style: none; margin: 0; padding: 0;">
+                                                    <li>• <b>Ưu điểm</b>
+                                                        <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
+                                                            <li><span class="fa fa-check"></span>Thấm hút mồ hôi cực tốt</li>
+                                                            <li><span class="fa fa-check"></span>Khi mặc cảm giác rất mát mẻ</li>
+                                                            <li><span class="fa fa-check"></span>Co giãn 4 chiều, thoải mái vận động</li>
+                                                            <li><span class="fa fa-check"></span>Ít xù long, bề mặt lán mịn</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>• <b>Nhược điểm</b>
+                                                        <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
+                                                            <li><span class="fa fa-check"></span>Hơi nhăn sau khi giặt</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </p>
+                                            <p>
+                                                - Tại HNF, chúng tôi sử dụng vải với thành phần 100% cotton nhằm đem lại sự thoải
+                                                mái và sang trọng nhất cho người mặc. Tuy nhiên, khi sử dụng cần ủi thường xuyên
+                                                để duy trì tính thẩm mỹ cho áo.
+                                            </p>
+                                            <p>
+                                                - Quý khách vui lòng liên hệ nhân viên tư vấn để được trải nghiệm thêm về chất vải
+                                                này!</p>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>

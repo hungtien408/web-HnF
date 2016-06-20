@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ad/template/adminEn.master" AutoEventWireup="true"
-    CodeFile="product.aspx.cs" Inherits="ad_single_product" %>
+    CodeFile="material.aspx.cs" Inherits="ad_single_product" %>
 
 <%@ Register TagPrefix="asp" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
 <%@ Register Assembly="Spaanjaars.Toolkit" Namespace="Spaanjaars.Toolkit" TagPrefix="isp" %>
@@ -119,11 +119,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBody" runat="Server">
     <h3 class="mainTitle">
-        <img alt="" src="../assets/images/product.png" class="vam" />
-        Sản Phẩm
+        <img alt="" src="../assets/images/service.png" class="vam" />
+        Chất vải
     </h3>
     <asp:RadAjaxPanel ID="RadAjaxPanel1" runat="server" ClientEvents-OnRequestStart="conditionalPostback">
-        <asp:Panel ID="pnlSearch" DefaultButton="btnSearch" runat="server">
+        <asp:Panel ID="pnlSearch" DefaultButton="btnSearch" runat="server" Visible="False">
             <h4 class="searchTitle">
                 Tìm kiếm
             </h4>
@@ -419,21 +419,22 @@
                             <asp:HiddenField ID="hdnImageName" runat="server" Value='<%# Eval("ImageName") %>' />
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridBoundColumn HeaderText="ID" DataField="ProductID" SortExpression="ProductID">
+                    <asp:GridBoundColumn HeaderText="ID" DataField="ProductID" SortExpression="ProductID" Visible="False">
                     </asp:GridBoundColumn>
-                    <asp:GridBoundColumn DataField="ProductName" HeaderText="Tên sản phẩm" SortExpression="ProductName" />
-                    <asp:GridTemplateColumn DataField="SavePrice" HeaderText="Giá cũ" SortExpression="SavePrice">
+                    <asp:GridBoundColumn DataField="ProductName" HeaderText="Tiêu đề" SortExpression="ProductName" />
+                    <asp:GridTemplateColumn DataField="SavePrice" HeaderText="Giá cũ" SortExpression="SavePrice" Visible="False">
                         <ItemTemplate>
                             <%# string.Format("{0:##,###.##}", Eval("SavePrice")) %>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn DataField="Price" HeaderText="Giá mới" SortExpression="Price">
+                    <asp:GridTemplateColumn DataField="Price" HeaderText="Giá mới" SortExpression="Price" Visible="False">
                         <ItemTemplate>
                             <%# string.IsNullOrEmpty(Eval("Price").ToString()) ? Eval("OtherPrice") : string.Format("{0:##,###.##}", Eval("Price")) %>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridBoundColumn DataField="ProductCategoryName" HeaderText="Danh mục" SortExpression="ProductCategoryName" />
-                    <asp:GridBoundColumn DataField="ManufacturerName" HeaderText="Nhà sản xuất" SortExpression="ManufacturerName" />
+                    <asp:GridBoundColumn DataField="ProductCategoryName" HeaderText="Danh mục" SortExpression="ProductCategoryName" Visible="False" />
+                    <asp:GridBoundColumn DataField="ServiceCategoryName" HeaderText="Danh mục" SortExpression="ServiceCategoryName" />
+                    <asp:GridBoundColumn DataField="ManufacturerName" HeaderText="Nhà sản xuất" SortExpression="ManufacturerName" Visible="False" />
                     <asp:GridTemplateColumn DataField="Priority" HeaderStyle-Width="1%" HeaderText="Thứ tự"
                         SortExpression="Priority">
                         <ItemTemplate>
@@ -444,38 +445,38 @@
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
                     <asp:GridTemplateColumn DataField="IsNew" HeaderStyle-Width="1%" HeaderText="Mới"
-                        SortExpression="IsNew">
+                        SortExpression="IsNew" Visible="False">
                         <ItemTemplate>
                             <asp:CheckBox ID="chkIsNew" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsNew").ToString()) ? false : Eval("IsNew") %>'
                                 CssClass="checkbox" />
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn DataField="IsHot" HeaderText="Hot" SortExpression="IsHot">
+                    <asp:GridTemplateColumn DataField="IsHot" HeaderText="Hot" SortExpression="IsHot" Visible="False">
                         <ItemTemplate>
                             <asp:CheckBox ID="chkIsHot" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsHot").ToString()) ? false : Eval("IsHot") %>'
                                 CssClass="checkbox" />
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn DataField="IsBestSeller" HeaderText="Bán chạy" SortExpression="IsBestSeller">
+                    <asp:GridTemplateColumn DataField="IsBestSeller" HeaderText="Bán chạy" SortExpression="IsBestSeller" Visible="False">
                         <ItemTemplate>
                             <asp:CheckBox ID="chkIsBestSeller" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsBestSeller").ToString()) ? false : Eval("IsBestSeller") %>'
                                 CssClass="checkbox" />
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn DataField="IsSaleOff" HeaderText="Giảm giá" SortExpression="IsSaleOff">
+                    <asp:GridTemplateColumn DataField="IsSaleOff" HeaderText="Giảm giá" SortExpression="IsSaleOff" Visible="False">
                         <ItemTemplate>
                             <asp:CheckBox ID="chkIsSaleOff" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsSaleOff").ToString()) ? false : Eval("IsSaleOff") %>'
                                 CssClass="checkbox" />
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn DataField="InStock" HeaderText="Còn hàng" SortExpression="InStock">
+                    <asp:GridTemplateColumn DataField="InStock" HeaderText="Còn hàng" SortExpression="InStock" Visible="False">
                         <ItemTemplate>
                             <asp:CheckBox ID="chkInStock" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("InStock").ToString()) ? false : Eval("InStock") %>'
                                 CssClass="checkbox" />
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
                     <asp:GridTemplateColumn DataField="IsShowOnHomePage" HeaderText="Xem trên trang chủ"
-                        SortExpression="IsShowOnHomePage">
+                        SortExpression="IsShowOnHomePage" Visible="False">
                         <ItemTemplate>
                             <asp:CheckBox ID="chkIsShowOnHomePage" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsShowOnHomePage").ToString()) ? false : Eval("IsShowOnHomePage") %>'
                                 CssClass="checkbox" />
@@ -498,7 +499,7 @@
                                 LegendText="{0} rates"></isp:ContentRating>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn HeaderStyle-Width="1%">
+                    <asp:GridTemplateColumn HeaderStyle-Width="1%" Visible="False">
                         <ItemTemplate>
                             <div style="width: 36px">
                                 <img alt="Thư viện ảnh" title="Thư viện ảnh" src="../assets/images/PhotoAlbum.png"
@@ -532,7 +533,7 @@
                                     <td valign="top" style="width: 500px">
                                         <div class="sub_box">
                                             <div class="head">
-                                                Thông Tin Sản Phẩm
+                                                Thông Tin Dịch Vụ
                                             </div>
                                             <div class="cont">
                                                 <asp:HiddenField ID="hdnProductID" runat="server" Value='<%# Eval("ProductID") %>' />
@@ -568,27 +569,27 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="left" colspan="2">
-                                                            <asp:CheckBox ID="chkIsNew" runat="server" CssClass="checkbox" Text=" Mới" Checked='<%# (Container is GridEditFormInsertItem) ? false : (string.IsNullOrEmpty(Eval("IsNew").ToString()) ? false : Eval("IsNew"))%>' />
+                                                            <asp:CheckBox ID="chkIsNew" runat="server" CssClass="checkbox" Text=" Mới" Checked='<%# (Container is GridEditFormInsertItem) ? false : (string.IsNullOrEmpty(Eval("IsNew").ToString()) ? false : Eval("IsNew"))%>' Visible="False" />
                                                             &nbsp;&nbsp;
-                                                            <asp:CheckBox ID="chkIsHot" runat="server" CssClass="checkbox" Text=" Hot" Checked='<%# (Container is GridEditFormInsertItem) ? false : (string.IsNullOrEmpty(Eval("IsHot").ToString()) ? false : Eval("IsHot"))%>' />
+                                                            <asp:CheckBox ID="chkIsHot" runat="server" CssClass="checkbox" Text=" Hot" Checked='<%# (Container is GridEditFormInsertItem) ? false : (string.IsNullOrEmpty(Eval("IsHot").ToString()) ? false : Eval("IsHot"))%>' Visible="False" />
                                                             &nbsp;&nbsp;
                                                             <asp:CheckBox ID="chkIsBestSeller" runat="server" CssClass="checkbox" Text=" Bán chạy"
-                                                                Checked='<%# (Container is GridEditFormInsertItem) ? false : Eval("IsBestSeller") %>' />
+                                                                Checked='<%# (Container is GridEditFormInsertItem) ? false : Eval("IsBestSeller") %>' Visible="False" />
                                                             &nbsp;&nbsp;
                                                             <asp:CheckBox ID="chkIsSaleOff" runat="server" CssClass="checkbox" Text=" Giảm giá"
-                                                                Checked='<%# (Container is GridEditFormInsertItem) ? false : Eval("IsSaleOff") %>' />
+                                                                Checked='<%# (Container is GridEditFormInsertItem) ? false : Eval("IsSaleOff") %>' Visible="False" />
                                                             &nbsp;&nbsp;
                                                             <asp:CheckBox ID="chkInStock" runat="server" CssClass="checkbox" Text=" Còn hàng"
-                                                                Checked='<%# (Container is GridEditFormInsertItem) ? true : Eval("InStock") %>' />
+                                                                Checked='<%# (Container is GridEditFormInsertItem) ? true : Eval("InStock") %>' Visible="False" />
                                                             &nbsp;&nbsp;
                                                             <asp:CheckBox ID="chkIsShowOnHomePage" runat="server" CssClass="checkbox" Text=" Xem trên trang chủ"
-                                                                Checked='<%# (Container is GridEditFormInsertItem) ? true : (string.IsNullOrEmpty(Eval("IsShowOnHomePage").ToString()) ? false : Eval("IsShowOnHomePage"))%>' />
+                                                                Checked='<%# (Container is GridEditFormInsertItem) ? true : (string.IsNullOrEmpty(Eval("IsShowOnHomePage").ToString()) ? false : Eval("IsShowOnHomePage"))%>' Visible="False" />
                                                             &nbsp;&nbsp;
                                                             <asp:CheckBox ID="chkIsAvailable" runat="server" CssClass="checkbox" Text=" Hiển thị"
                                                                 Checked='<%# (Container is GridEditFormInsertItem) ? true : (string.IsNullOrEmpty(Eval("IsAvailable").ToString()) ? false : Eval("IsAvailable")) %>' />
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="invisible">
                                                         <td class="left">
                                                             Danh mục
                                                         </td>
@@ -610,7 +611,7 @@
                                                             </asp:RadComboBox>
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="invisible">
                                                         <td class="left">
                                                             Nhà sản xuất
                                                         </td>
@@ -621,7 +622,7 @@
                                                             </asp:RadComboBox>
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="invisible">
                                                         <td class="left">
                                                             Xuất xứ
                                                         </td>
@@ -643,7 +644,7 @@
                                                             </asp:RadNumericTextBox>
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="invisible">
                                                         <td class="left">
                                                             Giá cũ
                                                         </td>
@@ -654,7 +655,7 @@
                                                             </asp:RadNumericTextBox>
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="invisible">
                                                         <td class="left">
                                                             Giá mới
                                                         </td>
@@ -676,7 +677,7 @@
                                                             </div>
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="invisible">
                                                         <td class="left">
                                                             Giảm
                                                         </td>
@@ -687,7 +688,7 @@
                                                             </asp:RadNumericTextBox>
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="invisible">
                                                         <td class="left">
                                                             Tag
                                                         </td>
@@ -719,18 +720,18 @@
                                                     </tr>
                                                     <tr>
                                                         <td class="left">
-                                                            Tên sản phẩm
+                                                            Tiêu đề
                                                         </td>
                                                         <td>
                                                             <asp:RadTextBox ID="txtProductName" runat="server" Text='<%# Bind("ProductName") %>'
-                                                                Width="500px" EmptyMessage="Tên sản phẩm...">
+                                                                Width="500px" EmptyMessage="Tiêu đề...">
                                                             </asp:RadTextBox>
                                                             <%--<asp:RadTextBox runat="server" Width="500px" ID="RadTextBox1" Text='<%# Bind("ProductName") %>' />
                                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtProductName"
                                             Display="Dynamic" ErrorMessage="Nhập tên sản phẩm" SetFocusOnError="true">*</asp:RequiredFieldValidator>--%>
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="invisible">
                                                         <td class="left" valign="top">
                                                             Mô tả
                                                         </td>
@@ -775,14 +776,14 @@
                                                         </td>
                                                     </tr>
                                                     <%-- Tiếng Anh--%>
-                                                    <tr>
+                                                    <tr class="invisible">
                                                         <td colspan="2">
                                                             <h3>
                                                                 (Ngôn Ngữ Tiếng Anh)</h3>
                                                             <hr />
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="invisible">
                                                         <td class="left">
                                                             Tag(En)
                                                         </td>
@@ -792,7 +793,7 @@
                                                             </asp:RadTextBox>
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="invisible">
                                                         <td class="left">
                                                             Meta Title
                                                         </td>
@@ -802,7 +803,7 @@
                                                             </asp:RadTextBox>
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="invisible">
                                                         <td class="left">
                                                             Meta Description
                                                         </td>
@@ -812,7 +813,7 @@
                                                             </asp:RadTextBox>
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="invisible">
                                                         <td class="left">
                                                             Tên sản phẩm
                                                         </td>
@@ -825,7 +826,7 @@
                                             Display="Dynamic" ErrorMessage="Nhập tên sản phẩm" SetFocusOnError="true">*</asp:RequiredFieldValidator>--%>
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="invisible">
                                                         <td class="left" valign="top">
                                                             Mô tả
                                                         </td>
@@ -853,7 +854,7 @@
                                                             </asp:RadEditor>
                                                         </td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="invisible">
                                                         <td class="left" valign="top">
                                                             Nội dung
                                                         </td>
@@ -883,9 +884,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        </div>
                                     </td>
-                                    <td valign="top">
+                                    <td valign="top" class="invisible">
                                         <div class="sub_box">
                                             <div class="head">
                                                 Ảnh sản phẩm</div>
@@ -1122,7 +1122,7 @@
                 Type="String" />
             <asp:ControlParameter ControlID="txtSearchPriceTo" Name="PriceTo" PropertyName="Text"
                 Type="String" />
-            <asp:ControlParameter ControlID="ddlSearchCategory" Name="CategoryID" PropertyName="SelectedValue"
+            <asp:ControlParameter ControlID="ddlSearchCategory" DefaultValue="4" Name="CategoryID" PropertyName="SelectedValue"
                 Type="String" />
             <asp:Parameter Name="ServiceCategoryID" Type="String" />
             <asp:ControlParameter ControlID="ddlSearchManufacturer" Name="ManufacturerID" PropertyName="SelectedValue"

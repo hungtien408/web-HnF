@@ -206,7 +206,7 @@ public partial class ad_single_product : System.Web.UI.Page
             string SavePrice = ((RadNumericTextBox)row.FindControl("txtSavePrice")).Text.Trim();
             string Discount = ((RadNumericTextBox)row.FindControl("txtDiscount")).Text.Trim();
             string Tag = ((RadTextBox)row.FindControl("txtTag")).Text.Trim();
-            string CategoryID = ((RadComboBox)row.FindControl("ddlCategory")).SelectedValue;
+            string CategoryID = "4";//((RadComboBox)row.FindControl("ddlCategory")).SelectedValue;
             string ServiceCategoryID = ((RadComboBox)row.FindControl("ddlServiceCategory")).SelectedValue;
             string ManufacturerID = ((RadComboBox)row.FindControl("ddlManufacturer")).SelectedValue;
             string OriginID = ((RadComboBox)row.FindControl("ddlOrigin")).SelectedValue;

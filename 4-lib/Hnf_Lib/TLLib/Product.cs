@@ -37,6 +37,7 @@ namespace TLLib
             string SavePrice,
             string Discount,
             string CategoryID,
+            string ServiceCategoryID,
             string ManufacturerID,
             string OriginID,
             string InStock,
@@ -73,6 +74,7 @@ namespace TLLib
                 cmd.Parameters.AddWithValue("@SavePrice", string.IsNullOrEmpty(SavePrice) ? dbNULL : (object)SavePrice);
                 cmd.Parameters.AddWithValue("@Discount", string.IsNullOrEmpty(Discount) ? dbNULL : (object)Discount);
                 cmd.Parameters.AddWithValue("@CategoryID", string.IsNullOrEmpty(CategoryID) ? dbNULL : (object)CategoryID);
+                cmd.Parameters.AddWithValue("@ServiceCategoryID", string.IsNullOrEmpty(ServiceCategoryID) ? dbNULL : (object)ServiceCategoryID);
                 cmd.Parameters.AddWithValue("@ManufacturerID", string.IsNullOrEmpty(ManufacturerID) ? dbNULL : (object)ManufacturerID);
                 cmd.Parameters.AddWithValue("@OriginID", string.IsNullOrEmpty(OriginID) ? dbNULL : (object)OriginID);
                 cmd.Parameters.AddWithValue("@InStock", string.IsNullOrEmpty(InStock) ? dbNULL : (object)InStock);
@@ -131,6 +133,7 @@ namespace TLLib
             string SavePrice,
             string Discount,
             string CategoryID,
+            string ServiceCategoryID,
             string ManufacturerID,
             string OriginID,
             string InStock,
@@ -168,6 +171,7 @@ namespace TLLib
                 cmd.Parameters.AddWithValue("@SavePrice", string.IsNullOrEmpty(SavePrice) ? dbNULL : (object)SavePrice);
                 cmd.Parameters.AddWithValue("@Discount", string.IsNullOrEmpty(Discount) ? dbNULL : (object)Discount);
                 cmd.Parameters.AddWithValue("@CategoryID", string.IsNullOrEmpty(CategoryID) ? dbNULL : (object)CategoryID);
+                cmd.Parameters.AddWithValue("@ServiceCategoryID", string.IsNullOrEmpty(ServiceCategoryID) ? dbNULL : (object)ServiceCategoryID);
                 cmd.Parameters.AddWithValue("@ManufacturerID", string.IsNullOrEmpty(ManufacturerID) ? dbNULL : (object)ManufacturerID);
                 cmd.Parameters.AddWithValue("@OriginID", string.IsNullOrEmpty(OriginID) ? dbNULL : (object)OriginID);
                 cmd.Parameters.AddWithValue("@InStock", string.IsNullOrEmpty(InStock) ? dbNULL : (object)InStock);
@@ -284,6 +288,7 @@ namespace TLLib
             string PriceFrom,
             string PriceTo,
             string CategoryID,
+            string ServiceCategoryID,
             string ManufacturerID,
             string OriginID,
             string Tag,
@@ -315,6 +320,7 @@ namespace TLLib
                 cmd.Parameters.AddWithValue("@PriceFrom", string.IsNullOrEmpty(PriceFrom) ? dbNULL : (object)PriceFrom);
                 cmd.Parameters.AddWithValue("@PriceTo", string.IsNullOrEmpty(PriceTo) ? dbNULL : (object)PriceTo);
                 cmd.Parameters.AddWithValue("@CategoryID", string.IsNullOrEmpty(CategoryID) ? dbNULL : (object)CategoryID);
+                cmd.Parameters.AddWithValue("@ServiceCategoryID", string.IsNullOrEmpty(ServiceCategoryID) ? dbNULL : (object)ServiceCategoryID);
                 cmd.Parameters.AddWithValue("@ManufacturerID", string.IsNullOrEmpty(ManufacturerID) ? dbNULL : (object)ManufacturerID);
                 cmd.Parameters.AddWithValue("@OriginID", string.IsNullOrEmpty(OriginID) ? dbNULL : (object)OriginID);
                 cmd.Parameters.AddWithValue("@Tag", string.IsNullOrEmpty(Tag) ? dbNULL : (object)Tag);
