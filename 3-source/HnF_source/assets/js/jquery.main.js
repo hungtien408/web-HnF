@@ -409,6 +409,17 @@ function myfunload() {
         $(this).addClass("fadeInRight");
         next();
     });
+    /*=====tabs order=====*/
+    var b = $('#orderTab .ui-tabs-panel:not(.ui-tabs-hide)').attr('data-img');
+    $(".bg-order").append("<img src='assets/images/" + b + "' alt='' />");
+    $('#orderTab').tabs({
+        activate: function(event, ui) {
+            var char = ui.newTab.index() + 1;
+            var a = ui.newPanel.attr('data-img');
+            $(".bg-order img").remove();
+            $(".bg-order").append("<img src='assets/images/" + a + "' alt='' />");
+        } 
+    });
     if ($('#mapshow').size() == 1) {
         mymap();
     }

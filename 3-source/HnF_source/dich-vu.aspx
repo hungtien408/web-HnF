@@ -264,15 +264,15 @@
                 <div class="head-2">
                     <ul class="menu-control menu-models simplefilter">
                         <li data-filter="1" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo
-                            cổ trụ - cổ bo</a></li>
+                            xẻ trụ - cổ bo</a></li>
                         <li data-filter="2" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo
-                            cổ trụ - cổ sơ mi</a></li>
+                            xẻ trụ - cổ sơ mi</a></li>
                         <li data-filter="3" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo
                             cổ tròn</a></li>
                         <li data-filter="4" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo
                             cổ tim</a></li>
                         <li data-filter="5" data-shuffle><a class="link-tabs" href="javascript:void(0);">Áo
-                            cổ tròn, tay raglan</a></li>
+                            raglan</a></li>
                     </ul>
                 </div>
             </div>
@@ -396,18 +396,18 @@
                                     <p>
                                         - Đặc điểm của thun cá sấu 100% cotton:
                                         <ul style="list-style: none; margin: 0; padding: 0;">
-                                            <li>• <b>Ưu điểm</b>
+                                            <li>• <b class="text-uppercase">Ưu điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span>Thấm hút mồ hôi cực tốt.</li>
-                                                    <li><span class="fa fa-check"></span>Khi mặc cảm giác rất mát mẻ</li>
-                                                    <li><span class="fa fa-check"></span>Co giãn 4 chiều, thoải mái vận động</li>
-                                                    <li><span class="fa fa-check"></span>Ít xù long, bề mặt lán mịn</li>
+                                                    <li><span class="fa fa-check"></span> Thấm hút mồ hôi cực tốt.</li>
+                                                    <li><span class="fa fa-check"></span> Khi mặc cảm giác rất mát mẻ</li>
+                                                    <li><span class="fa fa-check"></span> Co giãn 4 chiều, thoải mái vận động</li>
+                                                    <li><span class="fa fa-check"></span> Ít xù long, bề mặt lán mịn</li>
                                                 </ul>
                                             </li>
-                                            <li>• <b>Nhược điểm</b>
+                                            <li>• <b class="text-uppercase">Nhược điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span>Hơi nhăn sau khi giặt</li>
-                                                    <li><span class="fa fa-check"></span>Hạn chế về màu sắc. Chỉ có các màu như: trắng,
+                                                    <li><span class="fa fa-check"></span> Hơi nhăn sau khi giặt</li>
+                                                    <li><span class="fa fa-check"></span> Hạn chế về màu sắc. Chỉ có các màu như: trắng,
                                                         đen, xám tiêu, xanh bích.</li>
                                                 </ul>
                                             </li>
@@ -423,23 +423,24 @@
                                         này!</p>
                                 </div>
                                 <div data-id="fab-2" class="fabric-content">
+                                    <p>- Thành phần gồm 35 % xơ cotton và 65% xơ Polyeste</p>
                                     <p>
                                         - Đây là loại vải có bề mặt dệt đẹp, độ dày tương đối nên khi dùng may áo có cổ
                                         sẽ tạo form đứng cho áo.</p>
                                     <p>
                                         - Đặc điểm của thun cá sấu TC 65-35
                                         <ul style="list-style: none; margin: 0; padding: 0;">
-                                            <li>• <b>Ưu điểm</b>
+                                            <li>• <b class="text-uppercase">Ưu điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span>Có độ dày tương đối, giữ Form đứng cho áo</li>
-                                                    <li><span class="fa fa-check"></span>Vải mềm mại, ít nhàu khi giặt</li>
-                                                    <li><span class="fa fa-check"></span>Co giãn 4 chiều</li>
+                                                    <li><span class="fa fa-check"></span> Có độ dày tương đối, giữ Form đứng cho áo</li>
+                                                    <li><span class="fa fa-check"></span> Vải mềm mại, ít nhàu khi giặt</li>
+                                                    <li><span class="fa fa-check"></span> Co giãn 4 chiều</li>
                                                 </ul>
                                             </li>
-                                            <li>• <b>Nhược điểm</b>
+                                            <li>• <b class="text-uppercase">Nhược điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span>Thấm hút mồ hôi và không mát như Cá sấu 100% cotton</li>
-                                                    <li><span class="fa fa-check"></span>Hơi dễ xù long</li>
+                                                    <li><span class="fa fa-check"></span> Thấm hút mồ hôi và không mát như Cá sấu 100% cotton</li>
+                                                    <li><span class="fa fa-check"></span> Hơi dễ xù long</li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -455,21 +456,22 @@
                                         này!</p>
                                 </div>
                                 <div data-id="fab-3" class="fabric-content">
+                                    <p>- Polyeste, tên thường gọi PE</p>
                                     <p>
                                         - Đây là loại vải sử dụng cho các sản phẩm sử dụng vài lần, có giá thành cực tốt.</p>
                                     <p>
                                         <ul style="list-style: none; margin: 0; padding: 0;">
-                                            <li>• <b>Ưu điểm</b>
+                                            <li>• <b class="text-uppercase">Ưu điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span>Mình vải cứng, giữ Form đứng cho áo</li>
-                                                    <li><span class="fa fa-check"></span>Giá thành khá rẻ</li>
+                                                    <li><span class="fa fa-check"></span> Mình vải cứng, giữ Form đứng cho áo</li>
+                                                    <li><span class="fa fa-check"></span> Giá thành khá rẻ</li>
                                                 </ul>
                                             </li>
-                                            <li>• <b>Nhược điểm</b>
+                                            <li>• <b class="text-uppercase">Nhược điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span>Mình vải hơi thô ráp</li>
-                                                    <li><span class="fa fa-check"></span>Thấm hút mồ hôi kém, gây nóng cho người mặc</li>
-                                                    <li><span class="fa fa-check"></span>Màu nhuộm kém</li>
+                                                    <li><span class="fa fa-check"></span> Mình vải hơi thô ráp</li>
+                                                    <li><span class="fa fa-check"></span> Thấm hút mồ hôi kém, gây nóng cho người mặc</li>
+                                                    <li><span class="fa fa-check"></span> Màu nhuộm kém</li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -488,17 +490,17 @@
                                     <p>
                                         - Đặc điểm của thun cá sấu 100% cotton:
                                         <ul style="list-style: none; margin: 0; padding: 0;">
-                                            <li>• <b>Ưu điểm</b>
+                                            <li>• <b class="text-uppercase">Ưu điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span>Thấm hút mồ hôi cực tốt</li>
-                                                    <li><span class="fa fa-check"></span>Khi mặc cảm giác rất mát mẻ</li>
-                                                    <li><span class="fa fa-check"></span>Co giãn 4 chiều, thoải mái vận động</li>
-                                                    <li><span class="fa fa-check"></span>Ít xù long, bề mặt lán mịn</li>
+                                                    <li><span class="fa fa-check"></span> Thấm hút mồ hôi cực tốt</li>
+                                                    <li><span class="fa fa-check"></span> Khi mặc cảm giác rất mát mẻ</li>
+                                                    <li><span class="fa fa-check"></span> Co giãn 4 chiều, thoải mái vận động</li>
+                                                    <li><span class="fa fa-check"></span> Ít xù long, bề mặt lán mịn</li>
                                                 </ul>
                                             </li>
-                                            <li>• <b>Nhược điểm</b>
+                                            <li>• <b class="text-uppercase">Nhược điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span>Hơi nhăn sau khi giặt</li>
+                                                    <li><span class="fa fa-check"></span> Hơi nhăn sau khi giặt</li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -672,7 +674,7 @@
                         </tr>
                         <tr id="fab-2">
                             <td>
-                                VẢI CÁ SẤU TC 65-35 (Thành phần gồm 35 % xơ cotton và 65% xơ Polyeste)
+                                VẢI CÁ SẤU TC 65-35
                             </td>
                             <td>
                                 <img src="assets/images/fabric-img-2.jpg" alt="" />
@@ -680,7 +682,7 @@
                         </tr>
                         <tr id="fab-3">
                             <td>
-                                VẢI CÁ SẤU PE ( Polyeste, tên thường gọi PE )
+                                VẢI CÁ SẤU PE
                             </td>
                             <td>
                                 <img src="assets/images/fabric-img-3.jpg" alt="" />
@@ -703,10 +705,8 @@
                 <div class="head-2">
                     <ul class="menu-control menu-fabric-mo">
                         <li><a class="link-tabs" href="#fabric-1">VẢI CÁ SẤU 100% cotton</a></li>
-                        <li><a class="link-tabs" href="#fabric-2">VẢI CÁ SẤU TC 65-35 (Thành phần gồm 35 % xơ
-                            cotton và 65% xơ Polyeste)</a></li>
-                        <li><a class="link-tabs" href="#fabric-3">VẢI CÁ SẤU PE ( Polyeste, tên thường gọi PE
-                            )</a></li>
+                        <li><a class="link-tabs" href="#fabric-2">VẢI CÁ SẤU TC 65-35</a></li>
+                        <li><a class="link-tabs" href="#fabric-3">VẢI CÁ SẤU PE</a></li>
                         <li><a class="link-tabs" href="#fabric-4">VẢI TRƠN 100% cotton</a></li>
                     </ul>
                 </div>
@@ -733,18 +733,18 @@
                                             <p>
                                                 - Đặc điểm của thun cá sấu 100% cotton:
                                                 <ul style="list-style: none; margin: 0; padding: 0;">
-                                                    <li>• <b>Ưu điểm</b>
+                                                    <li>• <b class="text-uppercase">Ưu điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span>Thấm hút mồ hôi cực tốt.</li>
-                                                            <li><span class="fa fa-check"></span>Khi mặc cảm giác rất mát mẻ</li>
-                                                            <li><span class="fa fa-check"></span>Co giãn 4 chiều, thoải mái vận động</li>
-                                                            <li><span class="fa fa-check"></span>Ít xù long, bề mặt lán mịn</li>
+                                                            <li><span class="fa fa-check"></span> Thấm hút mồ hôi cực tốt.</li>
+                                                            <li><span class="fa fa-check"></span> Khi mặc cảm giác rất mát mẻ</li>
+                                                            <li><span class="fa fa-check"></span> Co giãn 4 chiều, thoải mái vận động</li>
+                                                            <li><span class="fa fa-check"></span> Ít xù long, bề mặt lán mịn</li>
                                                         </ul>
                                                     </li>
-                                                    <li>• <b>Nhược điểm</b>
+                                                    <li>• <b class="text-uppercase">Nhược điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span>Hơi nhăn sau khi giặt</li>
-                                                            <li><span class="fa fa-check"></span>Hạn chế về màu sắc. Chỉ có các màu như: trắng,
+                                                            <li><span class="fa fa-check"></span> Hơi nhăn sau khi giặt</li>
+                                                            <li><span class="fa fa-check"></span> Hạn chế về màu sắc. Chỉ có các màu như: trắng,
                                                                 đen, xám tiêu, xanh bích.</li>
                                                         </ul>
                                                     </li>
@@ -823,23 +823,24 @@
                                     </td>
                                     <td>
                                         <div class="fabric-content">
+                                            <p>- Thành phần gồm 35 % xơ cotton và 65% xơ Polyeste</p>
                                             <p>
                                                 - Đây là loại vải có bề mặt dệt đẹp, độ dày tương đối nên khi dùng may áo có cổ
                                                 sẽ tạo form đứng cho áo.</p>
                                             <p>
                                                 - Đặc điểm của thun cá sấu TC 65-35
                                                 <ul style="list-style: none; margin: 0; padding: 0;">
-                                                    <li>• <b>Ưu điểm</b>
+                                                    <li>• <b class="text-uppercase">Ưu điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span>Có độ dày tương đối, giữ Form đứng cho áo</li>
-                                                            <li><span class="fa fa-check"></span>Vải mềm mại, ít nhàu khi giặt</li>
-                                                            <li><span class="fa fa-check"></span>Co giãn 4 chiều</li>
+                                                            <li><span class="fa fa-check"></span> Có độ dày tương đối, giữ Form đứng cho áo</li>
+                                                            <li><span class="fa fa-check"></span> Vải mềm mại, ít nhàu khi giặt</li>
+                                                            <li><span class="fa fa-check"></span> Co giãn 4 chiều</li>
                                                         </ul>
                                                     </li>
-                                                    <li>• <b>Nhược điểm</b>
+                                                    <li>• <b class="text-uppercase">Nhược điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span>Thấm hút mồ hôi và không mát như Cá sấu 100% cotton</li>
-                                                            <li><span class="fa fa-check"></span>Hơi dễ xù long</li>
+                                                            <li><span class="fa fa-check"></span> Thấm hút mồ hôi và không mát như Cá sấu 100% cotton</li>
+                                                            <li><span class="fa fa-check"></span> Hơi dễ xù long</li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -918,21 +919,22 @@
                                     </td>
                                     <td>
                                         <div class="fabric-content">
+                                            <p>- Polyeste, tên thường gọi PE</p>
                                             <p>
                                                 - Đây là loại vải sử dụng cho các sản phẩm sử dụng vài lần, có giá thành cực tốt.</p>
                                             <p>
                                                 <ul style="list-style: none; margin: 0; padding: 0;">
-                                                    <li>• <b>Ưu điểm</b>
+                                                    <li>• <b class="text-uppercase">Ưu điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span>Mình vải cứng, giữ Form đứng cho áo</li>
-                                                            <li><span class="fa fa-check"></span>Giá thành khá rẻ</li>
+                                                            <li><span class="fa fa-check"></span> Mình vải cứng, giữ Form đứng cho áo</li>
+                                                            <li><span class="fa fa-check"></span> Giá thành khá rẻ</li>
                                                         </ul>
                                                     </li>
-                                                    <li>• <b>Nhược điểm</b>
+                                                    <li>• <b class="text-uppercase">Nhược điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span>Mình vải hơi thô ráp</li>
-                                                            <li><span class="fa fa-check"></span>Thấm hút mồ hôi kém, gây nóng cho người mặc</li>
-                                                            <li><span class="fa fa-check"></span>Màu nhuộm kém</li>
+                                                            <li><span class="fa fa-check"></span> Mình vải hơi thô ráp</li>
+                                                            <li><span class="fa fa-check"></span> Thấm hút mồ hôi kém, gây nóng cho người mặc</li>
+                                                            <li><span class="fa fa-check"></span> Màu nhuộm kém</li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -1020,17 +1022,17 @@
                                             <p>
                                                 - Đặc điểm của thun cá sấu 100% cotton:
                                                 <ul style="list-style: none; margin: 0; padding: 0;">
-                                                    <li>• <b>Ưu điểm</b>
+                                                    <li>• <b class="text-uppercase">Ưu điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span>Thấm hút mồ hôi cực tốt</li>
-                                                            <li><span class="fa fa-check"></span>Khi mặc cảm giác rất mát mẻ</li>
-                                                            <li><span class="fa fa-check"></span>Co giãn 4 chiều, thoải mái vận động</li>
-                                                            <li><span class="fa fa-check"></span>Ít xù long, bề mặt lán mịn</li>
+                                                            <li><span class="fa fa-check"></span> Thấm hút mồ hôi cực tốt</li>
+                                                            <li><span class="fa fa-check"></span> Khi mặc cảm giác rất mát mẻ</li>
+                                                            <li><span class="fa fa-check"></span> Co giãn 4 chiều, thoải mái vận động</li>
+                                                            <li><span class="fa fa-check"></span> Ít xù long, bề mặt lán mịn</li>
                                                         </ul>
                                                     </li>
-                                                    <li>• <b>Nhược điểm</b>
+                                                    <li>• <b class="text-uppercase">Nhược điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span>Hơi nhăn sau khi giặt</li>
+                                                            <li><span class="fa fa-check"></span> Hơi nhăn sau khi giặt</li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -1831,15 +1833,15 @@
     </div>
     <div class="wrap-section">
         <div id="qtdhShow" class="bg-order wow">
-            <img src="assets/images/img-quytrinh.jpg" alt="" /></div>
+        </div>
         <div class="container">
             <div id="orderTab">
                 <div class="head-2">
                     <ul class="menu-control menu-qt">
-                        <li><a class="link-tabs" href="#order-1"><span class="bg-button-left"></span>Tư vấn<span
-                            class="bg-button-right"></span></a></li>
-                        <li><a class="link-tabs" href="#order-2"><span class="bg-button-left"></span>Báo giá<span
-                            class="bg-button-right"></span></a></li>
+                        <li><a id="a" class="link-tabs" href="#order-1"><span class="bg-button-left"></span>
+                            Tư vấn<span class="bg-button-right"></span></a></li>
+                        <li><a class="link-tabs" href="#order-2" data-img="quytrinh-baogia.jpg"><span class="bg-button-left">
+                        </span>Báo giá<span class="bg-button-right"></span></a></li>
                         <li><a class="link-tabs" href="#order-3"><span class="bg-button-left"></span>Ký hợp
                             đồng<span class="bg-button-right"></span></a></li>
                         <li><a class="link-tabs" href="#order-4"><span class="bg-button-left"></span>Thiết kế
@@ -1857,93 +1859,75 @@
                 <h2 class="title-1 text-uppercase title-order">
                     Quy trình đặt hàng</h2>
                 <div class="wrap-order wow">
-                    <div id="order-1" class="section-tabs order-tabs">
+                    <div data-img="quytrinh-tuvan.jpg" id="order-1" class="section-tabs order-tabs">
                         <h4 class="title-design">
-                            Thiết kế mẫu <span class="fa fa-arrow-right"></span>
+                            Tư vấn <span class="fa fa-arrow-right"></span>
                         </h4>
                         <div class="desription">
-                            If you are like me you live and breathe fashion. You are constantly inspired with
-                            so many new designs racing through your mind, so many you can't seem to get them
-                            all down quick enough at the pace they arrive. You constantly dream of the day your
-                            fashions will be on the fashion runway with the lights beaming brightly overhead,
-                            the cameras flashing-1.</div>
+                            Sau khi nhận được thông tin-yêu cầu của khách hàng, đội tư vấn sẽ xin hẹn gặp trực
+                            tiếp và ghi nhận các yêu cầu cũng như giải thích các thắc mắc, đề xuất các phương
+                            án-giải pháp cụ thể.</div>
                     </div>
-                    <div id="order-2" class="section-tabs order-tabs">
+                    <div data-img="quytrinh-baogia.jpg" id="order-2" class="section-tabs order-tabs">
                         <h4 class="title-design">
-                            Thiết kế mẫu <span class="fa fa-arrow-right"></span>
+                            Báo giá <span class="fa fa-arrow-right"></span>
                         </h4>
                         <div class="desription">
-                            If you are like me you live and breathe fashion. You are constantly inspired with
-                            so many new designs racing through your mind, so many you can't seem to get them
-                            all down quick enough at the pace they arrive. You constantly dream of the day your
-                            fashions will be on the fashion runway with the lights beaming brightly overhead,
-                            the cameras flashing-2.</div>
+                            Nhân viên tư vấn sẽ cung cấp bảng báo giá cụ thể với nhiều phương án để khách lựa
+                            chọn một cách chính xác và nhanh nhất.</div>
                     </div>
-                    <div id="order-3" class="section-tabs order-tabs">
+                    <div data-img="quytrinh-kyhopdong.jpg" id="order-3" class="section-tabs order-tabs">
                         <h4 class="title-design">
-                            Thiết kế mẫu <span class="fa fa-arrow-right"></span>
+                            Ký hợp đồng <span class="fa fa-arrow-right"></span>
                         </h4>
                         <div class="desription">
-                            If you are like me you live and breathe fashion. You are constantly inspired with
-                            so many new designs racing through your mind, so many you can't seem to get them
-                            all down quick enough at the pace they arrive. You constantly dream of the day your
-                            fashions will be on the fashion runway with the lights beaming brightly overhead,
-                            the cameras flashing.</div>
+                            Nhân viên tư vấn sẽ cung cấp HĐ quy định rõ chất liệu, thông số size, các cam kết
+                            của HNF về sản phẩm đối với khách hàng.</div>
                     </div>
-                    <div id="order-4" class="section-tabs order-tabs">
+                    <div data-img="quytrinh-thietkemau.jpg" id="order-4" class="section-tabs order-tabs">
                         <h4 class="title-design">
                             Thiết kế mẫu <span class="fa fa-arrow-right"></span>
                         </h4>
                         <div class="desription">
-                            If you are like me you live and breathe fashion. You are constantly inspired with
-                            so many new designs racing through your mind, so many you can't seem to get them
-                            all down quick enough at the pace they arrive. You constantly dream of the day your
-                            fashions will be on the fashion runway with the lights beaming brightly overhead,
-                            the cameras flashing.</div>
+                            Thông qua các yêu cầu của khách hàng, Bộ phận thiết kế sẽ cung cấp bảng vẽ thiết
+                            kế 3D về sản phẩm, đem đến cho khách hàng cách nhìn trực quan, cụ thể nhất. Sau
+                            từ 3-5 ngày, HNF sẽ cung cấp cho quý khách áo mẫu thực tế với chất liệu-hình in/thêu
+                            đúng như yêu cầu của khách hàng. Giá của dịch vụ thiết kế áo mẫu là 500.000/mẫu
+                            thiết kế. Khách hàng sẽ được trừ chi phí thiết kế áo mẫu khi ký Hợp Đồng chính thức.</div>
                     </div>
-                    <div id="order-5" class="section-tabs order-tabs">
+                    <div data-img="quytrinh-chinhsua.jpg" id="order-5" class="section-tabs order-tabs">
                         <h4 class="title-design">
-                            Thiết kế mẫu <span class="fa fa-arrow-right"></span>
+                            Chỉnh sửa &amp; duyệt mẫu <span class="fa fa-arrow-right"></span>
                         </h4>
                         <div class="desription">
-                            If you are like me you live and breathe fashion. You are constantly inspired with
-                            so many new designs racing through your mind, so many you can't seem to get them
-                            all down quick enough at the pace they arrive. You constantly dream of the day your
-                            fashions will be on the fashion runway with the lights beaming brightly overhead,
-                            the cameras flashing.</div>
+                            Một lần nữa, nhân viên tư vấn ghi nhận các chỉnh sửa, các yêu cầu cộng thêm của
+                            khách hàng để chuẩn bị tiến hành sản xuất hàng loạt. Khách hàng và HNF cùng ký vào
+                            văn bản duyệt mẫu sau cùng nhằm đảm bảo sản phẩm đúng như mẫu đã cam kết..</div>
                     </div>
-                    <div id="order-6" class="section-tabs order-tabs">
+                    <div data-img="quytrinh-sanxuat.jpg" id="order-6" class="section-tabs order-tabs">
                         <h4 class="title-design">
-                            Thiết kế mẫu <span class="fa fa-arrow-right"></span>
+                            Sản xuất <span class="fa fa-arrow-right"></span>
                         </h4>
                         <div class="desription">
-                            If you are like me you live and breathe fashion. You are constantly inspired with
-                            so many new designs racing through your mind, so many you can't seem to get them
-                            all down quick enough at the pace they arrive. You constantly dream of the day your
-                            fashions will be on the fashion runway with the lights beaming brightly overhead,
-                            the cameras flashing.</div>
+                            HNF tiến hành sản xuất hàng loạt các sản phẩm từ 7-20 ngày tùy vào số lượng và độ
+                            khó của đơn hàng.</div>
                     </div>
-                    <div id="order-7" class="section-tabs order-tabs">
+                    <div data-img="quytrinh-giaohang.jpg" id="order-7" class="section-tabs order-tabs">
                         <h4 class="title-design">
-                            Thiết kế mẫu <span class="fa fa-arrow-right"></span>
+                            Giao hàng <span class="fa fa-arrow-right"></span>
                         </h4>
                         <div class="desription">
-                            If you are like me you live and breathe fashion. You are constantly inspired with
-                            so many new designs racing through your mind, so many you can't seem to get them
-                            all down quick enough at the pace they arrive. You constantly dream of the day your
-                            fashions will be on the fashion runway with the lights beaming brightly overhead,
-                            the cameras flashing.</div>
+                            HNF đóng gói và giao hàng tận nơi cho khách hàng (Khu vực ngoại thành, các tỉnh,
+                            khách hàng vui lòng hỗ trợ phí giao nhận).</div>
                     </div>
-                    <div id="order-8" class="section-tabs order-tabs">
+                    <div data-img="quytrinh-kiemtra.jpg" id="order-8" class="section-tabs order-tabs">
                         <h4 class="title-design">
-                            Thiết kế mẫu <span class="fa fa-arrow-right"></span>
+                            Kiểm tra chất lượng <span class="fa fa-arrow-right"></span>
                         </h4>
                         <div class="desription">
-                            If you are like me you live and breathe fashion. You are constantly inspired with
-                            so many new designs racing through your mind, so many you can't seem to get them
-                            all down quick enough at the pace they arrive. You constantly dream of the day your
-                            fashions will be on the fashion runway with the lights beaming brightly overhead,
-                            the cameras flashing.</div>
+                            Đội ngũ chăm sóc khách hàng sẽ gọi điện để lắng nghe, khảo sát ý kiến của khách
+                            hàng về thái độ, chất lượng phục vụ của HNF trong suốt quá trình hợp tác. Đồng thời
+                            cũng xin ý kiến về chất lượng sản phẩm qua quá trình sử dụng sản phẩm.</div>
                     </div>
                 </div>
             </div>

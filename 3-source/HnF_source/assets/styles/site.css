@@ -1498,11 +1498,11 @@ body .mobilep-right {
     font-size: 18px;
     line-height: 24px;
     /*padding: 40px 20px;*/
-    padding: 25px 20px;
+    padding: 25px 50px;
     font-weight: 700;
 }
 .wrap-section .table-fabric td:nth-child(3) {
-    width: 25%;
+    width: 30%;
     /*padding: 50px 22px;*/
     background-color: #ebeaec;
     font-weight: 400;
@@ -1519,7 +1519,7 @@ body .mobilep-right {
     padding: 50px 12px;
 }
 .list-color li {
-    width: 20%;
+    width: 25%;
     float: left;
     padding: 10px;
 }
@@ -1530,6 +1530,7 @@ body .mobilep-right {
 .note-color {
     font-style: italic;
     font-weight: 600;
+    padding: 0 10px;
 }
 /*======fabric mobile=======*/
 .wrap-section .table-fabric-mobile {
@@ -1826,11 +1827,13 @@ body .mobilep-right {
 }
 .order-tabs {
     float: right;
-    width: 50%;
+    /*width: 50%;*/
+    width: 47%;
 }
 .title-order {
     color: #fff;
-    padding: 45px 85px 0;
+    /*padding: 45px 85px 0;*/
+    padding: 45px 50px 0;
     text-align: right;
 }
 .title-design {
@@ -2919,6 +2922,23 @@ body .mobilep-right {
     .list-object li:nth-child(3) .content, .list-object li:nth-child(3) .desription, .list-object li:nth-child(5) .content, .list-object li:nth-child(5) .desription {
         width: 70%;
         top: 8%;        
+    }
+    .wrap-section .table-fabric th:first-child, .wrap-section .table-fabric td:first-child, .wrap-section .table-fabric th:nth-child(2), .wrap-section .table-fabric td:nth-child(2) {
+        width: 20%;
+    }
+    .wrap-section .table-fabric td:nth-child(4) {
+        width: 100%;
+        padding: 0;
+    }
+    .wrap-section .table-fabric td:nth-child(3) {
+        width: 37%;
+        padding: 7px 10px;
+    }
+    .list-color {
+        padding: 0 12px;
+    }
+    .list-color li {
+        width: 32%;
     }
     .menu-control {
         width: 100%;
