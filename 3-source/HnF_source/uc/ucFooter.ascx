@@ -17,7 +17,7 @@
                     <div class="hotline">
                         <p>
                             Liên hệ</p>
-                        <span>0917 377 999</span>
+                        <span><img src="../assets/images/img-phone.png" alt="" /></span>
                     </div>
                 </div>
             </div>
