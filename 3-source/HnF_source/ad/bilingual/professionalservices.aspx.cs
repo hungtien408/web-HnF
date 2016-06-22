@@ -356,6 +356,7 @@ public partial class ad_single_product : System.Web.UI.Page
             var dv = (DataView)ObjectDataSource1.Select();
             var ProductID = ((HiddenField)row.FindControl("hdnProductID")).Value;
             var ddlCategory = (RadComboBox)row.FindControl("ddlCategory");
+            var ddlServiceCategory = (RadComboBox)row.FindControl("ddlServiceCategory");
             var ddlManufacturer = (RadComboBox)row.FindControl("ddlManufacturer");
             var ddlOrigin = (RadComboBox)row.FindControl("ddlOrigin");
 
@@ -365,6 +366,8 @@ public partial class ad_single_product : System.Web.UI.Page
 
                 if (!string.IsNullOrEmpty(dv[0]["CategoryID"].ToString()))
                     ddlCategory.SelectedValue = dv[0]["CategoryID"].ToString();
+                if (!string.IsNullOrEmpty(dv[0]["ServiceCategoryID"].ToString()))
+                    ddlServiceCategory.SelectedValue = dv[0]["ServiceCategoryID"].ToString();
                 if (!string.IsNullOrEmpty(dv[0]["ManufacturerID"].ToString()))
                     ddlManufacturer.SelectedValue = dv[0]["ManufacturerID"].ToString();
                 if (!string.IsNullOrEmpty(dv[0]["OriginID"].ToString()))

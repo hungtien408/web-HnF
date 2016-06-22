@@ -493,7 +493,7 @@
                             <%# string.Format("{0:dd/MM/yyyy hh:mm tt}", Eval("CreateDate"))%>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn HeaderText="Đánh giá" SortExpression="Rating" HeaderStyle-Width="1%">
+                    <asp:GridTemplateColumn HeaderText="Đánh giá" SortExpression="Rating" HeaderStyle-Width="1%" Visible="False">
                         <ItemTemplate>
                             <isp:ContentRating ID="ContentRating1" runat="server" Enabled="false" CssClass="rating"
                                 LegendText="{0} rates"></isp:ContentRating>
