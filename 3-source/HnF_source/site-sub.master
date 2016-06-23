@@ -29,30 +29,46 @@
                     <li><a href="dich-vu.aspx" class="btn-2">Dịch vụ </a>
                         <div class="menu-sub">
                             <div class="menu-subin">
-                                <ul>
-                                    <li><a href="#"><span class="menu-box"><span class="iconai">
+                                <%--<ul>
+                                    <li><a href="dich-vu.aspx"><span class="menu-box"><span class="iconai">
                                         <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun đồng phục<span
                                             class="menubg fa fa-caret-right"></span></a> </li>
-                                    <li><a href="#"><span class="menu-box"><span class="iconai">
+                                    <li><a href="javascript:void(0);"><span class="menu-box"><span class="iconai">
                                         <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun quảng
                                         cáo - sự kiện<span class="menubg fa fa-caret-right"></span></a> </li>
-                                    <li><a href="#"><span class="menu-box"><span class="iconai">
+                                    <li><a href="javascript:void(0);"><span class="menu-box"><span class="iconai">
                                         <img src="assets/images/menusub-img-3.jpg" alt="" /></span></span>Áo nhóm - áo lớp<span
                                             class="menubg fa fa-caret-right"></span></a> </li>
-                                    <li><a href="#"><span class="menu-box"><span class="iconai">
+                                    <li><a href="javascript:void(0);"><span class="menu-box"><span class="iconai">
                                         <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản xuất áo thun
                                         theo yêu cầu<span class="menubg fa fa-caret-right"></span></a> </li>
-                                    <li><a href="#"><span class="menu-box"><span class="iconai">
+                                    <li><a href="javascript:void(0);"><span class="menu-box"><span class="iconai">
                                         <img src="assets/images/menusub-img-5.jpg" alt="" /></span></span>In ấn công nghệ
                                         cao<span class="menubg fa fa-caret-right"></span></a> </li>
-                                    <li><a href="#"><span class="menu-box"><span class="iconai">
+                                    <li><a href="javascript:void(0);"><span class="menu-box"><span class="iconai">
                                         <img src="assets/images/menusub-img-6.jpg" alt="" /></span></span>Thêu vi tính<span
                                             class="menubg fa fa-caret-right"></span></a> </li>
-                                </ul>
+                                </ul>--%>
+                                <asp:ListView ID="lstServiceCategory" runat="server" DataSourceID="odsServiceCategory"
+                                    EnableModelValidation="True">
+                                    <ItemTemplate>
+                                        <li><a href=<%# progressTitle(Eval("ServiceCategoryName")) + "-dv-" + Eval("ServiceCategoryID") + ".aspx" %>><span class="menu-box"><span class="iconai">
+                                            <img alt='<%# Eval("ImageMenu") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageMenu").ToString()) ? "~/res/servicecategory/menu/" + Eval("ImageMenu") : "~/assets/images/menusub-img-1.jpg" %>'
+                                                runat="server" /></span></span><%# Eval("ServiceCategoryName") %><span class="menubg fa fa-caret-right"></span></a>
+                                        </li>
+                                    </ItemTemplate>
+                                    <LayoutTemplate>
+                                        <ul>
+                                            <li runat="server" id="itemPlaceholder"></li>
+                                        </ul>
+                                    </LayoutTemplate>
+                                </asp:ListView>
+                                <asp:ObjectDataSource ID="odsServiceCategory" runat="server" SelectMethod="ServiceCategorySelectAll"
+                                    TypeName="TLLib.ServiceCategory"></asp:ObjectDataSource>
                             </div>
                         </div>
                     </li>
-                    <li><a href="#" class="btn-2">Quy trình thực hiện </a></li>
+                    <li><a href="quy-trinh-thuc-hien.htm" class="btn-2">Quy trình thực hiện </a></li>
                     <li><a href="san-pham.aspx" class="btn-2">Sản Phẩm </a>
                         <div class="menu-sub menu-sub2">
                             <%--<div class="menu-subin menu-pro"></div>--%>
@@ -99,12 +115,14 @@
                                             <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun cổ trụ<span
                                                 class="menubg fa fa-caret-right"></span></a> </li>
                                         <li><a href="#"><span class="menu-box"><span class="iconai">
-                                            <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun cổ tròn<span class="menubg fa fa-caret-right"></span></a> </li>
+                                            <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun cổ tròn<span
+                                                class="menubg fa fa-caret-right"></span></a> </li>
                                         <li><a href="#"><span class="menu-box"><span class="iconai">
                                             <img src="assets/images/menusub-img-3.jpg" alt="" /></span></span>Áo thun cổ tim<span
                                                 class="menubg fa fa-caret-right"></span></a> </li>
                                         <li><a href="#"><span class="menu-box"><span class="iconai">
-                                            <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản phẩm khác<span class="menubg fa fa-caret-right"></span></a> </li>
+                                            <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản phẩm khác<span
+                                                class="menubg fa fa-caret-right"></span></a> </li>
                                     </ul>
                                 </div>
                             </div>
@@ -130,8 +148,8 @@
                                 </ul>--%>
                         </div>
                     </li>
-                    <li><a href="#" class="btn-2">Thông số size </a></li>
-                    <li><a href="#" class="btn-2">Dự án </a></li>
+                    <li><a href="thong-so-size.htm" class="btn-2">Thông số size </a></li>
+                    <li><a href="javascript:void(0);" class="btn-2">Dự án </a></li>
                     <li><a href="tu-van.aspx" class="btn-2">Tư vấn </a></li>
                     <li><a href="lien-he.aspx" class="btn-2">Liên Hệ </a></li>
                 </ul>

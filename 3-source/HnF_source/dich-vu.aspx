@@ -50,64 +50,57 @@
         <div class="wrap-section">
             <div class="productw">
                 <div id="serviceShow" class="section-tb row">
-                    <div class="col-lg-3 col-xs-6 element-item">
-                        <div class="box-services">
-                            <a href="#" class="services-img">
-                                <img src="assets/images/services-img-1.png" alt="" class="corner" />
-                            </a>
-                            <h4 class="title-services">
-                                <a href="#">Tư vấn &amp; thiết kế miễn phí</a></h4>
-                            <div class="description content-services">
-                                Đội ngũ tư vấn viên nhiệt huyết-nhiều năm kinh nghiệm cùng với các Designer đầy
-                                sức sáng tạo, sẽ mang đến cho bạn những tư vấn phù hợp, biến ý tưởng của bạn thành
-                                sự thật.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-xs-6 element-item">
-                        <div class="box-services">
-                            <a href="#" class="services-img">
-                                <img src="assets/images/services-img-2.png" alt="" class="corner" />
-                            </a>
-                            <h4 class="title-services">
-                                <a href="#">Giải pháp toàn diện khép kín</a></h4>
-                            <div class="description content-services">
-                                Chúng tôi cung cấp giải pháp tối ưu nhất cho các doanh nghiệp trong nhiều lĩnh vực
-                                khác nhau bằng kinh nghiệm lâu năm trong ngành may mặc cũng như sự thấu hiểu về
-                                xu hướng thời trang theo từng ngành nghề cụ thể.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-xs-6 element-item">
-                        <div class="box-services">
-                            <a href="#" class="services-img">
-                                <img src="assets/images/services-img-3.png" alt="" class="corner" />
-                            </a>
-                            <h4 class="title-services">
-                                <a href="#">Chất lượng sản phẩm đúng cam kết</a></h4>
-                            <div class="description content-services">
-                                Chúng tôi luôn có những cam kết về chất lượng sản phẩm ngay từ khâu tiếp xúc khách
-                                hàng cho đến một khoảng thời gian nhất định sau khi sử dụng sản phẩm. Cam kết phải
-                                đi đôi với chất lượng thực tế.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-xs-6 element-item">
-                        <div class="box-services">
-                            <a href="#" class="services-img">
-                                <img src="assets/images/services-img-4.png" alt="" class="corner" />
-                            </a>
-                            <h4 class="title-services">
-                                <a href="#">Dịch vụ chu đáo nhiệt tình</a></h4>
-                            <div class="description content-services">
-                                Đến với chúng tôi, bạn sẽ được trải nghiệm chất lượng phục vụ tiêu chuẩn cao nhất.
-                                Đây là sự khác biệt, là thế mạnh của chúng tôi so với các đối tác khác trong ngành.
-                            </div>
-                            <%--<div class="more-details text-center">
+                    <asp:ListView ID="lstDVCN" runat="server" DataSourceID="odsDVCN" EnableModelValidation="True">
+                        <ItemTemplate>
+                            <div class="col-lg-3 col-xs-6 element-item">
+                                <div class="box-services">
+                                    <a href="javascript:void(0);" class="services-img">
+                                        <img class="corner" alt='<%# Eval("ImageName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/product/" + Eval("ImageName") : "~/assets/images/services-img-4.png" %>' runat="server" />
+                                    </a>
+                                    <h4 class="title-services">
+                                        <a href="javascript:void(0);"><%# Eval("ProductName") %></a></h4>
+                                    <div class="description content-services">
+                                        <asp:Label ID="Label1" runat="server" Text='<%# Eval("Content") %>'></asp:Label>
+                                    </div>
+                                    <%--<div class="more-details text-center">
                                 <a class="link-view" href="services-view.aspx">Xem thêm</a>
                             </div>--%>
-                        </div>
-                    </div>
+                                </div>
+                            </div>
+                        </ItemTemplate>
+                        <LayoutTemplate>
+                            <span runat="server" id="itemPlaceholder" />
+                        </LayoutTemplate>
+                    </asp:ListView>
+                    <asp:ObjectDataSource ID="odsDVCN" runat="server" 
+                        SelectMethod="ProductSelectAll" TypeName="TLLib.Product">
+                        <SelectParameters>
+                            <asp:Parameter Name="StartRowIndex" Type="String" />
+                            <asp:Parameter Name="EndRowIndex" Type="String" />
+                            <asp:Parameter Name="Keyword" Type="String" />
+                            <asp:Parameter Name="ProductName" Type="String" />
+                            <asp:Parameter Name="Description" Type="String" />
+                            <asp:Parameter Name="PriceFrom" Type="String" />
+                            <asp:Parameter Name="PriceTo" Type="String" />
+                            <asp:Parameter DefaultValue="3" Name="CategoryID" Type="String" />
+                            <asp:QueryStringParameter Name="ServiceCategoryID" 
+                                QueryStringField="dv" Type="String" />
+                            <asp:Parameter Name="ManufacturerID" Type="String" />
+                            <asp:Parameter Name="OriginID" Type="String" />
+                            <asp:Parameter Name="Tag" Type="String" />
+                            <asp:Parameter Name="InStock" Type="String" />
+                            <asp:Parameter Name="IsHot" Type="String" />
+                            <asp:Parameter Name="IsNew" Type="String" />
+                            <asp:Parameter Name="IsBestSeller" Type="String" />
+                            <asp:Parameter Name="IsSaleOff" Type="String" />
+                            <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+                            <asp:Parameter Name="FromDate" Type="String" />
+                            <asp:Parameter Name="ToDate" Type="String" />
+                            <asp:Parameter Name="Priority" Type="String" />
+                            <asp:Parameter DefaultValue="True" Name="IsAvailable" Type="String" />
+                            <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />
+                        </SelectParameters>
+                    </asp:ObjectDataSource>
                 </div>
             </div>
         </div>
@@ -296,10 +289,6 @@
                     </div>
                     <div class="models-tabs filtr-item" data-category="1">
                         <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-05-1.jpg" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="1">
-                        <a href="javascript:void(0);">
                             <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-05.jpg" alt="" /></a>
                     </div>
                     <div class="models-tabs filtr-item" data-category="1">
@@ -312,59 +301,7 @@
                     </div>
                     <div class="models-tabs filtr-item" data-category="1">
                         <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-10-1.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="1">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-10.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="1">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-11-1.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="1">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-11.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="1">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-12-1.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="1">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-12.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="1">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-13-1.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="1">
-                        <a href="javascript:void(0);">
                             <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-13.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="1">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-14-1.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="1">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-14.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="1">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-8-1.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="1">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-8.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="1">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-9-1.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="1">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aoxetrucobo/ao-thun-dong-phuc-ca-sau-9.png" alt="" /></a>
                     </div>
                     <div class="models-tabs filtr-item" data-category="2">
                         <a href="javascript:void(0);">
@@ -400,23 +337,7 @@
                     </div>
                     <div class="models-tabs filtr-item" data-category="3">
                         <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aocotron/ao-thun-dong-phuc-co-tron-01-1.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="3">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aocotron/ao-thun-dong-phuc-co-tron-01-2.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="3">
-                        <a href="javascript:void(0);">
                             <img src="assets/imgsp/aocotron/ao-thun-dong-phuc-co-tron-01.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="3">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aocotron/ao-thun-dong-phuc-co-tron-02-1.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="3">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aocotron/ao-thun-dong-phuc-co-tron-02-2.png" alt="" /></a>
                     </div>
                     <div class="models-tabs filtr-item" data-category="3">
                         <a href="javascript:void(0);">
@@ -428,23 +349,11 @@
                     </div>
                     <div class="models-tabs filtr-item" data-category="3">
                         <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aocotron/ao-thun-dong-phuc-co-tron-03-2.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="3">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aocotron/ao-thun-dong-phuc-co-tron-04-2.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="3">
-                        <a href="javascript:void(0);">
                             <img src="assets/imgsp/aocotron/ao-thun-dong-phuc-co-tron-04.png" alt="" /></a>
                     </div>
                     <div class="models-tabs filtr-item" data-category="3">
                         <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aocotron/keepdri-4733-641144-1.jpg" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="4">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aocotim/Ao-thun-dong-phuc-co-tim-01-1.png" alt="" /></a>
+                            <img src="assets/imgsp/aocotron/ao-thun-dong-phuc-co-tron-05.jpg" alt="" /></a>
                     </div>
                     <div class="models-tabs filtr-item" data-category="4">
                         <a href="javascript:void(0);">
@@ -452,15 +361,7 @@
                     </div>
                     <div class="models-tabs filtr-item" data-category="4">
                         <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aocotim/Ao-thun-dong-phuc-co-tim-02-1.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="4">
-                        <a href="javascript:void(0);">
                             <img src="assets/imgsp/aocotim/Ao-thun-dong-phuc-co-tim-02.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="4">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aocotim/Ao-thun-dong-phuc-co-tim-03-1.png" alt="" /></a>
                     </div>
                     <div class="models-tabs filtr-item" data-category="4">
                         <a href="javascript:void(0);">
@@ -468,15 +369,7 @@
                     </div>
                     <div class="models-tabs filtr-item" data-category="4">
                         <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aocotim/Ao-thun-dong-phuc-co-tim-04-1.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="4">
-                        <a href="javascript:void(0);">
                             <img src="assets/imgsp/aocotim/Ao-thun-dong-phuc-co-tim-04.png" alt="" /></a>
-                    </div>
-                    <div class="models-tabs filtr-item" data-category="4">
-                        <a href="javascript:void(0);">
-                            <img src="assets/imgsp/aocotim/Ao-thun-dong-phuc-co-tim-05-2.png" alt="" /></a>
                     </div>
                     <div class="models-tabs filtr-item" data-category="4">
                         <a href="javascript:void(0);">
@@ -542,16 +435,16 @@
                                         <ul style="list-style: none; margin: 0; padding: 0;">
                                             <li>• <b class="text-uppercase">Ưu điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span> Thấm hút mồ hôi cực tốt.</li>
-                                                    <li><span class="fa fa-check"></span> Khi mặc cảm giác rất mát mẻ</li>
-                                                    <li><span class="fa fa-check"></span> Co giãn 4 chiều, thoải mái vận động</li>
-                                                    <li><span class="fa fa-check"></span> Ít xù long, bề mặt lán mịn</li>
+                                                    <li><span class="fa fa-check"></span>Thấm hút mồ hôi cực tốt.</li>
+                                                    <li><span class="fa fa-check"></span>Khi mặc cảm giác rất mát mẻ</li>
+                                                    <li><span class="fa fa-check"></span>Co giãn 4 chiều, thoải mái vận động</li>
+                                                    <li><span class="fa fa-check"></span>Ít xù long, bề mặt lán mịn</li>
                                                 </ul>
                                             </li>
                                             <li>• <b class="text-uppercase">Nhược điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span> Hơi nhăn sau khi giặt</li>
-                                                    <li><span class="fa fa-check"></span> Hạn chế về màu sắc. Chỉ có các màu như: trắng,
+                                                    <li><span class="fa fa-check"></span>Hơi nhăn sau khi giặt</li>
+                                                    <li><span class="fa fa-check"></span>Hạn chế về màu sắc. Chỉ có các màu như: trắng,
                                                         đen, xám tiêu, xanh bích.</li>
                                                 </ul>
                                             </li>
@@ -567,7 +460,8 @@
                                         này!</p>
                                 </div>
                                 <div data-id="fab-2" class="fabric-content">
-                                    <p>- Thành phần gồm 35 % xơ cotton và 65% xơ Polyeste</p>
+                                    <p>
+                                        - Thành phần gồm 35 % xơ cotton và 65% xơ Polyeste</p>
                                     <p>
                                         - Đây là loại vải có bề mặt dệt đẹp, độ dày tương đối nên khi dùng may áo có cổ
                                         sẽ tạo form đứng cho áo.</p>
@@ -576,15 +470,15 @@
                                         <ul style="list-style: none; margin: 0; padding: 0;">
                                             <li>• <b class="text-uppercase">Ưu điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span> Có độ dày tương đối, giữ Form đứng cho áo</li>
-                                                    <li><span class="fa fa-check"></span> Vải mềm mại, ít nhàu khi giặt</li>
-                                                    <li><span class="fa fa-check"></span> Co giãn 4 chiều</li>
+                                                    <li><span class="fa fa-check"></span>Có độ dày tương đối, giữ Form đứng cho áo</li>
+                                                    <li><span class="fa fa-check"></span>Vải mềm mại, ít nhàu khi giặt</li>
+                                                    <li><span class="fa fa-check"></span>Co giãn 4 chiều</li>
                                                 </ul>
                                             </li>
                                             <li>• <b class="text-uppercase">Nhược điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span> Thấm hút mồ hôi và không mát như Cá sấu 100% cotton</li>
-                                                    <li><span class="fa fa-check"></span> Hơi dễ xù long</li>
+                                                    <li><span class="fa fa-check"></span>Thấm hút mồ hôi và không mát như Cá sấu 100% cotton</li>
+                                                    <li><span class="fa fa-check"></span>Hơi dễ xù long</li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -600,22 +494,23 @@
                                         này!</p>
                                 </div>
                                 <div data-id="fab-3" class="fabric-content">
-                                    <p>- Polyeste, tên thường gọi PE</p>
+                                    <p>
+                                        - Polyeste, tên thường gọi PE</p>
                                     <p>
                                         - Đây là loại vải sử dụng cho các sản phẩm sử dụng vài lần, có giá thành cực tốt.</p>
                                     <p>
                                         <ul style="list-style: none; margin: 0; padding: 0;">
                                             <li>• <b class="text-uppercase">Ưu điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span> Mình vải cứng, giữ Form đứng cho áo</li>
-                                                    <li><span class="fa fa-check"></span> Giá thành khá rẻ</li>
+                                                    <li><span class="fa fa-check"></span>Mình vải cứng, giữ Form đứng cho áo</li>
+                                                    <li><span class="fa fa-check"></span>Giá thành khá rẻ</li>
                                                 </ul>
                                             </li>
                                             <li>• <b class="text-uppercase">Nhược điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span> Mình vải hơi thô ráp</li>
-                                                    <li><span class="fa fa-check"></span> Thấm hút mồ hôi kém, gây nóng cho người mặc</li>
-                                                    <li><span class="fa fa-check"></span> Màu nhuộm kém</li>
+                                                    <li><span class="fa fa-check"></span>Mình vải hơi thô ráp</li>
+                                                    <li><span class="fa fa-check"></span>Thấm hút mồ hôi kém, gây nóng cho người mặc</li>
+                                                    <li><span class="fa fa-check"></span>Màu nhuộm kém</li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -636,15 +531,15 @@
                                         <ul style="list-style: none; margin: 0; padding: 0;">
                                             <li>• <b class="text-uppercase">Ưu điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span> Thấm hút mồ hôi cực tốt</li>
-                                                    <li><span class="fa fa-check"></span> Khi mặc cảm giác rất mát mẻ</li>
-                                                    <li><span class="fa fa-check"></span> Co giãn 4 chiều, thoải mái vận động</li>
-                                                    <li><span class="fa fa-check"></span> Ít xù long, bề mặt lán mịn</li>
+                                                    <li><span class="fa fa-check"></span>Thấm hút mồ hôi cực tốt</li>
+                                                    <li><span class="fa fa-check"></span>Khi mặc cảm giác rất mát mẻ</li>
+                                                    <li><span class="fa fa-check"></span>Co giãn 4 chiều, thoải mái vận động</li>
+                                                    <li><span class="fa fa-check"></span>Ít xù long, bề mặt lán mịn</li>
                                                 </ul>
                                             </li>
                                             <li>• <b class="text-uppercase">Nhược điểm</b>
                                                 <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                    <li><span class="fa fa-check"></span> Hơi nhăn sau khi giặt</li>
+                                                    <li><span class="fa fa-check"></span>Hơi nhăn sau khi giặt</li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -879,16 +774,16 @@
                                                 <ul style="list-style: none; margin: 0; padding: 0;">
                                                     <li>• <b class="text-uppercase">Ưu điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span> Thấm hút mồ hôi cực tốt.</li>
-                                                            <li><span class="fa fa-check"></span> Khi mặc cảm giác rất mát mẻ</li>
-                                                            <li><span class="fa fa-check"></span> Co giãn 4 chiều, thoải mái vận động</li>
-                                                            <li><span class="fa fa-check"></span> Ít xù long, bề mặt lán mịn</li>
+                                                            <li><span class="fa fa-check"></span>Thấm hút mồ hôi cực tốt.</li>
+                                                            <li><span class="fa fa-check"></span>Khi mặc cảm giác rất mát mẻ</li>
+                                                            <li><span class="fa fa-check"></span>Co giãn 4 chiều, thoải mái vận động</li>
+                                                            <li><span class="fa fa-check"></span>Ít xù long, bề mặt lán mịn</li>
                                                         </ul>
                                                     </li>
                                                     <li>• <b class="text-uppercase">Nhược điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span> Hơi nhăn sau khi giặt</li>
-                                                            <li><span class="fa fa-check"></span> Hạn chế về màu sắc. Chỉ có các màu như: trắng,
+                                                            <li><span class="fa fa-check"></span>Hơi nhăn sau khi giặt</li>
+                                                            <li><span class="fa fa-check"></span>Hạn chế về màu sắc. Chỉ có các màu như: trắng,
                                                                 đen, xám tiêu, xanh bích.</li>
                                                         </ul>
                                                     </li>
@@ -967,7 +862,8 @@
                                     </td>
                                     <td>
                                         <div class="fabric-content">
-                                            <p>- Thành phần gồm 35 % xơ cotton và 65% xơ Polyeste</p>
+                                            <p>
+                                                - Thành phần gồm 35 % xơ cotton và 65% xơ Polyeste</p>
                                             <p>
                                                 - Đây là loại vải có bề mặt dệt đẹp, độ dày tương đối nên khi dùng may áo có cổ
                                                 sẽ tạo form đứng cho áo.</p>
@@ -976,15 +872,15 @@
                                                 <ul style="list-style: none; margin: 0; padding: 0;">
                                                     <li>• <b class="text-uppercase">Ưu điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span> Có độ dày tương đối, giữ Form đứng cho áo</li>
-                                                            <li><span class="fa fa-check"></span> Vải mềm mại, ít nhàu khi giặt</li>
-                                                            <li><span class="fa fa-check"></span> Co giãn 4 chiều</li>
+                                                            <li><span class="fa fa-check"></span>Có độ dày tương đối, giữ Form đứng cho áo</li>
+                                                            <li><span class="fa fa-check"></span>Vải mềm mại, ít nhàu khi giặt</li>
+                                                            <li><span class="fa fa-check"></span>Co giãn 4 chiều</li>
                                                         </ul>
                                                     </li>
                                                     <li>• <b class="text-uppercase">Nhược điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span> Thấm hút mồ hôi và không mát như Cá sấu 100% cotton</li>
-                                                            <li><span class="fa fa-check"></span> Hơi dễ xù long</li>
+                                                            <li><span class="fa fa-check"></span>Thấm hút mồ hôi và không mát như Cá sấu 100% cotton</li>
+                                                            <li><span class="fa fa-check"></span>Hơi dễ xù long</li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -1063,22 +959,23 @@
                                     </td>
                                     <td>
                                         <div class="fabric-content">
-                                            <p>- Polyeste, tên thường gọi PE</p>
+                                            <p>
+                                                - Polyeste, tên thường gọi PE</p>
                                             <p>
                                                 - Đây là loại vải sử dụng cho các sản phẩm sử dụng vài lần, có giá thành cực tốt.</p>
                                             <p>
                                                 <ul style="list-style: none; margin: 0; padding: 0;">
                                                     <li>• <b class="text-uppercase">Ưu điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span> Mình vải cứng, giữ Form đứng cho áo</li>
-                                                            <li><span class="fa fa-check"></span> Giá thành khá rẻ</li>
+                                                            <li><span class="fa fa-check"></span>Mình vải cứng, giữ Form đứng cho áo</li>
+                                                            <li><span class="fa fa-check"></span>Giá thành khá rẻ</li>
                                                         </ul>
                                                     </li>
                                                     <li>• <b class="text-uppercase">Nhược điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span> Mình vải hơi thô ráp</li>
-                                                            <li><span class="fa fa-check"></span> Thấm hút mồ hôi kém, gây nóng cho người mặc</li>
-                                                            <li><span class="fa fa-check"></span> Màu nhuộm kém</li>
+                                                            <li><span class="fa fa-check"></span>Mình vải hơi thô ráp</li>
+                                                            <li><span class="fa fa-check"></span>Thấm hút mồ hôi kém, gây nóng cho người mặc</li>
+                                                            <li><span class="fa fa-check"></span>Màu nhuộm kém</li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -1168,15 +1065,15 @@
                                                 <ul style="list-style: none; margin: 0; padding: 0;">
                                                     <li>• <b class="text-uppercase">Ưu điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span> Thấm hút mồ hôi cực tốt</li>
-                                                            <li><span class="fa fa-check"></span> Khi mặc cảm giác rất mát mẻ</li>
-                                                            <li><span class="fa fa-check"></span> Co giãn 4 chiều, thoải mái vận động</li>
-                                                            <li><span class="fa fa-check"></span> Ít xù long, bề mặt lán mịn</li>
+                                                            <li><span class="fa fa-check"></span>Thấm hút mồ hôi cực tốt</li>
+                                                            <li><span class="fa fa-check"></span>Khi mặc cảm giác rất mát mẻ</li>
+                                                            <li><span class="fa fa-check"></span>Co giãn 4 chiều, thoải mái vận động</li>
+                                                            <li><span class="fa fa-check"></span>Ít xù long, bề mặt lán mịn</li>
                                                         </ul>
                                                     </li>
                                                     <li>• <b class="text-uppercase">Nhược điểm</b>
                                                         <ul style="list-style: none; margin: 0; padding: 10px 0 10px 10px;">
-                                                            <li><span class="fa fa-check"></span> Hơi nhăn sau khi giặt</li>
+                                                            <li><span class="fa fa-check"></span>Hơi nhăn sau khi giặt</li>
                                                         </ul>
                                                     </li>
                                                 </ul>
@@ -2202,7 +2099,8 @@
                     <div class="hotline">
                         <p>
                             Liên hệ</p>
-                        <span><img src="assets/images/img-phone.png" alt="" /></span>
+                        <span>
+                            <img src="assets/images/img-phone.png" alt="" /></span>
                     </div>
                 </div>
             </div>

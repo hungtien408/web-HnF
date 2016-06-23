@@ -2207,6 +2207,10 @@ body .mobilep-right {
     background: url(../images/icon-2.png) no-repeat left 12px;
     padding-right: 0;
 }
+.menu-list .menu-ma li a {
+    background: none;
+    padding: 0;
+}
 #menuMobile .menu-sub ul a .iconl, #menuMobileDV .menu-sub ul a .iconl {
     display: block;
     font-size: 20px;
@@ -2251,7 +2255,10 @@ body .mobilep-right {
     color: #f37121;
     background: url(../images/icon-2-hover.png) no-repeat left 12px;
 }
-#menuMobile .menu-list ul li a, .menu-nav ul li a {
+.menu-list .menu-ma li a:hover {
+    background: none;
+}
+#menuMobile .menu-list ul li a, .menu-nav ul li a, #menuMobile .menu-list ul li a:hover, .menu-nav ul li a:hover  {
     background: none;
 }
 .menu-list .menu-ma {
@@ -4026,6 +4033,23 @@ body .mobilep-right {
     }
     .section-list li:first-child .section-name, .section-list .section-name a {
         font-size: 12px;
+    }
+    .list-object li:nth-child(3) .content {
+        top: 50%;
+    }
+    .list-object li:nth-child(4) .content, .list-object li:nth-child(6) .content {
+        top: 80%;
+    }
+    .list-object li:nth-child(4) .object-name a, .list-object li:nth-child(6) .object-name a {
+        color: #484848;
+        font-weight: 700;
+    }
+    .list-object li:nth-child(5) .object-name a {
+        font-size: 12px;
+    }
+    .list-object li:nth-child(5) .content {
+        width: 36%;
+        top: 20%;
     }
 }
 @media (max-width: 319px)

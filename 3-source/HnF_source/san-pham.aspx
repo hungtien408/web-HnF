@@ -41,10 +41,10 @@
                     <div id="sliderBanner">
                         <div class="slide">
                             <img src="assets/images/slider-img-1.jpg" alt="" /></div>
-                        <div class="slide">
+                        <%--<div class="slide">
                             <img src="assets/images/slider-img-2.jpg" alt="" /></div>
                         <div class="slide">
-                            <img src="assets/images/slider-img-3.jpg" alt="" /></div>
+                            <img src="assets/images/slider-img-3.jpg" alt="" /></div>--%>
                     </div>
                 </div>
                 <div class="product-wrap">
