@@ -104,6 +104,7 @@ public partial class ad_single_productcategory : System.Web.UI.Page
             string strProductCategoryName = ((RadTextBox)row.FindControl("txtProductCategoryName")).Text.Trim();
             string strProductCategoryNameEn = ((RadTextBox)row.FindControl("txtProductCategoryNameEn")).Text.Trim();
             string strConvertedProductCategoryName = Common.ConvertTitle(strProductCategoryName);
+            string strServiceCategoryID = ((RadComboBox)row.FindControl("ddlServiceCategory")).SelectedValue;
             string strDescription = HttpUtility.HtmlDecode(FCKEditorFix.Fix(((RadEditor)row.FindControl("txtDescription")).Content.Trim()));
             string strDescriptionEn = HttpUtility.HtmlDecode(FCKEditorFix.Fix(((RadEditor)row.FindControl("txtDescriptionEn")).Content.Trim()));
             string strContent = HttpUtility.HtmlDecode(FCKEditorFix.Fix(((RadEditor)row.FindControl("txtContent")).Content.Trim()));
@@ -127,6 +128,7 @@ public partial class ad_single_productcategory : System.Web.UI.Page
                     strProductCategoryName,
                     strProductCategoryNameEn,
                     strConvertedProductCategoryName,
+                    strServiceCategoryID,
                     strDescription,
                     strDescriptionEn,
                     strContent,
@@ -161,6 +163,7 @@ public partial class ad_single_productcategory : System.Web.UI.Page
                 dsUpdateParam["ProductCategoryName"].DefaultValue = strProductCategoryName;
                 dsUpdateParam["ProductCategoryNameEn"].DefaultValue = strProductCategoryNameEn;
                 dsUpdateParam["ConvertedProductCategoryName"].DefaultValue = strConvertedProductCategoryName;
+                dsUpdateParam["ServiceCategoryID"].DefaultValue = strServiceCategoryID;
                 dsUpdateParam["Description"].DefaultValue = strDescription;
                 dsUpdateParam["DescriptionEn"].DefaultValue = strDescriptionEn;
                 dsUpdateParam["Content"].DefaultValue = strContent;
@@ -206,6 +209,7 @@ public partial class ad_single_productcategory : System.Web.UI.Page
             var ProductCategoryID = ((HiddenField)row.FindControl("hdnProductCategoryID")).Value;
             var dv = (DataView)ObjectDataSource1.Select();
             var ddlParent = (RadComboBox)row.FindControl("ddlParent");
+            var ddlServiceCategory = (RadComboBox)row.FindControl("ddlServiceCategory");
 
             if (!string.IsNullOrEmpty(ProductCategoryID))
             {
@@ -213,6 +217,8 @@ public partial class ad_single_productcategory : System.Web.UI.Page
 
                 if (!string.IsNullOrEmpty(dv[0]["ParentID"].ToString()))
                     ddlParent.SelectedValue = dv[0]["ParentID"].ToString();
+                if (!string.IsNullOrEmpty(dv[0]["ServiceCategoryID"].ToString()))
+                    ddlServiceCategory.SelectedValue = dv[0]["ServiceCategoryID"].ToString();
             }
 
             RadAjaxPanel1.ResponseScripts.Add(string.Format("window['UploadId'] = '{0}';", FileImageName.ClientID));

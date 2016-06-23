@@ -1187,7 +1187,11 @@
         </UpdateParameters>
     </asp:ObjectDataSource>
     <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="ProductCategorySelectAll"
-        TypeName="TLLib.ProductCategory"></asp:ObjectDataSource>
+        TypeName="TLLib.ProductCategory">
+        <SelectParameters>
+            <asp:Parameter Name="ServiceCategoryID" Type="String" />
+        </SelectParameters>
+    </asp:ObjectDataSource>
     <asp:ObjectDataSource ID="ObjectDataSource3" runat="server" SelectMethod="ManufacturerSelectAll"
         TypeName="TLLib.Manufacturer">
         <SelectParameters>

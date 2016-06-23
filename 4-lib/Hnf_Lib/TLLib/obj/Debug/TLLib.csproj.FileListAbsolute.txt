@@ -52,3 +52,10 @@ E:\Tien\Website\HnF\4-lib\Hnf_Lib\TLLib\bin\Debug\itextsharp.dll
 E:\Tien\Website\HnF\4-lib\Hnf_Lib\TLLib\obj\Debug\TLLib.csprojResolveAssemblyReference.cache
 E:\Tien\Website\HnF\4-lib\Hnf_Lib\TLLib\obj\Debug\TLLib.dll
 E:\Tien\Website\HnF\4-lib\Hnf_Lib\TLLib\obj\Debug\TLLib.pdb
+E:\Website\web-HnF\4-lib\Hnf_Lib\TLLib\bin\Debug\TLLib.dll
+E:\Website\web-HnF\4-lib\Hnf_Lib\TLLib\bin\Debug\TLLib.pdb
+E:\Website\web-HnF\4-lib\Hnf_Lib\TLLib\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Website\web-HnF\4-lib\Hnf_Lib\TLLib\bin\Debug\itextsharp.dll
+E:\Website\web-HnF\4-lib\Hnf_Lib\TLLib\obj\Debug\TLLib.csprojResolveAssemblyReference.cache
+E:\Website\web-HnF\4-lib\Hnf_Lib\TLLib\obj\Debug\TLLib.dll
+E:\Website\web-HnF\4-lib\Hnf_Lib\TLLib\obj\Debug\TLLib.pdb

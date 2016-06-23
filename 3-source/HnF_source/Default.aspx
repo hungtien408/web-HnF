@@ -3,8 +3,8 @@
 
 <%@ Register Src="uc/ucFooter.ascx" TagName="footer" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <title>HnF</title>
-    <meta name="description" content="HnF" />
+    <title>Áo Thun Đồng Phục Cao Cấp HnF</title>
+    <meta name="description" content="HnF chuyên Áo Thun Đồng Phục Cao Cấp, áo thun quảng cáo sự kiện, áo nhóm, áo lớp. Ao Thun Dong Phuc được may đẹp, vải đẹp, in thêu sắc sảo, áo thun được thiết kế theo yêu cầu của bạn, giao hàng nhanh." />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBanner" runat="Server">
     <div id="banner">
@@ -12,7 +12,7 @@
             <div class="slider-main">
                 <asp:ListView ID="lstBannerMain" runat="server" DataSourceID="odsBannerMain" EnableModelValidation="True">
                     <ItemTemplate>
-                        <img class="img-responsive" alt='<%# Eval("FileName") %>' src='<%# !string.IsNullOrEmpty(Eval("FileName").ToString()) ? "~/res/advertisement/" + Eval("FileName") : "~/assets/images/banner-img-2.jpg" %>'
+                        <img class="img-responsive" alt='Ao Thun Dong Phuc' src='<%# !string.IsNullOrEmpty(Eval("FileName").ToString()) ? "~/res/advertisement/" + Eval("FileName") : "~/assets/images/banner-img-2.jpg" %>'
                             runat="server" />
                     </ItemTemplate>
                     <LayoutTemplate>
@@ -55,7 +55,7 @@
         <div id="productShow" class="wrap-section">
             <ul class="section-list">
                 <li><a href="#" class="section-img">
-                    <img class="img-responsive" src="assets/images/provide-img-1.jpg" alt="" />
+                    <img class="img-responsive" src="assets/images/provide-img-1.jpg" alt="Áo Thun Đồng Phục" />
                 </a>
                     <div class="content">
                         <div class="section-name">
@@ -65,7 +65,7 @@
                     </div>
                 </li>
                 <li><a href="#" class="section-img">
-                    <img class="img-responsive" src="assets/images/provide-img-2.jpg" alt="" />
+                    <img class="img-responsive" src="assets/images/provide-img-2.jpg" alt="áo nhóm – áo lớp" />
                 </a>
                     <div class="content">
                         <div class="section-name">
@@ -75,7 +75,7 @@
                     </div>
                 </li>
                 <li><a href="#" class="section-img">
-                    <img class="img-responsive" src="assets/images/provide-img-3.jpg" alt="" />
+                    <img class="img-responsive" src="assets/images/provide-img-3.jpg" alt="sản xuất áo thun theo yêu cầu" />
                 </a>
                     <div class="content">
                         <div class="section-name">
@@ -87,7 +87,7 @@
             </ul>
             <div class="section-box">
                 <a href="#" class="section-img">
-                    <img class="img-responsive" src="assets/images/provide-img-4.jpg" alt="" />
+                    <img class="img-responsive" src="assets/images/provide-img-4.jpg" alt="áo thun quảng cáo sự kiện" />
                 </a>
                 <div class="content">
                     <div class="section-name">
@@ -114,7 +114,7 @@
                 <div class="col-lg-4 col-md-4 col-xs-4  element-item">
                     <div class="box-clothes">
                         <a class="section-img" href="#">
-                            <img src="assets/images/img-clothes-1.jpg" alt="" />
+                            <img src="assets/images/img-clothes-1.jpg" alt="áo thun cổ trụ" />
                         </a>
                         <div class="section-content">
                             <h3 class="section-name">
@@ -125,7 +125,7 @@
                 <div class="col-lg-4 col-md-4 col-xs-4  element-item">
                     <div class="box-clothes">
                         <a class="section-img" href="#">
-                            <img src="assets/images/img-clothes-2.jpg" alt="" />
+                            <img src="assets/images/img-clothes-2.jpg" alt="áo thun cổ tròn" />
                         </a>
                         <div class="section-content content-bottom">
                             <h3 class="section-name">
@@ -136,7 +136,7 @@
                 <div class="col-lg-4 col-md-4 col-xs-4  element-item">
                     <div class="box-clothes">
                         <a class="section-img" href="#">
-                            <img src="assets/images/img-clothes-3.jpg" alt="" />
+                            <img src="assets/images/img-clothes-3.jpg" alt="áo thun cổ tim" />
                         </a>
                         <div class="section-content">
                             <h3 class="section-name">
@@ -181,12 +181,14 @@
                             <div class="col-lg-4 col-xs-4 element-item">
                                 <div class="box-services">
                                     <a href="javascript:void(0);" class="services-img">
-                                        <img class="corner" alt='<%# Eval("ImageName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/article/" + Eval("ImageName") : "~/assets/images/we-other-1.png" %>' runat="server" />
+                                        <img class="corner" alt='<%# Eval("MetaTittle") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/article/" + Eval("ImageName") : "~/assets/images/we-other-1.png" %>'
+                                            runat="server" />
                                     </a>
                                     <h4 class="title-services">
-                                        <a href="javascript:void(0);"><%# Eval("ArticleTitle")%></a></h4>
+                                        <a href="javascript:void(0);">
+                                            <%# Eval("ArticleTitle")%></a></h4>
                                     <div class="description">
-                                       <%# Eval("Description")%>
+                                        <%# Eval("Description")%>
                                     </div>
                                 </div>
                             </div>
@@ -195,8 +197,8 @@
                             <span runat="server" id="itemPlaceholder" />
                         </LayoutTemplate>
                     </asp:ListView>
-                    <asp:ObjectDataSource ID="odsOurDifferent" runat="server" 
-                        SelectMethod="ArticleSelectAll" TypeName="TLLib.Article">
+                    <asp:ObjectDataSource ID="odsOurDifferent" runat="server" SelectMethod="ArticleSelectAll"
+                        TypeName="TLLib.Article">
                         <SelectParameters>
                             <asp:Parameter Name="StartRowIndex" Type="String" />
                             <asp:Parameter Name="EndRowIndex" Type="String" />

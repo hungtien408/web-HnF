@@ -10,7 +10,7 @@
         <div class="slider-wrapper">
             <h2 class="title-tv">
                 <span>Liên hệ</span></h2>
-            <img class="img-responsive" src="assets/images/banner-contact.jpg" alt="" />
+            <img class="img-responsive" src="assets/images/banner-contact.jpg" alt="lien he ao thun dong phuc" />
         </div>
     </div>
 </asp:Content>

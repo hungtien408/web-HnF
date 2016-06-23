@@ -97,7 +97,7 @@
     <asp:RadAjaxPanel ID="RadAjaxPanel1" runat="server" ClientEvents-OnRequestStart="conditionalPostback"
         Width="100%">
         <asp:Label ID="lblError" ForeColor="Red" runat="server"></asp:Label>
-        <asp:RadGrid ID="RadGrid1" AllowMultiRowSelection="True" runat="server" Culture="vi-VN" 
+        <asp:RadGrid ID="RadGrid1" AllowMultiRowSelection="True" runat="server" Culture="vi-VN"
             DataSourceID="ObjectDataSource1" GridLines="Horizontal" AutoGenerateColumns="False"
             AllowAutomaticDeletes="True" ShowStatusBar="True" OnItemCommand="RadGrid1_ItemCommand"
             OnItemDataBound="RadGrid1_ItemDataBound" CssClass="grid" AllowAutomaticUpdates="True"
@@ -174,6 +174,7 @@
                             </div>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
+                    <asp:GridBoundColumn DataField="ServiceCategoryName" HeaderText="Danh mục dịch vụ" SortExpression="ServiceCategoryName" />
                     <asp:GridBoundColumn DataField="ProductCategoryID" HeaderText="ID" SortExpression="ProductCategoryID">
                     </asp:GridBoundColumn>
                     <asp:GridTemplateColumn>
@@ -274,6 +275,17 @@
                                     </td>
                                 </tr>
                                 <tr>
+                                    <td class="left">
+                                        Danh mục dịch vụ
+                                    </td>
+                                    <td>
+                                        <asp:RadComboBox Filter="Contains" ID="ddlServiceCategory" runat="server" DataSourceID="ObjectDataSource5"
+                                            DataTextField="ServiceCategoryName" DataValueField="ServiceCategoryID" Width="504px"
+                                            OnDataBound="DropDownList_DataBound" EmptyMessage="- Chọn -">
+                                        </asp:RadComboBox>
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td class="left" valign="top">
                                         Meta Title
                                     </td>
@@ -308,11 +320,14 @@
                                         Mô tả
                                     </td>
                                     <td>
-                                        <asp:RadEditor ID="txtDescription" StripFormattingOptions="MSWordRemoveAll,ConvertWordLists,MSWordNoFonts,Font,Css,Span" ContentFilters="ConvertCharactersToEntities,ConvertToXhtml,OptimizeSpans,IndentHTMLContent,ConvertFontToSpan,IECleanAnchors,FixUlBoldItalic,RemoveScripts,FixEnclosingP" runat="server" Height="200" Language="vi-VN" Skin="Office2007"
-                                            Width="98%" Content='<%# Bind("Description") %>'>
-                                            <ImageManager DeletePaths="~/Uploads/Image/" UploadPaths="~/Uploads/Image/" ViewPaths="~/Uploads/Image/" MaxUploadFileSize="1024000" />
+                                        <asp:RadEditor ID="txtDescription" StripFormattingOptions="MSWordRemoveAll,ConvertWordLists,MSWordNoFonts,Font,Css,Span"
+                                            ContentFilters="ConvertCharactersToEntities,ConvertToXhtml,OptimizeSpans,IndentHTMLContent,ConvertFontToSpan,IECleanAnchors,FixUlBoldItalic,RemoveScripts,FixEnclosingP"
+                                            runat="server" Height="200" Language="vi-VN" Skin="Office2007" Width="98%" Content='<%# Bind("Description") %>'>
+                                            <ImageManager DeletePaths="~/Uploads/Image/" UploadPaths="~/Uploads/Image/" ViewPaths="~/Uploads/Image/"
+                                                MaxUploadFileSize="1024000" />
                                             <FlashManager DeletePaths="~/Uploads/Video/" UploadPaths="~/Uploads/Video/" ViewPaths="~/Uploads/Video/" />
-                                            <DocumentManager DeletePaths="~/Uploads/File/" UploadPaths="~/Uploads/File/" ViewPaths="~/Uploads/File/" MaxUploadFileSize="1024000" />
+                                            <DocumentManager DeletePaths="~/Uploads/File/" UploadPaths="~/Uploads/File/" ViewPaths="~/Uploads/File/"
+                                                MaxUploadFileSize="1024000" />
                                             <MediaManager DeletePaths="~/Uploads/Media/" UploadPaths="~/Uploads/Media/" ViewPaths="~/Uploads/Media/" />
                                             <TemplateManager DeletePaths="~/Uploads/Template/" UploadPaths="~/Uploads/Template/"
                                                 ViewPaths="~/Uploads/Template/" />
@@ -336,11 +351,13 @@
                                         Nội dung
                                     </td>
                                     <td>
-                                        <asp:RadEditor ID="txtContent" ContentFilters="ConvertCharactersToEntities,ConvertToXhtml,OptimizeSpans,IndentHTMLContent,ConvertFontToSpan,IECleanAnchors,FixUlBoldItalic,RemoveScripts,FixEnclosingP" runat="server" Language="vi-VN" Skin="Office2007"
-                                            Width="98%" Content='<%# Bind("Content") %>'>
-                                            <ImageManager DeletePaths="~/Uploads/Image/" UploadPaths="~/Uploads/Image/" ViewPaths="~/Uploads/Image/" MaxUploadFileSize="1024000" />
+                                        <asp:RadEditor ID="txtContent" ContentFilters="ConvertCharactersToEntities,ConvertToXhtml,OptimizeSpans,IndentHTMLContent,ConvertFontToSpan,IECleanAnchors,FixUlBoldItalic,RemoveScripts,FixEnclosingP"
+                                            runat="server" Language="vi-VN" Skin="Office2007" Width="98%" Content='<%# Bind("Content") %>'>
+                                            <ImageManager DeletePaths="~/Uploads/Image/" UploadPaths="~/Uploads/Image/" ViewPaths="~/Uploads/Image/"
+                                                MaxUploadFileSize="1024000" />
                                             <FlashManager DeletePaths="~/Uploads/Video/" UploadPaths="~/Uploads/Video/" ViewPaths="~/Uploads/Video/" />
-                                            <DocumentManager DeletePaths="~/Uploads/File/" UploadPaths="~/Uploads/File/" ViewPaths="~/Uploads/File/" MaxUploadFileSize="1024000" />
+                                            <DocumentManager DeletePaths="~/Uploads/File/" UploadPaths="~/Uploads/File/" ViewPaths="~/Uploads/File/"
+                                                MaxUploadFileSize="1024000" />
                                             <MediaManager DeletePaths="~/Uploads/Media/" UploadPaths="~/Uploads/Media/" ViewPaths="~/Uploads/Media/" />
                                             <TemplateManager DeletePaths="~/Uploads/Template/" UploadPaths="~/Uploads/Template/"
                                                 ViewPaths="~/Uploads/Template/" />
@@ -380,7 +397,8 @@
                                     </td>
                                     <td>
                                         <asp:RadTextBox ID="txtProductCategoryNameEn" runat="server" Text='<%# (Container is GridEditFormInsertItem) ? "" : Eval("ProductCategoryNameEn") %>'
-                                            Width="500px" EmptyMessage="Tên danh mục(En)..."></asp:RadTextBox>
+                                            Width="500px" EmptyMessage="Tên danh mục(En)...">
+                                        </asp:RadTextBox>
                                     </td>
                                 </tr>
                                 <tr>
@@ -388,11 +406,13 @@
                                         Mô tả(En)
                                     </td>
                                     <td>
-                                        <asp:RadEditor ID="txtDescriptionEn" ContentFilters="ConvertCharactersToEntities,ConvertToXhtml,OptimizeSpans,IndentHTMLContent,ConvertFontToSpan,IECleanAnchors,FixUlBoldItalic,RemoveScripts,FixEnclosingP" runat="server" Height="200" Language="vi-VN"
-                                            Skin="Office2007" Width="98%" Content='<%# Bind("DescriptionEn") %>'>
-                                            <ImageManager DeletePaths="~/Uploads/Image/" UploadPaths="~/Uploads/Image/" ViewPaths="~/Uploads/Image/" MaxUploadFileSize="1024000" />
+                                        <asp:RadEditor ID="txtDescriptionEn" ContentFilters="ConvertCharactersToEntities,ConvertToXhtml,OptimizeSpans,IndentHTMLContent,ConvertFontToSpan,IECleanAnchors,FixUlBoldItalic,RemoveScripts,FixEnclosingP"
+                                            runat="server" Height="200" Language="vi-VN" Skin="Office2007" Width="98%" Content='<%# Bind("DescriptionEn") %>'>
+                                            <ImageManager DeletePaths="~/Uploads/Image/" UploadPaths="~/Uploads/Image/" ViewPaths="~/Uploads/Image/"
+                                                MaxUploadFileSize="1024000" />
                                             <FlashManager DeletePaths="~/Uploads/Video/" UploadPaths="~/Uploads/Video/" ViewPaths="~/Uploads/Video/" />
-                                            <DocumentManager DeletePaths="~/Uploads/File/" UploadPaths="~/Uploads/File/" ViewPaths="~/Uploads/File/" MaxUploadFileSize="1024000" />
+                                            <DocumentManager DeletePaths="~/Uploads/File/" UploadPaths="~/Uploads/File/" ViewPaths="~/Uploads/File/"
+                                                MaxUploadFileSize="1024000" />
                                             <MediaManager DeletePaths="~/Uploads/Media/" UploadPaths="~/Uploads/Media/" ViewPaths="~/Uploads/Media/" />
                                             <TemplateManager DeletePaths="~/Uploads/Template/" UploadPaths="~/Uploads/Template/"
                                                 ViewPaths="~/Uploads/Template/" />
@@ -416,11 +436,13 @@
                                         Nội dung
                                     </td>
                                     <td>
-                                        <asp:RadEditor ID="txtContentEn" ContentFilters="ConvertCharactersToEntities,ConvertToXhtml,OptimizeSpans,IndentHTMLContent,ConvertFontToSpan,IECleanAnchors,FixUlBoldItalic,RemoveScripts,FixEnclosingP" runat="server" Language="vi-VN" Skin="Office2007"
-                                            Width="98%" Content='<%# Bind("ContentEn") %>'>
-                                            <ImageManager DeletePaths="~/Uploads/Image/" UploadPaths="~/Uploads/Image/" ViewPaths="~/Uploads/Image/" MaxUploadFileSize="1024000" />
+                                        <asp:RadEditor ID="txtContentEn" ContentFilters="ConvertCharactersToEntities,ConvertToXhtml,OptimizeSpans,IndentHTMLContent,ConvertFontToSpan,IECleanAnchors,FixUlBoldItalic,RemoveScripts,FixEnclosingP"
+                                            runat="server" Language="vi-VN" Skin="Office2007" Width="98%" Content='<%# Bind("ContentEn") %>'>
+                                            <ImageManager DeletePaths="~/Uploads/Image/" UploadPaths="~/Uploads/Image/" ViewPaths="~/Uploads/Image/"
+                                                MaxUploadFileSize="1024000" />
                                             <FlashManager DeletePaths="~/Uploads/Video/" UploadPaths="~/Uploads/Video/" ViewPaths="~/Uploads/Video/" />
-                                            <DocumentManager DeletePaths="~/Uploads/File/" UploadPaths="~/Uploads/File/" ViewPaths="~/Uploads/File/" MaxUploadFileSize="1024000" />
+                                            <DocumentManager DeletePaths="~/Uploads/File/" UploadPaths="~/Uploads/File/" ViewPaths="~/Uploads/File/"
+                                                MaxUploadFileSize="1024000" />
                                             <MediaManager DeletePaths="~/Uploads/Media/" UploadPaths="~/Uploads/Media/" ViewPaths="~/Uploads/Media/" />
                                             <TemplateManager DeletePaths="~/Uploads/Template/" UploadPaths="~/Uploads/Template/"
                                                 ViewPaths="~/Uploads/Template/" />
@@ -472,6 +494,7 @@
             <asp:Parameter Name="ProductCategoryName" Type="String" />
             <asp:Parameter Name="ProductCategoryNameEn" Type="String" />
             <asp:Parameter Name="ConvertedProductCategoryName" Type="String" />
+            <asp:Parameter Name="ServiceCategoryID" Type="String" />
             <asp:Parameter Name="Description" Type="String" />
             <asp:Parameter Name="DescriptionEn" Type="String" />
             <asp:Parameter Name="Content" Type="String" />
@@ -486,11 +509,15 @@
             <asp:Parameter Name="IsShowOnHomePage" Type="String" />
             <asp:Parameter Name="IsAvailable" Type="String" />
         </InsertParameters>
+        <SelectParameters>
+            <asp:Parameter Name="ServiceCategoryID" Type="String" />
+        </SelectParameters>
         <UpdateParameters>
             <asp:Parameter Name="ProductCategoryID" Type="String" />
             <asp:Parameter Name="ProductCategoryName" Type="String" />
             <asp:Parameter Name="ProductCategoryNameEn" Type="String" />
             <asp:Parameter Name="ConvertedProductCategoryName" Type="String" />
+            <asp:Parameter Name="ServiceCategoryID" Type="String" />
             <asp:Parameter Name="Description" Type="String" />
             <asp:Parameter Name="DescriptionEn" Type="String" />
             <asp:Parameter Name="Content" Type="String" />
@@ -506,6 +533,8 @@
             <asp:Parameter Name="IsAvailable" Type="String" />
         </UpdateParameters>
     </asp:ObjectDataSource>
+    <asp:ObjectDataSource ID="ObjectDataSource5" runat="server" 
+        SelectMethod="ServiceCategorySelectAll" TypeName="TLLib.ServiceCategory"></asp:ObjectDataSource>
     <asp:RadProgressManager ID="RadProgressManager1" runat="server" />
     <asp:RadProgressArea ID="ProgressArea1" runat="server" Culture="vi-VN" DisplayCancelButton="True"
         HeaderText="Đang tải" Skin="Office2007" Style="position: fixed; top: 50% !important;

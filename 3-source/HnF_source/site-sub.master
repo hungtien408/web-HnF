@@ -10,7 +10,7 @@
         <div class="container">
             <div class="logo">
                 <a id="A2" href="~/" runat="server">
-                    <img class="img-responsive" src="assets/images/logo.png" alt="logo" /></a>
+                    <img class="img-responsive" src="assets/images/logo.png" alt="Hnf – Áo Thun Đồng Phục" /></a>
             </div>
             <div class="wrapper-menu">
                 <a class="panel-a menu-mo ipadmo-992" href="#menumobile" data-position="true" data-type="false">

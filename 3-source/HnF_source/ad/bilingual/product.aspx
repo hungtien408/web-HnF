@@ -433,6 +433,7 @@
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
                     <asp:GridBoundColumn DataField="ProductCategoryName" HeaderText="Danh mục" SortExpression="ProductCategoryName" />
+                    <asp:GridBoundColumn DataField="ServiceCategoryName" HeaderText="Danh mục dịch vụ" SortExpression="ServiceCategoryName" />
                     <asp:GridBoundColumn DataField="ManufacturerName" HeaderText="Nhà sản xuất" SortExpression="ManufacturerName" />
                     <asp:GridTemplateColumn DataField="Priority" HeaderStyle-Width="1%" HeaderText="Thứ tự"
                         SortExpression="Priority">
@@ -1187,7 +1188,11 @@
         </UpdateParameters>
     </asp:ObjectDataSource>
     <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="ProductCategorySelectAll"
-        TypeName="TLLib.ProductCategory"></asp:ObjectDataSource>
+        TypeName="TLLib.ProductCategory">
+        <SelectParameters>
+            <asp:Parameter Name="ServiceCategoryID" Type="String" />
+        </SelectParameters>
+    </asp:ObjectDataSource>
     <asp:ObjectDataSource ID="ObjectDataSource3" runat="server" SelectMethod="ManufacturerSelectAll"
         TypeName="TLLib.Manufacturer">
         <SelectParameters>

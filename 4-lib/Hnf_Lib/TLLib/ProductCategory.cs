@@ -17,6 +17,7 @@ namespace TLLib
             string ProductCategoryName,
             string ProductCategoryNameEn,
             string ConvertedProductCategoryName,
+            string ServiceCategoryID,
             string Description,
             string DescriptionEn,
             string Content,
@@ -40,6 +41,7 @@ namespace TLLib
                 cmd.Parameters.AddWithValue("@ProductCategoryName", string.IsNullOrEmpty(ProductCategoryName) ? dbNULL : (object)ProductCategoryName);
                 cmd.Parameters.AddWithValue("@ProductCategoryNameEn", string.IsNullOrEmpty(ProductCategoryNameEn) ? dbNULL : (object)ProductCategoryNameEn);
                 cmd.Parameters.AddWithValue("@ConvertedProductCategoryName", string.IsNullOrEmpty(ConvertedProductCategoryName) ? dbNULL : (object)ConvertedProductCategoryName);
+                cmd.Parameters.AddWithValue("@ServiceCategoryID", string.IsNullOrEmpty(ServiceCategoryID) ? dbNULL : (object)ServiceCategoryID);
                 cmd.Parameters.AddWithValue("@Description", string.IsNullOrEmpty(Description) ? dbNULL : (object)Description);
                 cmd.Parameters.AddWithValue("@DescriptionEn", string.IsNullOrEmpty(DescriptionEn) ? dbNULL : (object)DescriptionEn);
                 cmd.Parameters.AddWithValue("@Content", string.IsNullOrEmpty(Content) ? dbNULL : (object)Content);
@@ -81,6 +83,7 @@ namespace TLLib
             string ProductCategoryName,
             string ProductCategoryNameEn,
             string ConvertedProductCategoryName,
+            string ServiceCategoryID,
             string Description,
             string DescriptionEn,
             string Content,
@@ -105,6 +108,7 @@ namespace TLLib
                 cmd.Parameters.AddWithValue("@ProductCategoryName", string.IsNullOrEmpty(ProductCategoryName) ? dbNULL : (object)ProductCategoryName);
                 cmd.Parameters.AddWithValue("@ProductCategoryNameEn", string.IsNullOrEmpty(ProductCategoryNameEn) ? dbNULL : (object)ProductCategoryNameEn);
                 cmd.Parameters.AddWithValue("@ConvertedProductCategoryName", string.IsNullOrEmpty(ConvertedProductCategoryName) ? dbNULL : (object)ConvertedProductCategoryName);
+                cmd.Parameters.AddWithValue("@ServiceCategoryID", string.IsNullOrEmpty(ServiceCategoryID) ? dbNULL : (object)ServiceCategoryID);
                 cmd.Parameters.AddWithValue("@Description", string.IsNullOrEmpty(Description) ? dbNULL : (object)Description);
                 cmd.Parameters.AddWithValue("@DescriptionEn", string.IsNullOrEmpty(DescriptionEn) ? dbNULL : (object)DescriptionEn);
                 cmd.Parameters.AddWithValue("@Content", string.IsNullOrEmpty(Content) ? dbNULL : (object)Content);
@@ -230,7 +234,7 @@ namespace TLLib
             }
         }
 
-        public DataTable ProductCategorySelectAll()
+        public DataTable ProductCategorySelectAll( string ServiceCategoryID)
         {
             try
             {
@@ -238,6 +242,7 @@ namespace TLLib
                 var scon = new SqlConnection(connectionString);
                 var cmd = new SqlCommand("usp_ProductCategory_SelectAll", scon);
                 cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ServiceCategoryID", string.IsNullOrEmpty(ServiceCategoryID) ? dbNULL : (object)ServiceCategoryID);
                 SqlParameter errorCodeParam = new SqlParameter("@ErrorCode", null);
                 errorCodeParam.Size = 4;
                 errorCodeParam.Direction = ParameterDirection.Output;
