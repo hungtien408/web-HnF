@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ad/template/adminEn.master" AutoEventWireup="true"
-    CodeFile="productcategory.aspx.cs" Inherits="ad_single_productcategory" %>
+    CodeFile="productcategory-1.aspx.cs" Inherits="ad_single_productcategory" %>
 
 <%@ Register TagPrefix="asp" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="Server">
@@ -166,7 +166,7 @@
                             </div>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn DataField="ProductCategoryNameEn" HeaderText="Tên danh mục(Tiếng Anh)" Visible="False">
+                    <asp:GridTemplateColumn DataField="ProductCategoryNameEn" HeaderText="Tên danh mục(Tiếng Anh)">
                         <ItemTemplate>
                             <div class='<%#"catlevel level" +  Eval("Level") %>' style='padding-left: <%# string.IsNullOrEmpty(Eval("Level").ToString()) ? 0 : Convert.ToInt32(Eval("Level")) * 10 %>px'>
                                 <asp:Label ID="lblProductCategoryNameEn" runat="server" Font-Bold='<%# Eval("ParentID").ToString() == "0" ? true : false %>'
@@ -220,7 +220,7 @@
                                 CssClass="checkbox" />
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn HeaderText="Ảnh" Visible="False">
+                    <asp:GridTemplateColumn HeaderText="Ảnh">
                         <ItemTemplate>
                             <asp:Panel ID="Panel1" runat="server" Visible='<%# string.IsNullOrEmpty( Eval("ImageName").ToString()) ? false : true %>'>
                                 <a class="screenshot" rel='../../res/productcategory/<%# Eval("ImageName") %>'>
@@ -243,7 +243,7 @@
                             <h3 class="searchTitle">
                                 Thông Tin Danh Mục Sản Phẩm</h3>
                             <table class="search">
-                                <tr class="invisible">
+                                <tr>
                                     <td class="left" valign="top">
                                         Ảnh đại diện
                                     </td>
@@ -346,7 +346,7 @@
                                         </asp:RadEditor>
                                     </td>
                                 </tr>
-                                <tr class="invisible">
+                                <tr>
                                     <td class="left" valign="top">
                                         Nội dung
                                     </td>
@@ -364,7 +364,6 @@
                                         </asp:RadEditor>
                                     </td>
                                 </tr>
-                                <asp:Panel ID="Panel2" runat="server" Visible="False">
                                 <tr>
                                     <td colspan="2">
                                         <h3>
@@ -450,7 +449,6 @@
                                         </asp:RadEditor>
                                     </td>
                                 </tr>
-                                </asp:Panel>
                                 <tr>
                                     <td class="left" colspan="2">
                                         <asp:CheckBox ID="chkIsShowOnMenu" runat="server" Checked='<%# (Container is GridEditFormInsertItem) ? true : (Eval("IsShowOnMenu") == DBNull.Value ? false : Convert.ToBoolean(Eval("IsShowOnMenu"))) %>'
@@ -512,10 +510,7 @@
             <asp:Parameter Name="IsAvailable" Type="String" />
         </InsertParameters>
         <SelectParameters>
-            <asp:Parameter Name="parentID" Type="Int32" DefaultValue="1" />
-            <asp:Parameter DefaultValue="2" Name="increaseLevelCount" Type="Int32" />
-            <asp:Parameter Name="IsShowOnMenu" Type="String" />
-            <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+            <asp:Parameter Name="ServiceCategoryID" Type="String" />
         </SelectParameters>
         <UpdateParameters>
             <asp:Parameter Name="ProductCategoryID" Type="String" />

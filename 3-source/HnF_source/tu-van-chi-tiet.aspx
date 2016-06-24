@@ -3,6 +3,12 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
+<asp:Content ID="Content8" ContentPlaceHolderID="cphMenuTV" runat="Server">
+    <div class="wrapper-menu">
+        <a class="panel-a backhome" href="~/" runat="server">
+            Quay về Trang chủ</a>
+     </div>
+</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="container">
         <div class="text-center wrapper-880 border-none wrap-suicide">

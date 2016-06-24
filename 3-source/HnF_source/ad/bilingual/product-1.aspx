@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ad/template/adminEn.master" AutoEventWireup="true"
-    CodeFile="product.aspx.cs" Inherits="ad_single_product" %>
+    CodeFile="product-1.aspx.cs" Inherits="ad_single_product" %>
 
 <%@ Register TagPrefix="asp" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
 <%@ Register Assembly="Spaanjaars.Toolkit" Namespace="Spaanjaars.Toolkit" TagPrefix="isp" %>
@@ -1123,7 +1123,7 @@
                 Type="String" />
             <asp:ControlParameter ControlID="txtSearchPriceTo" Name="PriceTo" PropertyName="Text"
                 Type="String" />
-            <asp:ControlParameter ControlID="ddlSearchCategory" Name="CategoryID" DefaultValue="1" PropertyName="SelectedValue"
+            <asp:ControlParameter ControlID="ddlSearchCategory" Name="CategoryID" PropertyName="SelectedValue"
                 Type="String" />
             <asp:Parameter Name="ServiceCategoryID" Type="String" />
             <asp:ControlParameter ControlID="ddlSearchManufacturer" Name="ManufacturerID" PropertyName="SelectedValue"
@@ -1190,10 +1190,7 @@
     <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="ProductCategorySelectAll"
         TypeName="TLLib.ProductCategory">
         <SelectParameters>
-            <asp:Parameter Name="parentID" Type="Int32" DefaultValue="1" />
-            <asp:Parameter DefaultValue="2" Name="increaseLevelCount" Type="Int32" />
-            <asp:Parameter Name="IsShowOnMenu" Type="String" />
-            <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+            <asp:Parameter Name="ServiceCategoryID" Type="String" />
         </SelectParameters>
     </asp:ObjectDataSource>
     <asp:ObjectDataSource ID="ObjectDataSource3" runat="server" SelectMethod="ManufacturerSelectAll"

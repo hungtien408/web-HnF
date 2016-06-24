@@ -359,7 +359,7 @@ function myfunload() {
         var whylist = $('#whyShow').imagesLoaded(function () {
             whylist.textHeight({
                 activetit: true,
-                listcss: [{ cssname: ".why-img" }, { cssname: ".why-name"}],
+                listcss: [{ cssname: ".why-box" }, { cssname: ".why-img" }, { cssname: ".why-name"}],
                 wpointb: true,
                 desbool: false,
                 listpos: [{ cssnamepos: ".desription", cssheightnum: "2"}],

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/site-sub.master" AutoEventWireup="true"
     CodeFile="gioi-thieu.aspx.cs" Inherits="gioi_thieu" %>
-<%@ Register TagPrefix="uc1" TagName="footer" Src="~/uc/ucFooter.ascx" %>
 
+<%@ Register TagPrefix="uc1" TagName="footer" Src="~/uc/ucFooter.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>HnF</title>
     <meta name="description" content="HnF" />
@@ -50,9 +50,10 @@
                         <div class="why-content">
                             <h5 class="why-name">
                                 <a href="#">Dịch vụ khách hàng hoàn hảo</a></h5>
-                            <%--<div class="description">
-                                We always strive to deliver the best of our services for the customers.
-                            </div>--%>
+                            <div class="description">
+                                Bạn sẽ cảm nhận được một dịch vụ khách hàng khép kín, theo tiêu chuẩn tốt nhất từ
+                                khâu tư vấn cho đến khi nhận sản phẩm.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -63,6 +64,10 @@
                         <div class="why-content">
                             <h5 class="why-name">
                                 <a href="#">Thiết kế áo mẫu miễn phí</a></h5>
+                            <div class="description">
+                                Bảng thiết kế 3D với ý tưởng về form dáng và màu sắc sẽ giúp bạn hình dung trực
+                                quan nhất về sản phẩm của mình.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -73,6 +78,10 @@
                         <div class="why-content">
                             <h5 class="why-name">
                                 <a href="#">Sản phẩm chất lượng</a></h5>
+                            <div class="description">
+                                Tất cả các sản phẩm của HNF đều được may theo đúng tiêu chuẩn quốc tế, sử dụng toàn
+                                bộ chỉ may 100% cotton, đường may sắc sảo.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,6 +92,10 @@
                         <div class="why-content">
                             <h5 class="why-name">
                                 <a href="#">Giải pháp in và thêu tiên tiến</a></h5>
+                            <div class="description">
+                                Máy thêu Nhật, màu in nhập khẩu từ Châu Âu, nguyên phụ liệu may mặc đến từ các nhà
+                                cung cấp hàng đầu Việt Nam.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -93,6 +106,9 @@
                         <div class="why-content">
                             <h5 class="why-name">
                                 <a href="#">Giá cả phù hợp với nhu cầu khách hàng</a></h5>
+                            <div class="description">
+                                Sẽ có nhiều mức giá để bạn lựa chọn tương ứng với nhiều giải pháp đến từ chúng tôi
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -103,6 +119,10 @@
                         <div class="why-content">
                             <h5 class="why-name">
                                 <a href="#">Giao hàng đúng hẹn Chăm sóc khách hàng sau bán hàng</a></h5>
+                            <div class="description">
+                                Hàng sẽ đến tận bàn làm việc của bạn. Bộ phận chăm sóc khách hàng sẽ còn “làm phiền”
+                                bạn sau đó nữa!
+                            </div>
                         </div>
                     </div>
                 </div>

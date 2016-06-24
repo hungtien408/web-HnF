@@ -2678,6 +2678,21 @@ body .mobilep-right {
     max-width: none;
     width: 60px;
 }
+.backhome {
+    float: left;
+    color: #303030;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 40px;
+    position: relative;
+    padding: 0 17px;
+    outline: none;
+}
+.backhome:hover {
+    text-decoration: none;
+}
 /*=============================footer======================*/
 #footer
 {

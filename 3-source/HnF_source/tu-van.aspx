@@ -3,6 +3,40 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
+<asp:Content ID="Content8" ContentPlaceHolderID="cphMenuTV" runat="Server">
+    <div class="wrapper-menu">
+        <a class="panel-a menu-mo ipadmo-992" href="#menumobile" data-position="true" data-type="false">
+            <span class="fa fa-reorder"></span>Menu</a>
+        <ul id="menu" class="desktop-992">
+            <asp:ListView ID="lstSupportCategoryMenu" runat="server" DataSourceID="odsSupportCategoryMenu" EnableModelValidation="True">
+                <ItemTemplate>
+                    <li class="supportShow"><a href='<%# "#supportShow" + Eval("ArticleCategoryID") %>'>
+                        <%# Eval("ArticleCategoryName")%></a></li>
+                    <%--<li><a href='<%# progressTitle(Eval("ArticleCategoryName")) + "-tci-" + Eval("ArticleCategoryID") + ".aspx" %>'><%# Eval("ArticleCategoryName")%></a></li>--%>
+                </ItemTemplate>
+                <EmptyDataTemplate>
+                    <li><a href="#">Công nghệ sản xuất</a></li>
+                    <li><a href="#">Nguyên vật liệu</a></li>
+                    <li><a href="#">Màu sắc - Form dáng</a></li>
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="#">Tin tức</a></li>
+                </EmptyDataTemplate>
+                <LayoutTemplate>
+                    <span runat="server" id="itemPlaceholder" />
+                </LayoutTemplate>
+            </asp:ListView>
+            <asp:ObjectDataSource ID="odsSupportCategoryMenu" runat="server" SelectMethod="ArticleCategorySelectAll"
+                TypeName="TLLib.ArticleCategory">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="2" Name="parentID" Type="Int32" />
+                    <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
+                    <asp:Parameter DefaultValue="True" Name="IsShowOnMenu" Type="String" />
+                    <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+                </SelectParameters>
+            </asp:ObjectDataSource>
+        </ul>
+    </div>
+</asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="container">
         <asp:UpdatePanel ID="UpdatePanel1" runat="server">

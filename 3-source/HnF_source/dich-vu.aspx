@@ -55,10 +55,12 @@
                             <div class="col-lg-3 col-xs-6 element-item">
                                 <div class="box-services">
                                     <a href="javascript:void(0);" class="services-img">
-                                        <img class="corner" alt='<%# Eval("ImageName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/product/" + Eval("ImageName") : "~/assets/images/services-img-4.png" %>' runat="server" />
+                                        <img class="corner" alt='<%# Eval("ImageName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/product/" + Eval("ImageName") : "~/assets/images/services-img-4.png" %>'
+                                            runat="server" />
                                     </a>
                                     <h4 class="title-services">
-                                        <a href="javascript:void(0);"><%# Eval("ProductName") %></a></h4>
+                                        <a href="javascript:void(0);">
+                                            <%# Eval("ProductName") %></a></h4>
                                     <div class="description content-services">
                                         <asp:Label ID="Label1" runat="server" Text='<%# Eval("Content") %>'></asp:Label>
                                     </div>
@@ -72,8 +74,8 @@
                             <span runat="server" id="itemPlaceholder" />
                         </LayoutTemplate>
                     </asp:ListView>
-                    <asp:ObjectDataSource ID="odsDVCN" runat="server" 
-                        SelectMethod="ProductSelectAll" TypeName="TLLib.Product">
+                    <asp:ObjectDataSource ID="odsDVCN" runat="server" SelectMethod="ProductSelectAll"
+                        TypeName="TLLib.Product">
                         <SelectParameters>
                             <asp:Parameter Name="StartRowIndex" Type="String" />
                             <asp:Parameter Name="EndRowIndex" Type="String" />
@@ -83,8 +85,7 @@
                             <asp:Parameter Name="PriceFrom" Type="String" />
                             <asp:Parameter Name="PriceTo" Type="String" />
                             <asp:Parameter DefaultValue="3" Name="CategoryID" Type="String" />
-                            <asp:QueryStringParameter Name="ServiceCategoryID" 
-                                QueryStringField="dv" Type="String" />
+                            <asp:QueryStringParameter Name="ServiceCategoryID" QueryStringField="dv" Type="String" />
                             <asp:Parameter Name="ManufacturerID" Type="String" />
                             <asp:Parameter Name="OriginID" Type="String" />
                             <asp:Parameter Name="Tag" Type="String" />
@@ -558,20 +559,6 @@
                                 <div data-id="fab-1" class="fabric-color">
                                     <ul class="list-color">
                                         <li>
-                                            <img src="assets/images/color-img-1.png" alt="" /></li>
-                                        <li>
-                                            <img src="assets/images/color-img-2.png" alt="" /></li>
-                                        <li>
-                                            <img src="assets/images/color-img-3.png" alt="" /></li>
-                                        <li>
-                                            <img src="assets/images/color-img-4.png" alt="" /></li>
-                                        <li>
-                                            <img src="assets/images/color-img-5.png" alt="" /></li>
-                                        <li>
-                                            <img src="assets/images/color-img-6.png" alt="" /></li>
-                                        <li>
-                                            <img src="assets/images/color-img-7.png" alt="" /></li>
-                                        <li>
                                             <img src="assets/images/color-img-8.png" alt="" /></li>
                                         <li>
                                             <img src="assets/images/color-img-9.png" alt="" /></li>
@@ -604,6 +591,20 @@
                                 </div>
                                 <div data-id="fab-2" class="fabric-color">
                                     <ul class="list-color">
+                                        <li>
+                                            <img src="assets/images/color-img-1.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-2.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-3.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-4.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-5.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-6.png" alt="" /></li>
+                                        <li>
+                                            <img src="assets/images/color-img-7.png" alt="" /></li>
                                         <li>
                                             <img src="assets/images/color-img-8.png" alt="" /></li>
                                         <li>
@@ -807,20 +808,6 @@
                                     <td>
                                         <ul class="list-color">
                                             <li>
-                                                <img src="assets/images/color-img-1.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-2.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-3.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-4.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-5.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-6.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-7.png" alt="" /></li>
-                                            <li>
                                                 <img src="assets/images/color-img-8.png" alt="" /></li>
                                             <li>
                                                 <img src="assets/images/color-img-9.png" alt="" /></li>
@@ -834,6 +821,18 @@
                                                 <img src="assets/images/color-img-13.png" alt="" /></li>
                                             <li>
                                                 <img src="assets/images/color-img-14.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-15.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-16.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-17.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-18.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-19.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-20.png" alt="" /></li>
                                         </ul>
                                         <p class="note-color">
                                             Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế.
@@ -904,6 +903,18 @@
                                     <td>
                                         <ul class="list-color">
                                             <li>
+                                                <img src="assets/images/color-img-1.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-2.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-3.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-4.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-5.png" alt="" /></li>
+                                            <li>
+                                                <img src="assets/images/color-img-6.png" alt="" /></li>
+                                            <li>
                                                 <img src="assets/images/color-img-7.png" alt="" /></li>
                                             <li>
                                                 <img src="assets/images/color-img-8.png" alt="" /></li>
@@ -919,18 +930,6 @@
                                                 <img src="assets/images/color-img-13.png" alt="" /></li>
                                             <li>
                                                 <img src="assets/images/color-img-14.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-15.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-16.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-17.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-18.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-19.png" alt="" /></li>
-                                            <li>
-                                                <img src="assets/images/color-img-20.png" alt="" /></li>
                                         </ul>
                                         <p class="note-color">
                                             Do chất lượng hình ảnh, màu vải trên Website có thể hơi khác so với vải thực tế.

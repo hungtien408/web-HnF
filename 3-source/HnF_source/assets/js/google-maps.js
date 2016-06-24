@@ -6,9 +6,9 @@ var rendererOptions = {
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
 //Thay dia chi web
-var endAddress = "10.745684, 106.614406";
+var endAddress = "10.746211, 106.612421";
 //Thay toa do
-var lat = 10.745684, long = 106.614406;
+var lat = 10.746211, long = 106.612421;
 window.onload = function () {
     //init direction
     directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
@@ -41,7 +41,7 @@ window.onload = function () {
         // Creating the content  
         var content = '<div class="box">' +
             '<p class="logo"><img src="assets/images/logo.png" /></p>' +
-            '<p><span class="fa fa-map-marker"></span>32 Đường 18, Phường Bình Trị Đông B, Quận Bình Tân, Tp.HCM</p>' +
+            '<p><span class="fa fa-map-marker"></span>111 Tên Lửa, P Bình Trị Đông B, Q. Bình Tân, TP. HCM</p>' +
             '<p><span class="fa fa-phone"></span>0917 377 999</p>' +
             '<p><span class="fa fa-envelope"></span><a href="mailto:info@hnf.vn"> info@hnf.vn</a></p>' +
         '</div>';

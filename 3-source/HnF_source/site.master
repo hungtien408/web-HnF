@@ -111,11 +111,11 @@
                                 <li><a href="#">Cách in chữ lên áo</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-3 col-xs-6">
+                        <%--<div class="col-md-3 col-xs-6">
                             <h4 class="text-uppercase">
                                 Follow us on facebook</h4>
                             <img class="img-responsive" src="assets/images/img-facebook.jpg" alt="" />
-                        </div>
+                        </div>--%>
                     </div>
                 </div>
             </div>
@@ -148,6 +148,61 @@
     </div>
     <asp:ContentPlaceHolder ID="cphPopup" runat="server">
     </asp:ContentPlaceHolder>
+    <!--popup-->
+    <div class="modal fade" id="popupInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header feedback-node">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span></button>
+                    <%--<h4 class="modal-title" id="exampleModalLabel">
+                        Phản hồi - Góp ý</h4>--%>
+                    <div class="desription">
+                        Website đang được cập nhật thông tin. Bạn vui lòng gọi <strong style="font-size: 18px">0917 377 999</strong> để được tư vấn</div>
+                </div>
+                <%--<div class="modal-body">
+                    <div class="feedback-form">
+                        <div class="feedback-input">
+                            <asp:TextBox ID="txtTitle" CssClass="feedback-text" runat="server"></asp:TextBox>
+                            <asp:TextBoxWatermarkExtender ID="txtTitle_WatermarkExtender" runat="server" Enabled="True"
+                                WatermarkText="Họ và tên..." TargetControlID="txtTitle">
+                            </asp:TextBoxWatermarkExtender>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Nhập họ và tên"
+                                ControlToValidate="txtTitle" ValidationGroup="feedback" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                            <asp:TextBox ID="txtPhone" CssClass="feedback-text" runat="server"></asp:TextBox>
+                            <asp:TextBoxWatermarkExtender ID="txtPhone_WatermarkExtender" runat="server" Enabled="True"
+                                WatermarkText="Số điện thoại..." TargetControlID="txtPhone">
+                            </asp:TextBoxWatermarkExtender>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Nhập số điện thoại"
+                                ControlToValidate="txtPhone" ValidationGroup="feedback" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                            <asp:TextBox ID="txtEmail" CssClass="feedback-text" runat="server"></asp:TextBox>
+                            <asp:TextBoxWatermarkExtender ID="txtEmail_WatermarkExtender" runat="server" Enabled="True"
+                                WatermarkText="Email..." TargetControlID="txtEmail">
+                            </asp:TextBoxWatermarkExtender>
+                            <asp:RegularExpressionValidator CssClass="lb-error" ID="RegularExpressionValidator1"
+                                runat="server" ValidationGroup="SendEmail" ControlToValidate="txtEmail" ErrorMessage="Email không đúng định dạng!"
+                                ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic"
+                                ForeColor="Red"></asp:RegularExpressionValidator>
+                            <asp:RequiredFieldValidator CssClass="lb-error" ID="RequiredFieldValidator4" runat="server"
+                                ValidationGroup="feedback" ControlToValidate="txtEmail" ErrorMessage="Nhập email"
+                                Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
+                            <asp:TextBox ID="txtContent" CssClass="feedback-area" runat="server" TextMode="MultiLine"></asp:TextBox>
+                            <asp:TextBoxWatermarkExtender ID="txtContent_WatermarkExtender" runat="server" Enabled="True"
+                                WatermarkText="Nội dung..." TargetControlID="txtContent">
+                            </asp:TextBoxWatermarkExtender>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Nhập nội dung"
+                                ControlToValidate="txtContent" ValidationGroup="feedback" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <asp:Button ID="btnGui" CssClass="feedback-btn corner" ValidationGroup="feedback"
+                        runat="server" Text="Gửi" OnClick="btnGui_Click" />
+                </div>--%>
+            </div>
+        </div>
+    </div>
     <!--active-->
     <div id="runScript" runat="server">
     </div>
