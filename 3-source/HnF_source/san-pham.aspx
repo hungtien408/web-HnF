@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/site-sub.master" AutoEventWireup="true"
     CodeFile="san-pham.aspx.cs" Inherits="san_pham" %>
-<%@ Register TagPrefix="uc1" TagName="footer" Src="~/uc/ucFooter.ascx" %>
 
+<%@ Register TagPrefix="uc1" TagName="footer" Src="~/uc/ucFooter.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>HnF</title>
     <meta name="description" content="HnF" />
@@ -13,7 +13,7 @@
         <div class="container">
             <div class="col-aside">
                 <div class="box-aside">
-                    <ul class="menu-list menu-iconr">
+                    <%--<ul class="menu-list menu-iconr">
                         <li><a href="#">Áo thun đồng phục</a>
                             <ul>
                                 <li><a href="#"><span>Ngành tài chính ngân hàng</span></a></li>
@@ -33,7 +33,53 @@
                         </li>
                         <li><a href="#">Áo lớp</a></li>
                         <li><a href="#">Áo thun sản xuất theo yêu cầu</a></li>
-                    </ul>
+                    </ul>--%>
+                    <asp:ListView ID="lstProductCategory" runat="server" DataSourceID="odsProductCategory"
+                        EnableModelValidation="True">
+                        <ItemTemplate>
+                            <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'>
+                                <%# Eval("ProductCategoryName") %></a>
+                                <asp:HiddenField ID="hdnProductCategoryID" runat="server" Value='<%# Eval("ProductCategoryID") %>' />
+                                <asp:ListView ID="lstProductCategorySub" runat="server" DataSourceID="odsProductCategorySub"
+                                    EnableModelValidation="True">
+                                    <ItemTemplate>
+                                        <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'>
+                                            <span>
+                                                <%# Eval("ProductCategoryName") %></span></a></li>
+                                    </ItemTemplate>
+                                    <LayoutTemplate>
+                                        <ul>
+                                            <li runat="server" id="itemPlaceholder"></li>
+                                        </ul>
+                                    </LayoutTemplate>
+                                </asp:ListView>
+                                <asp:ObjectDataSource ID="odsProductCategorySub" runat="server" SelectMethod="ProductCategorySelectAll"
+                                    TypeName="TLLib.ProductCategory">
+                                    <SelectParameters>
+                                        <asp:ControlParameter ControlID="hdnProductCategoryID" Name="parentID" PropertyName="Value"
+                                            Type="Int32" />
+                                        <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
+                                        <asp:Parameter Name="IsShowOnMenu" Type="String" />
+                                        <asp:Parameter DefaultValue="True" Name="IsShowOnHomePage" Type="String" />
+                                    </SelectParameters>
+                                </asp:ObjectDataSource>
+                            </li>
+                        </ItemTemplate>
+                        <LayoutTemplate>
+                            <ul class="menu-list menu-iconr">
+                                <li runat="server" id="itemPlaceholder"></li>
+                            </ul>
+                        </LayoutTemplate>
+                    </asp:ListView>
+                    <asp:ObjectDataSource ID="odsProductCategory" runat="server" SelectMethod="ProductCategorySelectAll"
+                        TypeName="TLLib.ProductCategory">
+                        <SelectParameters>
+                            <asp:Parameter DefaultValue="1" Name="parentID" Type="Int32" />
+                            <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
+                            <asp:Parameter Name="IsShowOnMenu" Type="String" />
+                            <asp:Parameter DefaultValue="True" Name="IsShowOnHomePage" Type="String" />
+                        </SelectParameters>
+                    </asp:ObjectDataSource>
                 </div>
             </div>
             <div class="col-main">
@@ -49,102 +95,94 @@
                 </div>
                 <div class="product-wrap">
                     <div class="text-center wrapper-880">
-                        <h4 class="text-uppercase title-1 title-pro">
-                            <span>Áo thun sự kiện</span></h4>
-                        <div class="desription">
-                            The River Island Gift Card is available online and in store (with the exception
-                            of Selfridges, Jersey, Belgium, Sweden and The Netherlands). Gift cards cannot currently
-                            be spent online but can be spent in most stores. Please note, they can be redeemed
-                            in our stores in the UK (excluding Selfridges and Jersey), the Republic of Ireland
-                            and the Isle of Man. Available in several designs, it can be loaded with any amount
-                            from £2 upwards.
-                        </div>
+                        <asp:ListView ID="lstContentProductCategory" runat="server" DataSourceID="odsContentProductCategory"
+                            EnableModelValidation="True">
+                            <ItemTemplate>
+                                <h4 class="text-uppercase title-1 title-pro">
+                                    <span>
+                                        <%# Eval("ProductCategoryName") %></span></h4>
+                                <div class="desription">
+                                    <%# Eval("Content") %>
+                                </div>
+                            </ItemTemplate>
+                            <LayoutTemplate>
+                                <span runat="server" id="itemPlaceholder" />
+                            </LayoutTemplate>
+                        </asp:ListView>
+                        <asp:ObjectDataSource ID="odsContentProductCategory" runat="server" 
+                            SelectMethod="ProductCategorySelectOne" TypeName="TLLib.ProductCategory">
+                            <SelectParameters>
+                                <asp:QueryStringParameter Name="ProductCategoryID" QueryStringField="pci" 
+                                    Type="String" />
+                            </SelectParameters>
+                        </asp:ObjectDataSource>
                     </div>
                     <div class="product-group row">
-                        <div class="col-md-4 col-xs-6 element-item">
-                            <div class="product-box">
-                                <a href="san-pham-chi-tiet.aspx" class="product-img fullbox-img">
-                                    <img class="hideo" src="assets/images/img-product-1.jpg" alt="" /></a>
-                                <h4 class="product-name">
-                                    <a href="san-pham-chi-tiet.aspx">Áo thun sự kiện 001</a></h4>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-6 element-item">
-                            <div class="product-box">
-                                <a href="#" class="product-img fullbox-img">
-                                    <img class="hideo" src="assets/images/img-product-2.jpg" alt="" /></a>
-                                <h4 class="product-name">
-                                    <a href="#">Áo thun sự kiện 001</a></h4>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-6 element-item">
-                            <div class="product-box">
-                                <a href="#" class="product-img fullbox-img">
-                                    <img class="hideo" src="assets/images/img-product-3.jpg" alt="" /></a>
-                                <h4 class="product-name">
-                                    <a href="#">Áo thun sự kiện 001</a></h4>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-6 element-item">
-                            <div class="product-box">
-                                <a href="#" class="product-img fullbox-img">
-                                    <img class="hideo" src="assets/images/img-product-4.jpg" alt="" /></a>
-                                <h4 class="product-name">
-                                    <a href="#">Áo thun sự kiện 001</a></h4>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-6 element-item">
-                            <div class="product-box">
-                                <a href="#" class="product-img fullbox-img">
-                                    <img class="hideo" src="assets/images/img-product-5.jpg" alt="" /></a>
-                                <h4 class="product-name">
-                                    <a href="#">Áo thun sự kiện 001</a></h4>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-6 element-item">
-                            <div class="product-box">
-                                <a href="#" class="product-img fullbox-img">
-                                    <img class="hideo" src="assets/images/img-product-6.jpg" alt="" /></a>
-                                <h4 class="product-name">
-                                    <a href="#">Áo thun sự kiện 001</a></h4>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-6 element-item">
-                            <div class="product-box">
-                                <a href="#" class="product-img fullbox-img">
-                                    <img class="hideo" src="assets/images/img-product-7.jpg" alt="" /></a>
-                                <h4 class="product-name">
-                                    <a href="#">Áo thun sự kiện 001</a></h4>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-6 element-item">
-                            <div class="product-box">
-                                <a href="#" class="product-img fullbox-img">
-                                    <img class="hideo" src="assets/images/img-product-8.jpg" alt="" /></a>
-                                <h4 class="product-name">
-                                    <a href="#">Áo thun sự kiện 001</a></h4>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-xs-6 element-item">
-                            <div class="product-box">
-                                <a href="#" class="product-img fullbox-img">
-                                    <img class="hideo" src="assets/images/img-product-9.jpg" alt="" /></a>
-                                <h4 class="product-name">
-                                    <a href="#">Áo thun sự kiện 001</a></h4>
-                            </div>
-                        </div>
+                        <asp:ListView ID="lstProduct" runat="server" DataSourceID="odsProduct" EnableModelValidation="True">
+                            <ItemTemplate>
+                                <div class="col-md-4 col-xs-6 element-item">
+                                    <div class="product-box">
+                                        <a href="san-pham-chi-tiet.aspx" class="product-img fullbox-img">
+                                            <img class="hideo" alt='<%# Eval("ImageName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/product/" + Eval("ImageName") : "~/assets/images/img-product-1.jpg" %>'
+                                                runat="server" /></a>
+                                        <h4 class="product-name">
+                                            <a href="san-pham-chi-tiet.aspx">
+                                                <%# Eval("ProductName") %></a></h4>
+                                    </div>
+                                </div>
+                            </ItemTemplate>
+                            <LayoutTemplate>
+                                <span runat="server" id="itemPlaceholder" />
+                            </LayoutTemplate>
+                        </asp:ListView>
+                        <asp:ObjectDataSource ID="odsProduct" runat="server" SelectMethod="ProductSelectAll"
+                            TypeName="TLLib.Product">
+                            <SelectParameters>
+                                <asp:Parameter Name="StartRowIndex" Type="String" />
+                                <asp:Parameter Name="EndRowIndex" Type="String" />
+                                <asp:Parameter Name="Keyword" Type="String" />
+                                <asp:Parameter Name="ProductName" Type="String" />
+                                <asp:Parameter Name="Description" Type="String" />
+                                <asp:Parameter Name="PriceFrom" Type="String" />
+                                <asp:Parameter Name="PriceTo" Type="String" />
+                                <asp:QueryStringParameter Name="CategoryID" QueryStringField="pci" Type="String" />
+                                <asp:Parameter Name="ServiceCategoryID" Type="String" />
+                                <asp:Parameter Name="ManufacturerID" Type="String" />
+                                <asp:Parameter Name="OriginID" Type="String" />
+                                <asp:Parameter Name="Tag" Type="String" />
+                                <asp:Parameter Name="InStock" Type="String" />
+                                <asp:Parameter Name="IsHot" Type="String" />
+                                <asp:Parameter Name="IsNew" Type="String" />
+                                <asp:Parameter Name="IsBestSeller" Type="String" />
+                                <asp:Parameter Name="IsSaleOff" Type="String" />
+                                <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+                                <asp:Parameter Name="FromDate" Type="String" />
+                                <asp:Parameter Name="ToDate" Type="String" />
+                                <asp:Parameter Name="Priority" Type="String" />
+                                <asp:Parameter DefaultValue="True" Name="IsAvailable" Type="String" />
+                                <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />
+                            </SelectParameters>
+                        </asp:ObjectDataSource>
                     </div>
                 </div>
                 <div class="pager pager-pro">
-                    <a class="first fa fa-backward" href="#"></a>
-                    <a class="prev fa fa-caret-left" href="#"></a>
-                    <a class="current" href="#">1</a> 
-                    <a href="#">2</a> 
-                    <a href="#">3</a> 
-                    <a href="#">4</a> 
-                    <a href="#">5</a> 
-                    <a class="next fa fa-caret-right" href="#"></a>
-                    <a class="last fa fa-forward" href="#"></a>
+                    <asp:DataPager ID="DataPager1" runat="server" PageSize="9" PagedControlID="lstProduct">
+                        <Fields>
+                            <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="true" ShowNextPageButton="false"
+                                ShowPreviousPageButton="false" ButtonCssClass="first fa fa-backward" RenderDisabledButtonsAsLabels="true"
+                                FirstPageText="" />
+                            <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="false" ShowNextPageButton="false"
+                                ShowPreviousPageButton="true" ButtonCssClass="prev fa fa-caret-left" RenderDisabledButtonsAsLabels="true"
+                                PreviousPageText="" />
+                            <asp:NumericPagerField ButtonCount="5" NumericButtonCssClass="numer-paging" CurrentPageLabelCssClass="current" />
+                            <asp:NextPreviousPagerField ButtonType="Link" ShowLastPageButton="false" ButtonCssClass="next fa fa-caret-right"
+                                ShowNextPageButton="true" ShowPreviousPageButton="false" RenderDisabledButtonsAsLabels="true"
+                                NextPageText="" />
+                            <asp:NextPreviousPagerField ButtonType="Link" ShowLastPageButton="True" ButtonCssClass="last fa fa-forward"
+                                ShowNextPageButton="false" ShowPreviousPageButton="false" RenderDisabledButtonsAsLabels="true"
+                                LastPageText="" />
+                        </Fields>
+                    </asp:DataPager>
                 </div>
             </div>
             <div id="mobileAside">

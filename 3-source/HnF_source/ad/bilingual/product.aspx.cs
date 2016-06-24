@@ -267,7 +267,7 @@ public partial class ad_single_product : System.Web.UI.Page
                 if (!string.IsNullOrEmpty(ImageName))
                 {
                     FileImageName.UploadedFiles[0].SaveAs(Server.MapPath(strFullPath));
-                    ResizeCropImage.ResizeByCondition(strFullPath, 800, 800);
+                    //ResizeCropImage.ResizeByCondition(strFullPath, 800, 800);
                     ResizeCropImage.CreateThumbNailByCondition("~/res/product/", "~/res/product/thumbs/", ImageName, 120, 120);
                 }
 
@@ -316,7 +316,7 @@ public partial class ad_single_product : System.Web.UI.Page
                     string strFullPath = "~/res/product/" + ImageName;
 
                     FileImageName.UploadedFiles[0].SaveAs(Server.MapPath(strFullPath));
-                    ResizeCropImage.ResizeByCondition(strFullPath, 800, 800);
+                    //ResizeCropImage.ResizeByCondition(strFullPath, 800, 800);
                     ResizeCropImage.CreateThumbNailByCondition("~/res/product/", "~/res/product/thumbs/", ImageName, 120, 120);
                 }
             }
@@ -504,7 +504,7 @@ public partial class ad_single_product : System.Web.UI.Page
         string newName = Guid.NewGuid().GetHashCode().ToString("X") + e.File.GetExtension();
         e.File.SaveAs(Server.MapPath(targetFolder + newName));
 
-        ResizeCropImage.ResizeByCondition(targetFolder + newName, 800, 800);
+        //ResizeCropImage.ResizeByCondition(targetFolder + newName, 800, 800);
         ResizeCropImage.CreateThumbNailByCondition("~/res/product/album/", "~/res/product/album/thumbs/", newName, 120, 120);
 
         if (string.IsNullOrEmpty(ProductID))

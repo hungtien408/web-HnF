@@ -69,7 +69,7 @@
                         </div>
                     </li>
                     <li><a href="quy-trinh-thuc-hien.htm" class="btn-2">Quy trình thực hiện </a></li>
-                    <li><a href="javascript:void(0);" class="btn-2" data-toggle="modal" data-target="#popupInfo">Sản Phẩm </a>
+                    <li><a href="javascript:void(0);" class="btn-2">Sản Phẩm </a>
                         <div class="menu-sub menu-sub2">
                             <%--<div class="menu-subin menu-pro"></div>--%>
                             <%--<div class="menu-content">
@@ -85,7 +85,7 @@
                                     </ul>
                                 </div>--%>
                             <div class="menu-content">
-                                <ul class="menu-procat">
+                                <%--<ul class="menu-procat">
                                     <li><a href="#">Áo thun đồng phục</a>
                                         <ul class="menu-procat-sub">
                                             <li><a href="javascript:void(0);" data-toggle="modal" data-target="#popupInfo">Ngành tài chính ngân hàng<span class="icon-right menubg fa fa-caret-right"></span></a></li>
@@ -106,23 +106,73 @@
                                     </li>
                                     <li><a href="javascript:void(0);" data-toggle="modal" data-target="#popupInfo">Áo lớp</a></li>
                                     <li><a href="javascript:void(0);" data-toggle="modal" data-target="#popupInfo">Áo thun sản xuất theo yêu cầu</a></li>
-                                </ul>
+                                </ul>--%>
+                                <asp:ListView ID="lstProductCategory" runat="server" DataSourceID="odsProductCategory"
+                                    EnableModelValidation="True">
+                                    <ItemTemplate>
+                                        <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'>
+                                            <%# Eval("ProductCategoryName") %></a>
+                                            <asp:HiddenField ID="hdnProductCategoryID" runat="server" Value='<%# Eval("ProductCategoryID") %>' />
+                                            <asp:ListView ID="lstProductCategorySub" runat="server" DataSourceID="odsProductCategorySub"
+                                                EnableModelValidation="True">
+                                                <ItemTemplate>
+                                                    <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'>
+                                                        <span>
+                                                            <%# Eval("ProductCategoryName") %></span></a></li>
+                                                </ItemTemplate>
+                                                <LayoutTemplate>
+                                                    <ul class="menu-procat-sub">
+                                                        <li runat="server" id="itemPlaceholder"></li>
+                                                    </ul>
+                                                </LayoutTemplate>
+                                            </asp:ListView>
+                                            <asp:ObjectDataSource ID="odsProductCategorySub" runat="server" SelectMethod="ProductCategorySelectAll"
+                                                TypeName="TLLib.ProductCategory">
+                                                <SelectParameters>
+                                                    <asp:ControlParameter ControlID="hdnProductCategoryID" Name="parentID" PropertyName="Value"
+                                                        Type="Int32" />
+                                                    <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
+                                                    <asp:Parameter Name="IsShowOnMenu" Type="String" />
+                                                    <asp:Parameter DefaultValue="True" Name="IsShowOnHomePage" Type="String" />
+                                                </SelectParameters>
+                                            </asp:ObjectDataSource>
+                                        </li>
+                                    </ItemTemplate>
+                                    <LayoutTemplate>
+                                        <ul class="menu-procat">
+                                            <li runat="server" id="itemPlaceholder"></li>
+                                        </ul>
+                                    </LayoutTemplate>
+                                </asp:ListView>
+                                <asp:ObjectDataSource ID="odsProductCategory" runat="server" SelectMethod="ProductCategorySelectAll"
+                                    TypeName="TLLib.ProductCategory">
+                                    <SelectParameters>
+                                        <asp:Parameter DefaultValue="1" Name="parentID" Type="Int32" />
+                                        <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
+                                        <asp:Parameter Name="IsShowOnMenu" Type="String" />
+                                        <asp:Parameter DefaultValue="True" Name="IsShowOnHomePage" Type="String" />
+                                    </SelectParameters>
+                                </asp:ObjectDataSource>
                                 <div class="menu-procat2">
                                     <h4>
                                         Mẫu áo thun</h4>
                                     <ul>
-                                        <li><a href="javascript:void(0);" data-toggle="modal" data-target="#popupInfo"><span class="menu-box"><span class="iconai">
-                                            <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun cổ trụ<span
-                                                class="menubg fa fa-caret-right"></span></a> </li>
-                                        <li><a href="javascript:void(0);" data-toggle="modal" data-target="#popupInfo"><span class="menu-box"><span class="iconai">
-                                            <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun cổ tròn<span
-                                                class="menubg fa fa-caret-right"></span></a> </li>
-                                        <li><a href="javascript:void(0);" data-toggle="modal" data-target="#popupInfo"><span class="menu-box"><span class="iconai">
-                                            <img src="assets/images/menusub-img-3.jpg" alt="" /></span></span>Áo thun cổ tim<span
-                                                class="menubg fa fa-caret-right"></span></a> </li>
-                                        <li><a href="javascript:void(0);" data-toggle="modal" data-target="#popupInfo"><span class="menu-box"><span class="iconai">
-                                            <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản phẩm khác<span
-                                                class="menubg fa fa-caret-right"></span></a> </li>
+                                        <li><a href="javascript:void(0);" data-toggle="modal" data-target="#popupInfo"><span
+                                            class="menu-box"><span class="iconai">
+                                                <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun cổ
+                                            trụ<span class="menubg fa fa-caret-right"></span></a> </li>
+                                        <li><a href="javascript:void(0);" data-toggle="modal" data-target="#popupInfo"><span
+                                            class="menu-box"><span class="iconai">
+                                                <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun cổ
+                                            tròn<span class="menubg fa fa-caret-right"></span></a> </li>
+                                        <li><a href="javascript:void(0);" data-toggle="modal" data-target="#popupInfo"><span
+                                            class="menu-box"><span class="iconai">
+                                                <img src="assets/images/menusub-img-3.jpg" alt="" /></span></span>Áo thun cổ
+                                            tim<span class="menubg fa fa-caret-right"></span></a> </li>
+                                        <li><a href="javascript:void(0);" data-toggle="modal" data-target="#popupInfo"><span
+                                            class="menu-box"><span class="iconai">
+                                                <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản phẩm khác<span
+                                                    class="menubg fa fa-caret-right"></span></a> </li>
                                     </ul>
                                 </div>
                             </div>
@@ -149,7 +199,8 @@
                         </div>
                     </li>
                     <li><a href="thong-so-size.htm" class="btn-2">Thông số size </a></li>
-                    <li><a href="javascript:void(0);" class="btn-2" data-toggle="modal" data-target="#popupInfo">Dự án </a></li>
+                    <li><a href="javascript:void(0);" class="btn-2" data-toggle="modal" data-target="#popupInfo">
+                        Dự án </a></li>
                     <li><a href="tu-van.aspx" class="btn-2">Tư vấn </a></li>
                     <li><a href="lien-he.aspx" class="btn-2">Liên Hệ </a></li>
                 </ul>

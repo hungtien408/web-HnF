@@ -2326,6 +2326,8 @@ body .mobilep-right {
 .title-pro span {
     background-color: #fff;
     padding: 0 16px;
+    width: 80%;
+    display: inline-block;
 }
 .product-box {
     background-color: #fff;
