@@ -286,7 +286,7 @@ namespace TLLib
                 Common oCommon = new Common();
 
                 //oCommon.RecursiveFillTree(dt, parentID, "ParentID", "ProductCategoryName", "ProductCategoryID", increaseLevelCount, IsShowOnMenu, IsShowOnHomePage);
-                oCommon.RecursiveFillTree1(dt, parentID, "ParentID", "ProductCategoryName", "ProductCategoryID", increaseLevelCount, IsShowOnMenu, IsShowOnHomePage, "-");
+                oCommon.RecursiveFillTree2(dt, parentID, "ParentID", "ProductCategoryName", "ProductCategoryID", increaseLevelCount, IsShowOnMenu, IsShowOnHomePage, "-");
 
                 return oCommon.Tree;
             }

@@ -181,7 +181,7 @@
                     <td>
                         <asp:RadComboBox Filter="Contains" ID="ddlSearchCategory" runat="server" DataSourceID="ObjectDataSource2"
                             DataTextField="ProductCategoryName" DataValueField="ProductCategoryID" OnDataBound="DropDownList_DataBound"
-                            Width="134px" EmptyMessage="- Tất cả -">
+                            Width="200px" EmptyMessage="- Tất cả -">
                         </asp:RadComboBox>
                     </td>
                     <td class="left invisible">

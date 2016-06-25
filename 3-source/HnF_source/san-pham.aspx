@@ -122,11 +122,11 @@
                             <ItemTemplate>
                                 <div class="col-md-4 col-xs-6 element-item">
                                     <div class="product-box">
-                                        <a href="san-pham-chi-tiet.aspx" class="product-img fullbox-img">
+                                        <a href='<%# progressTitle(Eval("ProductName")) + "-pci-" + Eval("CategoryID") + "-pi-" + Eval("ProductID") + ".aspx" %>' class="product-img fullbox-img">
                                             <img class="hideo" alt='<%# Eval("ImageName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/product/" + Eval("ImageName") : "~/assets/images/img-product-1.jpg" %>'
                                                 runat="server" /></a>
                                         <h4 class="product-name">
-                                            <a href="san-pham-chi-tiet.aspx">
+                                            <a href='<%# progressTitle(Eval("ProductName")) + "-pci-" + Eval("CategoryID") + "-pi-" + Eval("ProductID") + ".aspx" %>'>
                                                 <%# Eval("ProductName") %></a></h4>
                                     </div>
                                 </div>
