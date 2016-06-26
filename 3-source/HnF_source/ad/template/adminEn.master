@@ -119,6 +119,12 @@
                     <asp:RadMenuItem runat="server" NavigateUrl="~/ad/bilingual/" Text="Trang Chủ" ImageUrl="~/ad/assets/images/home.png"
                         PostBack="False" Font-Bold="True">
                     </asp:RadMenuItem>
+                    <asp:RadMenuItem runat="server" Text="Giới Thiệu" PostBack="False" Font-Bold="True"
+                        NavigateUrl="~/ad/bilingual/aboutus.aspx">
+                    </asp:RadMenuItem>
+                    <asp:RadMenuItem runat="server" Text="Tại Sao Chọn Chúng Tôi" PostBack="False" Font-Bold="True"
+                        NavigateUrl="~/ad/bilingual/whychoose.aspx">
+                    </asp:RadMenuItem>
                     <asp:RadMenuItem runat="server" Owner="RadMenu1" PostBack="False" Text="Tư Vấn"
                         Font-Bold="True">
                         <Items>
@@ -138,6 +144,17 @@
                             <asp:RadMenuItem runat="server" IsSeparator="True">
                             </asp:RadMenuItem>
                             <asp:RadMenuItem runat="server" Text="Danh Mục" NavigateUrl="~/ad/bilingual/productcategory.aspx">
+                            </asp:RadMenuItem>
+                        </Items>
+                    </asp:RadMenuItem>
+                    <asp:RadMenuItem runat="server" Owner="RadMenu1" PostBack="False" Text="Mẫu Áo Thun"
+                        Font-Bold="True">
+                        <Items>
+                            <asp:RadMenuItem runat="server" NavigateUrl="~/ad/bilingual/clothes.aspx" Text="Bài Viết">
+                            </asp:RadMenuItem>
+                            <asp:RadMenuItem runat="server" IsSeparator="True">
+                            </asp:RadMenuItem>
+                            <asp:RadMenuItem runat="server" Text="Danh Mục" NavigateUrl="~/ad/bilingual/clothescategory.aspx">
                             </asp:RadMenuItem>
                         </Items>
                     </asp:RadMenuItem>

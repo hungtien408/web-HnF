@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ad/template/adminEn.master" AutoEventWireup="true"
-    CodeFile="productcategory.aspx.cs" Inherits="ad_single_productcategory" %>
+    CodeFile="clothescategory.aspx.cs" Inherits="ad_single_productcategory" %>
 
 <%@ Register TagPrefix="asp" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="Server">
@@ -93,7 +93,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBody" runat="Server">
     <h3 class="mainTitle">
         <img alt="" src="../assets/images/category.png" class="vam" />
-        Danh Mục Sản Phẩm</h3>
+        Danh Mục Mẫu Áo Thun</h3>
     <br />
     <asp:RadAjaxPanel ID="RadAjaxPanel1" runat="server" ClientEvents-OnRequestStart="conditionalPostback"
         Width="100%">
@@ -175,7 +175,7 @@
                             </div>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridBoundColumn DataField="ServiceCategoryName" HeaderText="Danh mục dịch vụ" SortExpression="ServiceCategoryName" />
+                    <asp:GridBoundColumn DataField="ServiceCategoryName" HeaderText="Danh mục dịch vụ" SortExpression="ServiceCategoryName" Visible="False" />
                     <asp:GridBoundColumn DataField="ProductCategoryID" HeaderText="ID" SortExpression="ProductCategoryID">
                     </asp:GridBoundColumn>
                     <asp:GridTemplateColumn>
@@ -237,7 +237,7 @@
                             </asp:Panel>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn HeaderText="Ảnh Menu" Visible="False">
+                    <asp:GridTemplateColumn HeaderText="Ảnh Menu">
                         <ItemTemplate>
                             <asp:Panel ID="Panel2" runat="server" Visible='<%# string.IsNullOrEmpty( Eval("ImageMenu").ToString()) ? false : true %>'>
                                 <img id="Img1" alt="" src='<%# "~/res/productcategory/menu/" + Eval("ImageMenu") %>' width="80" runat="server"
@@ -257,7 +257,7 @@
                     <FormTemplate>
                         <asp:Panel ID="Panel1" runat="server" DefaultButton="lnkUpdate">
                             <h3 class="searchTitle">
-                                Thông Tin Danh Mục Sản Phẩm</h3>
+                                Thông Tin Danh Mục Mẫu Áo Thun</h3>
                             <table class="search">
                                 <tr>
                                     <td class="left" valign="top">
@@ -270,12 +270,10 @@
                                             ControlObjectsVisibility="None" Culture="vi-VN" InputSize="69" Language="vi-VN" />
                                         <asp:CustomValidator ID="CustomValidator1" runat="server" ClientValidationFunction="validateRadUpload"
                                             Display="Dynamic" ErrorMessage="Sai định dạng ảnh (*.jpg, *.jpeg, *.gif, *.png)"></asp:CustomValidator>
-                                        <span class="required">(Kích thước 1: 800px x 323px)</span>
-                                        <span class="required">(Kích thước 2: 398px x 270px)</span>
-                                        <span class="required">(Kích thước 3: 367px x 596px)</span>
+                                        <span class="required">(Kích thước: 366px x 469px)</span>
                                     </td>
                                 </tr>
-                                <tr class="invisible">
+                                <tr>
                                     <td class="left" valign="top">
                                         Ảnh menu
                                     </td>
@@ -288,7 +286,7 @@
                                          <span class="required">(Kích thước 132px x 154px)</span>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="invisible">
                                     <td class="left" valign="top">
                                         Danh mục cấp trên
                                     </td>
@@ -306,7 +304,7 @@
                                         </asp:ObjectDataSource>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="invisible">
                                     <td class="left">
                                         Danh mục dịch vụ
                                     </td>
@@ -545,8 +543,8 @@
             <asp:Parameter Name="IsAvailable" Type="String" />
         </InsertParameters>
         <SelectParameters>
-            <asp:Parameter Name="parentID" Type="Int32" DefaultValue="1" />
-            <asp:Parameter DefaultValue="2" Name="increaseLevelCount" Type="Int32" />
+            <asp:Parameter Name="parentID" Type="Int32" DefaultValue="2" />
+            <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
             <asp:Parameter Name="IsShowOnMenu" Type="String" />
             <asp:Parameter Name="IsShowOnHomePage" Type="String" />
         </SelectParameters>

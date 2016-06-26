@@ -3,8 +3,8 @@
 
 <%@ Register TagPrefix="uc1" TagName="footer" Src="~/uc/ucFooter.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <title>HnF</title>
-    <meta name="description" content="HnF" />
+    <title>Giới Thiệu</title>
+    <meta name="description" content="Giới Thiệu" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBanner" runat="Server">
     <div id="banner">
@@ -43,106 +43,87 @@
         </div>
         <div class="wrap-section">
             <div id="whyShow" class="section-tb row mobile100">
-                <div class="col-lg-4 col-xs-6 element-item">
-                    <div class="why-box">
-                        <a href="#" class="why-img">
-                            <img src="assets/images/why-img-1.png" alt="" class="corner" /></a>
-                        <div class="why-content">
-                            <h5 class="why-name">
-                                <a href="#">Dịch vụ khách hàng hoàn hảo</a></h5>
-                            <div class="description">
-                                Bạn sẽ cảm nhận được một dịch vụ khách hàng khép kín, theo tiêu chuẩn tốt nhất từ
-                                khâu tư vấn cho đến khi nhận sản phẩm.
+                <asp:ListView ID="lstWhy" runat="server" DataSourceID="odsWhy" EnableModelValidation="True">
+                    <ItemTemplate>
+                        <div class="col-lg-4 col-xs-6 element-item">
+                            <div class="why-box">
+                                <a href="javascript:void(0);" class="why-img">
+                                    <img class="corner" alt='<%# Eval("ImageName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/article/" + Eval("ImageName") : "~/assets/images/why-img-1.png" %>' runat="server" /></a>
+                                <div class="why-content">
+                                    <h5 class="why-name">
+                                        <a href="javascript:void(0);"><%# Eval("ArticleTitle")%></a></h5>
+                                    <div class="description">
+                                        <%# Eval("Description")%>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xs-6 element-item">
-                    <div class="why-box">
-                        <a href="#" class="why-img">
-                            <img src="assets/images/why-img-2.png" alt="" class="corner" /></a>
-                        <div class="why-content">
-                            <h5 class="why-name">
-                                <a href="#">Thiết kế áo mẫu miễn phí</a></h5>
-                            <div class="description">
-                                Bảng thiết kế 3D với ý tưởng về form dáng và màu sắc sẽ giúp bạn hình dung trực
-                                quan nhất về sản phẩm của mình.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xs-6 element-item">
-                    <div class="why-box">
-                        <a href="#" class="why-img">
-                            <img src="assets/images/why-img-3.png" alt="" class="corner" /></a>
-                        <div class="why-content">
-                            <h5 class="why-name">
-                                <a href="#">Sản phẩm chất lượng</a></h5>
-                            <div class="description">
-                                Tất cả các sản phẩm của HNF đều được may theo đúng tiêu chuẩn quốc tế, sử dụng toàn
-                                bộ chỉ may 100% cotton, đường may sắc sảo.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xs-6 element-item">
-                    <div class="why-box">
-                        <a href="#" class="why-img">
-                            <img src="assets/images/why-img-4.png" alt="" class="corner" /></a>
-                        <div class="why-content">
-                            <h5 class="why-name">
-                                <a href="#">Giải pháp in và thêu tiên tiến</a></h5>
-                            <div class="description">
-                                Máy thêu Nhật, màu in nhập khẩu từ Châu Âu, nguyên phụ liệu may mặc đến từ các nhà
-                                cung cấp hàng đầu Việt Nam.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xs-6 element-item">
-                    <div class="why-box">
-                        <a href="#" class="why-img">
-                            <img src="assets/images/why-img-5.png" alt="" class="corner" /></a>
-                        <div class="why-content">
-                            <h5 class="why-name">
-                                <a href="#">Giá cả phù hợp với nhu cầu khách hàng</a></h5>
-                            <div class="description">
-                                Sẽ có nhiều mức giá để bạn lựa chọn tương ứng với nhiều giải pháp đến từ chúng tôi
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-xs-6 element-item">
-                    <div class="why-box">
-                        <a href="#" class="why-img">
-                            <img src="assets/images/why-img-6.png" alt="" class="corner" /></a>
-                        <div class="why-content">
-                            <h5 class="why-name">
-                                <a href="#">Giao hàng đúng hẹn Chăm sóc khách hàng sau bán hàng</a></h5>
-                            <div class="description">
-                                Hàng sẽ đến tận bàn làm việc của bạn. Bộ phận chăm sóc khách hàng sẽ còn “làm phiền”
-                                bạn sau đó nữa!
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    </ItemTemplate>
+                    <LayoutTemplate>
+                        <span runat="server" id="itemPlaceholder" />
+                    </LayoutTemplate>
+                </asp:ListView>
+                <asp:ObjectDataSource ID="odsWhy" runat="server" 
+                    SelectMethod="ArticleSelectAll" TypeName="TLLib.Article">
+                    <SelectParameters>
+                        <asp:Parameter Name="StartRowIndex" Type="String" />
+                        <asp:Parameter Name="EndRowIndex" Type="String" />
+                        <asp:Parameter Name="Keyword" Type="String" />
+                        <asp:Parameter Name="ArticleTitle" Type="String" />
+                        <asp:Parameter Name="Description" Type="String" />
+                        <asp:Parameter DefaultValue="12" Name="ArticleCategoryID" Type="String" />
+                        <asp:Parameter Name="Tag" Type="String" />
+                        <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+                        <asp:Parameter Name="IsHot" Type="String" />
+                        <asp:Parameter Name="IsNew" Type="String" />
+                        <asp:Parameter Name="FromDate" Type="String" />
+                        <asp:Parameter Name="ToDate" Type="String" />
+                        <asp:Parameter DefaultValue="True" Name="IsAvailable" Type="String" />
+                        <asp:Parameter Name="Priority" Type="String" />
+                        <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
             </div>
         </div>
     </div>
     <div class="wrap-section" style="padding: 10px 0 0;">
-        <div class="bg-why wow">
-            <img src="assets/images/why-background.jpg" alt="" /></div>
-        <div class="bg-content">
-            <p class="content-1 text-uppercase">
-                Để mang lại một sản phẩm may mặc phù hợp xu hướng và chất lượng vượt trội, công
-                việc thiết kế đòi hỏi sự kết hợp của sự sáng tạo, máy móc và kinh nghiệm thực tiễn</p>
-            <p class="content-2">
-                Đội ngũ chuyên gia của chúng tôi luôn áp dụng các kỹ thuật tiên tiến nhất để phát
-                triển và tạo ra các giải pháp về nguyên liệu may mặc. Bên cạnh đó chúng tôi còn
-                nghiên cứu về form dáng, kích cỡ size của người Việt, màu sắc trong bộ nhận diện
-                thương hiệu của mỗi doanh nghiệp để có được một chiếc áo phù hợp.
-            </p>
-        </div>
+        <asp:ListView ID="lstAboutUs" runat="server" DataSourceID="odsAboutUs" EnableModelValidation="True">
+            <ItemTemplate>
+                <div class="bg-why wow">
+                    <img alt='<%# Eval("ImageName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/article/" + Eval("ImageName") : "~/assets/images/why-background.jpg" %>'
+                        runat="server" /></div>
+                <div class="bg-content">
+                    <p class="content-1 text-uppercase">
+                        <%# Eval("Description")%></p>
+                    <p class="content-2">
+                        <%# Eval("Content")%>
+                    </p>
+                </div>
+            </ItemTemplate>
+            <LayoutTemplate>
+                <span runat="server" id="itemPlaceholder" />
+            </LayoutTemplate>
+        </asp:ListView>
+        <asp:ObjectDataSource ID="odsAboutUs" runat="server" SelectMethod="ArticleSelectAll"
+            TypeName="TLLib.Article">
+            <SelectParameters>
+                <asp:Parameter DefaultValue="1" Name="StartRowIndex" Type="String" />
+                <asp:Parameter DefaultValue="1" Name="EndRowIndex" Type="String" />
+                <asp:Parameter Name="Keyword" Type="String" />
+                <asp:Parameter Name="ArticleTitle" Type="String" />
+                <asp:Parameter Name="Description" Type="String" />
+                <asp:Parameter DefaultValue="1" Name="ArticleCategoryID" Type="String" />
+                <asp:Parameter Name="Tag" Type="String" />
+                <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+                <asp:Parameter Name="IsHot" Type="String" />
+                <asp:Parameter Name="IsNew" Type="String" />
+                <asp:Parameter Name="FromDate" Type="String" />
+                <asp:Parameter Name="ToDate" Type="String" />
+                <asp:Parameter DefaultValue="True" Name="IsAvailable" Type="String" />
+                <asp:Parameter Name="Priority" Type="String" />
+                <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />
+            </SelectParameters>
+        </asp:ObjectDataSource>
     </div>
     <%--<div class="container">
         <div class="text-center wrapper-880 wrap-why">

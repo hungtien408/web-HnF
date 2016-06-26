@@ -3,8 +3,6 @@
 
 <%@ Register TagPrefix="uc1" TagName="footer" Src="~/uc/ucFooter.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <title>HnF</title>
-    <meta name="description" content="HnF" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBanner" runat="Server">
 </asp:Content>
@@ -28,7 +26,7 @@
                                                         data-page="roast-groud-content.aspx" class='cloud-zoom-gallery small-imga' title='Thumbnail 1'
                                                         rel="useZoom: 'zoom1', smallImage: '<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "res/product/album/" + Eval("ImageName") : "assets/images/details-img-1.jpg" %>'">
                                                         <span>
-                                                            <img src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/product/album/" + Eval("ImageName") : "~/assets/images/details-small-1.jpg" %>'
+                                                            <img src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "res/product/album/" + Eval("ImageName") : "~/assets/images/details-small-1.jpg" %>'
                                                                 alt="" /></span> </a>
                                                 </div>
                                             </ItemTemplate>
@@ -50,7 +48,7 @@
                                         <LayoutTemplate>
                                             <div class="detailimg-desktop">
                                                 <div class="zoom-box">
-                                                    <a id="zoom1" href='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/product/album/" + Eval("ImageName") : "~/assets/images/details-img-1.jpg" %>'
+                                                    <a id="zoom1" href='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "res/product/album/" + Eval("ImageName") : "~/assets/images/details-img-1.jpg" %>'
                                                         class="cloud-zoom" rel="showTitle: false, zoomWidth: '350', adjustY:0, adjustX:5">
                                                         <img class="img-responsive" src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/product/album/" + Eval("ImageName") : "~/assets/images/details-img-1.jpg" %>'
                                                             alt="" />
@@ -77,9 +75,9 @@
                             </div>
                             <div class="detail-content">
                                 <h2 class="product-name">
-                                    Áo thun sự kiện 001</h2>
+                                    <%# Eval("ProductName") %></h2>
                                 <div class="description">
-                                    <ul>
+                                    <%--<ul>
                                         <li>Contrast trim on neck, sleeve and pockets</li>
                                         <li>Concealed front zip </li>
                                         <li>Two pockets Round collar </li>
@@ -92,7 +90,8 @@
                                     <p style="font-style: italic;">
                                         Please CONTACT us by email or phone to enquire about ordering this garment. For
                                         any garments not in stock please allow 20 working days for New Zealand production.
-                                    </p>
+                                    </p>--%>
+                                    <asp:Label ID="Label1" runat="server" Text='<%# Eval("Content") %>'></asp:Label>
                                     <img class="img-responsive" src="assets/images/productdetails-fb.jpg" alt="" />
                                 </div>
                             </div>
@@ -111,26 +110,35 @@
                 <div class="col-same">
                     <h4 class="title-same">
                         Sản phẩm liên quan</h4>
-                    <div class="listAside">
-                        <div class="box-in">
-                            <div class="boxa">
-                                <a href="#" class="box-img">
-                                    <img src="assets/images/product-same-1.jpg" alt="" />
-                                </a>
-                                <h5 class="box-name">
-                                    <a href="#">Áo thu sự kiện 001</a></h5>
+                    <asp:ListView ID="lstProductSame" runat="server" DataSourceID="odsProductSame" EnableModelValidation="True">
+                        <ItemTemplate>
+                            <div class="box-in">
+                                <div class="boxa">
+                                    <a href='<%# progressTitle(Eval("ProductName")) + "-pci-" + Eval("CategoryID") + "-pi-" + Eval("ProductID") + ".aspx" %>'
+                                        class="box-img">
+                                        <img alt='<%# Eval("ImageName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/product/" + Eval("ImageName") : "~/assets/images/product-same-1.jpg" %>'
+                                            runat="server" />
+                                    </a>
+                                    <h5 class="box-name">
+                                        <a href='<%# progressTitle(Eval("ProductName")) + "-pci-" + Eval("CategoryID") + "-pi-" + Eval("ProductID") + ".aspx" %>'>
+                                            <%# Eval("ProductName") %></a></h5>
+                                </div>
                             </div>
-                        </div>
-                        <div class="box-in">
-                            <div class="boxa">
-                                <a href="#" class="box-img">
-                                    <img src="assets/images/product-same-2.jpg" alt="" />
-                                </a>
-                                <h5 class="box-name">
-                                    <a href="#">Áo thu sự kiện 001</a></h5>
+                        </ItemTemplate>
+                        <LayoutTemplate>
+                            <div class="listAside">
+                                <span runat="server" id="itemPlaceholder" />
                             </div>
-                        </div>
-                    </div>
+                        </LayoutTemplate>
+                    </asp:ListView>
+                    <asp:ObjectDataSource ID="odsProductSame" runat="server" SelectMethod="ProductSameSelectAll"
+                        TypeName="TLLib.Product">
+                        <SelectParameters>
+                            <asp:Parameter DefaultValue="10" Name="RerultCount" Type="String" />
+                            <asp:QueryStringParameter DefaultValue="" Name="ProductID" QueryStringField="pi"
+                                Type="String" />
+                        </SelectParameters>
+                    </asp:ObjectDataSource>
                 </div>
             </div>
         </div>

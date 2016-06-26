@@ -194,7 +194,7 @@
                                     Culture="vi-VN" Language="vi-VN" InputSize="70" AllowedFileExtensions=".jpg,.jpeg,.gif,.png" />
                                 <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="Sai định dạng ảnh (*.jpg, *.jpeg, *.gif, *.png)"
                                     ClientValidationFunction="validateRadUpload" Display="Dynamic"></asp:CustomValidator>
-                                <span class="required">(Kích thước 850px x 850px)</span>
+                                <span class="required">(Kích thước 695px x 935px)</span>
                             </td>
                         </tr>
                         <tr class="invisible">
@@ -277,7 +277,7 @@
                                     Culture="vi-VN" Language="vi-VN" InputSize="70" AllowedFileExtensions=".jpg,.jpeg,.gif,.png" />
                                 <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="Sai định dạng ảnh (*.jpg, *.jpeg, *.gif, *.png)"
                                     ClientValidationFunction="validateRadUpload" Display="Dynamic"></asp:CustomValidator>
-                                <span class="required">(Kích thước 850px x 850px)</span>
+                                <span class="required">(Kích thước 695px x 935px)</span>
                             </td>
                             <td rowspan="5" valign="top">
                                 <asp:RadBinaryImage Style="display: block;" runat="server" ID="RadBinaryImage1" ImageUrl='<%# "~/res/product/album/" + Eval("ImageName") %>'

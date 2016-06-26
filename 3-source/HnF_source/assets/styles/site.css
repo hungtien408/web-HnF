@@ -961,7 +961,7 @@ body .mobilep-right {
     width: 100%;
     position: relative;
 }
-.wrap-object {
+.wrap-object, .wrap-provide {
     overflow: hidden;
 }
 .wrap-section .section-list {

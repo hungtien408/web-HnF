@@ -64,9 +64,10 @@
             var theRegexp = new RegExp("\.lnkUpdate$|\.lnkUpdateTop$|\.PerformInsertButton$", "ig");
             if (eventArgs.get_eventTarget().match(theRegexp)) {
                 var upload = $find(window['UploadId']);
+                var upload2 = $find(window['UploadId2']);
 
                 //AJAX is disabled only if file is selected for upload
-                if (upload.getFileInputs()[0].value != "") {
+                if (upload.getFileInputs()[0].value != "" || upload2.getFileInputs()[0].value != "") {
                     eventArgs.set_enableAjax(false);
                 }
             }
@@ -234,6 +235,19 @@
                             </asp:Panel>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
+                    <asp:GridTemplateColumn HeaderText="Ảnh Menu">
+                        <ItemTemplate>
+                            <asp:Panel ID="Panel2" runat="server" Visible='<%# string.IsNullOrEmpty( Eval("ImageMenu").ToString()) ? false : true %>'>
+                                <img id="Img1" alt="" src='<%# "~/res/productcategory/menu/" + Eval("ImageMenu") %>' width="80" runat="server"
+                                    visible='<%# string.IsNullOrEmpty(Eval("ImageMenu").ToString()) ? false : true %>' />
+                                <asp:LinkButton ID="lnkDeleteImageMenu" runat="server" CommandName="DeleteImageMenu" OnClientClick="return confirm('Xóa ảnh này ?')"
+                                    rel='<%#  Eval("ProductCategoryID") + "#" + Eval("ImageMenu") %>'>
+                            <img alt="Xóa ảnh" title="Xóa ảnh" src="../assets/images/delete-icon.png" />
+                                </asp:LinkButton>
+                                <asp:HiddenField ID="hdnImageMenu" runat="server" Value='<%# Eval("ImageMenu") %>' />
+                            </asp:Panel>
+                        </ItemTemplate>
+                    </asp:GridTemplateColumn>
                 </Columns>
                 <EditFormSettings EditFormType="Template">
                     <EditColumn FilterControlAltText="Filter EditCommandColumn column">
@@ -254,6 +268,19 @@
                                             ControlObjectsVisibility="None" Culture="vi-VN" InputSize="69" Language="vi-VN" />
                                         <asp:CustomValidator ID="CustomValidator1" runat="server" ClientValidationFunction="validateRadUpload"
                                             Display="Dynamic" ErrorMessage="Sai định dạng ảnh (*.jpg, *.jpeg, *.gif, *.png)"></asp:CustomValidator>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left" valign="top">
+                                        Ảnh menu
+                                    </td>
+                                    <td>
+                                        <asp:HiddenField ID="hdnImageMenu" runat="server" Value='<%# Eval("ImageMenu") %>' />
+                                        <asp:RadUpload ID="FileImageMenu" runat="server" AllowedFileExtensions=".jpg,.jpeg,.gif,.png"
+                                            ControlObjectsVisibility="None" Culture="vi-VN" InputSize="69" Language="vi-VN" />
+                                        <asp:CustomValidator ID="CustomValidator2" runat="server" ClientValidationFunction="validateRadUpload"
+                                            Display="Dynamic" ErrorMessage="Sai định dạng ảnh (*.jpg, *.jpeg, *.gif, *.png)"></asp:CustomValidator>
+                                         <span class="required">(Kích thước 132px x 154px)</span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -504,6 +531,7 @@
             <asp:Parameter Name="MetaDescription" Type="String" />
             <asp:Parameter Name="MetaDescriptionEn" Type="String" />
             <asp:Parameter Name="ImageName" Type="String" />
+            <asp:Parameter Name="ImageMenu" Type="String" />
             <asp:Parameter Name="ParentID" Type="String" />
             <asp:Parameter Name="IsShowOnMenu" Type="String" />
             <asp:Parameter Name="IsShowOnHomePage" Type="String" />
@@ -527,6 +555,7 @@
             <asp:Parameter Name="MetaDescription" Type="String" />
             <asp:Parameter Name="MetaDescriptionEn" Type="String" />
             <asp:Parameter Name="ImageName" Type="String" />
+            <asp:Parameter Name="ImageMenu" Type="String" />
             <asp:Parameter Name="ParentID" Type="String" />
             <asp:Parameter Name="IsShowOnMenu" Type="String" />
             <asp:Parameter Name="IsShowOnHomePage" Type="String" />

@@ -10,6 +10,10 @@ namespace TLLib
 {
     public class ProductCategory
     {
+        #region Class Member Declaration
+        private string m_ProductCategoryID;
+        #endregion
+
         string connectionString = Common.ConnectionString;
         DBNull dbNULL = DBNull.Value;
 
@@ -27,6 +31,7 @@ namespace TLLib
             string MetaDescription,
             string MetaDescriptionEn,
             string ImageName,
+            string ImageMenu,
             string ParentID,
             string IsShowOnMenu,
             string IsShowOnHomePage,
@@ -51,17 +56,20 @@ namespace TLLib
                 cmd.Parameters.AddWithValue("@MetaDescription", string.IsNullOrEmpty(MetaDescription) ? dbNULL : (object)MetaDescription);
                 cmd.Parameters.AddWithValue("@MetaDescriptionEn", string.IsNullOrEmpty(MetaDescriptionEn) ? dbNULL : (object)MetaDescriptionEn);
                 cmd.Parameters.AddWithValue("@ImageName", string.IsNullOrEmpty(ImageName) ? dbNULL : (object)ImageName);
+                cmd.Parameters.AddWithValue("@ImageMenu", string.IsNullOrEmpty(ImageMenu) ? dbNULL : (object)ImageMenu);
                 cmd.Parameters.AddWithValue("@ParentID", string.IsNullOrEmpty(ParentID) ? dbNULL : (object)ParentID);
                 cmd.Parameters.AddWithValue("@IsShowOnMenu", string.IsNullOrEmpty(IsShowOnMenu) ? dbNULL : (object)IsShowOnMenu);
                 cmd.Parameters.AddWithValue("@IsShowOnHomePage", string.IsNullOrEmpty(IsShowOnHomePage) ? dbNULL : (object)IsShowOnHomePage);
                 cmd.Parameters.AddWithValue("@IsAvailable", string.IsNullOrEmpty(IsAvailable) ? dbNULL : (object)IsAvailable);
 
                 SqlParameter imageNameParam = new SqlParameter("@OutImageName", null);
+                SqlParameter productCategoryIDParam = new SqlParameter("@OutProductCategoryID", null);
                 SqlParameter errorCodeParam = new SqlParameter("@ErrorCode", null);
                 imageNameParam.Size = 100;
-                errorCodeParam.Size = 4;
-                errorCodeParam.Direction = imageNameParam.Direction = ParameterDirection.Output;
+                errorCodeParam.Size = productCategoryIDParam.Size = 4;
+                errorCodeParam.Direction = imageNameParam.Direction = productCategoryIDParam.Direction = ParameterDirection.Output;
                 cmd.Parameters.Add(imageNameParam);
+                cmd.Parameters.Add(productCategoryIDParam);
                 cmd.Parameters.Add(errorCodeParam);
                 scon.Open();
                 cmd.ExecuteNonQuery();
@@ -70,6 +78,8 @@ namespace TLLib
                 if (errorCodeParam.Value.ToString() != "0")
                     throw new Exception("Stored Procedure 'usp_ProductCategory_Insert' reported the ErrorCode : " + errorCodeParam.Value.ToString());
 
+                m_ProductCategoryID = productCategoryIDParam.Value.ToString();
+                
                 return imageNameParam.Value.ToString();
             }
             catch (Exception ex)
@@ -93,6 +103,7 @@ namespace TLLib
             string MetaDescription,
             string MetaDescriptionEn,
             string ImageName,
+            string ImageMenu,
             string ParentID,
             string IsShowOnMenu,
             string IsShowOnHomePage,
@@ -118,6 +129,7 @@ namespace TLLib
                 cmd.Parameters.AddWithValue("@MetaDescription", string.IsNullOrEmpty(MetaDescription) ? dbNULL : (object)MetaDescription);
                 cmd.Parameters.AddWithValue("@MetaDescriptionEn", string.IsNullOrEmpty(MetaDescriptionEn) ? dbNULL : (object)MetaDescriptionEn);
                 cmd.Parameters.AddWithValue("@ImageName", string.IsNullOrEmpty(ImageName) ? dbNULL : (object)ImageName);
+                cmd.Parameters.AddWithValue("@ImageMenu", string.IsNullOrEmpty(ImageMenu) ? dbNULL : (object)ImageMenu);
                 cmd.Parameters.AddWithValue("@ParentID", string.IsNullOrEmpty(ParentID) ? dbNULL : (object)ParentID);
                 cmd.Parameters.AddWithValue("@IsShowOnMenu", string.IsNullOrEmpty(IsShowOnMenu) ? dbNULL : (object)IsShowOnMenu);
                 cmd.Parameters.AddWithValue("@IsShowOnHomePage", string.IsNullOrEmpty(IsShowOnHomePage) ? dbNULL : (object)IsShowOnHomePage);
@@ -225,6 +237,35 @@ namespace TLLib
 
                 if (errorCodeParam.Value.ToString() != "0")
                     throw new Exception("Stored Procedure 'usp_ProductCategoryImage_Delete' reported the ErrorCode : " + errorCodeParam.Value.ToString());
+
+                return success;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public int ProductCategoryImageMenuDelete(
+            string ProductCategoryID
+        )
+        {
+            try
+            {
+                var scon = new SqlConnection(connectionString);
+                var cmd = new SqlCommand("usp_ProductCategoryImageMenu_Delete", scon);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ProductCategoryID", string.IsNullOrEmpty(ProductCategoryID) ? dbNULL : (object)ProductCategoryID);
+                SqlParameter errorCodeParam = new SqlParameter("@ErrorCode", null);
+                errorCodeParam.Size = 4;
+                errorCodeParam.Direction = ParameterDirection.Output;
+                cmd.Parameters.Add(errorCodeParam);
+                scon.Open();
+                int success = cmd.ExecuteNonQuery();
+                scon.Close();
+
+                if (errorCodeParam.Value.ToString() != "0")
+                    throw new Exception("Stored Procedure 'usp_ProductCategoryImageMenu_Delete' reported the ErrorCode : " + errorCodeParam.Value.ToString());
 
                 return success;
             }
@@ -635,6 +676,16 @@ namespace TLLib
                 throw new Exception(ex.Message);
             }
         }
+
+        #region Properties
+
+        public string ProductCategoryID
+        {
+            get { return m_ProductCategoryID; }
+            set { m_ProductCategoryID = value; }
+        }
+
+        #endregion
     }
 }
 

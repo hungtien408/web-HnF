@@ -142,7 +142,7 @@ function myfunload() {
             $(this).children('.menu-sub').slideDown(600);
         },
         function () {
-            $(this).children('.menu-sub').slideUp(300);
+            $(this).children('.menu-sub').slideUp(600);
         }
     );
     $('.wrap-section .table-fabric tr:first-child').addClass("act");
@@ -258,6 +258,9 @@ function myfunload() {
             });
         }
     }
+
+    $('#isotopelist .element-item:nth-child(2) .box-clothes .section-content').addClass("content-bottom");
+
     $(".link-show a").click(function () {
         var idboxs = $(this).attr("href");
         var offset = $(idboxs).offset();

@@ -137,7 +137,7 @@ public partial class ad_single_productcategory : System.Web.UI.Page
             string strImageMenu = FileImageMenu.UploadedFiles.Count > 0 ? FileImageMenu.UploadedFiles[0].GetName() : "";
             string strParentID = ((RadComboBox)row.FindControl("ddlParent")).SelectedValue;
             if ("".Equals(strParentID))
-                strParentID = "1";
+                strParentID = "2";
             string strIsAvailable = ((CheckBox)row.FindControl("chkIsAvailable")).Checked.ToString();
             string strIsShowOnMenu = ((CheckBox)row.FindControl("chkIsShowOnMenu")).Checked.ToString();
             string strIsShowOnHomePage = ((CheckBox)row.FindControl("chkIsShowOnHomePage")).Checked.ToString();

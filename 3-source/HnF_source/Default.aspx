@@ -52,7 +52,7 @@
                 của HNF là:
             </div>
         </div>
-        <div id="productShow" class="wrap-section">
+        <div id="productShow" class="wrap-section wrap-provide">
             <ul class="section-list">
                 <li><a href="#" class="section-img">
                     <img class="img-responsive" src="assets/images/provide-img-1.jpg" alt="Áo Thun Đồng Phục" />
@@ -85,6 +85,34 @@
                     </div>
                 </li>
             </ul>
+            <%--<asp:ListView ID="lstProvide1" runat="server" DataSourceID="odsProvide1" EnableModelValidation="True">
+                <ItemTemplate>
+                    <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>' class="section-img">
+                        <img class="img-responsive" alt='<%# Eval("ProductCategoryName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/productcategory/" + Eval("ImageName") : "~/assets/images/provide-img-1.jpg" %>' runat="server" />
+                    </a>
+                        <div class="content">
+                            <div class="section-name">
+                                <a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'><strong><%# Eval("ProductCategoryName")%></strong></a></div>
+                            <p class="more-details">
+                                <a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'>Chi tiết</a></p>
+                        </div>
+                    </li>
+                </ItemTemplate>
+                <LayoutTemplate>
+                    <ul class="section-list">
+                        <li runat="server" id="itemPlaceholder"></li>
+                    </ul>
+                </LayoutTemplate>
+            </asp:ListView>
+            <asp:ObjectDataSource ID="odsProvide1" runat="server" 
+                SelectMethod="ProductCategorySelectAll" TypeName="TLLib.ProductCategory">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="1" Name="parentID" Type="Int32" />
+                    <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
+                    <asp:Parameter Name="IsShowOnMenu" Type="String" />
+                    <asp:Parameter DefaultValue="True" Name="IsShowOnHomePage" Type="String" />
+                </SelectParameters>
+            </asp:ObjectDataSource>--%>
             <div class="section-box">
                 <a href="#" class="section-img">
                     <img class="img-responsive" src="assets/images/provide-img-4.jpg" alt="áo thun quảng cáo sự kiện" />
@@ -111,52 +139,33 @@
         </div>
         <div class="wrap-section">
             <div id="isotopelist" class="section-tb row mobile100">
-                <div class="col-lg-4 col-md-4 col-xs-4  element-item">
-                    <div class="box-clothes">
-                        <a class="section-img" href="#">
-                            <img src="assets/images/img-clothes-1.jpg" alt="áo thun cổ trụ" />
-                        </a>
-                        <div class="section-content">
-                            <h3 class="section-name">
-                                <a href="#">Áo thun cổ trụ</a></h3>
+                <asp:ListView ID="lstClothes" runat="server" DataSourceID="odsClothes" EnableModelValidation="True">
+                    <ItemTemplate>
+                        <div class="col-lg-4 col-md-4 col-xs-4  element-item">
+                            <div class="box-clothes">
+                                <a class="section-img" href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'>
+                                    <img alt='<%# Eval("ProductCategoryName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/productcategory/" + Eval("ImageName") : "~/assets/images/img-clothes-1.jpg" %>' runat="server" />
+                                </a>
+                                <div class="section-content">
+                                    <h3 class="section-name">
+                                        <a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'><%# Eval("ProductCategoryName")%></a></h3>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-xs-4  element-item">
-                    <div class="box-clothes">
-                        <a class="section-img" href="#">
-                            <img src="assets/images/img-clothes-2.jpg" alt="áo thun cổ tròn" />
-                        </a>
-                        <div class="section-content content-bottom">
-                            <h3 class="section-name">
-                                <a href="#">Áo thun cổ tròn</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-xs-4  element-item">
-                    <div class="box-clothes">
-                        <a class="section-img" href="#">
-                            <img src="assets/images/img-clothes-3.jpg" alt="áo thun cổ tim" />
-                        </a>
-                        <div class="section-content">
-                            <h3 class="section-name">
-                                <a href="#">Áo thun cổ tim</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <%--<div class="col-lg-4 col-md-6 col-sm-4 col-xs-6  element-item">
-                    <div class="box-clothes">
-                        <a class="section-img" href="#">
-                            <img src="assets/images/img-clothes-3.jpg" alt="" />
-                        </a>
-                        <div class="section-content">
-                            <h3 class="section-name">
-                                <a href="#">Áo polo trơn</a></h3>
-                            <div class="description text-uppercase">
-                                Bộ sưu tập 2016</div>
-                        </div>
-                    </div>
-                </div>--%>
+                    </ItemTemplate>
+                    <LayoutTemplate>
+                        <span runat="server" id="itemPlaceholder" />
+                    </LayoutTemplate>
+                </asp:ListView>
+                <asp:ObjectDataSource ID="odsClothes" runat="server" 
+                    SelectMethod="ProductCategorySelectAll" TypeName="TLLib.ProductCategory">
+                    <SelectParameters>
+                        <asp:Parameter DefaultValue="2" Name="parentID" Type="Int32" />
+                        <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
+                        <asp:Parameter DefaultValue="" Name="IsShowOnMenu" Type="String" />
+                        <asp:Parameter DefaultValue="True" Name="IsShowOnHomePage" Type="String" />
+                    </SelectParameters>
+                </asp:ObjectDataSource>
             </div>
         </div>
         <div class="text-center wrapper-880">
