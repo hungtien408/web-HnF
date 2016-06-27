@@ -2311,7 +2311,8 @@ body .mobilep-right {
     font-size: 14px;
     font-weight: 300;
     line-height: 26px;
-    padding: 25px 30px;
+    /*padding: 25px 30px;*/
+    padding: 25px 0;
 }
 .product-wrap .wrapper-880 .desription {
     width: 100%;
@@ -2320,13 +2321,14 @@ body .mobilep-right {
 }
 .title-pro {
     background: url('../images/bg-title-pro.png') repeat-x left center;
-    width: 70%;
+    /*width: 70%;*/
     margin: 0 auto;
 }
 .title-pro span {
     background-color: #fff;
     padding: 0 16px;
-    width: 80%;
+    font-size: 27px;
+    /*width: 80%;*/
     display: inline-block;
 }
 .product-box {
@@ -2365,6 +2367,9 @@ body .mobilep-right {
     display: block;
     line-height: 20px;
     padding: 0;
+}
+.product-box .product-name a:hover {
+    text-decoration: none;
 }
 #mobileAside .box-aside {
     width: 100%;
