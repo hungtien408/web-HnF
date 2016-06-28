@@ -22,7 +22,7 @@
         </div>
         <div class="paragraph-banner">
             <p class="paragraph-1 text-uppercase">
-                Kể từ năm 2016, Hnf chuyên cung cấp các giải pháp hoàn diện về may mặc như áo thun
+                Hnf chuyên cung cấp các giải pháp hoàn diện về may mặc như áo thun
                 đồng phục, áo thun quảng cáo nhằm đáp ứng nhu cầu của các doanh nghiệp trên địa
                 bàn Thành Phố Hồ Chí Minh và cả nước.</p>
         </div>

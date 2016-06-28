@@ -53,7 +53,7 @@
             </div>
         </div>
         <div id="productShow" class="wrap-section wrap-provide">
-            <ul class="section-list">
+            <%--<ul class="section-list">
                 <li><a href="#" class="section-img">
                     <img class="img-responsive" src="assets/images/provide-img-1.jpg" alt="Áo Thun Đồng Phục" />
                 </a>
@@ -84,15 +84,15 @@
                             <a href="#">Chi tiết</a></p>
                     </div>
                 </li>
-            </ul>
-            <%--<asp:ListView ID="lstProvide1" runat="server" DataSourceID="odsProvide1" EnableModelValidation="True">
+            </ul>--%>
+            <asp:ListView ID="lstProvide1" runat="server" DataSourceID="odsProvide1" EnableModelValidation="True">
                 <ItemTemplate>
                     <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>' class="section-img">
                         <img class="img-responsive" alt='<%# Eval("ProductCategoryName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/productcategory/" + Eval("ImageName") : "~/assets/images/provide-img-1.jpg" %>' runat="server" />
                     </a>
                         <div class="content">
                             <div class="section-name">
-                                <a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'><strong><%# Eval("ProductCategoryName")%></strong></a></div>
+                                <a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'><%# Eval("ProductCategoryName")%></a></div>
                             <p class="more-details">
                                 <a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'>Chi tiết</a></p>
                         </div>
@@ -112,8 +112,8 @@
                     <asp:Parameter Name="IsShowOnMenu" Type="String" />
                     <asp:Parameter DefaultValue="True" Name="IsShowOnHomePage" Type="String" />
                 </SelectParameters>
-            </asp:ObjectDataSource>--%>
-            <div class="section-box">
+            </asp:ObjectDataSource>
+            <%--<div class="section-box">
                 <a href="#" class="section-img">
                     <img class="img-responsive" src="assets/images/provide-img-4.jpg" alt="áo thun quảng cáo sự kiện" />
                 </a>
@@ -123,7 +123,7 @@
                     <p class="more-details">
                         <a href="#">Chi tiết</a></p>
                 </div>
-            </div>
+            </div>--%>
         </div>
         <div class="text-center wrapper-880">
             <h4 class="text-uppercase title-1">
