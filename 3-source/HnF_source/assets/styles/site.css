@@ -2317,6 +2317,10 @@ body .mobilep-right {
     text-align: center;
     width: 100%;
 }
+.menu-ma img {
+    display: block;
+    width: 100%;
+}
 .menu-ma .menubg {
     padding-left: 5px;
 }

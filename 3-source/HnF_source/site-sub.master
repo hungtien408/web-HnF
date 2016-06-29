@@ -29,7 +29,7 @@
                     <li><a href="dich-vu.aspx" class="btn-2">Dịch vụ </a>
                         <div class="menu-sub">
                             <div class="menu-subin">
-                                <ul>
+                                <%--<ul>
                                     <li><a href="dich-vu.aspx"><span class="menu-box"><span class="iconai">
                                         <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun đồng phục<span
                                             class="menubg fa fa-caret-right"></span></a> </li>
@@ -48,8 +48,8 @@
                                     <li><a href="javascript:void(0);"><span class="menu-box"><span class="iconai">
                                         <img src="assets/images/menusub-img-6.jpg" alt="" /></span></span>Thêu vi tính<span
                                             class="menubg fa fa-caret-right"></span></a> </li>
-                                </ul>
-                                <%--<asp:ListView ID="lstServiceCategory" runat="server" DataSourceID="odsServiceCategory"
+                                </ul>--%>
+                                <asp:ListView ID="lstServiceCategory" runat="server" DataSourceID="odsServiceCategory"
                                     EnableModelValidation="True">
                                     <ItemTemplate>
                                         <li><a href=<%# progressTitle(Eval("ServiceCategoryName")) + "-dv-" + Eval("ServiceCategoryID") + ".aspx" %>><span class="menu-box"><span class="iconai">
@@ -64,7 +64,7 @@
                                     </LayoutTemplate>
                                 </asp:ListView>
                                 <asp:ObjectDataSource ID="odsServiceCategory" runat="server" SelectMethod="ServiceCategorySelectAll"
-                                    TypeName="TLLib.ServiceCategory"></asp:ObjectDataSource>--%>
+                                    TypeName="TLLib.ServiceCategory"></asp:ObjectDataSource>
                             </div>
                         </div>
                     </li>
@@ -125,7 +125,7 @@
                                         <ItemTemplate>
                                             <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-psi-" + Eval("ProductCategoryID") + ".aspx" %>'><span
                                                 class="menu-box"><span class="iconai">
-                                                    <img alt='<%# Eval("ProductCategoryName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/productcategory/menu/" + Eval("ImageName") : "~/assets/images/menusub-img-1.jpg" %>' runat="server" />
+                                                    <img alt='<%# Eval("ProductCategoryName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageMenu").ToString()) ? "~/res/productcategory/menu/" + Eval("ImageMenu") : "~/assets/images/menusub-img-1.jpg" %>' runat="server" />
                                                     </span></span><%# Eval("ProductCategoryName")%><span class="menubg fa fa-caret-right"></span></a> </li>
                                         </ItemTemplate>
                                         <LayoutTemplate>

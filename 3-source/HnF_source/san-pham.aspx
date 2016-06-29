@@ -83,12 +83,32 @@
             <div class="col-main">
                 <div class="slider-sub">
                     <div id="sliderBanner">
-                        <div class="slide">
-                            <img src="assets/images/slider-img-1.jpg" alt="" /></div>
-                        <%--<div class="slide">
-                            <img src="assets/images/slider-img-2.jpg" alt="" /></div>
-                        <div class="slide">
-                            <img src="assets/images/slider-img-3.jpg" alt="" /></div>--%>
+                        <asp:ListView ID="lstBannerProduct" runat="server" DataSourceID="odsBannerProduct"
+                            EnableModelValidation="True">
+                            <ItemTemplate>
+                                <div class="slide">
+                                    <img alt='<%# Eval("FileName") %>' src='<%# !string.IsNullOrEmpty(Eval("FileName").ToString()) ? "~/res/advertisement/" + Eval("FileName") : "~/assets/images/slider-img-1.jpg" %>'
+                                        runat="server" /></div>
+                            </ItemTemplate>
+                            <LayoutTemplate>
+                                <span runat="server" id="itemPlaceholder" />
+                            </LayoutTemplate>
+                        </asp:ListView>
+                        <asp:ObjectDataSource ID="odsBannerProduct" runat="server" SelectMethod="AdsBannerSelectAll"
+                            TypeName="TLLib.AdsBanner">
+                            <SelectParameters>
+                                <asp:Parameter Name="StartRowIndex" Type="String" />
+                                <asp:Parameter Name="EndRowIndex" Type="String" />
+                                <asp:Parameter DefaultValue="6" Name="AdsCategoryID" Type="String" />
+                                <asp:Parameter Name="CompanyName" Type="String" />
+                                <asp:Parameter Name="Website" Type="String" />
+                                <asp:Parameter Name="FromDate" Type="String" />
+                                <asp:Parameter Name="ToDate" Type="String" />
+                                <asp:Parameter DefaultValue="True" Name="IsAvailable" Type="String" />
+                                <asp:Parameter Name="Priority" Type="String" />
+                                <asp:Parameter DefaultValue="True" Name="SortByPriority" Type="String" />
+                            </SelectParameters>
+                        </asp:ObjectDataSource>
                     </div>
                 </div>
                 <div class="product-wrap">
@@ -107,11 +127,10 @@
                                 <span runat="server" id="itemPlaceholder" />
                             </LayoutTemplate>
                         </asp:ListView>
-                        <asp:ObjectDataSource ID="odsContentProductCategory" runat="server" 
-                            SelectMethod="ProductCategorySelectOne" TypeName="TLLib.ProductCategory">
+                        <asp:ObjectDataSource ID="odsContentProductCategory" runat="server" SelectMethod="ProductCategorySelectOne"
+                            TypeName="TLLib.ProductCategory">
                             <SelectParameters>
-                                <asp:QueryStringParameter Name="ProductCategoryID" QueryStringField="pci" 
-                                    Type="String" />
+                                <asp:QueryStringParameter Name="ProductCategoryID" QueryStringField="pci" Type="String" />
                             </SelectParameters>
                         </asp:ObjectDataSource>
                     </div>
@@ -120,7 +139,8 @@
                             <ItemTemplate>
                                 <div class="col-md-4 col-xs-6 element-item">
                                     <div class="product-box">
-                                        <a href='<%# progressTitle(Eval("ProductName")) + "-pci-" + Eval("CategoryID") + "-pi-" + Eval("ProductID") + ".aspx" %>' class="product-img fullbox-img">
+                                        <a href='<%# progressTitle(Eval("ProductName")) + "-pci-" + Eval("CategoryID") + "-pi-" + Eval("ProductID") + ".aspx" %>'
+                                            class="product-img fullbox-img">
                                             <img class="hideo" alt='<%# Eval("ImageName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/product/" + Eval("ImageName") : "~/assets/images/img-product-1.jpg" %>'
                                                 runat="server" /></a>
                                         <h4 class="product-name">
@@ -183,7 +203,7 @@
                     </asp:DataPager>
                 </div>
             </div>
-            <div id="mobileAside">
+            <%--<div id="mobileAside">
                 <div class="box-aside">
                     <ul class="menu-list menu-iconr">
                         <li><a href="#">Áo thun đồng phục</a>
@@ -223,7 +243,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div>--%>
         </div>
     </div>
 </asp:Content>
