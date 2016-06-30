@@ -17,6 +17,7 @@ namespace TLLib
             string FileName,
             string ConvertedAdsBannerName,
             string AdsCategoryID,
+            string ProductCategoryID,
             string CompanyName,
             string Website,
             string FromDate,
@@ -34,6 +35,7 @@ namespace TLLib
                 cmd.Parameters.AddWithValue("@FileName", string.IsNullOrEmpty(FileName) ? dbNULL : (object)FileName);
                 cmd.Parameters.AddWithValue("@ConvertedAdsBannerName", string.IsNullOrEmpty(ConvertedAdsBannerName) ? dbNULL : (object)ConvertedAdsBannerName);
                 cmd.Parameters.AddWithValue("@AdsCategoryID", string.IsNullOrEmpty(AdsCategoryID) ? dbNULL : (object)AdsCategoryID);
+                cmd.Parameters.AddWithValue("@ProductCategoryID", string.IsNullOrEmpty(ProductCategoryID) ? dbNULL : (object)ProductCategoryID);
                 cmd.Parameters.AddWithValue("@CompanyName", string.IsNullOrEmpty(CompanyName) ? dbNULL : (object)CompanyName);
                 cmd.Parameters.AddWithValue("@Website", string.IsNullOrEmpty(Website) ? dbNULL : (object)(Website.ToLower().StartsWith("http://") ? Website.ToLower() : "http://" + Website.ToLower()));
                 cmd.Parameters.AddWithValue("@FromDate", string.IsNullOrEmpty(FromDate) ? dbNULL : (object)FromDate);
@@ -69,6 +71,7 @@ namespace TLLib
             string FileName,
             string ConvertedAdsBannerName,
             string AdsCategoryID,
+            string ProductCategoryID,
             string CompanyName,
             string Website,
             string FromDate,
@@ -87,6 +90,7 @@ namespace TLLib
                 cmd.Parameters.AddWithValue("@FileName", string.IsNullOrEmpty(FileName) ? dbNULL : (object)FileName);
                 cmd.Parameters.AddWithValue("@ConvertedAdsBannerName", string.IsNullOrEmpty(ConvertedAdsBannerName) ? dbNULL : (object)ConvertedAdsBannerName);
                 cmd.Parameters.AddWithValue("@AdsCategoryID", string.IsNullOrEmpty(AdsCategoryID) ? dbNULL : (object)AdsCategoryID);
+                cmd.Parameters.AddWithValue("@ProductCategoryID", string.IsNullOrEmpty(ProductCategoryID) ? dbNULL : (object)ProductCategoryID);
                 cmd.Parameters.AddWithValue("@CompanyName", string.IsNullOrEmpty(CompanyName) ? dbNULL : (object)CompanyName);
                 cmd.Parameters.AddWithValue("@Website", string.IsNullOrEmpty(Website) ? dbNULL : (object)(Website.ToLower().StartsWith("http://") ? Website.ToLower() : "http://" + Website.ToLower()));
                 cmd.Parameters.AddWithValue("@FromDate", string.IsNullOrEmpty(FromDate) ? dbNULL : (object)FromDate);
@@ -181,6 +185,7 @@ namespace TLLib
             string StartRowIndex,
             string EndRowIndex,
             string AdsCategoryID,
+            string ProductCategoryID,
             string CompanyName,
             string Website,
             string FromDate,
@@ -200,6 +205,7 @@ namespace TLLib
                 cmd.Parameters.AddWithValue("@StartRowIndex", string.IsNullOrEmpty(StartRowIndex) ? dbNULL : (object)StartRowIndex);
                 cmd.Parameters.AddWithValue("@EndRowIndex", string.IsNullOrEmpty(EndRowIndex) ? dbNULL : (object)EndRowIndex);
                 cmd.Parameters.AddWithValue("@AdsCategoryID", string.IsNullOrEmpty(AdsCategoryID) ? dbNULL : (object)AdsCategoryID);
+                cmd.Parameters.AddWithValue("@ProductCategoryID", string.IsNullOrEmpty(ProductCategoryID) ? dbNULL : (object)ProductCategoryID);
                 cmd.Parameters.AddWithValue("@CompanyName", string.IsNullOrEmpty(CompanyName) ? dbNULL : (object)CompanyName.Trim());
                 cmd.Parameters.AddWithValue("@Website", string.IsNullOrEmpty(Website) ? dbNULL : (object)Website);
                 cmd.Parameters.AddWithValue("@FromDate", string.IsNullOrEmpty(FromDate) ? dbNULL : (object)FromDate);

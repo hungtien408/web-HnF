@@ -100,6 +100,7 @@
                                 <asp:Parameter Name="StartRowIndex" Type="String" />
                                 <asp:Parameter Name="EndRowIndex" Type="String" />
                                 <asp:Parameter DefaultValue="6" Name="AdsCategoryID" Type="String" />
+                                <asp:QueryStringParameter QueryStringField="pci" Name="ProductCategoryID" Type="String" />
                                 <asp:Parameter Name="CompanyName" Type="String" />
                                 <asp:Parameter Name="Website" Type="String" />
                                 <asp:Parameter Name="FromDate" Type="String" />

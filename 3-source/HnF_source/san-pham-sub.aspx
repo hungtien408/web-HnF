@@ -18,7 +18,7 @@
                         <ItemTemplate>
                             <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-psi-" + Eval("ProductCategoryID") + ".aspx" %>'>
                                 <span class="menu-box"><span class="iconai">
-                                    <img alt='<%# Eval("ImageName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/productcategory/menu/" + Eval("ImageName") : "~/assets/images/menuma-img-1.jpg" %>'
+                                    <img alt='<%# Eval("ImageMenu") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageMenu").ToString()) ? "~/res/productcategory/menu/" + Eval("ImageMenu") : "~/assets/images/menuma-img-1.jpg" %>'
                                         runat="server" /></span></span><%# Eval("ProductCategoryName") %><span class="menubg fa fa-caret-right"></span></a>
                             </li>
                         </ItemTemplate>
@@ -62,7 +62,8 @@
                             <SelectParameters>
                                 <asp:Parameter Name="StartRowIndex" Type="String" />
                                 <asp:Parameter Name="EndRowIndex" Type="String" />
-                                <asp:Parameter DefaultValue="6" Name="AdsCategoryID" Type="String" />
+                                <asp:Parameter DefaultValue="7" Name="AdsCategoryID" Type="String" />
+                                <asp:QueryStringParameter QueryStringField="psi" Name="ProductCategoryID" Type="String" />
                                 <asp:Parameter Name="CompanyName" Type="String" />
                                 <asp:Parameter Name="Website" Type="String" />
                                 <asp:Parameter Name="FromDate" Type="String" />

@@ -1788,7 +1788,7 @@ body .mobilep-right {
 .wrap-qtdh {
     min-height: 578px;
 }
-.bg-order {
+.bg-order, .bg-qt {
     left: 0;
     top: 0;
     bottom: 0;
@@ -2727,6 +2727,52 @@ body .mobilep-right {
 }
 .backhome:hover {
     text-decoration: none;
+}
+/*=======quy trinh thuc hien=============*/
+.wrap-qt {
+    padding: 56px 0 46px;
+}
+.wrap-contentqt {
+    position: relative;
+    width: 100%;
+}
+.title-qt {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.title-qt span {
+    height: 118px;
+    width: 118px;
+    line-height: 118px;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin: 0 auto;
+}
+.title-3 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+.content-qt {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    padding: 20px 0;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.icon-qt {
+    width: 100%;
+    height: 143px;
+    text-align: center;
 }
 /*=============================footer======================*/
 #footer

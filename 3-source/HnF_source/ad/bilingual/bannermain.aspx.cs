@@ -202,6 +202,7 @@ public partial class ad_single_advertisement : System.Web.UI.Page
                     strFileName,
                     strConvertedAdsBannerName,
                     strAdsCategoryID,
+                    "",
                     strCompanyName,
                     strWebsite,
                     strFromDate,
@@ -233,6 +234,7 @@ public partial class ad_single_advertisement : System.Web.UI.Page
                 dsUpdateParam["FileName"].DefaultValue = strFileName;
                 dsUpdateParam["ConvertedAdsBannerName"].DefaultValue = strConvertedAdsBannerName;
                 dsUpdateParam["AdsCategoryID"].DefaultValue = strAdsCategoryID;
+                dsUpdateParam["ProductCategoryID"].DefaultValue = "";
                 dsUpdateParam["FromDate"].DefaultValue = strFromDate;
                 dsUpdateParam["ToDate"].DefaultValue = strToDate;
                 dsUpdateParam["IsAvailable"].DefaultValue = strIsAvailable;

@@ -169,7 +169,7 @@ public partial class ad_single_advertisement : System.Web.UI.Page
             string strPriority = ((RadNumericTextBox)row.FindControl("txtPriority")).Text.Trim();
             string strFromDate = dpFromDate.SelectedDate.HasValue ? dpFromDate.SelectedDate.Value.ToString("MM/dd/yyyy") : "";
             string strToDate = dpToDate.SelectedDate.HasValue ? dpToDate.SelectedDate.Value.ToString("MM/dd/yyyy") : "";
-            string strAdsCategoryID = "6";// ((RadComboBox)row.FindControl("ddlCategory")).SelectedValue;
+            string strAdsCategoryID = "7";// ((RadComboBox)row.FindControl("ddlCategory")).SelectedValue;
             string strProductCategoryID = ((RadComboBox)row.FindControl("ddlCategoryProduct")).SelectedValue;
             string strWebsite = ((TextBox)row.FindControl("txtWebsite")).Text.Trim();
             double ratio = 0;

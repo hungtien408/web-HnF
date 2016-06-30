@@ -25,6 +25,7 @@
                         <asp:Parameter Name="StartRowIndex" Type="String" />
                         <asp:Parameter Name="EndRowIndex" Type="String" />
                         <asp:Parameter DefaultValue="5" Name="AdsCategoryID" Type="String" />
+                        <asp:Parameter Name="ProductCategoryID" Type="String" />
                         <asp:Parameter Name="CompanyName" Type="String" />
                         <asp:Parameter Name="Website" Type="String" />
                         <asp:Parameter Name="FromDate" Type="String" />

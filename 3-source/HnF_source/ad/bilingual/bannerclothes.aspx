@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ad/template/adminEn.master" AutoEventWireup="true"
-    CodeFile="bannermain.aspx.cs" Inherits="ad_single_advertisement" %>
+    CodeFile="bannerclothes.aspx.cs" Inherits="ad_single_advertisement" %>
 
 <%@ Register TagPrefix="asp" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="cphHead" runat="Server">
@@ -94,7 +94,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBody" runat="Server">
     <h3 class="mainTitle">
         <img alt="" src="../assets/images/advertisement.png" class="vam" />
-        Banner</h3>
+        Banner Mẫu Áo</h3>
     <br />
     <asp:RadAjaxPanel ID="RadAjaxPanel1" runat="server" ClientEvents-OnRequestStart="conditionalPostback">
         <asp:Panel ID="pnlSearch" DefaultButton="btnSearch" runat="server" Visible="False">
@@ -210,7 +210,7 @@
             </div>
         </asp:Panel>
         <asp:Label ID="lblError" ForeColor="Red" runat="server"></asp:Label>
-        <asp:RadGrid ID="RadGrid1" AllowMultiRowSelection="True" runat="server" Culture="vi-VN" 
+        <asp:RadGrid ID="RadGrid1" AllowMultiRowSelection="True" runat="server" Culture="vi-VN"
             DataSourceID="ObjectDataSource1" GridLines="Horizontal" AutoGenerateColumns="False"
             AllowAutomaticDeletes="True" ShowStatusBar="True" Skin="Default" OnItemCommand="RadGrid1_ItemCommand"
             OnItemDataBound="RadGrid1_ItemDataBound" CssClass="grid" AllowAutomaticUpdates="True"
@@ -267,25 +267,30 @@
                             <asp:HiddenField ID="hdnFileName" runat="server" Value='<%# Eval("FileName") %>' />
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridBoundColumn HeaderText="ID" DataField="AdsBannerID" SortExpression="AdsBannerID" Visible="False">
+                    <asp:GridBoundColumn HeaderText="ID" DataField="AdsBannerID" SortExpression="AdsBannerID"
+                        Visible="False">
                     </asp:GridBoundColumn>
-                    <asp:GridTemplateColumn HeaderText="Tên công ty" DataField="CompanyName" SortExpression="CompanyName" Visible="False">
+                    <asp:GridTemplateColumn HeaderText="Tên công ty" DataField="CompanyName" SortExpression="CompanyName"
+                        Visible="False">
                         <ItemTemplate>
                             <%# Eval("CompanyName")%>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn HeaderText="Website" DataField="Website" SortExpression="Website" Visible="False">
+                    <asp:GridTemplateColumn HeaderText="Website" DataField="Website" SortExpression="Website"
+                        Visible="False">
                         <ItemTemplate>
                             <a href='<%# Eval("Website")%>' target="_blank">
                                 <%# Eval("Website")%></a>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn HeaderText="Từ ngày" DataField="FromDate" SortExpression="FromDate" Visible="False">
+                    <asp:GridTemplateColumn HeaderText="Từ ngày" DataField="FromDate" SortExpression="FromDate"
+                        Visible="False">
                         <ItemTemplate>
                             <%# string.Format("{0:dd/MM/yyyy}", Eval("FromDate"))%>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn HeaderText="Đến ngày" DataField="ToDate" SortExpression="ToDate" Visible="False">
+                    <asp:GridTemplateColumn HeaderText="Đến ngày" DataField="ToDate" SortExpression="ToDate"
+                        Visible="False">
                         <ItemTemplate>
                             <%# string.Format("{0:dd/MM/yyyy}", Eval("ToDate"))%>
                         </ItemTemplate>
@@ -293,6 +298,11 @@
                     <asp:GridTemplateColumn HeaderText="Vị trí" DataField="AdsCategoryName" SortExpression="AdsCategoryName">
                         <ItemTemplate>
                             <%# Eval("AdsCategoryName")%>
+                        </ItemTemplate>
+                    </asp:GridTemplateColumn>
+                    <asp:GridTemplateColumn HeaderText="Danh mục sản phẩm" DataField="ProductCategoryName" SortExpression="ProductCategoryName">
+                        <ItemTemplate>
+                            <%# Eval("ProductCategoryName")%>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
                     <asp:GridTemplateColumn HeaderText="Thứ tự" DataField="Priority" SortExpression="Priority">
@@ -360,7 +370,7 @@
                     <FormTemplate>
                         <asp:Panel ID="Panel1" runat="server" DefaultButton="lnkUpdate">
                             <h3 class="searchTitle">
-                                Thông Tin Banner</h3>
+                                Thông Tin Banner Mẫu Áo</h3>
                             <table class="search">
                                 <tr>
                                     <td class="left" valign="top">
@@ -374,7 +384,7 @@
                                             TargetFolder="~/res/Temp/" />
                                         <asp:CustomValidator ID="CustomValidator1" runat="server" ErrorMessage="Sai định dạng ảnh (*.jpg, *.jpeg, *.gif, *.png, *.swf)"
                                             ClientValidationFunction="validateRadUpload" Display="Dynamic"></asp:CustomValidator>
-                                        <span class="required">(Kích thước 1360px x 534px)</span>
+                                        <span class="required">(Kích thước 889px x 334px)</span>
                                     </td>
                                 </tr>
                                 <tr class="invisible">
@@ -385,6 +395,17 @@
                                         <asp:RadComboBox Filter="Contains" ID="ddlCategory" runat="server" DataSourceID="ObjectDataSource2"
                                             DataTextField="AdsCategoryName" DataValueField="AdsCategoryID" Width="504px"
                                             OnDataBound="DropDownList_DataBound">
+                                        </asp:RadComboBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        Danh mục sản phẩm
+                                    </td>
+                                    <td>
+                                        <asp:RadComboBox Filter="Contains" ID="ddlCategoryProduct" runat="server" DataSourceID="ObjectDataSource3"
+                                            DataTextField="ProductCategoryName" DataValueField="ProductCategoryID" Width="504px"
+                                            OnDataBound="DropDownList_DataBound" EmptyMessage="- Chọn -">
                                         </asp:RadComboBox>
                                     </td>
                                 </tr>
@@ -511,8 +532,8 @@
         <SelectParameters>
             <asp:Parameter Name="StartRowIndex" Type="String" />
             <asp:Parameter Name="EndRowIndex" Type="String" />
-            <asp:ControlParameter ControlID="ddlSearchCategory" DefaultValue="5" Name="AdsCategoryID" PropertyName="SelectedValue"
-                Type="String" />
+            <asp:ControlParameter ControlID="ddlSearchCategory" DefaultValue="7" Name="AdsCategoryID"
+                PropertyName="SelectedValue" Type="String" />
             <asp:Parameter Name="ProductCategoryID" Type="String" />
             <asp:ControlParameter ControlID="txtSearchCompanyName" Name="CompanyName" PropertyName="Text"
                 Type="String" />
@@ -545,6 +566,15 @@
     </asp:ObjectDataSource>
     <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="AdsCategorySelectAll"
         TypeName="TLLib.AdsCategory"></asp:ObjectDataSource>
+    <asp:ObjectDataSource ID="ObjectDataSource3" runat="server" SelectMethod="ProductCategorySelectAll"
+        TypeName="TLLib.ProductCategory">
+        <SelectParameters>
+            <asp:Parameter Name="parentID" Type="Int32" DefaultValue="2" />
+            <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
+            <asp:Parameter Name="IsShowOnMenu" Type="String" />
+            <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+        </SelectParameters>
+    </asp:ObjectDataSource>
     <asp:RadProgressManager ID="RadProgressManager1" runat="server" />
     <asp:RadProgressArea ID="ProgressArea1" runat="server" Culture="vi-VN" DisplayCancelButton="True"
         HeaderText="Đang tải" Skin="Office2007" Style="position: fixed; top: 50% !important;

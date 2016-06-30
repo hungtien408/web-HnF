@@ -426,6 +426,14 @@ function myfunload() {
     if ($('#mapshow').size() == 1) {
         mymap();
     }
+    $(".wrap-qt:nth-child(odd)").css("color", "#fff");
+    $(".wrap-qt:nth-child(even)").css("color", "#282828");
+    $(".wrap-qt:nth-child(odd) .title-qt span").css("background", 'url("assets/images/bg-step-2.png") no-repeat left center');
+    $(".wrap-qt:nth-child(even) .title-qt span").css("background", 'url("assets/images/bg-step-1.png") no-repeat left center');
+    $(".wrap-qt:nth-child(odd) .title-3").css("background", 'url("assets/images/line-title-3-2.png") no-repeat bottom center');
+    $(".wrap-qt:nth-child(even) .title-3").css("background", 'url("assets/images/line-title-3.png") no-repeat bottom center');
+    $(".wrap-qt:nth-child(odd) .icon-qt").css("background", 'url("assets/images/line-qt-2.png") no-repeat center top');
+    $(".wrap-qt:nth-child(even) .icon-qt").css("background", 'url("assets/images/line-qt-1.png") no-repeat center top');
     myfunsroll();
 }
 /*=========================================================================*/

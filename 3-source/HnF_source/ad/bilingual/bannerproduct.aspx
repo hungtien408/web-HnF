@@ -210,7 +210,7 @@
             </div>
         </asp:Panel>
         <asp:Label ID="lblError" ForeColor="Red" runat="server"></asp:Label>
-        <asp:RadGrid ID="RadGrid1" AllowMultiRowSelection="True" runat="server" Culture="vi-VN" 
+        <asp:RadGrid ID="RadGrid1" AllowMultiRowSelection="True" runat="server" Culture="vi-VN"
             DataSourceID="ObjectDataSource1" GridLines="Horizontal" AutoGenerateColumns="False"
             AllowAutomaticDeletes="True" ShowStatusBar="True" Skin="Default" OnItemCommand="RadGrid1_ItemCommand"
             OnItemDataBound="RadGrid1_ItemDataBound" CssClass="grid" AllowAutomaticUpdates="True"
@@ -267,25 +267,30 @@
                             <asp:HiddenField ID="hdnFileName" runat="server" Value='<%# Eval("FileName") %>' />
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridBoundColumn HeaderText="ID" DataField="AdsBannerID" SortExpression="AdsBannerID" Visible="False">
+                    <asp:GridBoundColumn HeaderText="ID" DataField="AdsBannerID" SortExpression="AdsBannerID"
+                        Visible="False">
                     </asp:GridBoundColumn>
-                    <asp:GridTemplateColumn HeaderText="Tên công ty" DataField="CompanyName" SortExpression="CompanyName" Visible="False">
+                    <asp:GridTemplateColumn HeaderText="Tên công ty" DataField="CompanyName" SortExpression="CompanyName"
+                        Visible="False">
                         <ItemTemplate>
                             <%# Eval("CompanyName")%>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn HeaderText="Website" DataField="Website" SortExpression="Website" Visible="False">
+                    <asp:GridTemplateColumn HeaderText="Website" DataField="Website" SortExpression="Website"
+                        Visible="False">
                         <ItemTemplate>
                             <a href='<%# Eval("Website")%>' target="_blank">
                                 <%# Eval("Website")%></a>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn HeaderText="Từ ngày" DataField="FromDate" SortExpression="FromDate" Visible="False">
+                    <asp:GridTemplateColumn HeaderText="Từ ngày" DataField="FromDate" SortExpression="FromDate"
+                        Visible="False">
                         <ItemTemplate>
                             <%# string.Format("{0:dd/MM/yyyy}", Eval("FromDate"))%>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn HeaderText="Đến ngày" DataField="ToDate" SortExpression="ToDate" Visible="False">
+                    <asp:GridTemplateColumn HeaderText="Đến ngày" DataField="ToDate" SortExpression="ToDate"
+                        Visible="False">
                         <ItemTemplate>
                             <%# string.Format("{0:dd/MM/yyyy}", Eval("ToDate"))%>
                         </ItemTemplate>
@@ -293,6 +298,11 @@
                     <asp:GridTemplateColumn HeaderText="Vị trí" DataField="AdsCategoryName" SortExpression="AdsCategoryName">
                         <ItemTemplate>
                             <%# Eval("AdsCategoryName")%>
+                        </ItemTemplate>
+                    </asp:GridTemplateColumn>
+                    <asp:GridTemplateColumn HeaderText="Danh mục sản phẩm" DataField="ProductCategoryName" SortExpression="ProductCategoryName">
+                        <ItemTemplate>
+                            <%# Eval("ProductCategoryName")%>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
                     <asp:GridTemplateColumn HeaderText="Thứ tự" DataField="Priority" SortExpression="Priority">
@@ -317,17 +327,17 @@
                                     <asp:Image runat="server" ImageUrl="~/ad/assets/images/sap-het-han.gif" Visible='<%# string.IsNullOrEmpty(Eval("BeginDeadLine").ToString()) ? false : (Convert.ToBoolean(Eval("IsDeadLine")) ? false : Eval("BeginDeadLine")) %>' />
                                 </div>--%>
                                 <div runat="server" visible='<%# string.IsNullOrEmpty(Eval("FileName").ToString()) ? false : (!Eval("FileName").ToString().ToLower().EndsWith(".swf") ? true : false) %>'>
-                                    <img id="Img2" alt="" height="100" width='<%# string.IsNullOrEmpty(Eval("Ratio").ToString()) ? "100%" : (100*Convert.ToDouble( Eval("Ratio"))).ToString() %>'
+                                    <img id="Img2" alt="" height="100" width='200'
                                         src='<%# "../../res/advertisement/" + Eval("FileName") %>' />
                                 </div>
                                 <div runat="server" visible='<%# Eval("FileName").ToString() == "" ? false : (Eval("FileName").ToString().ToLower().EndsWith(".swf") ? true : false) %>'>
-                                    <object id="Object1" height="100" width='<%# string.IsNullOrEmpty(Eval("Ratio").ToString()) ? "100%" : (100*Convert.ToDouble( Eval("Ratio"))).ToString() %>'
+                                    <object id="Object1" height="100" width='200'
                                         style="z-index: 0;" name="player" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
                                         <param value='../../res/advertisement/<%# Eval("FileName") %>' name="movie">
                                         <param value="true" name="allowfullscreen">
                                         <param value="always" name="allowscriptaccess">
                                         <param value="opaque" name="wmode">
-                                        <embed id="player2" height="100" width='<%# string.IsNullOrEmpty(Eval("Ratio").ToString()) ? "100%" : (100*Convert.ToDouble( Eval("Ratio"))).ToString() %>'
+                                        <embed id="player2" height="100" width='200'
                                             style="z-index: 0;" wmode="opaque" allowfullscreen="false" allowscriptaccess="always"
                                             src="../../res/advertisement/<%# Eval("FileName") %>" name="player2" type="application/x-shockwave-flash">
                                     </object>
@@ -385,6 +395,17 @@
                                         <asp:RadComboBox Filter="Contains" ID="ddlCategory" runat="server" DataSourceID="ObjectDataSource2"
                                             DataTextField="AdsCategoryName" DataValueField="AdsCategoryID" Width="504px"
                                             OnDataBound="DropDownList_DataBound">
+                                        </asp:RadComboBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">
+                                        Danh mục sản phẩm
+                                    </td>
+                                    <td>
+                                        <asp:RadComboBox Filter="Contains" ID="ddlCategoryProduct" runat="server" DataSourceID="ObjectDataSource3"
+                                            DataTextField="ProductCategoryName" DataValueField="ProductCategoryID" Width="504px"
+                                            OnDataBound="DropDownList_DataBound" EmptyMessage="- Chọn -">
                                         </asp:RadComboBox>
                                     </td>
                                 </tr>
@@ -511,8 +532,9 @@
         <SelectParameters>
             <asp:Parameter Name="StartRowIndex" Type="String" />
             <asp:Parameter Name="EndRowIndex" Type="String" />
-            <asp:ControlParameter ControlID="ddlSearchCategory" DefaultValue="6" Name="AdsCategoryID" PropertyName="SelectedValue"
-                Type="String" />
+            <asp:ControlParameter ControlID="ddlSearchCategory" DefaultValue="6" Name="AdsCategoryID"
+                PropertyName="SelectedValue" Type="String" />
+            <asp:Parameter Name="ProductCategoryID" Type="String" />
             <asp:ControlParameter ControlID="txtSearchCompanyName" Name="CompanyName" PropertyName="Text"
                 Type="String" />
             <asp:ControlParameter ControlID="txtSearchWebsite" Name="Website" PropertyName="Text"
@@ -532,6 +554,7 @@
             <asp:Parameter Name="FileName" Type="String" />
             <asp:Parameter Name="ConvertedAdsBannerName" Type="String" />
             <asp:Parameter Name="AdsCategoryID" Type="String" />
+            <asp:Parameter Name="ProductCategoryID" Type="String" />
             <asp:Parameter Name="CompanyName" Type="String" />
             <asp:Parameter Name="Website" Type="String" />
             <asp:Parameter Name="FromDate" Type="String" />
@@ -543,6 +566,15 @@
     </asp:ObjectDataSource>
     <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="AdsCategorySelectAll"
         TypeName="TLLib.AdsCategory"></asp:ObjectDataSource>
+    <asp:ObjectDataSource ID="ObjectDataSource3" runat="server" SelectMethod="ProductCategorySelectAll"
+        TypeName="TLLib.ProductCategory">
+        <SelectParameters>
+            <asp:Parameter Name="parentID" Type="Int32" DefaultValue="1" />
+            <asp:Parameter DefaultValue="2" Name="increaseLevelCount" Type="Int32" />
+            <asp:Parameter Name="IsShowOnMenu" Type="String" />
+            <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+        </SelectParameters>
+    </asp:ObjectDataSource>
     <asp:RadProgressManager ID="RadProgressManager1" runat="server" />
     <asp:RadProgressArea ID="ProgressArea1" runat="server" Culture="vi-VN" DisplayCancelButton="True"
         HeaderText="Đang tải" Skin="Office2007" Style="position: fixed; top: 50% !important;

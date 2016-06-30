@@ -192,6 +192,10 @@
                             </asp:RadMenuItem>
                             <asp:RadMenuItem runat="server" Text="Banner Sản Phẩm" NavigateUrl="~/ad/bilingual/bannerproduct.aspx">
                             </asp:RadMenuItem>
+                            <asp:RadMenuItem runat="server" IsSeparator="True">
+                            </asp:RadMenuItem>
+                            <asp:RadMenuItem runat="server" Text="Banner Mẫu Áo" NavigateUrl="~/ad/bilingual/bannerclothes.aspx">
+                            </asp:RadMenuItem>
                         </Items>
                     </asp:RadMenuItem>
                 </Items>
