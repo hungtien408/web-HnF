@@ -85,6 +85,16 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="cphFooter" runat="Server">
+    <div class="wrap-footer2">
+        <h4 class="title-footer title-footer2 text-uppercase">
+            Cam kết - bảo hành của chúng tôi</h4>
+        <p class="footer-content footer-content2">
+            Sau khi bàn giao áo, chúng tôi vẫn bên cạnh để hỗ trợ. Nếu có bất kỳ lỗi sản phẩm
+            hay thắc mắc về cách sử dụng, chúng tôi sẽ hỗ trợ trong thời gian sớm nhất bằng
+            một dịch vụ hậu mãi tốt nhất. Chúng tôi tin rằng việc cam kết này sẽ phần nào chứng
+            tỏ được chất lượng sản phẩm của HNF đối với khách hàng.
+        </p>
+    </div>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="cphPopup" runat="Server">
 </asp:Content>

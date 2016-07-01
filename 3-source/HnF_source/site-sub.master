@@ -68,7 +68,7 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="quy-trinh-thuc-hien.htm" class="btn-2">Quy trình thực hiện </a></li>
+                    <li><a href="quy-trinh-thuc-hien.aspx" class="btn-2">Quy trình thực hiện </a></li>
                     <li><a href="javascript:void(0);" class="btn-2">Sản Phẩm </a>
                         <div class="menu-sub menu-sub2">
                             <div class="menu-content">

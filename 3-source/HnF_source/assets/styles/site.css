@@ -2731,6 +2731,7 @@ body .mobilep-right {
 /*=======quy trinh thuc hien=============*/
 .wrap-qt {
     padding: 56px 0 46px;
+    overflow: hidden;
 }
 .wrap-contentqt {
     position: relative;
@@ -2774,6 +2775,18 @@ body .mobilep-right {
     height: 143px;
     text-align: center;
 }
+/*=====thong so size=====*/
+.wrap-ts {
+    overflow: hidden;
+    border-top: 1px solid #e5e5e5;
+    padding: 40px 0;
+}
+.title-ts {
+    font-size: 30px;
+    line-height: 42px;
+    color: #145b77;
+    text-align: center;
+}
 /*=============================footer======================*/
 #footer
 {
@@ -2781,11 +2794,15 @@ body .mobilep-right {
     width: 100%;
     z-index: 1;
 }
-#footer .wrap-footer
+#footer .wrap-footer, .wrap-footer2
 {
     width: 100%;
     background-color: #ff7920;
     padding: 70px 0;
+}
+.wrap-footer2 {
+    background-color: #c1c1c1;
+    padding: 50px 0;
 }
 #footer2 {
     padding: 50px 0 10px;
@@ -2837,6 +2854,13 @@ body .mobilep-right {
     text-align: center;
     display: block;
 }
+.title-footer2 {
+    font-size: 24px;
+    line-height: 45px;
+    background: url('../images/line-title-3-2.png') center bottom no-repeat;
+    padding: 20px 0;
+    margin-bottom: 24px;
+}
 .footer-content {
     color: #fff;
     font-size: 18px;
@@ -2844,6 +2868,11 @@ body .mobilep-right {
     text-align: center;
     margin: 0 auto;
     width: 45%;
+}
+.footer-content2 {
+    font-size: 14px;
+    line-height: 22px;
+    width: 60%;
 }
 #footer .hotline {
     border-left: 2px solid #fff;
@@ -3341,6 +3370,9 @@ body .mobilep-right {
      }   
      .title-services, .title-services a {
          font-size: 18px;
+     }
+     .content-qt {
+         width: 90%;
      } 
 }
 /* Landscape phone to portrait tablet */
@@ -3449,6 +3481,13 @@ body .mobilep-right {
     .product-details .detail-content {
         padding-left: 1px;
     }
+    .content-qt {
+         width: 100%;
+        font-size: 12px;
+    }
+    .title-3 {
+        font-size: 32px;
+    } 
 }
 @media (min-width: 481px) and (max-width: 767px)
 {
@@ -3848,6 +3887,9 @@ body .mobilep-right {
     #footer2 {
         padding: 0;
     }
+    .title-3 {
+        font-size: 24px;
+    }
 }
 @media (max-width: 479px)
 {
@@ -4026,6 +4068,12 @@ body .mobilep-right {
     }
     #weShow .col-xs-4 {
         width: 100%;
+    }
+    .bg-qt {
+        background-color: #b4b6b9;
+    }
+    .bg-qt img {
+        display: none;
     }
 }
 @media (max-width: 419px)
