@@ -97,8 +97,40 @@
                                 Bảng kích thước size cho Nữ</div>
                             <img src="assets/images/img-tablesize-2.jpg" alt="" />
                         </div>
+                        <img class="size-img" src="assets/images/img-note-1.jpg" alt="" />
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="wrap-contentts">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="title-4 text-uppercase">
+                            Cách 3:</div>
+                        <h4 class="title-step text-uppercase">
+                            Chọn size áo theo chiều cao - cân nặng</h4>
+                        <div class="content-size">
+                            Quý khách có chiều cao cân nặng cân đối có thể chọn size áo theo bảng thông số chiều
+                            cao-cân nặng. Việc chọn theo tiêu chí này không phải lúc nào cũng chính xác nhưng
+                            rất tiện lợi.
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="title-size">
+                            Bảng kích thước size cho Nam</div>
+                        <img class="size-img" src="assets/images/img-tablesize-3.jpg" alt="" />
+                        <div class="title-size">
+                            Bảng kích thước size cho Nữ</div>
+                        <img class="size-img" src="assets/images/img-tablesize-4.jpg" alt="" />
+                        <img class="size-img" src="assets/images/img-note-2.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="wrap-contentts">
+                <img class="img-responsive" src="assets/images/img-themanh.jpg" alt="" />
             </div>
         </div>
     </div>

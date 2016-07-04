@@ -147,7 +147,7 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="thong-so-size.htm" class="btn-2">Thông số size </a></li>
+                    <li><a href="thong-so-size.aspx" class="btn-2">Thông số size </a></li>
                     <li><a href="javascript:void(0);" class="btn-2" data-toggle="modal" data-target="#popupInfo">
                         Dự án </a></li>
                     <li><a href="tu-van.aspx" class="btn-2">Tư vấn </a></li>

@@ -2835,7 +2835,12 @@ body .mobilep-right {
     line-height: 30px;
     color: #303030;
     font-weight: 600;
-    padding-bottom: 10px;
+    padding: 10px 0;
+}
+.size-img {
+    display: block;
+    width: 100%;
+    padding: 10px 12px 10px 0;
 }
 /*=============================footer======================*/
 #footer
