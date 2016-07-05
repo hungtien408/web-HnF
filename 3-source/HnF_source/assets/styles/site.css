@@ -2812,6 +2812,11 @@ body .mobilep-right {
 .box-size {
     width: 50%;
     float: left;
+    padding: 0 10px;
+}
+.box-size > img {
+    width: 100%;
+    display: block;
 }
 .list-size {
     float: left;
@@ -2823,6 +2828,10 @@ body .mobilep-right {
     float: left;
     width: 30%;
     padding: 0 10px;
+}
+.list-size li img {
+    width: 100%;
+    display: block;
 }
 .list-size li span {
     width: 100%;
@@ -2840,7 +2849,7 @@ body .mobilep-right {
 .size-img {
     display: block;
     width: 100%;
-    padding: 10px 12px 10px 0;
+    padding: 10px;
 }
 /*=============================footer======================*/
 #footer
@@ -3542,7 +3551,7 @@ body .mobilep-right {
     }
     .title-3 {
         font-size: 32px;
-    } 
+    }
 }
 @media (min-width: 481px) and (max-width: 767px)
 {
@@ -3944,6 +3953,15 @@ body .mobilep-right {
     }
     .title-3 {
         font-size: 24px;
+    }
+    .box-size {
+        width: 100%;
+    }
+    .size-img {
+        padding: 10px 0;
+    }
+    .wrap-contentts {
+        padding: 15px 0;
     }
 }
 @media (max-width: 479px)
