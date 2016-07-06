@@ -2,8 +2,6 @@
     CodeFile="dich-vu.aspx.cs" Inherits="services" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <title>HnF</title>
-    <meta name="description" content="HnF" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphHeader" runat="Server">
     <div id="banner" class="banner-ser">

@@ -3,8 +3,6 @@
 
 <%@ Register TagPrefix="uc1" TagName="footer" Src="~/uc/ucFooter.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <title>Giới Thiệu</title>
-    <meta name="description" content="Giới Thiệu" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBanner" runat="Server">
     <div id="banner">

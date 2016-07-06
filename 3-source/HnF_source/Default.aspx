@@ -3,8 +3,8 @@
 
 <%@ Register Src="uc/ucFooter.ascx" TagName="footer" TagPrefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <title>Áo Thun Đồng Phục Cao Cấp HnF</title>
-    <meta name="description" content="HnF chuyên Áo Thun Đồng Phục Cao Cấp, áo thun quảng cáo sự kiện, áo nhóm, áo lớp. Ao Thun Dong Phuc được may đẹp, vải đẹp, in thêu sắc sảo, áo thun được thiết kế theo yêu cầu của bạn, giao hàng nhanh." />
+    <%--<title>Áo Thun Đồng Phục Cao Cấp HnF</title>
+    <meta name="description" content="HnF chuyên Áo Thun Đồng Phục Cao Cấp, áo thun quảng cáo sự kiện, áo nhóm, áo lớp. Ao Thun Dong Phuc được may đẹp, vải đẹp, in thêu sắc sảo, áo thun được thiết kế theo yêu cầu của bạn, giao hàng nhanh." />--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBanner" runat="Server">
     <div id="banner">

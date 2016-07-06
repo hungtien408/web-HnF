@@ -2,8 +2,6 @@
     CodeFile="lien-he.aspx.cs" Inherits="lien_he" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-    <title>HnF</title>
-    <meta name="description" content="HnF" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphBanner" runat="Server">
     <div id="banner" class="banner-ser">
