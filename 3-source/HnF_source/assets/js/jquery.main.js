@@ -145,6 +145,10 @@ function myfunload() {
             $(this).children('.menu-sub').slideUp(600);
         }
     );
+//    jQuery('#menu').superfish({
+//        animation: { height: 'show' },
+//        delay: 200
+//    });    
     $('.wrap-section .table-fabric tr:first-child').addClass("act");
         $('.wrap-section .table-fabric tr').each(function() {
             if ($(this).hasClass("act")) {
