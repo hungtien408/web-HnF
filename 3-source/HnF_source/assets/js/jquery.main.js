@@ -137,12 +137,17 @@ function myfunload() {
         $(".search").hide("slow");
     });
     /*===slide hover menu==*/
+//    $('#menu > li').hover(
+//        function () {
+//            $(this).children('.menu-sub').stop(true, true).slideDown(600);
+//        },
+//        function () {
+//            $(this).children('.menu-sub').stop(true, true).slideUp(600);
+//        }
+    //    );
     $('#menu > li').hover(
         function () {
-            $(this).children('.menu-sub').slideDown(600);
-        },
-        function () {
-            $(this).children('.menu-sub').slideUp(600);
+            $(this).children('.menu-sub').stop(true, true).slideToggle();
         }
     );
 //    jQuery('#menu').superfish({
