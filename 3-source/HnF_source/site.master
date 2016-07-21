@@ -45,6 +45,17 @@
     <script src="assets/js/hoverIntent.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        jQuery(document).bind("contextmenu cut copy", function (e) {
+            e.preventDefault();
+        });
+        jQuery(document).bind("mousedown", function (e) {
+            return false;
+        });
+        jQuery(document).live("dragstart", function (e) {
+            return false;
+        }); 
+    </script>
     <!--active menu-->
 </head>
 <body>
