@@ -92,7 +92,17 @@
                                         any garments not in stock please allow 20 working days for New Zealand production.
                                     </p>--%>
                                     <asp:Label ID="Label1" runat="server" Text='<%# Eval("Content") %>'></asp:Label>
-                                    <img class="img-responsive" src="assets/images/productdetails-fb.jpg" alt="" />
+                                    <%--<img class="img-responsive" src="assets/images/productdetails-fb.jpg" alt="" />--%>
+                                    <div id="fb-root">
+                                    </div>
+                                    <script>                                        (function (d, s, id) {
+                                            var js, fjs = d.getElementsByTagName(s)[0];
+                                            if (d.getElementById(id)) return;
+                                            js = d.createElement(s); js.id = id;
+                                            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                                            fjs.parentNode.insertBefore(js, fjs);
+                                        } (document, 'script', 'facebook-jssdk'));</script>
+                                    <div class="fb-comments" data-href="http://www.hnf.vn/" data-numposts="5" data-colorscheme="light"></div>  
                                 </div>
                             </div>
                         </ItemTemplate>

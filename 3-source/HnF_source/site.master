@@ -55,7 +55,7 @@
         jQuery(document).live("dragstart", function (e) {
             return false;
         }); 
-    </script>
+    </script>
     <!--active menu-->
 </head>
 <body>
