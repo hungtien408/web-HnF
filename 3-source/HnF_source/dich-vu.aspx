@@ -4,6 +4,162 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphHeader" runat="Server">
+    <div class="header-services services-scroll desktop-992">
+        <div class="container">
+            <div class="logo">
+                <a id="A3" href="~/" runat="server">
+                    <img class="img-responsive" src="assets/images/logo.png" alt="Hnf – Áo Thun Đồng Phục" /></a>
+            </div>
+            <div class="wrapper-menu">
+                <a class="panel-a menu-mo ipadmo-992" href="#menumobile" data-position="true" data-type="false">
+                    <span class="fa fa-reorder"></span>Menu</a>
+                <div class="search-head desktop-992">
+                    <a class="search-click" href="javascript:void(0);">
+                        <img src="assets/images/icon-search.png" alt="" /></a>
+                    <div class="search">
+                        <span class="del"><a href="javascript:void(0);">x</a></span>
+                        <asp:Button ID="Button1" CssClass="search-btn" runat="server" />
+                        <asp:TextBox ID="TextBox1" runat="server" CssClass="search-text"></asp:TextBox>
+                    </div>
+                </div>
+                <ul class="menu-services desktop-992">
+                    <li><a href="gioi-thieu.aspx" class="btn-2">Về chúng tôi </a></li>
+                    <li><a href="dich-vu.aspx" class="btn-2">Dịch vụ </a>
+                        <div class="menu-sub">
+                            <div class="menu-subin">
+                                <%--<ul>
+                                    <li><a href="dich-vu.aspx"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-1.jpg" alt="" /></span></span>Áo thun đồng phục<span
+                                            class="menubg fa fa-caret-right"></span></a> </li>
+                                    <li><a href="javascript:void(0);"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-2.jpg" alt="" /></span></span>Áo thun quảng
+                                        cáo - sự kiện<span class="menubg fa fa-caret-right"></span></a> </li>
+                                    <li><a href="javascript:void(0);"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-3.jpg" alt="" /></span></span>Áo nhóm - áo lớp<span
+                                            class="menubg fa fa-caret-right"></span></a> </li>
+                                    <li><a href="javascript:void(0);"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-4.jpg" alt="" /></span></span>Sản xuất áo thun
+                                        theo yêu cầu<span class="menubg fa fa-caret-right"></span></a> </li>
+                                    <li><a href="javascript:void(0);"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-5.jpg" alt="" /></span></span>In ấn công nghệ
+                                        cao<span class="menubg fa fa-caret-right"></span></a> </li>
+                                    <li><a href="javascript:void(0);"><span class="menu-box"><span class="iconai">
+                                        <img src="assets/images/menusub-img-6.jpg" alt="" /></span></span>Thêu vi tính<span
+                                            class="menubg fa fa-caret-right"></span></a> </li>
+                                </ul>--%>
+                                <asp:ListView ID="lstServiceCategory" runat="server" DataSourceID="odsServiceCategory"
+                                    EnableModelValidation="True">
+                                    <ItemTemplate>
+                                        <li><a href=<%# progressTitle(Eval("ServiceCategoryName")) + "-dv-" + Eval("ServiceCategoryID") + ".aspx" %>><span class="menu-box"><span class="iconai">
+                                            <img id="Img1" alt='<%# Eval("ImageMenu") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageMenu").ToString()) ? "~/res/servicecategory/menu/" + Eval("ImageMenu") : "~/assets/images/menusub-img-1.jpg" %>'
+                                                runat="server" /></span></span><%# Eval("ServiceCategoryName") %><span class="menubg fa fa-caret-right"></span></a>
+                                        </li>
+                                    </ItemTemplate>
+                                    <LayoutTemplate>
+                                        <ul>
+                                            <li runat="server" id="itemPlaceholder"></li>
+                                        </ul>
+                                    </LayoutTemplate>
+                                </asp:ListView>
+                                <asp:ObjectDataSource ID="odsServiceCategory" runat="server" SelectMethod="ServiceCategorySelectAll"
+                                    TypeName="TLLib.ServiceCategory"></asp:ObjectDataSource>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="quy-trinh-thuc-hien.aspx" class="btn-2">Quy trình thực hiện </a></li>
+                    <li><a href="javascript:void(0);" class="btn-2">Sản Phẩm </a>
+                        <div class="menu-sub menu-sub2">
+                            <div class="menu-content">
+                                <asp:ListView ID="lstProductCategory" runat="server" DataSourceID="odsProductCategory"
+                                    EnableModelValidation="True">
+                                    <ItemTemplate>
+                                        <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'>
+                                            <%# Eval("ProductCategoryName") %></a>
+                                            <asp:HiddenField ID="hdnProductCategoryID" runat="server" Value='<%# Eval("ProductCategoryID") %>' />
+                                            <asp:ListView ID="lstProductCategorySub" runat="server" DataSourceID="odsProductCategorySub"
+                                                EnableModelValidation="True">
+                                                <ItemTemplate>
+                                                    <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'>
+                                                        <span>
+                                                            <%# Eval("ProductCategoryName") %></span></a></li>
+                                                </ItemTemplate>
+                                                <LayoutTemplate>
+                                                    <ul class="menu-procat-sub">
+                                                        <li runat="server" id="itemPlaceholder"></li>
+                                                    </ul>
+                                                </LayoutTemplate>
+                                            </asp:ListView>
+                                            <asp:ObjectDataSource ID="odsProductCategorySub" runat="server" SelectMethod="ProductCategorySelectAll"
+                                                TypeName="TLLib.ProductCategory">
+                                                <SelectParameters>
+                                                    <asp:ControlParameter ControlID="hdnProductCategoryID" Name="parentID" PropertyName="Value"
+                                                        Type="Int32" />
+                                                    <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
+                                                    <asp:Parameter DefaultValue="True" Name="IsShowOnMenu" Type="String" />
+                                                    <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+                                                </SelectParameters>
+                                            </asp:ObjectDataSource>
+                                        </li>
+                                    </ItemTemplate>
+                                    <LayoutTemplate>
+                                        <ul class="menu-procat">
+                                            <li runat="server" id="itemPlaceholder"></li>
+                                        </ul>
+                                    </LayoutTemplate>
+                                </asp:ListView>
+                                <asp:ObjectDataSource ID="odsProductCategory" runat="server" SelectMethod="ProductCategorySelectAll"
+                                    TypeName="TLLib.ProductCategory">
+                                    <SelectParameters>
+                                        <asp:Parameter DefaultValue="1" Name="parentID" Type="Int32" />
+                                        <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
+                                        <asp:Parameter DefaultValue="True" Name="IsShowOnMenu" Type="String" />
+                                        <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+                                    </SelectParameters>
+                                </asp:ObjectDataSource>
+                                <div class="menu-procat2">
+                                    <h4>
+                                        Mẫu áo thun</h4>
+                                    <asp:ListView ID="lstClothes" runat="server" DataSourceID="odsClothes" EnableModelValidation="True">
+                                        <ItemTemplate>
+                                            <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-psi-" + Eval("ProductCategoryID") + ".aspx" %>'><span
+                                                class="menu-box"><span class="iconai">
+                                                    <img id="Img2" alt='<%# Eval("ProductCategoryName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageMenu").ToString()) ? "~/res/productcategory/menu/" + Eval("ImageMenu") : "~/assets/images/menusub-img-1.jpg" %>' runat="server" />
+                                                    </span></span><%# Eval("ProductCategoryName")%><span class="menubg fa fa-caret-right"></span></a> </li>
+                                        </ItemTemplate>
+                                        <LayoutTemplate>
+                                            <ul>
+                                                <li runat="server" id="itemPlaceholder"></li>
+                                            </ul>
+                                        </LayoutTemplate>
+                                    </asp:ListView>
+                                    <asp:ObjectDataSource ID="odsClothes" runat="server" SelectMethod="ProductCategorySelectAll"
+                                    TypeName="TLLib.ProductCategory">
+                                    <SelectParameters>
+                                        <asp:Parameter DefaultValue="2" Name="parentID" Type="Int32" />
+                                        <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
+                                        <asp:Parameter DefaultValue="True" Name="IsShowOnMenu" Type="String" />
+                                        <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+                                    </SelectParameters>
+                                </asp:ObjectDataSource>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="thong-so-size.aspx" class="btn-2">Thông số size </a></li>
+                    <li><a href="javascript:void(0);" class="btn-2" data-toggle="modal" data-target="#popupInfo">
+                        Dự án </a></li>
+                    <li><a href="tu-van.aspx" class="btn-2">Tư vấn </a></li>
+                    <li><a href="lien-he.aspx" class="btn-2">Liên Hệ </a></li>
+                </ul>
+                <div class="form-search corner ipadmo-992">
+                    <asp:Button ID="btnSearch" CssClass="search-btnmo" runat="server" />
+                    <div class="search-input">
+                        <asp:TextBox ID="txtSearch" CssClass="search-text" runat="server"></asp:TextBox>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="banner" class="banner-ser">
         <div class="slider-wrapper">
             <div class="logoServices">

@@ -121,30 +121,30 @@ hr
 {
     display: none;
 }
-#menu
+#menu, .menu-services
 {
     float: right;
     list-style: none;
     padding: 20px 0;
     margin: 0;
 }
-#menu a
+#menu a, .menu-services a
 {
     -webkit-transition: all .2s ease;
     -moz-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease;
 }
-#menu li
+#menu li, .menu-services li
 {
     position: relative;
 }
-#menu > li
+#menu > li, .menu-services > li
 {
     float: left;
     margin-right: 1px;
 }
-#menu > li > a
+#menu > li > a, .menu-services > li > a
 {
     color: #303030;
     display: block;
@@ -157,6 +157,7 @@ hr
     outline: none;
 }
 #menu > li > a:hover, #menu > li:hover > a, #menu > li.active > a
+.menu-services > li > a:hover, .menu-services > li:hover > a, .menu-services > li.active > a
 {
     color: #f37121;
     text-decoration: none;
@@ -171,23 +172,24 @@ hr
     margin: 0;
     width: 240px;
 }*/
-#menu > li > ul
+#menu > li > ul, .menu-services > li > ul
 {
     left: 0;
     top: 100%;
     padding-top: 1px;
 }
-#menu ul ul
+#menu ul ul, .menu-services ul ul
 {
     left: 100%;
     top: 0;
     padding-right: 10px;
 }
-#menu li li
+#menu li li, .menu-services li li
 {
     padding-bottom: 1px;
 }
 #menu li li > a:hover, #menu li li:hover > a, #menu li li.active > a
+.menu-services li li > a:hover, .menu-services li li:hover > a, .menu-services li li.active > a
 {
     /*background-color: #ff9933;*/
     text-decoration: none;
@@ -240,7 +242,7 @@ hr
     border: none;
 }
 /*=====menu-sub=====*/
-#menu .menu-sub {
+#menu .menu-sub, .menu-services .menu-sub {
     display: none;
     left: -135%;
     top: 100%;
@@ -252,7 +254,7 @@ hr
     /*background-color: #0b1748;
     padding: 4px;*/
 }
-#menu li ul {
+#menu li ul, .menu-services li ul {
     font-size: 0;
 }
 .menu-sub ul {
@@ -274,7 +276,7 @@ hr
     width: 150px;
     float: left;
 }
-#menu .menu-subin li a {
+#menu .menu-subin li a, .menu-services .menu-subin li a {
     color: #484848;
     background-color: #fff;
     display: block;
@@ -299,7 +301,7 @@ hr
 .menu-sub ul li:first-child .menu-box {
     border-left: none;
 }
-#menu .menubg {
+#menu .menubg, .menu-services .menubg {
     color: #f37121;
     padding-left: 5px;
 }
@@ -326,7 +328,7 @@ hr
     margin: 0;
     padding: 0;
 }
-#menu .menu-sub2 {
+#menu .menu-sub2, .menu-services .menu-sub2 {
     left: -395%;
 }
 .menu-sub .menu-content {
@@ -437,6 +439,10 @@ hr
 .menu-sub .menu-procat {
     border-right: 1px solid #e5e5e5;
     padding-left: 10px;
+}
+.services-scroll {
+    position: fixed;
+    background: url(../images/bg-hide.png) repeat left top;
 }
 /*========================menu mobile=================================================================*/
 .menu-mo {
@@ -858,15 +864,16 @@ body .mobilep-right {
 .header-services #banner, .banner-ser {
     margin: 0 !important;
 }
-.header-services #menu {
+.header-services #menu, .header-services .menu-services {
     padding: 18px 0;
 }
-.header-services #menu > li > a {
+.header-services #menu > li > a, .header-services .menu-services > li > a {
     padding: 0 14px;
 }
 .header-services .logo {
     padding-top: 5px;
     padding-bottom: 5px;
+    width: 85px;
 }
 .header-services .wrapper-menu {
     padding: 5px 0;
@@ -1661,7 +1668,7 @@ body .mobilep-right {
 }
 /*=====suicide====*/
 .display-none {
-    display: none;
+    display: none !important;
 }
 .header-tv {
     background: url('../images/bg-header-tv.png') repeat left top !important;
@@ -3096,21 +3103,24 @@ body .mobilep-right {
         font-size: 24px;
         line-height: 30px;
     }
-    #menu > li > a {
+    #menu > li > a, .menu-services > li > a {
         font-size: 15px;
         line-height: 44px;
         padding: 0 6px;
     }
-    .header-services #menu > li > a {
+    .header-services #menu > li > a, .header-services .menu-services > li > a {
         padding: 0 4px;
     }
-    #menu li li a {
+    #menu li li a, .menu-services li li a {
         font-size: 13px;
         line-height: 20px;
     }
-    #menu .menu-sub {
+    #menu .menu-sub, .menu-services .menu-sub {
         left: -380%;
         top: 56px;
+    }
+    #menu .menu-sub2, .menu-services .menu-sub2 {
+        
     }
     #header .form-search {
         margin-top: 6px;
@@ -3454,7 +3464,7 @@ body .mobilep-right {
          padding: 3px 0;
          width: 50px;
      }
-     #header.header-sroll .wrapper-menu, #header.header-sroll #menu, .header-services.header-sroll .wrapper-menu, .header-services.header-sroll #menu {
+     #header.header-sroll .wrapper-menu, #header.header-sroll #menu, .header-services.header-sroll .wrapper-menu, .header-services.header-sroll #menu, .header-services.header-sroll .menu-services {
          padding: 2px 0;
      }
      #header.header-sroll .search-head .search-click {
