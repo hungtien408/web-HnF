@@ -177,12 +177,11 @@ public partial class ad_single_productcategory : System.Web.UI.Page
                     //ResizeCropImage.ResizeByCondition(strFullPath, 40, 40);
                 }
 
-                strImageMenu = (string.IsNullOrEmpty(strConvertedProductCategoryName) ? "" : strConvertedProductCategoryName + "-") + ProductCategoryID + strImageMenu.Substring(strImageMenu.LastIndexOf('.'));
-
-                string strFullPathMenu = "~/res/productcategory/menu/" + strImageMenu;
-
                 if (!string.IsNullOrEmpty(strImageMenu))
                 {
+                    strImageMenu = (string.IsNullOrEmpty(strConvertedProductCategoryName) ? "" : strConvertedProductCategoryName + "-") + ProductCategoryID + strImageMenu.Substring(strImageMenu.LastIndexOf('.'));
+                    string strFullPathMenu = "~/res/productcategory/menu/" + strImageMenu;
+
                     FileImageMenu.UploadedFiles[0].SaveAs(Server.MapPath(strFullPathMenu));
                     //ResizeCropImage.ResizeByCondition(strFullPath, 40, 40);
                 }

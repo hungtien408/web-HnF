@@ -50,9 +50,10 @@
                                 <asp:ListView ID="lstServiceCategory" runat="server" DataSourceID="odsServiceCategory"
                                     EnableModelValidation="True">
                                     <ItemTemplate>
-                                        <li><a href=<%# progressTitle(Eval("ServiceCategoryName")) + "-dv-" + Eval("ServiceCategoryID") + ".aspx" %>><span class="menu-box"><span class="iconai">
-                                            <img id="Img1" alt='<%# Eval("ImageMenu") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageMenu").ToString()) ? "~/res/servicecategory/menu/" + Eval("ImageMenu") : "~/assets/images/menusub-img-1.jpg" %>'
-                                                runat="server" /></span></span><%# Eval("ServiceCategoryName") %><span class="menubg fa fa-caret-right"></span></a>
+                                        <li><a href='<%# progressTitle(Eval("ServiceCategoryName")) + "-dv-" + Eval("ServiceCategoryID") + ".aspx" %>'>
+                                            <span class="menu-box"><span class="iconai">
+                                                <img id="Img1" alt='<%# Eval("ImageMenu") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageMenu").ToString()) ? "~/res/servicecategory/menu/" + Eval("ImageMenu") : "~/assets/images/menusub-img-1.jpg" %>'
+                                                    runat="server" /></span></span><%# Eval("ServiceCategoryName") %><span class="menubg fa fa-caret-right"></span></a>
                                         </li>
                                     </ItemTemplate>
                                     <LayoutTemplate>
@@ -121,10 +122,13 @@
                                         Mẫu áo thun</h4>
                                     <asp:ListView ID="lstClothes" runat="server" DataSourceID="odsClothes" EnableModelValidation="True">
                                         <ItemTemplate>
-                                            <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-psi-" + Eval("ProductCategoryID") + ".aspx" %>'><span
-                                                class="menu-box"><span class="iconai">
-                                                    <img id="Img2" alt='<%# Eval("ProductCategoryName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageMenu").ToString()) ? "~/res/productcategory/menu/" + Eval("ImageMenu") : "~/assets/images/menusub-img-1.jpg" %>' runat="server" />
-                                                    </span></span><%# Eval("ProductCategoryName")%><span class="menubg fa fa-caret-right"></span></a> </li>
+                                            <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-psi-" + Eval("ProductCategoryID") + ".aspx" %>'>
+                                                <span class="menu-box"><span class="iconai">
+                                                    <img id="Img2" alt='<%# Eval("ProductCategoryName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageMenu").ToString()) ? "~/res/productcategory/menu/" + Eval("ImageMenu") : "~/assets/images/menusub-img-1.jpg" %>'
+                                                        runat="server" />
+                                                </span></span>
+                                                <%# Eval("ProductCategoryName")%><span class="menubg fa fa-caret-right"></span></a>
+                                            </li>
                                         </ItemTemplate>
                                         <LayoutTemplate>
                                             <ul>
@@ -133,14 +137,14 @@
                                         </LayoutTemplate>
                                     </asp:ListView>
                                     <asp:ObjectDataSource ID="odsClothes" runat="server" SelectMethod="ProductCategorySelectAll"
-                                    TypeName="TLLib.ProductCategory">
-                                    <SelectParameters>
-                                        <asp:Parameter DefaultValue="2" Name="parentID" Type="Int32" />
-                                        <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
-                                        <asp:Parameter DefaultValue="True" Name="IsShowOnMenu" Type="String" />
-                                        <asp:Parameter Name="IsShowOnHomePage" Type="String" />
-                                    </SelectParameters>
-                                </asp:ObjectDataSource>
+                                        TypeName="TLLib.ProductCategory">
+                                        <SelectParameters>
+                                            <asp:Parameter DefaultValue="2" Name="parentID" Type="Int32" />
+                                            <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
+                                            <asp:Parameter DefaultValue="True" Name="IsShowOnMenu" Type="String" />
+                                            <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+                                        </SelectParameters>
+                                    </asp:ObjectDataSource>
                                 </div>
                             </div>
                         </div>
@@ -268,64 +272,32 @@
             </div>
         </div>
         <div class="wrap-section wrap-object">
-            <ul class="list-object">
-                <li><a href="#" class="object-img">
-                    <img class="img-responsive" src="assets/images/object-img-1.jpg" alt="">
-                </a>
-                    <div class="content">
-                        <div class="object-name">
-                            <a href="#">Ngân hàng tài chính</a></div>
-                    </div>
-                </li>
-                <li><a href="#" class="object-img">
-                    <img class="img-responsive" src="assets/images/object-img-2.jpg" alt="">
-                </a>
-                    <div class="content">
-                        <div class="object-name">
-                            <a href="#">Ngành xây dựng</a></div>
-                    </div>
-                </li>
-                <li><a href="#" class="object-img">
-                    <img class="img-responsive" src="assets/images/object-img-3.jpg" alt="">
-                </a>
-                    <div class="content">
-                        <div class="object-name">
-                            <a href="#">Ngành hàng tiêu dùng</a></div>
-                    </div>
-                </li>
-                <li><a href="#" class="object-img">
-                    <img class="img-responsive" src="assets/images/object-img-4.jpg" alt="">
-                </a>
-                    <div class="content">
-                        <div class="object-name">
-                            <a href="#">Ngành logistic</a></div>
-                    </div>
-                </li>
-                <li><a href="#" class="object-img">
-                    <img class="img-responsive" src="assets/images/object-img-5.jpg" alt="">
-                </a>
-                    <div class="content">
-                        <div class="object-name">
-                            <a href="#">Kỹ thuật - công nghệ thông tin</a></div>
-                    </div>
-                </li>
-                <li><a href="#" class="object-img">
-                    <img class="img-responsive" src="assets/images/object-img-6.jpg" alt="">
-                </a>
-                    <div class="content">
-                        <div class="object-name">
-                            <a href="#">Truyền thông giải trí</a></div>
-                    </div>
-                </li>
-                <li><a href="#" class="object-img">
-                    <img class="img-responsive" src="assets/images/object-img-7.jpg" alt="">
-                </a>
-                    <div class="content">
-                        <div class="object-name">
-                            <a href="#">Nhà hàng khách sạn</a></div>
-                    </div>
-                </li>
-            </ul>
+            <asp:ListView ID="lstObject" runat="server" DataSourceID="odsObject" EnableModelValidation="True">
+                <ItemTemplate>
+                    <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>' class="object-img">
+                        <img class="img-responsive" alt='<%# Eval("ImageName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/productcategory/" + Eval("ImageName") : "~/assets/images/object-img-1.jpg" %>' runat="server" />
+                    </a>
+                        <div class="content">
+                            <div class="object-name">
+                                <a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'><%# Eval("ProductCategoryName") %></a></div>
+                        </div>
+                    </li>
+                </ItemTemplate>
+                <LayoutTemplate>
+                    <ul class="list-object">
+                        <li runat="server" id="itemPlaceholder"></li>
+                    </ul>
+                </LayoutTemplate>
+            </asp:ListView>
+            <asp:ObjectDataSource ID="odsObject" runat="server" SelectMethod="ProductCategorySelectAll"
+                TypeName="TLLib.ProductCategory">
+                <SelectParameters>
+                    <asp:Parameter DefaultValue="7" Name="parentID" Type="Int32" />
+                    <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
+                    <asp:Parameter DefaultValue="True" Name="IsShowOnMenu" Type="String" />
+                    <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+                </SelectParameters>
+            </asp:ObjectDataSource>
         </div>
         <div id="maShow" class="text-center wrapper-880">
             <h4 class="text-uppercase title-1">
