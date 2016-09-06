@@ -48,6 +48,19 @@ namespace TLLib
             }
         }
 
+        public static string ConnectionStringSoft
+        {
+            get
+            {
+                //Remote lock website
+                if (WebsiteChecker.IsValidWebsite)
+                    return ConfigurationManager.ConnectionStrings["ConnectionStringSoft"].ConnectionString;
+                else
+                    return null;
+                //return ConfigurationManager.ConnectionStrings[1].ConnectionString;
+            }
+        }
+
         public static void ShowAlert(string Message)
         {
             string strBuilder = "<script type='text/javascript'>alert('";

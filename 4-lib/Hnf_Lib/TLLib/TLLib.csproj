@@ -81,12 +81,15 @@
     <Compile Include="District.cs" />
     <Compile Include="ExchangeRate.cs" />
     <Compile Include="Import\ImportExcel.cs" />
+    <Compile Include="InterView.cs" />
     <Compile Include="Manufacturer1.cs" />
     <Compile Include="Menu.cs" />
     <Compile Include="MenuPosition.cs" />
     <Compile Include="Newsletter.cs" />
     <Compile Include="PaymentMethod.cs" />
     <Compile Include="PayStatus.cs" />
+    <Compile Include="Personal.cs" />
+    <Compile Include="Position.cs" />
     <Compile Include="ProductLength.cs" />
     <Compile Include="ProductOfLength.cs" />
     <Compile Include="ProductOfSame.cs" />
