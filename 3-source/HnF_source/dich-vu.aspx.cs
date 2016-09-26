@@ -11,9 +11,39 @@ public partial class services : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        Page.Title = "HnF";
-        var meta = new HtmlMeta() { Name = "description", Content = "HnF" };
-        Header.Controls.Add(meta);
+        if (!IsPostBack)
+        {
+
+            string strTitle, strDescription, strMetaTitle, strMetaDescription;
+            if (!string.IsNullOrEmpty(Request.QueryString["dv"]))
+            {
+                var oServiceCategory = new ServiceCategory();
+                var oService = new Service();
+                var dv = oServiceCategory.ServiceCategorySelectOne(Request.QueryString["dv"]).DefaultView;
+
+                if (dv != null && dv.Count <= 0) return;
+                var row = dv[0];
+
+                strTitle = Server.HtmlDecode(row["ServiceCategoryName"].ToString());
+                strDescription = Server.HtmlDecode(row["Description"].ToString());
+                strMetaTitle = Server.HtmlDecode(row["MetaTitle"].ToString());
+                strMetaDescription = Server.HtmlDecode(row["MetaDescription"].ToString());
+
+                //hdnSanPham.Value = progressTitle(dv[0]["ProductCategoryName"].ToString()) + "-pci-" + dv[0]["ProductCategoryID"].ToString() + ".aspx";
+            }
+            else
+            {
+                strTitle = strMetaTitle = "HnF";
+                strDescription = "";
+                strMetaDescription = "";
+            }
+            Page.Title = !string.IsNullOrEmpty(strMetaTitle) ? strMetaTitle : strTitle;
+            var meta = new HtmlMeta() { Name = "description", Content = !string.IsNullOrEmpty(strMetaDescription) ? strMetaDescription : strDescription };
+            Header.Controls.Add(meta);
+
+            //lblTitle.Text = strTitle;
+            //lblTitle2.Text = strTitle;
+        }
     }
 
     protected string progressTitle(object input)
