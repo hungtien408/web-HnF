@@ -96,5 +96,7 @@
         </p>
     </div>
 </asp:Content>
+<asp:Content ID="Content6" ContentPlaceHolderID="cphFooter2" runat="Server">
+</asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="cphPopup" runat="Server">
 </asp:Content>

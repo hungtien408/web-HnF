@@ -52,9 +52,10 @@
                                 <asp:ListView ID="lstServiceCategory" runat="server" DataSourceID="odsServiceCategory"
                                     EnableModelValidation="True">
                                     <ItemTemplate>
-                                        <li><a href=<%# progressTitle(Eval("ServiceCategoryName")) + "-dv-" + Eval("ServiceCategoryID") + ".aspx" %>><span class="menu-box"><span class="iconai">
-                                            <img alt='<%# Eval("ImageMenu") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageMenu").ToString()) ? "~/res/servicecategory/menu/" + Eval("ImageMenu") : "~/assets/images/menusub-img-1.jpg" %>'
-                                                runat="server" /></span></span><%# Eval("ServiceCategoryName") %><span class="menubg fa fa-caret-right"></span></a>
+                                        <li><a href='<%# progressTitle(Eval("ServiceCategoryName")) + "-dv-" + Eval("ServiceCategoryID") + ".aspx" %>'>
+                                            <span class="menu-box"><span class="iconai">
+                                                <img alt='<%# Eval("ImageMenu") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageMenu").ToString()) ? "~/res/servicecategory/menu/" + Eval("ImageMenu") : "~/assets/images/menusub-img-1.jpg" %>'
+                                                    runat="server" /></span></span><%# Eval("ServiceCategoryName") %><span class="menubg fa fa-caret-right"></span></a>
                                         </li>
                                     </ItemTemplate>
                                     <LayoutTemplate>
@@ -123,10 +124,13 @@
                                         Mẫu áo thun</h4>
                                     <asp:ListView ID="lstClothes" runat="server" DataSourceID="odsClothes" EnableModelValidation="True">
                                         <ItemTemplate>
-                                            <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-psi-" + Eval("ProductCategoryID") + ".aspx" %>'><span
-                                                class="menu-box"><span class="iconai">
-                                                    <img alt='<%# Eval("ProductCategoryName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageMenu").ToString()) ? "~/res/productcategory/menu/" + Eval("ImageMenu") : "~/assets/images/menusub-img-1.jpg" %>' runat="server" />
-                                                    </span></span><%# Eval("ProductCategoryName")%><span class="menubg fa fa-caret-right"></span></a> </li>
+                                            <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-psi-" + Eval("ProductCategoryID") + ".aspx" %>'>
+                                                <span class="menu-box"><span class="iconai">
+                                                    <img alt='<%# Eval("ProductCategoryName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageMenu").ToString()) ? "~/res/productcategory/menu/" + Eval("ImageMenu") : "~/assets/images/menusub-img-1.jpg" %>'
+                                                        runat="server" />
+                                                </span></span>
+                                                <%# Eval("ProductCategoryName")%><span class="menubg fa fa-caret-right"></span></a>
+                                            </li>
                                         </ItemTemplate>
                                         <LayoutTemplate>
                                             <ul>
@@ -135,14 +139,14 @@
                                         </LayoutTemplate>
                                     </asp:ListView>
                                     <asp:ObjectDataSource ID="odsClothes" runat="server" SelectMethod="ProductCategorySelectAll"
-                                    TypeName="TLLib.ProductCategory">
-                                    <SelectParameters>
-                                        <asp:Parameter DefaultValue="2" Name="parentID" Type="Int32" />
-                                        <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
-                                        <asp:Parameter DefaultValue="True" Name="IsShowOnMenu" Type="String" />
-                                        <asp:Parameter Name="IsShowOnHomePage" Type="String" />
-                                    </SelectParameters>
-                                </asp:ObjectDataSource>
+                                        TypeName="TLLib.ProductCategory">
+                                        <SelectParameters>
+                                            <asp:Parameter DefaultValue="2" Name="parentID" Type="Int32" />
+                                            <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
+                                            <asp:Parameter DefaultValue="True" Name="IsShowOnMenu" Type="String" />
+                                            <asp:Parameter Name="IsShowOnHomePage" Type="String" />
+                                        </SelectParameters>
+                                    </asp:ObjectDataSource>
                                 </div>
                             </div>
                         </div>
@@ -191,6 +195,10 @@
 </asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="cphFooter" runat="Server">
     <asp:ContentPlaceHolder ID="cphFooter" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content8" ContentPlaceHolderID="cphFooter2" runat="Server">
+    <asp:ContentPlaceHolder ID="cphFooter2" runat="server">
     </asp:ContentPlaceHolder>
 </asp:Content>
 <asp:Content ID="Content7" ContentPlaceHolderID="cphPopup" runat="Server">

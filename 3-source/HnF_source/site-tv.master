@@ -56,6 +56,8 @@
         </div>
     </div>
 </asp:Content>
+<asp:Content ID="Content8" ContentPlaceHolderID="cphFooter2" runat="Server">
+</asp:Content>
 <asp:Content ID="Content6" ContentPlaceHolderID="cphMenuMobile" runat="Server">
     <!--menumobile-->
     <div id="menumobile" class="mobile-panel mobilep-left">

@@ -212,5 +212,7 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="cphFooter" runat="Server">
     <uc1:footer ID="footer1" runat="server" />
 </asp:Content>
+<asp:Content ID="Content6" ContentPlaceHolderID="cphFooter2" runat="Server">
+</asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="cphPopup" runat="Server">
 </asp:Content>

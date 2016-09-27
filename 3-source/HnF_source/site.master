@@ -84,51 +84,8 @@
                 </asp:ContentPlaceHolder>
             </div>
             <div id="footer2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-xs-4">
-                            <h4 class="text-uppercase">
-                                Dịch vụ</h4>
-                            <ul class="list-address">
-                                <li><a href="#">Áo thun đồng phục</a></li>
-                                <li><a href="#">Áo thun Quảng cáo</a></li>
-                                <li><a href="#">Áo thun thời trang</a></li>
-                                <li><a href="#">Áo nhóm - Áo lớp</a></li>
-                                <li><a href="#">In áo thun</a></li>
-                                <li><a href="#">Thêu Logo</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 col-xs-4">
-                            <h4 class="text-uppercase">
-                                Thông tin đặt hàng</h4>
-                            <ul class="list-address">
-                                <li><a href="#">Các bước đặt áo thun</a></li>
-                                <li><a href="#">Bảng giá áo thun</a></li>
-                                <li><a href="#">Thông số size áo</a></li>
-                                <li><a href="#">Uniform Branding</a></li>
-                                <li><a href="#">Styling Service</a></li>
-                                <li><a href="#">Subcribe to News</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 col-xs-4">
-                            <h4 class="text-uppercase">
-                                Kiến thức sản phẩm</h4>
-                            <ul class="list-address">
-                                <li><a href="#">Cách nhận biết vải áo thun</a></li>
-                                <li><a href="#">Quy trình sản xuất</a></li>
-                                <li><a href="#">Cách bảo quản áo thun</a></li>
-                                <li><a href="#">Cách in áo thun</a></li>
-                                <li><a href="#">Công nghệ in áo thun</a></li>
-                                <li><a href="#">Cách in chữ lên áo</a></li>
-                            </ul>
-                        </div>
-                        <%--<div class="col-md-3 col-xs-6">
-                            <h4 class="text-uppercase">
-                                Follow us on facebook</h4>
-                            <img class="img-responsive" src="assets/images/img-facebook.jpg" alt="" />
-                        </div>--%>
-                    </div>
-                </div>
+                <asp:ContentPlaceHolder ID="cphFooter2" runat="server">
+                </asp:ContentPlaceHolder>
             </div>
             <div id="footer3">
                 <div class="container">

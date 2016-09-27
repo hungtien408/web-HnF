@@ -88,14 +88,18 @@
             </ul>--%>
             <asp:ListView ID="lstProvide1" runat="server" DataSourceID="odsProvide1" EnableModelValidation="True">
                 <ItemTemplate>
-                    <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>' class="section-img">
-                        <img class="img-responsive" alt='<%# Eval("ProductCategoryName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/productcategory/" + Eval("ImageName") : "~/assets/images/provide-img-1.jpg" %>' runat="server" />
+                    <li><a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'
+                        class="section-img">
+                        <img class="img-responsive" alt='<%# Eval("ProductCategoryName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/productcategory/" + Eval("ImageName") : "~/assets/images/provide-img-1.jpg" %>'
+                            runat="server" />
                     </a>
                         <div class="content">
                             <div class="section-name">
-                                <a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'><%# Eval("ProductCategoryName")%></a></div>
+                                <a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'>
+                                    <%# Eval("ProductCategoryName")%></a></div>
                             <p class="more-details">
-                                <a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'>Chi tiết</a></p>
+                                <a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'>
+                                    Chi tiết</a></p>
                         </div>
                     </li>
                 </ItemTemplate>
@@ -105,8 +109,8 @@
                     </ul>
                 </LayoutTemplate>
             </asp:ListView>
-            <asp:ObjectDataSource ID="odsProvide1" runat="server" 
-                SelectMethod="ProductCategorySelectAll" TypeName="TLLib.ProductCategory">
+            <asp:ObjectDataSource ID="odsProvide1" runat="server" SelectMethod="ProductCategorySelectAll"
+                TypeName="TLLib.ProductCategory">
                 <SelectParameters>
                     <asp:Parameter DefaultValue="1" Name="parentID" Type="Int32" />
                     <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
@@ -145,11 +149,13 @@
                         <div class="col-lg-4 col-md-4 col-xs-4  element-item">
                             <div class="box-clothes">
                                 <a class="section-img" href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'>
-                                    <img alt='<%# Eval("ProductCategoryName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/productcategory/" + Eval("ImageName") : "~/assets/images/img-clothes-1.jpg" %>' runat="server" />
+                                    <img alt='<%# Eval("ProductCategoryName") %>' src='<%# !string.IsNullOrEmpty(Eval("ImageName").ToString()) ? "~/res/productcategory/" + Eval("ImageName") : "~/assets/images/img-clothes-1.jpg" %>'
+                                        runat="server" />
                                 </a>
                                 <div class="section-content">
                                     <h3 class="section-name">
-                                        <a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'><%# Eval("ProductCategoryName")%></a></h3>
+                                        <a href='<%# progressTitle(Eval("ProductCategoryName")) + "-pci-" + Eval("ProductCategoryID") + ".aspx" %>'>
+                                            <%# Eval("ProductCategoryName")%></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -158,8 +164,8 @@
                         <span runat="server" id="itemPlaceholder" />
                     </LayoutTemplate>
                 </asp:ListView>
-                <asp:ObjectDataSource ID="odsClothes" runat="server" 
-                    SelectMethod="ProductCategorySelectAll" TypeName="TLLib.ProductCategory">
+                <asp:ObjectDataSource ID="odsClothes" runat="server" SelectMethod="ProductCategorySelectAll"
+                    TypeName="TLLib.ProductCategory">
                     <SelectParameters>
                         <asp:Parameter DefaultValue="2" Name="parentID" Type="Int32" />
                         <asp:Parameter DefaultValue="1" Name="increaseLevelCount" Type="Int32" />
@@ -234,6 +240,60 @@
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="cphFooter" runat="Server">
     <uc1:footer ID="footer1" runat="server" />
+</asp:Content>
+<asp:Content ID="Content6" ContentPlaceHolderID="cphFooter2" runat="Server">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-4">
+                <h4 class="text-uppercase">
+                    Dịch vụ</h4>
+                <ul class="list-address">
+                    <li><a href="http://www.hnf.vn/ao-thun-dong-phuc-dv-1.aspx">Áo thun đồng phục</a></li>
+                    <li><a href="http://www.hnf.vn/ao-thun-dong-phuc-cong-ty-tci-10-tv-35.aspx">Áo thun
+                        đồng phục công ty</a></li>
+                    <li><a href="http://www.hnf.vn/ao-thun-dong-phuc-dep-tci-10-tv-40.aspx">Áo thun đồng
+                        phục đẹp</a></li>
+                    <li><a href="http://www.hnf.vn/may-ao-thun-dong-phuc-tci-10-tv-34.aspx">May áo thun
+                        đồng phục</a></li>
+                    <li><a href="http://www.hnf.vn/dat-ao-thun-dong-phuc-tci-10-tv-42.aspx">Đặt áo thun
+                        đồng phục</a></li>
+                    <li><a href="http://www.hnf.vn/dat-may-ao-thun-dong-phuc-tci-10-tv-46.aspx">Đặt may
+                        áo thun đồng phục</a></li>
+                    <li><a href="http://www.hnf.vn/ao-thun-dong-phuc-khach-san-tci-10-tv-51.aspx">Áo thun
+                        đồng phục khách sạn</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <h4 class="text-uppercase">
+                    Thông tin đặt hàng</h4>
+                <ul class="list-address">
+                    <li><a href="#">Các bước đặt áo thun</a></li>
+                    <li><a href="#">Bảng giá áo thun</a></li>
+                    <li><a href="#">Thông số size áo</a></li>
+                    <li><a href="#">Uniform Branding</a></li>
+                    <li><a href="#">Styling Service</a></li>
+                    <li><a href="#">Subcribe to News</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-xs-4">
+                <h4 class="text-uppercase">
+                    Kiến thức sản phẩm</h4>
+                <ul class="list-address">
+                    <li><a href="#">Cách nhận biết vải áo thun</a></li>
+                    <li><a href="#">Quy trình sản xuất</a></li>
+                    <li><a href="#">Cách bảo quản áo thun</a></li>
+                    <li><a href="#">Cách in áo thun</a></li>
+                    <li><a href="#">Công nghệ in áo thun</a></li>
+                    <li><a href="#">Cách in chữ lên áo</a></li>
+                </ul>
+            </div>
+            <%--<div class="col-md-3 col-xs-6">
+                            <h4 class="text-uppercase">
+                                Follow us on facebook</h4>
+                            <img class="img-responsive" src="assets/images/img-facebook.jpg" alt="" />
+                        </div>--%>
+        </div>
+    </div>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="cphPopup" runat="Server">
 </asp:Content>
