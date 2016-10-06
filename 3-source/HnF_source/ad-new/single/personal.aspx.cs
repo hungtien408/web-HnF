@@ -32,6 +32,16 @@ public partial class ad_single_personal : System.Web.UI.Page
                 File.Delete(strImagePath);
         }
     }
+    void DeleteFileDownload(string strFileDownload)
+    {
+        if (!string.IsNullOrEmpty(strFileDownload))
+        {
+            var strFileDownloadPath = Server.MapPath("~/res/quotation/" + strFileDownload);
+
+            if (File.Exists(strFileDownloadPath))
+                File.Delete(strFileDownloadPath);
+        }
+    }
 
     #endregion
 
@@ -104,25 +114,41 @@ public partial class ad_single_personal : System.Web.UI.Page
         }
         else if (e.CommandName == "QuickUpdate")
         {
-            string PersonalID, Status, IsPV;
+            string PersonalID, WorkHistory, Status, IsPV, IsChuyenTien, IsCatHang, IsDuyetMau, IsIn, IsTheu, IsMay, IsGiaoHang;
             var oPersonal = new Personal();
 
             foreach (GridDataItem item in RadGrid1.Items)
             {
                 PersonalID = item.GetDataKeyValue("PersonalID").ToString();
+                WorkHistory = ((TextBox)item.FindControl("txtWorkHistory")).Text.Trim();
                 Status = ((TextBox)item.FindControl("txtStatus")).Text.Trim();
                 IsPV = ((CheckBox)item.FindControl("chkIsPV")).Checked.ToString();
+                IsChuyenTien = ((CheckBox)item.FindControl("chkIsChuyenTien")).Checked.ToString();
+                IsCatHang = ((CheckBox)item.FindControl("chkIsCatHang")).Checked.ToString();
+                IsDuyetMau = ((CheckBox)item.FindControl("chkIsDuyetMau")).Checked.ToString();
+                IsIn = ((CheckBox)item.FindControl("chkIsIn")).Checked.ToString();
+                IsTheu = ((CheckBox)item.FindControl("chkIsTheu")).Checked.ToString();
+                IsMay = ((CheckBox)item.FindControl("chkIsMay")).Checked.ToString();
+                IsGiaoHang = ((CheckBox)item.FindControl("chkIsGiaoHang")).Checked.ToString();
 
                 oPersonal.PersonalQuickUpdate(
                     PersonalID,
+                    WorkHistory,
                     Status,
-                    IsPV
+                    IsPV,
+                    IsChuyenTien, 
+                    IsCatHang, 
+                    IsDuyetMau, 
+                    IsIn, 
+                    IsTheu, 
+                    IsMay, 
+                    IsGiaoHang
                 );
             }
         }
         else if(e.CommandName == "DeleteSelected")
         {
-            string OldImageName;
+            string OldImageName, OldFileDownload;
             var oPersonal = new TLLib.Personal();
 
             string errorList = "", Name = "";
@@ -136,7 +162,9 @@ public partial class ad_single_personal : System.Web.UI.Page
                     oPersonal.PersonalDelete(PersonalID);
 
                     OldImageName = ((HiddenField)item.FindControl("hdnImageName")).Value;
+                    OldFileDownload = ((HiddenField)item.FindControl("hdnFileDownload")).Value;
                     DeleteImage(OldImageName);
+                    DeleteFileDownload(OldFileDownload);
                 }
                 catch(Exception ex)
                 {
@@ -162,12 +190,16 @@ public partial class ad_single_personal : System.Web.UI.Page
             var command = e.CommandName;
             var row = command == "PerformInsert" ? (GridEditFormInsertItem)e.Item : (GridEditFormItem)e.Item;
             var FileImageName = (RadUpload)row.FindControl("FileImageName");
+            var FileLinkDownload = (RadUpload)row.FindControl("FileLinkDownload");
 
             string PersonalID = ((HiddenField)row.FindControl("hdnPersonalID")).Value;
             string OldImageName = ((HiddenField)row.FindControl("hdnOldImageName")).Value;
+            string OldLinkDownload = ((HiddenField)row.FindControl("hdnOldLinkDownload")).Value;
             string ImageName = FileImageName.UploadedFiles.Count > 0 ? FileImageName.UploadedFiles[0].GetName() : "";
+            string LinkDownload = FileLinkDownload.UploadedFiles.Count > 0 ? FileLinkDownload.UploadedFiles[0].GetName() : "";
             string Name = ((RadTextBox)row.FindControl("txtName")).Text.Trim();
             string ConvertedName = TLLib.Common.ConvertTitle(Name);
+            string ConvertedFileDownload = TLLib.Common.ConvertTitle(LinkDownload.Substring(0, LinkDownload.LastIndexOf('.')));
             string DoB = ((RadDatePicker)row.FindControl("dpDoB")).SelectedDate.ToString();
             string PoB = ((RadTextBox)row.FindControl("txtPoB")).Text.Trim();
             string Tel = ((RadTextBox)row.FindControl("txtTel")).Text.Trim();
@@ -178,9 +210,17 @@ public partial class ad_single_personal : System.Web.UI.Page
             string Address = ((RadTextBox)row.FindControl("txtAddress")).Text.Trim();
             string Certificate = ((RadComboBox)row.FindControl("ddlCertificate")).SelectedValue;
             string Education = FCKEditorFix.Fix(((RadEditor)row.FindControl("txtEducation")).Content.Trim());
-            string WorkHistory = FCKEditorFix.Fix(((RadEditor)row.FindControl("txtWorkHistory")).Content.Trim());
+            string WorkHistory = ((RadTextBox)row.FindControl("txtWorkHistory1")).Text.Trim();//FCKEditorFix.Fix(((RadEditor)row.FindControl("txtWorkHistory")).Content.Trim());
             string Status = ((RadTextBox)row.FindControl("txtStatus1")).Text.Trim();
+            string Link = ((RadTextBox)row.FindControl("txtLink")).Text.Trim();
             string IsPV = ((CheckBox)row.FindControl("chkIsPV")).Checked.ToString();
+            string IsChuyenTien = ((CheckBox)row.FindControl("chkIsChuyenTien")).Checked.ToString();
+            string IsCatHang = ((CheckBox)row.FindControl("chkIsCatHang")).Checked.ToString();
+            string IsDuyetMau = ((CheckBox)row.FindControl("chkIsDuyetMau")).Checked.ToString();
+            string IsIn = ((CheckBox)row.FindControl("chkIsIn")).Checked.ToString();
+            string IsTheu = ((CheckBox)row.FindControl("chkIsTheu")).Checked.ToString();
+            string IsMay = ((CheckBox)row.FindControl("chkIsMay")).Checked.ToString();
+            string IsGiaoHang = ((CheckBox)row.FindControl("chkIsGiaoHang")).Checked.ToString();
 
             if(e.CommandName == "PerformInsert")
             {
@@ -190,6 +230,7 @@ public partial class ad_single_personal : System.Web.UI.Page
                     ImageName,
                     Name,
                     ConvertedName,
+                    ConvertedFileDownload,
                     DoB,
                     PoB,
                     Tel,
@@ -201,7 +242,16 @@ public partial class ad_single_personal : System.Web.UI.Page
                     Education,
                     WorkHistory,
                     Status,
-                    IsPV
+                    Link,
+                    LinkDownload,
+                    IsPV,
+                    IsChuyenTien,
+                    IsCatHang,
+                    IsDuyetMau,
+                    IsIn,
+                    IsTheu,
+                    IsMay,
+                    IsGiaoHang
                 );
 
                 string strFullPath = "~/res/personal/" + ImageName;
@@ -211,16 +261,26 @@ public partial class ad_single_personal : System.Web.UI.Page
                     ResizeCropImage.ResizeByCondition(strFullPath, 200, 200);
                 }
 
+                if (!string.IsNullOrEmpty(LinkDownload))
+                {
+                    //LinkDownload = (string.IsNullOrEmpty(ConvertedName) ? "" : ConvertedName + "-") + PersonalID + LinkDownload.Substring(LinkDownload.LastIndexOf('.'));
+                    LinkDownload = (string.IsNullOrEmpty(ConvertedFileDownload) ? "" : ConvertedFileDownload + "-") + PersonalID + LinkDownload.Substring(LinkDownload.LastIndexOf('.'));
+                    string strFullPathLinkDownload = "~/res/quotation/" + LinkDownload;
+                    FileLinkDownload.UploadedFiles[0].SaveAs(Server.MapPath(strFullPathLinkDownload));
+                }
+
                 RadGrid1.Rebind();
             }
             else
             {
                 var strOldImagePath = Server.MapPath("~/res/personal/" + OldImageName);
+                var strOldImagePathLinkDownload = Server.MapPath("~/res/quotation/" + OldLinkDownload);
                 new Personal().PersonalUpdate(
                     PersonalID,
                     ImageName,
                     Name,
                     ConvertedName,
+                    ConvertedFileDownload,
                     DoB,
                     PoB,
                     Tel,
@@ -232,11 +292,33 @@ public partial class ad_single_personal : System.Web.UI.Page
                     Education,
                     WorkHistory,
                     Status,
-                    IsPV
+                    Link,
+                    LinkDownload,
+                    IsPV,
+                    IsChuyenTien,
+                    IsCatHang,
+                    IsDuyetMau,
+                    IsIn,
+                    IsTheu,
+                    IsMay,
+                    IsGiaoHang
                 );
-                if(!string.IsNullOrEmpty(ImageName))
+                if (!string.IsNullOrEmpty(LinkDownload))
                 {
-                    if(File.Exists(strOldImagePath))
+                    if (File.Exists(strOldImagePathLinkDownload))
+                        File.Delete(strOldImagePathLinkDownload);
+
+                    //LinkDownload = (string.IsNullOrEmpty(ConvertedName) ? "" : ConvertedName + "-") + PersonalID + LinkDownload.Substring(LinkDownload.LastIndexOf('.'));
+                    LinkDownload = (string.IsNullOrEmpty(LinkDownload) ? "" : ConvertedFileDownload + "-") + PersonalID + LinkDownload.Substring(LinkDownload.LastIndexOf('.'));
+
+                    string strFullPathLinkDownload = "~/res/quotation/" + LinkDownload;
+
+                    FileLinkDownload.UploadedFiles[0].SaveAs(Server.MapPath(strFullPathLinkDownload));
+                }
+
+                if (!string.IsNullOrEmpty(ImageName))
+                {
+                    if (File.Exists(strOldImagePath))
                         File.Delete(strOldImagePath);
 
                     ImageName = (string.IsNullOrEmpty(ConvertedName) ? "" : ConvertedName + "-") + PersonalID + ImageName.Substring(ImageName.LastIndexOf('.'));
@@ -272,6 +354,18 @@ public partial class ad_single_personal : System.Web.UI.Page
             DeleteImage(ImageName);
             RadGrid1.Rebind();
         }
+        else if (e.CommandName == "DeleteFileDownload")
+        {
+            var oPersonal = new TLLib.Personal();
+            var lnkDeleteFileDownload = (LinkButton)e.CommandSource;
+            var s = lnkDeleteFileDownload.Attributes["rel"].ToString().Split('#');
+            var strPersonalID = s[0];
+            var FileDownload = s[1];
+
+            oPersonal.PersonalFileDownloadDelete(strPersonalID);
+            DeleteFileDownload(FileDownload);
+            RadGrid1.Rebind();
+        }
     }
     protected void RadGrid1_ItemDataBound(object sender, GridItemEventArgs e)
     {
@@ -280,6 +374,7 @@ public partial class ad_single_personal : System.Web.UI.Page
             var itemtype = e.Item.ItemType;
             var row = itemtype == GridItemType.EditFormItem ? (GridEditFormItem)e.Item : (GridEditFormInsertItem)e.Item;
             var FileImageName = (RadUpload)row.FindControl("FileImageName");
+            var FileLinkDownload = (RadUpload)row.FindControl("FileLinkDownload");
 
             var dv = (DataView)ObjectDataSource1.Select();
             var PersonalID = ((HiddenField)row.FindControl("hdnPersonalID")).Value;
@@ -295,6 +390,7 @@ public partial class ad_single_personal : System.Web.UI.Page
                     dpDoB.SelectedDate = Convert.ToDateTime(dv[0]["DoB"]);
             }
             RadAjaxPanel1.ResponseScripts.Add(string.Format("window['UploadId'] = '{0}';", FileImageName.ClientID));
+            RadAjaxPanel1.ResponseScripts.Add(string.Format("window['UploadId2'] = '{0}';", FileLinkDownload.ClientID));
         }
     }
 

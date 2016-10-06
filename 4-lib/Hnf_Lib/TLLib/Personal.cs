@@ -82,7 +82,65 @@ namespace TLLib
             return num2;
         }
 
-        public string PersonalInsert(string ImageName, string Name, string ConvertedName, string DoB, string PoB, string Tel, string Email, string Sex, string MaritalStatus, string Address, string Certificate, string Education, string WorkHistory, string Status, string IsPV)
+        public int PersonalFileDownloadDelete(string PersonalID)
+        {
+            int num2;
+            try
+            {
+                SqlConnection connection = new SqlConnection(this.connectionString);
+                SqlCommand command = new SqlCommand("usp_PersonalFileDownload_Delete", connection)
+                {
+                    CommandType = CommandType.StoredProcedure
+                };
+                command.Parameters.AddWithValue("@PersonalID", string.IsNullOrEmpty(PersonalID) ? ((object)this.dbNULL) : ((object)PersonalID));
+                SqlParameter parameter = new SqlParameter("@ErrorCode", null)
+                {
+                    Size = 4,
+                    Direction = ParameterDirection.Output
+                };
+                command.Parameters.Add(parameter);
+                connection.Open();
+                int num = command.ExecuteNonQuery();
+                connection.Close();
+                if (parameter.Value.ToString() != "0")
+                {
+                    throw new Exception("Stored Procedure 'usp_PersonalFileDownload_Delete' reported the ErrorCode : " + parameter.Value.ToString());
+                }
+                num2 = num;
+            }
+            catch (Exception exception)
+            {
+                throw new Exception(exception.Message);
+            }
+            return num2;
+        }
+
+        public string PersonalInsert(
+            string ImageName, 
+            string Name, 
+            string ConvertedName, 
+            string ConvertedFileDownload,
+            string DoB, 
+            string PoB, 
+            string Tel, 
+            string Email, 
+            string Sex, 
+            string MaritalStatus, 
+            string Address, 
+            string Certificate, 
+            string Education, 
+            string WorkHistory, 
+            string Status, 
+            string Link, 
+            string FileDownload, 
+            string IsPV, 
+            string IsChuyenTien, 
+            string IsCatHang, 
+            string IsDuyetMau, 
+            string IsIn, 
+            string IsTheu, 
+            string IsMay, 
+            string IsGiaoHang)
         {
             string str;
             try
@@ -95,6 +153,7 @@ namespace TLLib
                 command.Parameters.AddWithValue("@ImageName", string.IsNullOrEmpty(ImageName) ? ((object)this.dbNULL) : ((object)ImageName));
                 command.Parameters.AddWithValue("@Name", string.IsNullOrEmpty(Name) ? ((object)this.dbNULL) : ((object)Name));
                 command.Parameters.AddWithValue("@ConvertedName", string.IsNullOrEmpty(ConvertedName) ? ((object)this.dbNULL) : ((object)ConvertedName));
+                command.Parameters.AddWithValue("@ConvertedFileDownload", string.IsNullOrEmpty(ConvertedFileDownload) ? ((object)this.dbNULL) : ((object)ConvertedFileDownload));
                 command.Parameters.AddWithValue("@DoB", string.IsNullOrEmpty(DoB) ? ((object)this.dbNULL) : ((object)DoB));
                 command.Parameters.AddWithValue("@PoB", string.IsNullOrEmpty(PoB) ? ((object)this.dbNULL) : ((object)PoB));
                 command.Parameters.AddWithValue("@Tel", string.IsNullOrEmpty(Tel) ? ((object)this.dbNULL) : ((object)Tel));
@@ -106,7 +165,16 @@ namespace TLLib
                 command.Parameters.AddWithValue("@Education", string.IsNullOrEmpty(Education) ? ((object)this.dbNULL) : ((object)Education));
                 command.Parameters.AddWithValue("@WorkHistory", string.IsNullOrEmpty(WorkHistory) ? ((object)this.dbNULL) : ((object)WorkHistory));
                 command.Parameters.AddWithValue("@Status", string.IsNullOrEmpty(Status) ? ((object)this.dbNULL) : ((object)Status));
+                command.Parameters.AddWithValue("@Link", string.IsNullOrEmpty(Link) ? ((object)this.dbNULL) : ((object)Link));
+                command.Parameters.AddWithValue("@FileDownload", string.IsNullOrEmpty(FileDownload) ? ((object)this.dbNULL) : ((object)FileDownload));
                 command.Parameters.AddWithValue("@IsPV", string.IsNullOrEmpty(IsPV) ? ((object)this.dbNULL) : ((object)IsPV));
+                command.Parameters.AddWithValue("@IsChuyenTien", string.IsNullOrEmpty(IsChuyenTien) ? ((object)this.dbNULL) : ((object)IsChuyenTien));
+                command.Parameters.AddWithValue("@IsCatHang", string.IsNullOrEmpty(IsCatHang) ? ((object)this.dbNULL) : ((object)IsCatHang));
+                command.Parameters.AddWithValue("@IsDuyetMau", string.IsNullOrEmpty(IsDuyetMau) ? ((object)this.dbNULL) : ((object)IsDuyetMau));
+                command.Parameters.AddWithValue("@IsIn", string.IsNullOrEmpty(IsIn) ? ((object)this.dbNULL) : ((object)IsIn));
+                command.Parameters.AddWithValue("@IsTheu", string.IsNullOrEmpty(IsTheu) ? ((object)this.dbNULL) : ((object)IsTheu));
+                command.Parameters.AddWithValue("@IsMay", string.IsNullOrEmpty(IsMay) ? ((object)this.dbNULL) : ((object)IsMay));
+                command.Parameters.AddWithValue("@IsGiaoHang", string.IsNullOrEmpty(IsGiaoHang) ? ((object)this.dbNULL) : ((object)IsGiaoHang));
                 SqlParameter parameter = new SqlParameter("@OutImageName", null);
                 SqlParameter parameter2 = new SqlParameter("@ErrorCode", null);
                 parameter.Size = 100;
@@ -293,7 +361,33 @@ namespace TLLib
             return table2;
         }
 
-        public int PersonalUpdate(string PersonalID, string ImageName, string Name, string ConvertedName, string DoB, string PoB, string Tel, string Email, string Sex, string MaritalStatus, string Address, string Certificate, string Education, string WorkHistory, string Status, string IsPV)
+        public int PersonalUpdate(
+            string PersonalID, 
+            string ImageName, 
+            string Name, 
+            string ConvertedName, 
+            string ConvertedFileDownload,
+            string DoB, 
+            string PoB, 
+            string Tel, 
+            string Email, 
+            string Sex, 
+            string MaritalStatus, 
+            string Address, 
+            string Certificate, 
+            string Education, 
+            string WorkHistory, 
+            string Status,
+            string Link,
+            string FileDownload, 
+            string IsPV,
+            string IsChuyenTien,
+            string IsCatHang,
+            string IsDuyetMau,
+            string IsIn,
+            string IsTheu,
+            string IsMay,
+            string IsGiaoHang)
         {
             int num2;
             try
@@ -307,6 +401,7 @@ namespace TLLib
                 command.Parameters.AddWithValue("@ImageName", string.IsNullOrEmpty(ImageName) ? ((object)this.dbNULL) : ((object)ImageName));
                 command.Parameters.AddWithValue("@Name", string.IsNullOrEmpty(Name) ? ((object)this.dbNULL) : ((object)Name));
                 command.Parameters.AddWithValue("@ConvertedName", string.IsNullOrEmpty(ConvertedName) ? ((object)this.dbNULL) : ((object)ConvertedName));
+                command.Parameters.AddWithValue("@ConvertedFileDownload", string.IsNullOrEmpty(ConvertedFileDownload) ? ((object)this.dbNULL) : ((object)ConvertedFileDownload));
                 command.Parameters.AddWithValue("@DoB", string.IsNullOrEmpty(DoB) ? ((object)this.dbNULL) : ((object)DoB));
                 command.Parameters.AddWithValue("@PoB", string.IsNullOrEmpty(PoB) ? ((object)this.dbNULL) : ((object)PoB));
                 command.Parameters.AddWithValue("@Tel", string.IsNullOrEmpty(Tel) ? ((object)this.dbNULL) : ((object)Tel));
@@ -318,7 +413,16 @@ namespace TLLib
                 command.Parameters.AddWithValue("@Education", string.IsNullOrEmpty(Education) ? ((object)this.dbNULL) : ((object)Education));
                 command.Parameters.AddWithValue("@WorkHistory", string.IsNullOrEmpty(WorkHistory) ? ((object)this.dbNULL) : ((object)WorkHistory));
                 command.Parameters.AddWithValue("@Status", string.IsNullOrEmpty(Status) ? ((object)this.dbNULL) : ((object)Status));
+                command.Parameters.AddWithValue("@Link", string.IsNullOrEmpty(Link) ? ((object)this.dbNULL) : ((object)Link));
+                command.Parameters.AddWithValue("@FileDownload", string.IsNullOrEmpty(FileDownload) ? ((object)this.dbNULL) : ((object)FileDownload));
                 command.Parameters.AddWithValue("@IsPV", string.IsNullOrEmpty(IsPV) ? ((object)this.dbNULL) : ((object)IsPV));
+                command.Parameters.AddWithValue("@IsChuyenTien", string.IsNullOrEmpty(IsChuyenTien) ? ((object)this.dbNULL) : ((object)IsChuyenTien));
+                command.Parameters.AddWithValue("@IsCatHang", string.IsNullOrEmpty(IsCatHang) ? ((object)this.dbNULL) : ((object)IsCatHang));
+                command.Parameters.AddWithValue("@IsDuyetMau", string.IsNullOrEmpty(IsDuyetMau) ? ((object)this.dbNULL) : ((object)IsDuyetMau));
+                command.Parameters.AddWithValue("@IsIn", string.IsNullOrEmpty(IsIn) ? ((object)this.dbNULL) : ((object)IsIn));
+                command.Parameters.AddWithValue("@IsTheu", string.IsNullOrEmpty(IsTheu) ? ((object)this.dbNULL) : ((object)IsTheu));
+                command.Parameters.AddWithValue("@IsMay", string.IsNullOrEmpty(IsMay) ? ((object)this.dbNULL) : ((object)IsMay));
+                command.Parameters.AddWithValue("@IsGiaoHang", string.IsNullOrEmpty(IsGiaoHang) ? ((object)this.dbNULL) : ((object)IsGiaoHang));
                 SqlParameter parameter = new SqlParameter("@ErrorCode", null)
                 {
                     Size = 4,
@@ -345,7 +449,18 @@ namespace TLLib
             return num2;
         }
 
-        public int PersonalQuickUpdate(string PersonalID, string Status, string IsPV)
+        public int PersonalQuickUpdate(
+            string PersonalID, 
+            string WorkHistory, 
+            string Status, 
+            string IsPV,
+            string IsChuyenTien,
+            string IsCatHang,
+            string IsDuyetMau,
+            string IsIn,
+            string IsTheu,
+            string IsMay,
+            string IsGiaoHang)
         {
             int num2;
             try
@@ -356,8 +471,16 @@ namespace TLLib
                     CommandType = CommandType.StoredProcedure
                 };
                 command.Parameters.AddWithValue("@PersonalID", string.IsNullOrEmpty(PersonalID) ? ((object)this.dbNULL) : ((object)PersonalID));
+                command.Parameters.AddWithValue("@WorkHistory", string.IsNullOrEmpty(WorkHistory) ? ((object)this.dbNULL) : ((object)WorkHistory));
                 command.Parameters.AddWithValue("@Status", string.IsNullOrEmpty(Status) ? ((object)this.dbNULL) : ((object)Status));
                 command.Parameters.AddWithValue("@IsPV", string.IsNullOrEmpty(IsPV) ? ((object)this.dbNULL) : ((object)IsPV));
+                command.Parameters.AddWithValue("@IsChuyenTien", string.IsNullOrEmpty(IsChuyenTien) ? ((object)this.dbNULL) : ((object)IsChuyenTien));
+                command.Parameters.AddWithValue("@IsCatHang", string.IsNullOrEmpty(IsCatHang) ? ((object)this.dbNULL) : ((object)IsCatHang));
+                command.Parameters.AddWithValue("@IsDuyetMau", string.IsNullOrEmpty(IsDuyetMau) ? ((object)this.dbNULL) : ((object)IsDuyetMau));
+                command.Parameters.AddWithValue("@IsIn", string.IsNullOrEmpty(IsIn) ? ((object)this.dbNULL) : ((object)IsIn));
+                command.Parameters.AddWithValue("@IsTheu", string.IsNullOrEmpty(IsTheu) ? ((object)this.dbNULL) : ((object)IsTheu));
+                command.Parameters.AddWithValue("@IsMay", string.IsNullOrEmpty(IsMay) ? ((object)this.dbNULL) : ((object)IsMay));
+                command.Parameters.AddWithValue("@IsGiaoHang", string.IsNullOrEmpty(IsGiaoHang) ? ((object)this.dbNULL) : ((object)IsGiaoHang));
                 SqlParameter parameter = new SqlParameter("@ErrorCode", null)
                 {
                     Size = 4,

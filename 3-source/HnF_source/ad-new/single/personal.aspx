@@ -66,9 +66,10 @@
             var theRegexp = new RegExp("\.lnkUpdate$|\.lnkUpdateTop$|\.PerformInsertButton$", "ig");
             if (eventArgs.get_eventTarget().match(theRegexp)) {
                 var upload = $find(window['UploadId']);
+                var upload2 = $find(window['UploadId2']);
 
                 //AJAX is disabled only if file is selected for upload
-                if (upload.getFileInputs()[0].value != "") {
+                if (upload.getFileInputs()[0].value != "" || upload2.getFileInputs()[0].value != "") {
                     eventArgs.set_enableAjax(false);
                 }
             }
@@ -132,11 +133,13 @@
         }
     </script>
     <style type="text/css">
-        .myClass:hover {
+        .myClass:hover
+        {
             background-color: #a1da29 !important;
         }
-
-        .txt {
+        
+        .txt
+        {
             border: 0px !important;
             background: #eeeeee !important;
             color: Black !important;
@@ -156,7 +159,8 @@
         <SelectParameters>
             <asp:Parameter Name="Keyword" Type="String" />
             <asp:Parameter Name="WorkHistoryID" Type="String" />
-            <asp:ControlParameter ControlID="ddlSearchCertificate" Name="PersonalID" PropertyName="SelectedValue" Type="String" />
+            <asp:ControlParameter ControlID="ddlSearchCertificate" Name="PersonalID" PropertyName="SelectedValue"
+                Type="String" />
             <asp:Parameter Name="FromDate" Type="String" />
             <asp:Parameter Name="ToDate" Type="String" />
             <asp:Parameter Name="CompanyName" Type="String" />
@@ -164,47 +168,55 @@
             <asp:Parameter Name="Reference" Type="String" />
         </SelectParameters>
     </asp:ObjectDataSource>
-    <h3 class="mainTitle">Thông Tin Cá Nhân
+    <h3 class="mainTitle">
+        Thông Tin Cá Nhân
     </h3>
     <asp:RadAjaxPanel ID="RadAjaxPanel1" runat="server" ClientEvents-OnRequestStart="conditionalPostback">
         <asp:Panel ID="pnlSearch" DefaultButton="btnSearch" runat="server">
-            <h4 class="searchTitle">Tìm kiếm
+            <h4 class="searchTitle">
+                Tìm kiếm
             </h4>
             <table class="search">
                 <tr>
-                    <td class="left">Tên
+                    <td class="left">
+                        Tên
                     </td>
                     <td>
                         <asp:RadTextBox ID="txtNameSearch" runat="server" Text='<%# Bind("Name") %>' EmptyMessage="Họ tên"
                             Width="130px">
                         </asp:RadTextBox>
                     </td>
-                    <td class="left">Điện thoại
+                    <td class="left">
+                        Điện thoại
                     </td>
                     <td>
                         <asp:RadTextBox ID="txtTelSearch" runat="server" Text='<%# Bind("Tel") %>' EmptyMessage="Điện thoại"
                             Width="130px">
                         </asp:RadTextBox>
                     </td>
-                    <td class="left">Email
+                    <td class="left">
+                        Email
                     </td>
                     <td>
                         <asp:RadTextBox ID="txtEmailSearch" runat="server" Text='<%# Bind("Mail") %>' EmptyMessage="Email"
                             Width="130px">
                         </asp:RadTextBox>
                     </td>
-                    <td class="left">Công ty
+                    <td class="left">
+                        Công ty
                     </td>
                     <td>
                         <asp:RadTextBox ID="txtPoB" runat="server" Text='<%# Bind("PoB") %>' EmptyMessage="Công ty"
                             Width="130px">
                         </asp:RadTextBox>
                     </td>
-                    <td class="left invisible">Vị trí tuyển dụng
+                    <td class="left invisible">
+                        Vị trí tuyển dụng
                     </td>
                     <td class="invisible">
-                        <asp:RadComboBox ID="ddPosition" DataSourceID="ObjectDataSource2" OnDataBound="DropDownList_DataBound" DataTextField="PositionName" DataValueField="PositionName" runat="server" Filter="Contains" Width="134px"
-                            EmptyMessage="- Tất cả -">
+                        <asp:RadComboBox ID="ddPosition" DataSourceID="ObjectDataSource2" OnDataBound="DropDownList_DataBound"
+                            DataTextField="PositionName" DataValueField="PositionName" runat="server" Filter="Contains"
+                            Width="134px" EmptyMessage="- Tất cả -">
                         </asp:RadComboBox>
                         <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="PositionSelectAll"
                             TypeName="TLLib.Position">
@@ -215,11 +227,10 @@
                             </SelectParameters>
                         </asp:ObjectDataSource>
                     </td>
-
-
                 </tr>
                 <tr class="invisible">
-                    <td class="left">Giới tính
+                    <td class="left">
+                        Giới tính
                     </td>
                     <td>
                         <asp:RadComboBox ID="ddlSearchSex" runat="server" Filter="Contains" Width="134px"
@@ -231,13 +242,15 @@
                             </Items>
                         </asp:RadComboBox>
                     </td>
-                    <td class="left">Tiếng anh
+                    <td class="left">
+                        Tiếng anh
                     </td>
                     <td>
                         <asp:RadTextBox ID="txtSearchEnlishLevel" runat="server" Width="130px" EmptyMessage="Tiếng anh...">
                         </asp:RadTextBox>
                     </td>
-                    <td class="left">Lương
+                    <td class="left">
+                        Lương
                     </td>
                     <td>
                         <asp:RadNumericTextBox ID="RadNumericTextBox1" runat="server" Width="130px" EmptyMessage="Lương..."
@@ -245,7 +258,8 @@
                             <NumberFormat AllowRounding="false" />
                         </asp:RadNumericTextBox>
                     </td>
-                    <td class="left">Bằng cấp
+                    <td class="left">
+                        Bằng cấp
                     </td>
                     <td>
                         <asp:RadComboBox Filter="Contains" ID="ddlSearchCertificate" runat="server" CssClass="dropdownlist"
@@ -260,7 +274,8 @@
                     </td>
                 </tr>
                 <tr class="invisible">
-                    <td class="left">Kinh nghiệm
+                    <td class="left">
+                        Kinh nghiệm
                     </td>
                     <td>
                         <asp:RadNumericTextBox ID="RadNumericTextBox2" runat="server" Width="130px" EmptyMessage="Kinh nghiệm..."
@@ -268,17 +283,23 @@
                             <NumberFormat AllowRounding="false" />
                         </asp:RadNumericTextBox>
                     </td>
-                    <td class="left">&nbsp;
+                    <td class="left">
+                        &nbsp;
                     </td>
-                    <td>&nbsp;
+                    <td>
+                        &nbsp;
                     </td>
-                    <td class="left">&nbsp;
+                    <td class="left">
+                        &nbsp;
                     </td>
-                    <td>&nbsp;
+                    <td>
+                        &nbsp;
                     </td>
-                    <td class="left">&nbsp;
+                    <td class="left">
+                        &nbsp;
                     </td>
-                    <td>&nbsp;
+                    <td>
+                        &nbsp;
                     </td>
                 </tr>
             </table>
@@ -289,10 +310,10 @@
             </div>
         </asp:Panel>
         <asp:Label ID="lblError" ForeColor="Red" runat="server"></asp:Label>
-        <asp:RadGrid ID="RadGrid1" DataSourceID="ObjectDataSource1" runat="server" AllowPaging="True" Culture="vi-VN" AllowMultiRowSelection="True"
-            AllowSorting="True" GridLines="Horizontal" AutoGenerateColumns="False"
-            ShowStatusBar="True" OnItemCommand="RadGrid1_ItemCommand" OnItemDataBound="RadGrid1_ItemDataBound" CssClass="grid"
-            CellSpacing="0">
+        <asp:RadGrid ID="RadGrid1" DataSourceID="ObjectDataSource1" runat="server" AllowPaging="True"
+            Culture="vi-VN" AllowMultiRowSelection="True" AllowSorting="True" GridLines="Horizontal"
+            AutoGenerateColumns="False" ShowStatusBar="True" OnItemCommand="RadGrid1_ItemCommand"
+            OnItemDataBound="RadGrid1_ItemDataBound" CssClass="grid" CellSpacing="0">
             <ClientSettings EnableRowHoverStyle="true">
                 <Selecting AllowRowSelect="True" />
                 <ClientEvents OnRowDblClick="RowDblClick" />
@@ -302,8 +323,8 @@
                 Excel-Format="ExcelML" Pdf-AllowCopy="true">
             </ExportSettings>
             <MasterTableView CommandItemDisplay="TopAndBottom" DataSourceID="ObjectDataSource1"
-                InsertItemPageIndexAction="ShowItemOnCurrentPage" AllowMultiColumnSorting="True" PageSize="100"
-                DataKeyNames="PersonalID">
+                InsertItemPageIndexAction="ShowItemOnCurrentPage" AllowMultiColumnSorting="True"
+                PageSize="10" DataKeyNames="PersonalID">
                 <PagerStyle AlwaysVisible="true" Mode="NextPrevNumericAndAdvanced" PageButtonCount="10"
                     FirstPageToolTip="Trang đầu" LastPageToolTip="Trang cuối" NextPagesToolTip="Trang kế"
                     NextPageToolTip="Trang kế" PagerTextFormat="Đổi trang: {4} &nbsp;Trang <strong>{0}</strong> / <strong>{1}</strong>, Kết quả <strong>{2}</strong> - <strong>{3}</strong> trong <strong>{5}</strong>."
@@ -339,31 +360,107 @@
                         <ItemTemplate>
                             <%# Container.DataSetIndex + 1 %>
                             <asp:HiddenField ID="hdnImageName" runat="server" Value='<%# Eval("ImageName") %>' />
+                            <asp:HiddenField ID="hdnFileDownload" runat="server" Value='<%# Eval("FileDownload") %>' />
+                        </ItemTemplate>
+                    </asp:GridTemplateColumn>
+                    <asp:GridTemplateColumn HeaderText="Ngày" SortExpression="CreateDate" HeaderStyle-Width="1%">
+                        <ItemTemplate>
+                            <%# string.Format("{0:dd/MM/yyyy hh:mm tt}", Eval("CreateDate"))%>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
                     <asp:GridBoundColumn DataField="Name" HeaderText="Họ tên" SortExpression="Name" />
                     <asp:GridBoundColumn DataField="Age" HeaderText="Tuổi" SortExpression="Age" Visible="False" />
-                    <asp:GridTemplateColumn DataField="Sex" HeaderText="GT"
-                        SortExpression="Sex" Visible="False">
+                    <asp:GridTemplateColumn DataField="Sex" HeaderText="GT" SortExpression="Sex" Visible="False">
                         <ItemTemplate>
                             <%# Eval("Sex").ToString() == "True" ? "Nữ" : "Nam" %>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridBoundColumn DataField="EnglishLevel" HeaderText="Tiếng anh" SortExpression="EnglishLevel" Visible="False" />
-                    <asp:GridBoundColumn DataField="Salary" HeaderText="Lương" SortExpression="Salary" Visible="False" />
+                    <asp:GridBoundColumn DataField="EnglishLevel" HeaderText="Tiếng anh" SortExpression="EnglishLevel"
+                        Visible="False" />
+                    <asp:GridBoundColumn DataField="Salary" HeaderText="Lương" SortExpression="Salary"
+                        Visible="False" />
                     <asp:GridTemplateColumn HeaderText="Công ty">
                         <ItemTemplate>
                             <%--<%# Eval("Company").ToString() %>--%>
                             <%# Eval("PoB").ToString()%>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
-                    <asp:GridBoundColumn DataField="Experience" HeaderText="KN" SortExpression="Experience" Visible="False" />
+                    <asp:GridBoundColumn DataField="Experience" HeaderText="KN" SortExpression="Experience"
+                        Visible="False" />
                     <asp:GridBoundColumn DataField="Tel" HeaderText="Điện thoại" SortExpression="Tel" />
                     <asp:GridBoundColumn DataField="Email" HeaderText="Email" SortExpression="Email" />
+                    <asp:GridTemplateColumn HeaderText="Yêu cầu" DataField="WorkHistory" SortExpression="WorkHistory">
+                        <ItemTemplate>
+                            <asp:TextBox ID="txtWorkHistory" TextMode="MultiLine" Columns="40" Rows="12" runat="server"
+                                Text='<%# Eval("WorkHistory")%>'></asp:TextBox>
+                        </ItemTemplate>
+                    </asp:GridTemplateColumn>
                     <asp:GridTemplateColumn HeaderText="Status" DataField="Status" SortExpression="Status">
                         <ItemTemplate>
-                            <asp:TextBox ID="txtStatus" TextMode="MultiLine" Columns="60" Rows="12" runat="server"
+                            <asp:TextBox ID="txtStatus" TextMode="MultiLine" Columns="40" Rows="12" runat="server"
                                 Text='<%# Eval("Status")%>'></asp:TextBox>
+                        </ItemTemplate>
+                    </asp:GridTemplateColumn>
+                    <asp:GridTemplateColumn HeaderText="Mẫu áo" DataField="Link" SortExpression="Link">
+                        <ItemTemplate>
+                            <asp:HyperLink ID="hpLink" runat="server" Target="_blank" NavigateUrl='<%# Eval("Link") %>'><%# Eval("Link") %></asp:HyperLink>
+                        </ItemTemplate>
+                    </asp:GridTemplateColumn>
+                    <asp:GridTemplateColumn HeaderText="Bảng báo giá" DataField="FileDownload" SortExpression="FileDownload">
+                        <ItemTemplate>
+                            <asp:Panel ID="Panel2" runat="server" Visible='<%# string.IsNullOrEmpty( Eval("FileDownload").ToString()) ? false : true %>'
+                                Width="95">
+                                <a id="A1" download runat="server" href='<%# "~/res/quotation/" + Eval("FileDownload") %>'>
+                                    <%# Eval("FileDownload") %></a>
+                                <asp:LinkButton ID="lnkDeleteFileDownload" runat="server" rel='<%#  Eval("PersonalID") + "#" + Eval("FileDownload") %>'
+                                    CommandName="DeleteFileDownload" OnClientClick="return confirm('Xóa file này ?')">
+                                <img alt="Xóa file" title="Xóa file" src="../assets/images/delete-icon.png" />
+                                </asp:LinkButton>
+                            </asp:Panel>
+                        </ItemTemplate>
+                    </asp:GridTemplateColumn>
+                    <asp:GridTemplateColumn HeaderStyle-Width="40%" HeaderText="Sản xuất">
+                        <ItemTemplate>
+                            <table cellspacing="0" cellpadding="0" width="250px" border="0">
+                                <tr>
+                                    <td style="border-style: none;">
+                                        <asp:CheckBox ID="chkIsChuyenTien" Text="Chuyển tiền" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsChuyenTien").ToString()) ? false : Eval("IsChuyenTien") %>'
+                                            CssClass="checkbox" />
+                                    </td>
+                                    <td style="border-style: none;">
+                                        <asp:CheckBox ID="chkIsCatHang" Text="Cắt hàng" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsCatHang").ToString()) ? false : Eval("IsCatHang") %>'
+                                            CssClass="checkbox" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-style: none;">
+                                        <asp:CheckBox ID="chkIsDuyetMau" Text="Duyệt mẫu" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsDuyetMau").ToString()) ? false : Eval("IsDuyetMau") %>'
+                                            CssClass="checkbox" />
+                                    </td>
+                                    <td style="border-style: none;">
+                                        <asp:CheckBox ID="chkIsIn" Text="In" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsIn").ToString()) ? false : Eval("IsIn") %>'
+                                            CssClass="checkbox" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-style: none;">
+                                        <asp:CheckBox ID="chkIsTheu" Text="Thêu" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsTheu").ToString()) ? false : Eval("IsTheu") %>'
+                                            CssClass="checkbox" />
+                                    </td>
+                                    <td style="border-style: none;">
+                                        <asp:CheckBox ID="chkIsMay" Text="May" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsMay").ToString()) ? false : Eval("IsMay") %>'
+                                            CssClass="checkbox" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="border-style: none;">
+                                        <asp:CheckBox ID="chkIsGiaoHang" Text="Giao hàng" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsGiaoHang").ToString()) ? false : Eval("IsGiaoHang") %>'
+                                            CssClass="checkbox" />
+                                    </td>
+                                    <td style="border-style: none;">
+                                    </td>
+                                </tr>
+                            </table>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
                     <asp:GridTemplateColumn DataField="IsPV" HeaderStyle-Width="1%" HeaderText="Đang theo"
@@ -376,12 +473,10 @@
                     <asp:GridTemplateColumn>
                         <ItemTemplate>
                             <div>
-                                <button type="button" value="Xem thông tin" title="Xem thông tin"
-                                    onclick="openWindow('view.aspx?ID=<%# Eval("PersonalID") %>','Xem thông tin')"
+                                <button type="button" value="Xem thông tin" title="Xem thông tin" onclick="openWindow('view.aspx?ID=<%# Eval("PersonalID") %>','Xem thông tin')"
                                     style="cursor: pointer">
                                     Xem thông tin</button>
-                                <button type="button" value="Phỏng vấn" title="Phỏng vấn"
-                                    onclick="openWindow('interview.aspx?ID=<%# Eval("PersonalID") %>','Phỏng vấn')"
+                                <button type="button" value="Phỏng vấn" title="Phỏng vấn" onclick="openWindow('interview.aspx?ID=<%# Eval("PersonalID") %>','Phỏng vấn')"
                                     style="cursor: pointer">
                                     Phỏng vấn</button>
                             </div>
@@ -398,11 +493,6 @@
                                 <img alt="Xóa ảnh" title="Xóa ảnh" src="../assets/images/delete-icon.png" />
                                 </asp:LinkButton>
                             </asp:Panel>
-                        </ItemTemplate>
-                    </asp:GridTemplateColumn>
-                    <asp:GridTemplateColumn HeaderText="Ngày tạo" SortExpression="CreateDate" HeaderStyle-Width="1%">
-                        <ItemTemplate>
-                            <%# string.Format("{0:dd/MM/yyyy hh:mm tt}", Eval("CreateDate"))%>
                         </ItemTemplate>
                     </asp:GridTemplateColumn>
                 </Columns>
@@ -422,6 +512,7 @@
                                                         <td colspan="2" style="padding-left: 10px;">
                                                             <asp:HiddenField ID="hdnPersonalID" runat="server" Value='<%# Eval("PersonalID") %>' />
                                                             <asp:HiddenField ID="hdnOldImageName" runat="server" Value='<%# Eval("ImageName") %>' />
+                                                            <asp:HiddenField ID="hdnOldLinkDownload" runat="server" Value='<%# Eval("FileDownload") %>' />
                                                             <asp:LinkButton ID="lnkUpdateTop" runat="server" CausesValidation="True" CommandName='<%# (Container is GridEditFormInsertItem) ? "PerformInsert" : "Update" %>'><img alt="" title="Cập nhật" src="../assets/images/ok.png" class="vam" /> <%# (Container is GridEditFormInsertItem) ? "Thêm" : "Cập nhật" %></asp:LinkButton>
                                                             &nbsp;&nbsp;
                                                             <asp:LinkButton ID="LinkButton7" runat="server" CausesValidation="False" CommandName="Cancel"> <img alt="" title="Hủy" src="../assets/images/cancel.png" class="vam" />&nbsp;&nbsp;Hủy </asp:LinkButton>
@@ -429,7 +520,8 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="invisible">
-                                                        <td class="left" valign="top">Ảnh đại diện
+                                                        <td class="left" valign="top">
+                                                            Ảnh đại diện
                                                         </td>
                                                         <td id="Td1" runat="server">
                                                             <asp:RadUpload ID="FileImageName" runat="server" ControlObjectsVisibility="None"
@@ -440,22 +532,34 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="left">Họ tên
+                                                        <td class="left" valign="top">
+                                                            Bảng báo giá
                                                         </td>
                                                         <td>
-                                                            <asp:RadTextBox ID="txtName" runat="server" Width="500px" Text='<%# Bind("Name") %>' ClientEvents-OnBlur="ClientValidationFunction"
-                                                                EmptyMessage="Họ tên...">
+                                                            <asp:HiddenField ID="hdnFileDownload" runat="server" Value='<%# Eval("FileDownload") %>' />
+                                                            <asp:RadUpload ID="FileLinkDownload" runat="server" ControlObjectsVisibility="None"
+                                                                Culture="vi-VN" Language="vi-VN" InputSize="69" />
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="left">
+                                                            Họ tên
+                                                        </td>
+                                                        <td>
+                                                            <asp:RadTextBox ID="txtName" runat="server" Width="500px" Text='<%# Bind("Name") %>'
+                                                                ClientEvents-OnBlur="ClientValidationFunction" EmptyMessage="Họ tên...">
                                                             </asp:RadTextBox>
                                                             <%-- <asp:CustomValidator ID="CustomValidator2" runat="server" ControlToValidate="txtName" ClientValidationFunction="ClientValidationFunction"
                                                                 Display="Dynamic" ErrorMessage="Tên ứng viên được tìm thấy trong hệ thống, tiếp tục thêm mới, hoặc nhấn button Hủy."></asp:CustomValidator>
                                                             <asp:Label ID="lblNameMessage" runat="server" ForeColor="Green"></asp:Label>--%>
                                                         </td>
                                                     </tr>
-                                                    <td class="left invisible">Ngày sinh
+                                                    <td class="left invisible">
+                                                        Ngày sinh
                                                     </td>
                                                     <td class="invisible">
-                                                        <asp:RadDatePicker ShowPopupOnFocus="True" ID="dpDoB" runat="server" Culture="vi-VN" Calendar-CultureInfo="vi-VN"
-                                                            Width="208px">
+                                                        <asp:RadDatePicker ShowPopupOnFocus="True" ID="dpDoB" runat="server" Culture="vi-VN"
+                                                            Calendar-CultureInfo="vi-VN" Width="208px">
                                                             <Calendar ID="Calendar1" runat="server">
                                                                 <SpecialDays>
                                                                     <asp:RadCalendarDay Repeatable="Today">
@@ -466,7 +570,8 @@
                                                         </asp:RadDatePicker>
                                                     </td>
                                                     <tr>
-                                                        <td class="left">Công ty
+                                                        <td class="left">
+                                                            Công ty
                                                         </td>
                                                         <td>
                                                             <asp:RadTextBox ID="txtPoB" runat="server" Width="500px" Text='<%# Bind("PoB") %>'
@@ -475,7 +580,8 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="left">Điện thoại
+                                                        <td class="left">
+                                                            Điện thoại
                                                         </td>
                                                         <td>
                                                             <asp:RadTextBox ID="txtTel" runat="server" Width="500px" Text='<%# Bind("Tel") %>'
@@ -484,19 +590,22 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="left">Email
+                                                        <td class="left">
+                                                            Email
                                                         </td>
                                                         <td>
-                                                            <asp:RadTextBox ID="txtEmail" runat="server" Text='<%# Bind("Email") %>'
-                                                                Width="500px" EmptyMessage="Email...">
+                                                            <asp:RadTextBox ID="txtEmail" runat="server" Text='<%# Bind("Email") %>' Width="500px"
+                                                                EmptyMessage="Email...">
                                                             </asp:RadTextBox>
                                                         </td>
                                                     </tr>
                                                     <tr class="invisible">
-                                                        <td class="left">Giới tính
+                                                        <td class="left">
+                                                            Giới tính
                                                         </td>
                                                         <td>
-                                                            <asp:RadioButtonList runat="server" ID="RadioButtonListSex" SelectedValue='<%# Bind("Sex") %>' RepeatDirection="Horizontal">
+                                                            <asp:RadioButtonList runat="server" ID="RadioButtonListSex" SelectedValue='<%# Bind("Sex") %>'
+                                                                RepeatDirection="Horizontal">
                                                                 <asp:ListItem Value="False" Text="Nam" />
                                                                 <asp:ListItem Value="True" Text="Nữ" />
                                                                 <asp:ListItem Value="" Text="" Selected="true" style="display: none" />
@@ -504,7 +613,8 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="invisible">
-                                                        <td class="left">Tình trạng hôn nhân
+                                                        <td class="left">
+                                                            Tình trạng hôn nhân
                                                         </td>
                                                         <td>
                                                             <asp:CheckBox ID="chkMaritalStatus" runat="server" CssClass="checkbox" Text=" Độc thân"
@@ -512,16 +622,18 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="left">Địa chỉ
+                                                        <td class="left">
+                                                            Địa chỉ
                                                         </td>
                                                         <td>
-                                                            <asp:RadTextBox ID="txtAddress" runat="server" Text='<%# Bind("Address") %>'
-                                                                Width="500px" EmptyMessage="Địa chỉ...">
+                                                            <asp:RadTextBox ID="txtAddress" runat="server" Text='<%# Bind("Address") %>' Width="500px"
+                                                                EmptyMessage="Địa chỉ...">
                                                             </asp:RadTextBox>
                                                         </td>
                                                     </tr>
                                                     <tr class="invisible">
-                                                        <td class="left">Bằng cấp
+                                                        <td class="left">
+                                                            Bằng cấp
                                                         </td>
                                                         <td>
                                                             <asp:RadComboBox Filter="Contains" ID="ddlCertificate" runat="server" CssClass="dropdownlist"
@@ -536,7 +648,8 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="invisible">
-                                                        <td class="left" valign="top">Education
+                                                        <td class="left" valign="top">
+                                                            Education
                                                         </td>
                                                         <td>
                                                             <asp:RadEditor ID="txtEducation" runat="server" Language="vi-VN" Skin="Office2007"
@@ -550,33 +663,60 @@
                                                             </asp:RadEditor>
                                                         </td>
                                                     </tr>
-                                                    <tr class="invisible">
-                                                        <td class="left" valign="top">Work History
+                                                    <tr>
+                                                        <td class="left" valign="top">
+                                                            Yêu cầu
                                                         </td>
                                                         <td>
-                                                            <asp:RadEditor ID="txtWorkHistory" runat="server" Language="vi-VN" Skin="Office2007"
-                                                                Width="98%" Content='<%# Bind("WorkHistory") %>'>
-                                                                <ImageManager DeletePaths="~/Uploads/Image/" UploadPaths="~/Uploads/Image/" ViewPaths="~/Uploads/Image/" />
-                                                                <FlashManager DeletePaths="~/Uploads/Video/" UploadPaths="~/Uploads/Video/" ViewPaths="~/Uploads/Video/" />
-                                                                <DocumentManager DeletePaths="~/Uploads/File/" UploadPaths="~/Uploads/File/" ViewPaths="~/Uploads/File/" />
-                                                                <MediaManager DeletePaths="~/Uploads/Media/" UploadPaths="~/Uploads/Media/" ViewPaths="~/Uploads/Media/" />
-                                                                <TemplateManager DeletePaths="~/Uploads/Template/" UploadPaths="~/Uploads/Template/"
-                                                                    ViewPaths="~/Uploads/Template/" />
-                                                            </asp:RadEditor>
+                                                            <asp:RadTextBox ID="txtWorkHistory1" runat="server" Text='<%# Bind("WorkHistory") %>'
+                                                                Width="500px" Height="100px" EmptyMessage="Yêu cầu..." TextMode="MultiLine">
+                                                            </asp:RadTextBox>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="left">Status
+                                                        <td class="left">
+                                                            Status
                                                         </td>
                                                         <td>
-                                                            <asp:RadTextBox ID="txtStatus1" runat="server" Text='<%# Bind("Status") %>'
-                                                                Width="500px" EmptyMessage="Status...">
+                                                            <asp:RadTextBox ID="txtStatus1" runat="server" Text='<%# Bind("Status") %>' Width="500px"
+                                                                Height="100px" EmptyMessage="Status..." TextMode="MultiLine">
+                                                            </asp:RadTextBox>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="left">
+                                                            Mẫu áo
+                                                        </td>
+                                                        <td>
+                                                            <asp:RadTextBox ID="txtLink" runat="server" Width="500px" Text='<%# Bind("Link") %>'
+                                                                EmptyMessage="Mẫu áo...">
                                                             </asp:RadTextBox>
                                                         </td>
                                                     </tr>
                                                     <tr>
                                                         <td class="left" colspan="2">
                                                             <asp:CheckBox ID="chkIsPV" runat="server" CssClass="checkbox" Text=" Đang Theo" Checked='<%# (Container is GridEditFormInsertItem) ? false : (string.IsNullOrEmpty(Eval("IsPV").ToString()) ? false : Eval("IsPV"))%>' />
+                                                            &nbsp;&nbsp;
+                                                            <asp:CheckBox ID="chkIsChuyenTien" Text="Chuyển tiền" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsChuyenTien").ToString()) ? false : Eval("IsChuyenTien") %>'
+                                                                CssClass="checkbox" />
+                                                            &nbsp;&nbsp;
+                                                            <asp:CheckBox ID="chkIsCatHang" Text="Cắt hàng" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsCatHang").ToString()) ? false : Eval("IsCatHang") %>'
+                                                                CssClass="checkbox" />
+                                                            &nbsp;&nbsp;
+                                                            <asp:CheckBox ID="chkIsDuyetMau" Text="Duyệt mẫu" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsDuyetMau").ToString()) ? false : Eval("IsDuyetMau") %>'
+                                                                CssClass="checkbox" />
+                                                            &nbsp;&nbsp;
+                                                            <asp:CheckBox ID="chkIsIn" Text="In" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsIn").ToString()) ? false : Eval("IsIn") %>'
+                                                                CssClass="checkbox" />
+                                                            &nbsp;&nbsp;
+                                                            <asp:CheckBox ID="chkIsTheu" Text="Thêu" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsTheu").ToString()) ? false : Eval("IsTheu") %>'
+                                                                CssClass="checkbox" />
+                                                            &nbsp;&nbsp;
+                                                            <asp:CheckBox ID="chkIsMay" Text="May" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsMay").ToString()) ? false : Eval("IsMay") %>'
+                                                                CssClass="checkbox" />
+                                                            &nbsp;&nbsp;
+                                                            <asp:CheckBox ID="chkIsGiaoHang" Text="Giao hàng" runat="server" Checked='<%# string.IsNullOrEmpty(Eval("IsGiaoHang").ToString()) ? false : Eval("IsGiaoHang") %>'
+                                                                CssClass="checkbox" />
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -615,18 +755,26 @@
             <asp:Parameter Name="DoB" Type="String" />
             <asp:ControlParameter ControlID="txtPoB" Name="PoB" PropertyName="Text" Type="String" />
             <asp:ControlParameter ControlID="txtTelSearch" Name="Tel" PropertyName="Text" Type="String" />
-            <asp:ControlParameter ControlID="txtEmailSearch" Name="Email" PropertyName="Text" Type="String" />
-            <asp:ControlParameter ControlID="ddlSearchSex" Name="Sex" PropertyName="SelectedValue" Type="String" />
+            <asp:ControlParameter ControlID="txtEmailSearch" Name="Email" PropertyName="Text"
+                Type="String" />
+            <asp:ControlParameter ControlID="ddlSearchSex" Name="Sex" PropertyName="SelectedValue"
+                Type="String" />
             <asp:Parameter Name="MaritalStatus" Type="String" />
             <asp:Parameter Name="Address" Type="String" />
-            <asp:ControlParameter ControlID="ddlSearchCertificate" Name="Certificate" PropertyName="SelectedValue" Type="String" />
-            <asp:ControlParameter ControlID="txtSearchEnlishLevel" Name="EnglishLevel" PropertyName="Text" Type="String" />
-            <asp:ControlParameter ControlID="RadNumericTextBox1" Name="Salary" PropertyName="Text" Type="String" />
-            <asp:ControlParameter ControlID="RadNumericTextBox2" Name="Experience" PropertyName="Text" Type="String" />
-            <asp:ControlParameter ControlID="ddPosition" Name="Position" PropertyName="SelectedValue" Type="String" />
+            <asp:ControlParameter ControlID="ddlSearchCertificate" Name="Certificate" PropertyName="SelectedValue"
+                Type="String" />
+            <asp:ControlParameter ControlID="txtSearchEnlishLevel" Name="EnglishLevel" PropertyName="Text"
+                Type="String" />
+            <asp:ControlParameter ControlID="RadNumericTextBox1" Name="Salary" PropertyName="Text"
+                Type="String" />
+            <asp:ControlParameter ControlID="RadNumericTextBox2" Name="Experience" PropertyName="Text"
+                Type="String" />
+            <asp:ControlParameter ControlID="ddPosition" Name="Position" PropertyName="SelectedValue"
+                Type="String" />
         </SelectParameters>
     </asp:ObjectDataSource>
     <asp:RadProgressManager ID="RadProgressManager1" runat="server" />
     <asp:RadProgressArea ID="ProgressArea1" runat="server" Culture="vi-VN" DisplayCancelButton="True"
-        HeaderText="Đang tải" Skin="Office2007" Style="position: fixed; top: 228% !important; left: 51% !important; margin: -93px 0 0 -188px;" />
+        HeaderText="Đang tải" Skin="Office2007" Style="position: fixed; top: 228% !important;
+        left: 51% !important; margin: -93px 0 0 -188px;" />
 </asp:Content>
