@@ -1,5 +1,15 @@
 ﻿function pageLoad() {
     mypageload();
+    $('.section-tb').textHeight({
+        activetit: true,
+        listcss: [{ cssname: ".box-suicide" }, { cssname: ".title-suicide" }, { cssname: ".suicide-img"}],
+        wpointb: true,
+        desbool: false,
+        listpos: [{ cssnamepos: ".desription", cssheightnum: "2"}],
+        tbrow: true,
+        csstr: ".element-item",
+        max: true
+    });
 }
 (function ($) {
     $(window).load(function () {
@@ -371,7 +381,8 @@ function myfunload() {
                 max: true
             });
         });
-    }
+    }   
+    
     if ($('#whyShow').size() > 0) {
         var whylist = $('#whyShow').imagesLoaded(function () {
             whylist.textHeight({
