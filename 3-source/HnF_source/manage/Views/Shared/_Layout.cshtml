@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+
+    <link rel="stylesheet" href="@Url.Content("~/Content/assets/styles/bootstrap.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/assets/styles/font-awesome.min.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/assets/dataTables/css/jquery.dataTables.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/assets/styles/jquery-ui.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/assets/styles/site.css")">
+    <script src="@Url.Content("~/Content/assets/js/jquery.js")"></script>
+    <script src="@Url.Content("~/Content/assets/js/bootstrap.min.js")"></script>
+    <script src="@Url.Content("~/Content/assets/js/jquery-ui.js")"></script>
+    <script src="@Url.Content("~/Content/assets/dataTables/js/jquery.dataTables.js")"></script>
+    <script src="@Url.Content("~/Content/assets/js/jquery-main.js")"></script>
+</head>
+<body>
+    <div class="wrapper-main">
+        <div class="haeder-main">
+            <div class="title-haed"><span>HnF COMPANY</span></div>
+            <div class="header-right">
+                <div class="thongbao">
+                    <img src="@Url.Content("~/Content/assets/images/icon1.png")" alt="">
+                    <div class="numbers"><span>2</span></div>
+                </div>
+                <div class="quantri"><span>QUẢN TRỊ VIÊN</span></div>
+                <div class="dangxuat"><span><a href="#">ĐĂNG XUẤT</a></span></div>
+            </div>
+        </div>
+        <div class="wrapper-info">
+            <div class="aside-left">
+                <div class="menu">
+                    <ul>
+                        <li><a href="@Url.Action("Index","Customer")">KHÁCH HÀNG</a></li>
+                        <li><a href="@Url.Action("Index","Produce")">SẢN XUẤT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="aside-right">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>

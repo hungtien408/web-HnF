@@ -1,0 +1,152 @@
+﻿@model TranLe_pj.Models.CustomerModel
+@{
+    ViewBag.Title = "ModifyCustomer";
+    Layout = "~/Areas/admin/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm("SaveData", "Customer", FormMethod.Post, new { id = "myForm" }))
+{
+    <div class="info-left">
+        <h1>THÔNG TIN KHÁCH HÀNG</h1>
+        @Html.HiddenFor(m => m.CustomerID)
+        <div class="wrapper-input">
+            <div class="input-box">
+                <div class="input-lable">Họ Tên</div>
+                <div class="input-text">@Html.TextBoxFor(m=>m.CustomerName,Model.CustomerName)</div>
+            </div>
+            <div class="input-box">
+                <div class="input-lable">Ngày sinh</div>
+                <div class="input-text">@Html.TextBoxFor(m => m.Birthday, Model.Birthday.HasValue ? Model.Birthday.Value.ToString("dd/MM/yyyy") : string.Empty, new { @class = "datepicker" })</div>
+            </div>
+            <div class="input-box">
+                <div class="input-lable">Số điện thoại</div>
+                <div class="input-text">@Html.TextBoxFor(m => m.Phone, Model.Phone)</div>
+            </div>
+            <div class="input-box">
+                <div class="input-lable">Email</div>
+                <div class="input-text">@Html.TextBoxFor(m => m.Email, Model.Email)</div>
+            </div>
+            <div class="input-box">
+                <div class="input-lable">Công ty</div>
+                <div class="input-text">@Html.TextBoxFor(m => m.Company, Model.Company)</div>
+            </div>
+            <div class="input-box">
+                <div class="input-lable">Ngành nghề</div>
+                <div class="input-text">@Html.TextBoxFor(m => m.Career, Model.Career)</div>
+            </div>
+            <div class="input-box">
+                <div class="input-lable">Địa chỉ</div>
+                <div class="input-text">@Html.TextBoxFor(m => m.Address, Model.Address)</div>
+            </div>
+            @*<div class="input-box">
+                <div class="input-lable">Tình trạng tư vấn</div>
+                <div class="input-select">
+                    <select>
+                        <option value="value">Tình trạng</option>
+                        <option value="1">Hủy hợp đồng</option>
+                        <option value="2">Chờ phản hồi</option>
+                        <option value="3">Đã ký</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-lable">Quan tâm về dịch vụ/Sản phẩm</div>
+                <div class="input-area"><textarea></textarea></div>
+            </div>
+            <div class="input-box">
+                <div class="input-lable">Loại áo đã làm</div>
+                <div class="input-text"><input type="text" name="" value=""></div>
+            </div>
+            <div class="input-box">
+                <div class="input-lable">Loại vải</div>
+                <div class="input-text"><input type="text" name="" value=""></div>
+            </div>
+            <div class="input-box">
+                <div class="input-lable">Thành tiền</div>
+                <div class="input-text"><input type="text" name="" value=""></div>
+            </div>*@
+            <div class="input-box">
+                <div class="input-lable">Nhận xét</div>
+                <div class="input-text"><input type="text" name="" value=""></div>
+            </div>
+            @*<div class="input-box">
+                <div class="input-lable">Công ty đã thực hiện</div>
+                <div class="input-text"><input type="text" name="" value=""></div>
+            </div>*@
+        </div>
+        <div class="input-box">
+            <div class="input-lable">Ghi chú</div>
+            <div class="input-area">@Html.TextAreaFor(m => m.Note, Model.Note)</div>
+        </div>
+        @*<div class="input-box">
+            <div class="input-lable">Hiển thị</div>
+            <div class="input-area">@Html.CheckBoxFor(m=>Model.IsAvailable.Value)</div>
+        </div>*@
+    </div>
+    <div class="info-right">
+        <h1>THÔNG TIN KHÁCH HÀNG</h1>
+        <div class="wrapper-input">
+            <div class="input-box">
+                <div class="input-lable">Loại áo</div>
+                <div class="input-text"><input type="text" name="" value=""></div>
+            </div>
+            <div class="input-box">
+                <div class="input-lable">Loại vải</div>
+                <div class="input-text"><input type="text" name="" value=""></div>
+            </div>
+            <div class="input-box">
+                <div class="input-lable">Mục đích sử dụng</div>
+                <div class="input-text"><input type="text" name="" value=""></div>
+            </div>
+            <div class="input-50">
+                <div class="input-box">
+                    <div class="input-lable">Đã có thiết kế</div>
+                    <div class="input-select">
+                        <select>
+                            <option value="value">Có</option>
+                            <option value="1">Chưa</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-lable">Tình trạng tư vấn</div>
+                    <div class="input-select">
+                        <select>
+                            <option value="value">Đỏ</option>
+                            <option value="1">Đen</option>
+                            <option value="2">Xanh</option>
+                            <option value="3">Trắng</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-lable">In thuê?</div>
+                <div class="input-text"><input type="text" name="" value=""></div>
+            </div>
+            <div class="input-50">
+                <div class="input-box">
+                    <div class="input-lable">Số lượng</div>
+                    <div class="input-text"><input type="text" name="" value=""></div>
+                </div>
+                <div class="input-box">
+                    <div class="input-lable">Tầm giá</div>
+                    <div class="input-text"><input type="text" name="" value=""></div>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-lable">Ghi chú</div>
+                <div class="input-area"><textarea></textarea></div>
+            </div>
+        </div>
+    </div>
+    <div class="btn-table">
+        <div class="btn1"><input type="submit" value="LƯU" /></div>
+        <div class="btn2"><a href="@Url.Action("DeleteByID", "Customer", new { id = Model.CustomerID})">XÓA</a></div>
+        <div class="btn3"><a href="@Url.Action("Index")">QUAY LẠI</a></div>
+        <div class="btn4"><a href="@Url.Action("Index","Contract")">TẠO GIAO DỊCH</a></div>
+        <div class="khachhang">KHÁCH HÀNG: NGUYỄN THỊ XUÂN DIỆU</div>
+    </div>
+}
+
+

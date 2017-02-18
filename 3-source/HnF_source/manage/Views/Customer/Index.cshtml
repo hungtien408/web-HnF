@@ -1,0 +1,64 @@
+﻿@model List<TranLe_pj.Models.CustomerModel>
+@using TranLe_pj.Models
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2 style="color:red">@TempData["msgSuccess"]</h2>
+<div class="btn-table">
+    <div class="btn1"><a href="@Url.Action("ModifyCustomer","Customer",new { id = (int?)null})">THÊM</a></div>
+    <div class="btn2"><a href="#">SỬA NHANH</a></div>
+    <div class="btn3"><a href="@Url.Action("MultiDeleteRecord")">XÓA</a></div>
+    <div class="thang">
+        <select>
+            <option value="value">Tháng</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+    </div>
+</div>
+
+<table id="table-kh" class="table table-hover">
+    <thead>
+        <tr>
+            <th class="check no-sort"> <input type="checkbox" name="vehicle"/></th>
+            <th class="name">ID</th>
+            <th class="name">HỌ VÀ TÊN</th>
+            <th class="cty">CÔNG TY</th>
+            <th class="email">EMAIL</th>
+            <th class="dienthoai">ĐIỆN THOẠI</th>
+            <th class="goinhac">GHI CHÚ</th>
+            <th class="sale">HIỂN THỊ</th>
+            <th class="tinhtrang">NGÀY UPDATE</th>
+            <th class="=info"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td><input type="checkbox" name="vehicle" value="@item.CustomerID"/></td>
+                <td>@item.CustomerID</td>
+                <td><a href="@Url.Action("ModifyCustomer","Customer",new { id = item.CustomerID})">@item.CustomerName</a></td>
+                <td>@item.Company</td>
+                <td>@item.Email</td>
+                <td>@item.Phone</td>
+                <td>@item.Note</td>
+                <td>@Html.CheckBoxFor(m => item.IsAvailable.Value)</td>
+                <td>@Convert.ToDateTime(item.UpdateDate).ToString("dd/MM/yyyy hh:mm")</td>
+                <td><a href="@Url.Action("DeleteByID","Customer",new { id = item.CustomerID})"><span class="info-icon">i</span></a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+

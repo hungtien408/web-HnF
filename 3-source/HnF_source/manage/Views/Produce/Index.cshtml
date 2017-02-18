@@ -1,0 +1,129 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="btn-table">
+    <div class="select-box">
+        <select>
+            <option value="value">Tiến độ</option>
+            <option value="1">Hoàn Thành</option>
+            <option value="2">Đang làm</option>
+        </select>
+    </div>
+    <div class="select-box">
+        <select>
+            <option value="value">Tình trạng</option>
+            <option value="1">Đang in/thêu</option>
+            <option value="2">Đang cắt</option>
+            <option value="3">Đang may</option>
+            <option value="4">Đang ủi</option>
+            <option value="5">Đang đóng gói</option>
+            <option value="6">Đang giao</option>
+            <option value="2">Hoàn thành</option>
+        </select>
+    </div>
+    <div class="select-box">
+        <select>
+            <option value="value">Chuyển tiền</option>
+            <option value="1">Đã chuyển</option>
+            <option value="2">Chưa chuyển</option>
+        </select>
+    </div>
+</div>
+<table id="table-kh" class="table table-hover">
+    <thead>
+        <tr>
+            <th class="check no-sort"> <input type="checkbox" name="vehicle" value="1"></th>
+            <th class="name">HỌ VÀ TÊN</th>
+            <th class="cty">CÔNG TY</th>
+            <th class="dienthoai">ĐIỆN THOẠI</th>
+            <th class="ngayky">NGÀY KÝ</th>
+            <th class="ngaygiao">NGÀY GIAO HÀNG</th>
+            <th class="chuyentien">CHUYỂN TIỀN</th>
+            <th class="tinhtrang">TÌNH TRẠNG</th>
+            <th class="=info"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input type="checkbox" name="vehicle"></td>
+            <td>Nguyễn Thị Xuân Diệu</td>
+            <td>HnF Company</td>
+            <td>0123 456 7890</td>
+            <td>1/1/2016</td>
+            <td>1/2/2016</td>
+            <td>50%</td>
+            <td><span class="choph">ĐANG IN/THÊU</span></td>
+            <td><span class="info-icon">i</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="vehicle"></td>
+            <td>Nguyễn Thị Xuân Diệu</td>
+            <td>HnF Company</td>
+            <td>0123 456 7890</td>
+            <td>1/1/2016</td>
+            <td>1/2/2016</td>
+            <td>50%</td>
+            <td><span class="choph">ĐANG CẮT VẢI</span></td>
+            <td><span class="info-icon">i</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="vehicle"></td>
+            <td>Nguyễn Thị Xuân Diệu</td>
+            <td>HnF Company</td>
+            <td>0123 456 7890</td>
+            <td>1/1/2016</td>
+            <td>1/2/2016</td>
+            <td>50%</td>
+            <td><span class="choph">ĐANG MAY</span></td>
+            <td><span class="info-icon">i</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="vehicle"></td>
+            <td>Nguyễn Thị Xuân Diệu</td>
+            <td>HnF Company</td>
+            <td>0123 456 7890</td>
+            <td>1/1/2016</td>
+            <td>1/2/2016</td>
+            <td>50%</td>
+            <td><span class="choph">ĐANG ỦI</span></td>
+            <td><span class="info-icon">i</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="vehicle"></td>
+            <td>Nguyễn Thị Xuân Diệu</td>
+            <td>HnF Company</td>
+            <td>0123 456 7890</td>
+            <td>1/1/2016</td>
+            <td>1/2/2016</td>
+            <td>50%</td>
+            <td><span class="choph">ĐANG ĐÓNG GÓI</span></td>
+            <td><span class="info-icon">i</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="vehicle"></td>
+            <td>Nguyễn Thị Xuân Diệu</td>
+            <td>HnF Company</td>
+            <td>0123 456 7890</td>
+            <td>1/1/2016</td>
+            <td>1/2/2016</td>
+            <td>50%</td>
+            <td><span class="choph">ĐANG GIAO HÀNG</span></td>
+            <td><span class="info-icon">i</span></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="vehicle"></td>
+            <td>Nguyễn Thị Xuân Diệu</td>
+            <td>HnF Company</td>
+            <td>0123 456 7890</td>
+            <td>1/1/2016</td>
+            <td>1/2/2016</td>
+            <td>50%</td>
+            <td><span class="choph">HOÀN THÀNH</span></td>
+            <td><span class="info-icon">i</span></td>
+        </tr>
+    </tbody>
+</table>
+
