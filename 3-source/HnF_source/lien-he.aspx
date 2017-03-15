@@ -18,7 +18,7 @@
             <div class="contact-form">
                 <div class="node">
                     Mọi thắc mắc hoặc yêu cầu, đóng góp của quý khách xin hãy liên hệ với chúng tôi:
-                    0917 377 999 Hoặc điền vào form bên dưới chúng tôi sẽ liên hệ với quý khách
+                    090.856.3644 Hoặc điền vào form bên dưới chúng tôi sẽ liên hệ với quý khách
                 </div>
                 <div class="form-input">
                     <label class="form-lb">
@@ -111,7 +111,7 @@
             <p class="paragraph-2 text-uppercase">
                 111 Tên Lửa, P Bình Trị Đông B, Q. Bình Tân, Thành phố Hồ Chí Minh</p>
             <p class="paragraph-2">
-                Điện thoại: 0917 377 999  |  Email: <a href="mailTo:info@hnf.vn">info@hnf.vn</a></p>
+                Điện thoại: 090.856.3644  |  Email: <a href="mailTo:info@hnf.vn">info@hnf.vn</a></p>
      </div>
      <div id="mapshow"></div>
 </asp:Content>

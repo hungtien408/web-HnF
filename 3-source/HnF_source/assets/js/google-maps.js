@@ -42,7 +42,7 @@ window.onload = function () {
         var content = '<div class="box">' +
             '<p class="logo"><img src="assets/images/logo.png" /></p>' +
             '<p><span class="fa fa-map-marker"></span>111 Tên Lửa, P Bình Trị Đông B, Q. Bình Tân, TP. HCM</p>' +
-            '<p><span class="fa fa-phone"></span>0917 377 999</p>' +
+            '<p><span class="fa fa-phone"></span>090.856.3644</p>' +
             '<p><span class="fa fa-envelope"></span><a href="mailto:info@hnf.vn"> info@hnf.vn</a></p>' +
         '</div>';
 
